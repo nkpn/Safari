@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  // background-color: $main-bg-color;
+  // color: $text-color;
+  // font-family: $font-family;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin:0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
