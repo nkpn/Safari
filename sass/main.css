@@ -275,6 +275,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -292,6 +293,8 @@ li,
 a {
   margin: 0;
   padding: 0;
+  color: inherit;
+  font-style: inherit;
 }
 
 h1,
@@ -299,6 +302,7 @@ h2,
 h3,
 p {
   margin: 0;
+  font-family: inherit;
 }
 
 li {
@@ -310,70 +314,897 @@ img {
   max-width: 100%;
 }
 
-.button-sayhi {
-  padding: 12px 20px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 6px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 6px rgba(0, 0, 0, 0.12);
+.contact-us-btn {
+  font-size: inherit;
+  padding: 5px 30px;
+  background-color: inherit;
+  border: 1px solid #ffffff;
   border-radius: 100px;
-  border: 1px;
-  font-size: 20px;
-  line-height: 32px;
-  max-width: 279;
+  color: inherit;
 }
 
-@media screen and (max-width: 428px) {
-  .button-sayhi {
-    max-width: 215px;
-    font-size: 14px;
-    line-height: 20px;
+@media screen and (min-width: 1024px) {
+  .contact-us-btn {
+    padding: 8px 60px;
   }
 }
 
-.button-sayhi a {
-  color: #7a7a7a;
-}
-
-.button-linkedin {
-  padding: 12px 20px;
-  background-color: #ebebeb;
-  border-radius: 100px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px;
-  font-size: 20px;
-  line-height: 32px;
-  max-width: 279;
-}
-
-@media screen and (max-width: 428px) {
-  .button-linkedin {
-    max-width: 215px;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.contact-us-btn:hover {
+  border: 1px solid #F1F1F1;
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 0;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 708px;
-    padding: 0 0;
-    margin: auto;
+    padding: 0 20px;
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 1024px) {
   .container {
+    max-width: 1220px;
+  }
+}
+
+header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 14px;
+  }
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.mobile-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-nav-list {
+    display: none;
+  }
+}
+
+.is-active {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.header-logo {
+  width: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    width: 60px;
+  }
+}
+
+footer {
+  height: 36px;
+  background-color: #000000;
+}
+
+footer .footer-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: auto;
+  }
+}
+
+.description h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  max-width: 50%;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .description h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description h2 {
+    max-width: 210px;
+    margin-bottom: 24px;
+  }
+}
+
+.description p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .description p {
+    margin-bottom: 24px;
+  }
+}
+
+.home-hero {
+  background-image: url("../../images/home-page/elephants-min.jpg");
+  background-size: cover;
+  background-position: 40% 50%;
+  height: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero {
+    height: 805px;
+    background-position: center;
+  }
+}
+
+.home-hero .home-hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 230px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .home-hero-container {
+    margin-top: 360px;
+  }
+}
+
+.home-hero .hero-text h1 {
+  max-width: 265px;
+  font-family: Kaisei Decol;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: end;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .hero-text h1 {
+    font-size: 83px;
+    line-height: 83px;
+    max-width: 550px;
+  }
+}
+
+.home-hero .hero-text span {
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 3%;
+  color: inherit;
+  text-transform: none;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .hero-text span {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.home-hero .hero-text h2 {
+  margin-top: 22px;
+  font-size: 9px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: Montserrat;
+  text-align: end;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .hero-text h2 {
+    font-size: 14px;
+  }
+}
+
+.home-hero .bottom-arrow {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .bottom-arrow {
+    display: block;
+  }
+}
+
+.home-hero .social-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-hero .social-nav-item {
+  padding: 16px 17px;
+  border: 1px solid #F2FBFF;
+  border-radius: 50%;
+}
+
+.home-hero .social-nav-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .social-nav-item {
+    padding: 26px 27px;
+  }
+  .home-hero .social-nav-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.home-hero .facebook {
+  padding: 16px 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .facebook {
+    padding: 26px 27px;
+  }
+}
+
+.welcome {
+  margin-top: 60px;
+  position: relative;
+  z-index: 5;
+}
+
+.welcome::after {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  content: '';
+  background-position: -100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(196, 196, 196, 0)), to(#c4c4c4)), url("../../images/home-page/white-mountain-hero-min.jpg");
+  background-image: linear-gradient(to top, rgba(196, 196, 196, 0), #c4c4c4), url("../../images/home-page/white-mountain-hero-min.jpg");
+  opacity: 0.3;
+  width: 100%;
+  height: 161px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome::after {
+    height: 378px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    margin-top: 80px;
+  }
+}
+
+.welcome .welcome-to-our-world {
+  z-index: 5;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'description' 'wrapper' 'giraffe';
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome .welcome-to-our-world {
+        grid-template-areas: 'description wrapper' 'giraffe .';
+    grid-gap: 100px;
+  }
+}
+
+.welcome .welcome-desc {
+  z-index: 5;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: description;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.welcome .image-wrapper {
+  z-index: 5;
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: wrapper;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome .image-wrapper {
+    margin-left: 0;
+  }
+}
+
+.welcome .mount-kil {
+  position: absolute;
+  right: -20px;
+  height: 330px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome .mount-kil {
+    position: static;
+    height: auto;
+    right: 0;
+  }
+}
+
+.welcome .logo-abs {
+  position: absolute;
+  width: 90px;
+  top: 25px;
+  right: 185px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome .logo-abs {
+    top: 35px;
+    left: -95px;
+    width: 135px;
+  }
+}
+
+.welcome .home-giraffe {
+  margin-top: 360px;
+  max-width: 260px;
+  display: block;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: giraffe;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome .home-giraffe {
     max-width: 100%;
-    padding: 0 20px;
-    margin: auto;
+    margin-top: 0;
+    height: auto;
+    position: absolute;
+    top: -220px;
+  }
+}
+
+.tours-carousel {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel {
+    margin-top: 168px;
+  }
+}
+
+.tours-carousel h2 {
+  text-align: center;
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel h2 {
+    text-align: right;
+  }
+}
+
+.tours-carousel .carousel {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel {
+    margin-top: 42px;
+  }
+}
+
+.tours-carousel .carousel-card-zanzibar {
+  width: 320px;
+  height: 342px;
+  background-image: url("../../images/home-page/beach-safari-min.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-zanzibar {
+    width: 499px;
+    height: 473px;
+  }
+}
+
+.tours-carousel .carousel-card-wildlife {
+  width: 320px;
+  height: 342px;
+  background-image: url("../../images/home-page/tanzania-safaris-min.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-wildlife {
+    width: 499px;
+    height: 473px;
+  }
+}
+
+.tours-carousel .carousel-card-moshi {
+  width: 320px;
+  height: 342px;
+  background-image: url("../../images/home-page/moshi-min.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-moshi {
+    width: 499px;
+    height: 473px;
+  }
+}
+
+.tours-carousel .carousel-card-kilimanjaro {
+  width: 320px;
+  height: 342px;
+  background-image: url("../../images/home-page/killimanjaro-min.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-kilimanjaro {
+    width: 499px;
+    height: 473px;
+  }
+}
+
+.tours-carousel .hide {
+  display: none;
+}
+
+.tours-carousel .carousel-card:hover + .hide {
+  display: block;
+}
+
+.tours-carousel .carousel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0 31px 32px 16px;
+}
+
+.tours-carousel h3 {
+  font-family: Kaisei Decol;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.tours-carousel p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.advantages {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    margin-top: 171px;
+  }
+}
+
+.advantages h2 {
+  text-align: center;
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.advantages h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  margin-top: 25px;
+}
+
+.advantages .list {
+  margin-top: 74px;
+  margin-bottom: 73px;
+}
+
+.advantages .list-item {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .list-item {
+    max-width: 30%;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .advantages .list-item {
+    max-width: 30%;
+    margin-right: 100px;
+  }
+}
+
+.advantages .list-item:not(:last-child) {
+  margin-bottom: 73px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages .list-item:not(:last-child)::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  bottom: -36px;
+  left: 31%;
+  width: 40%;
+  height: 1px;
+  background-color: #DBE7ED;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .list-item:not(:last-child)::after {
+    bottom: 35px;
+    left: 107%;
+    width: 1px;
+    height: 78px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .advantages .list-item:not(:last-child)::after {
+    bottom: 30px;
+    left: 118%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .advantages .list-item:not(:last-child)::after {
+    bottom: 15px;
+    left: 115%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages .list-item:not(:last-child)::after {
+    bottom: 15px;
+  }
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.list-item {
+  text-align: center;
+}
+
+.home-photos {
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-photos {
+    margin-bottom: 168px;
+  }
+}
+
+.home-photos h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-photos h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-photos h2 {
+    margin-bottom: 42px;
+  }
+}
+
+.contact-us {
+  background-color: #F2FBFF;
+  padding-top: 36px;
+  padding-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.contact-us h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contact-us a {
+  margin-top: 12px;
+  font-family: Kaisei Decol;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us a {
+    font-size: 36px;
+    line-height: 52px;
+    margin-top: 24px;
+  }
+}
+
+.contact-us .contact-information-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-information-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 69px;
+  }
+}
+
+.contact-us .contact-information-item {
+  margin-bottom: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-information-item {
+    margin-bottom: 0;
+  }
+}
+
+.contact-us .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-us .social-item {
+  padding: 26px 27px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.contact-us .contact-us-bottom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.contact-us .contact-us-bottom-list p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-us-bottom-list p {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */

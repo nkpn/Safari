@@ -10,9 +10,7 @@ html {
 
 body {
   margin: 0;
-  // background-color: $main-bg-color;
-  // color: $text-color;
-  // font-family: $font-family;
+  background-color: $white;
   position: relative;
 }
 
@@ -30,6 +28,8 @@ li,
 a {
   margin: 0;
   padding: 0;
+  color:inherit;
+  font-style: inherit;
 }
 
 h1,
@@ -37,6 +37,7 @@ h2,
 h3,
 p {
   margin:0;
+  font-family: inherit;
 }
 
 li {

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Safari</title>
-    <link rel="shortcut icon" href="./images/32х32.png" type="image/png" />
+    <title>Good Deeds Travel</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -13,19 +13,254 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" src="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" src="slick/slick-theme.css"/>
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body class="page">
-    <header>
-    </header>
     <body>
+      <section class="home-hero">
+        <header>
+          <div class="container">
+            <nav>
+              <ul class="nav-list">
+                <li>
+                  <a href="index.html" class="nav-link">
+                    <img src="./images/icons/logo.png" alt="Good Deeds Travel" class="header-logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html" class="nav-link is-active">Home</a></li>
+                <li>
+                  <a href="./wildlife-safari-tours.html" class="nav-link">Wildlife Safari Tours </a></li>
+                <li>
+                  <a href="./kilimanjaro-mountain.html" class="nav-link">The Kilimanjaro Mountain</a></li>
+                <li>
+                  <a href="./day-trips-in-moshi.html" class="nav-link">Day trips in Moshi</a></li>
+                <li>
+                  <a href="./zanzibar-archipelago.html" class="nav-link">Zanzibar Archipelago</a></li>
+                <li>
+                    <a href="./contact-us.html" class="nav-link contact-us-btn">Contact Us</a>
+                </li>
+              </ul>
+    
+    
+              <!-- Mobile navigation -->
+              <ul class="mobile-nav-list">
+                <li>
+                  <a href="index.html" class="nav-link">
+                    <img src="./images/icons/logo.png" alt="Good Deeds Travel" class="header-logo">
+                  </a>
+                </li>
+                <a href="#">
+                  <img src="./images/icons/burger-icon.svg" alt="menu">
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
+
+        <div class="container">
+          <div class="home-hero-container">
+            <div class="hero-text">
+              <h1><span>visit </span> Unusual Tanzania</h1>
+              <h2>Delightful, unusual, wild</h2>
+            </div>
+            <ul class="social-nav">
+              <li class="social-nav-item">
+                <img src="./images/icons/phone.svg" alt="social-link">
+              </li>
+              <li class="social-nav-item facebook">
+                <img src="./images/icons/facebook.svg" alt="social-link">
+              </li>
+              <li class="social-nav-item">
+                <img src="./images/icons/insta.svg" alt="social-link">
+              </li>
+            </ul>
+          </div>
+          <img src="./images/icons/arrow-bottom.svg" class="bottom-arrow" alt="To Welcome to our World">
+        </div>
+       
+      </section>
+
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome-to-our-world">
+            <div class="description welcome-desc">
+              <h2>Welcome to our world</h2>
+              <p>Good Deeds Travel is a tour operator company specializing in quality destinations in Tanzania. We are specialized in Lodge and Camping safari in all National parks, Mountain trekking, beach safari, cultural activities and accommodation reservations</p>
+              <p>We build and offer unique designed itineraries to fit your budget, interests and time for the purpose of planning a good and enjoyable trip. We have a well dedicated and experienced team of tour guides and crew who will certainly go the extra mile to show you all that you might've been imagining when you were thinking of going on a safari to Tanzania.</p>
+            </div>
+            <div class="image-wrapper">
+              <img src="./images/home-page/photo-peoples-min.jpg" alt="Mount Kilimanjaro photo two persons" class="mount-kil">
+              <img src="./images/icons/logo-black.png" alt="Good Deeds Travel" class="logo-abs">
+            </div>
+            <img src="./images/home-page/ellena-min.jpg" alt="photo" class="home-giraffe">
+          </div>
+        </div>
+      </section>
+
+      <section class="tours-carousel">
+        <div class="container">
+          <h2>Organizing author tours</h2>
+
+          <ul class="carousel">
+            <li>
+              <a href="./zanzibar-archipelago.html">
+                <div class="carousel-card carousel-card-zanzibar">
+                  <a class="contact-us-btn hide" href="./zanzibar-archipelago.html">Read More</a>
+                  <h3> Bush to Beach Safari</h3>
+                  <p>Tanzania is located in East Africa and is a leading travel destination in the world, due to its scenery, magnificent wildlife.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./wildlife-safari-tours.html">
+                <div class="carousel-card carousel-card-wildlife">
+                  <a href="./wildlife-safari-tours.html" class="contact-us-btn hide">Read More</a>
+                  <h3>Tanzania Safaris</h3>
+                  <p>Tanzania is located in East Africa and is a leading travel destination in the world, due to its scenery, magnificent wildlife.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./day-trips-in-moshi.html">
+                <div class="carousel-card carousel-card-moshi">
+                  <a class="contact-us-btn hide" href="./day-trips-in-moshi.html">Read More</a>
+                  <h3>Day trips in Moshi</h3>
+                  <p>Tanzania is located in East Africa and is a leading travel destination in the world, due to its scenery, magnificent wildlife.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./kilimanjaro-mountain.html">
+                <div class="carousel-card carousel-card-kilimanjaro">
+                  <a href="./kilimanjaro-mountain.html" class="contact-us-btn hide">Read More</a>
+                  <h3>The Kilimanjaro Mountain</h3>
+                  <p>Tanzania is located in East Africa and is a leading travel destination in the world, due to its scenery, magnificent wildlife.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="carousel-progress"></div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2>Why choose us?</h2>
+          <ul class="list">
+            <li class="list-item">
+              <h3>Reboot yourself</h3>
+              <p>In our trips you can look at yourself from the other side, see your strengths and weaknesses, feel the other side of your body and soul.</p>
+            </li>
+            <li class="list-item">
+              <h3>Adventures</h3>
+              <p>Each trip is different from the previous one, here you can feel the real adrenaline inside the various adventures that you meet along the way.</p>
+            </li>
+            <li class="list-item">
+              <h3>New sensations</h3>
+              <p>You can see unique things that are not even shown on TV. Emotions from this charge for a long time.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home-photos">
+        <div class="container">
+          <h2>Some photos from tours</h2>
+
+          <ul class="carousel">
+            <li>
+               <img src="./images/home-page/tiger-slider-min.jpg" alt="Tiger family" loading="lazy"> 
+            </li>
+            <li>
+              <img src="./images/home-page/elephants-slider-min.jpg" alt="Elephants family" loading="lazy"> 
+            </li>
+            <li>
+              <img src="./images/home-page/kids-min.jpg" alt="Kids" loading="lazy"> 
+            </li>
+            <li>
+              <img src="./images/home-page/fruits-min.jpg" alt="Tiger family" loading="lazy"> 
+            </li>
+          </ul>
+          <div class="carousel-progress"></div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="container">
+          <ul class="contact-information-list">
+            <li class="contact-information-item">
+              <h3>email us</h3>
+              <a href="mailto:gooddeeds_travel@outlook.com">gooddeeds_travel@outlook.com</a>
+            </li>
+            <li class="contact-information-item">
+              <h3>phone</h3>
+              <a href="tel:+390121345768">+255 752 030 338</a>
+            </li>
+          </ul>
+          <ul class="contact-us-bottom-list">
+            <li>
+              <ul class="social-list">
+              <li class="social-item"><img src="./images/icons/phone-black.svg" alt="phone-icon" class="social-img" width="20px"></li>
+              <li class="social-item"><img src="./images/icons/facebook-black.svg" alt="facebook-icon" class="social-img" width="20px"></li>
+              <li class="social-item"><img src="./images/icons/insta-black.svg" alt="instagram" class="social-img" width="20px"></li>
+              <li class="social-item"><img src="./images/icons/twitter-black.svg" alt="twitter" class="social-img" width="20px"></li>
+            </ul>
+          </li>
+            <li>
+              <p>We always aim to reply within 24 hours.</p>
+            </li>
+        </ul>
+         
+
+        </div>
+      </section>
     </body>
     <footer>
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <ul>
+              <li class="footer-navigation">TOURS</li>
+              <li class="footer-navigation"><a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a></li>
+              <li class="footer-navigation"><a href="./kilimanjaro-mountain.html">The Kilimanjaro Mountain</a></li>
+              <li class="footer-navigation"><a href="./day-trips-in-moshi.html">Day Trips Moshi</a></li>
+              <li class="footer-navigation"><a href="./zanzibar-archipelago.html">Zanzibar Archipelago</a></li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <ul class="contact-information-list">
+              <li class="contact-information-item">
+                <h3>email us</h3>
+                <a href="mailto:gooddeeds_travel@outlook.com">gooddeeds_travel@outlook.com</a>
+              </li>
+              <li class="contact-information-item">
+                <h3>phone</h3>
+                <a href="tel:+390121345768">+255 752 030 338</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <ul class="contact-us-bottom-list">
+              <li>
+                <ul class="social-list">
+                <li class="social-item"><img src="./images/icons/phone.svg" alt="phone-icon" class="social-img" width="20px"></li>
+                <li class="social-item"><img src="./images/icons/facebook.svg" alt="facebook-icon" class="social-img" width="20px"></li>
+                <li class="social-item"><img src="./images/icons/insta.svg" alt="instagram" class="social-img" width="20px"></li>
+                <li class="social-item"><img src="./images/icons/twitter.svg" alt="twitter" class="social-img" width="20px"></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

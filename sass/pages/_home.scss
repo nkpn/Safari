@@ -1,0 +1,561 @@
+.description{
+    h2{
+        @include subheading();
+        max-width: 50%;
+        margin-bottom: 12px; 
+
+        @media screen and (min-width:$tablet) {
+            max-width: 210px;
+            margin-bottom: 24px; 
+        }
+    }
+
+    p{
+        @include text-description();
+        margin-bottom: 12px;
+        text-align: justify;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 24px; 
+        }
+    }
+}
+
+//* HOME HERO SECTION
+//--------------------------
+.home-hero{
+    background-image: url('../../images/home-page/elephants-min.jpg');
+    background-size: cover;
+    background-position: 40% 50%;
+    height: 600px;
+
+    @media screen and (min-width:$tablet) {
+        height: 805px;
+        background-position: center;
+    }
+
+    .home-hero-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 230px;
+        align-items: end;
+
+        @media screen and (min-width:$tablet) {
+            margin-top: 360px;
+        }
+    }
+    
+    .hero-text{
+        h1{
+            max-width: 265px;
+            font-family: Kaisei Decol;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 45px;
+            color: $white;
+            text-transform: uppercase;
+            text-align: end;
+
+            @media screen and (min-width:$tablet) {
+                font-size: 83px;
+                line-height: 83px;
+                max-width: 550px;
+            }
+        }
+
+        span{
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 44px;
+            letter-spacing: 3%;
+            color:inherit;
+            text-transform: none;
+            font-weight: 100;
+
+            @media screen and (min-width:$tablet) {
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+
+        h2{
+            margin-top: 22px;
+            font-size:9px;
+            line-height: 24px;
+            font-weight:300;
+            font-family: Montserrat;
+            text-align: end;
+            color: $white;
+            @media screen and (min-width:$tablet) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .bottom-arrow{
+        display: none;
+        @media screen and (min-width:$tablet) {
+            display: block;
+        }
+    }
+
+    .social-nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .social-nav-item{
+        padding: 16px 17px;
+        border: 1px solid $bg-light-color;
+        border-radius:50%;
+        
+        &:not(:last-child){
+            margin-bottom: 12px;
+        }
+
+        @media screen and (min-width:$tablet) {
+            padding: 26px 27px;
+
+            &:not(:last-child){
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .facebook{
+        padding: 16px 18px;
+
+        @media screen and (min-width:$tablet) {
+            padding: 26px 27px;
+        }
+    }
+}
+
+//* Welcome to our world section
+//-----------------------------------------
+.welcome{
+    margin-top: 60px;
+    position: relative;
+    z-index: 5;
+
+    &::after{
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        content: '';
+        background-position: -100% ;
+        background-repeat: no-repeat;
+
+        background-image: linear-gradient(
+            to top,
+               rgba(196, 196, 196, 0),
+               rgba(196, 196, 196, 100)),
+               url('../../images/home-page/white-mountain-hero-min.jpg');
+        opacity: 0.3;
+        width: 100%;
+        height: 161px;
+
+        @media screen and (min-width:$tablet) {
+            height: 378px;
+        }
+    }
+    
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 80px;
+    }
+
+    .welcome-to-our-world{
+        z-index: 5;
+        display: grid;
+        grid-template-areas: 'description'
+        'wrapper'
+        'giraffe';
+        position: relative;
+
+        @media screen and (min-width:$tablet) {
+            grid-template-areas: 'description wrapper'
+            'giraffe .';
+            grid-gap: 100px;
+        }
+    }
+
+    .welcome-desc{
+        z-index: 5;
+        grid-area:description;
+        max-width: 100%;
+        margin-bottom: 24px;
+        @media screen and (min-width:$tablet) {
+            // max-width: 50%;
+        }
+    }
+
+    .image-wrapper{
+        z-index: 5;
+        position: relative;
+        grid-area: wrapper;
+
+        @media screen and (min-width:$tablet) {
+            margin-left: 0;
+        }
+    }
+
+    .mount-kil{
+        position: absolute;
+        right: -20px;
+        height: 330px;
+        @media screen and (min-width:$tablet) {
+            position: static;
+            height: auto;
+            right: 0;
+        }
+    }
+
+    .logo-abs{
+        position: absolute;
+        width: 90px;
+
+        top: 25px;
+        right: 185px;
+        @media screen and (min-width:$tablet) {
+            top: 35px;
+            left: -95px;
+            width: 135px;
+        }
+    }
+
+    .home-giraffe{
+        margin-top: 360px;
+        max-width: 260px;
+        display: block;
+        grid-area: giraffe;
+        
+
+        @media screen and (min-width:$tablet) {
+            max-width: 100%;
+            margin-top: 0;
+            height: auto;
+            position: absolute;
+            top: -220px;
+        }
+    }
+}
+
+.tours-carousel{
+    margin-top: 100px;
+    @media screen and (min-width:$tablet) {
+        margin-top: 168px;
+    }
+
+    h2{
+        text-align: center;
+        @include subheading();
+
+        @media screen and (min-width:$tablet) {
+            text-align: right;
+        }
+    }
+
+    .carousel{
+        margin-top: 30px;
+        @media screen and (min-width:$tablet) {
+            margin-top: 42px;
+        }
+    }
+
+    .carousel-card-zanzibar{
+        width: 320px;
+        height: 342px;
+        background-image: url('../../images/home-page/beach-safari-min.jpg');
+        background-size: cover;
+
+        @media screen and (min-width:$tablet) {
+            width: 499px;
+            height: 473px;
+        }
+    }
+
+    .carousel-card-wildlife{
+        width: 320px;
+        height: 342px;
+        background-image: url('../../images/home-page/tanzania-safaris-min.jpg');
+        background-size: cover;
+
+        @media screen and (min-width:$tablet) {
+            width: 499px;
+            height: 473px;
+        }
+    }
+
+    .carousel-card-moshi{
+        width: 320px;
+        height: 342px;
+        background-image: url('../../images/home-page/moshi-min.jpg');
+        background-size: cover;
+
+        @media screen and (min-width:$tablet) {
+            width: 499px;
+            height: 473px;
+        }
+    }
+
+    .carousel-card-kilimanjaro{
+        width: 320px;
+        height: 342px;
+        background-image: url('../../images/home-page/killimanjaro-min.jpg');
+        background-size: cover;
+
+        @media screen and (min-width:$tablet) {
+            width: 499px;
+            height: 473px;
+        }
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .carousel-card:hover + .hide{
+        display: block;
+    }
+
+    .carousel-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 0 31px 32px 16px;
+    }
+    
+    h3{
+        font-family: Kaisei Decol;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color:$white;
+
+        @media screen and (min-width:$tablet) {
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+    p{
+        font-family: Montserrat, sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color:$white;
+        margin-top: 12px;
+
+        @media screen and (min-width:$tablet) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+//----------------------------------
+//* Advantages section
+
+.advantages{
+   margin-top: 100px;
+   @media screen and (min-width:$tablet) {
+        margin-top: 171px;
+    }
+
+    h2{
+        text-align: center;
+        @include subheading();
+    }
+
+    h3{
+        @include uppercase-heading();
+    }
+
+    p{
+        @include text-description();
+        margin-top: 25px;
+    }
+
+    .list{
+        margin-top: 74px;
+        margin-bottom: 73px;
+
+    }
+
+    .list-item{
+        position: relative;
+
+        @media screen and (min-width:$tablet) {
+            max-width: 30%;
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width:$desktop) {
+            max-width: 30%;
+            margin-right: 100px;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 73px;
+
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 0;
+            }
+        }
+        
+        //* line after item
+        &:not(:last-child){
+            &::after{
+                content: ' ';
+                display: inline-block;
+                position: absolute;
+                bottom: -36px;
+                left: 31%;
+                width: 40%;
+                height: 1px;
+                background-color:$bg-main-color;
+
+                @media screen and (min-width:$tablet) {
+                    bottom: 35px;
+                    left: 107%;
+                    width: 1px;
+                    height: 78px;
+                }
+
+                @media screen and (min-width:$desktop) {
+                  bottom: 30px;
+                  left: 118%;
+                }
+                @media screen and (min-width:1220px) {
+                    bottom: 15px;
+                    left: 115%;
+                }
+                @media screen and (min-width:1440px) {
+                    bottom: 15px;
+                  }
+
+            }
+        }
+    }
+
+       
+}
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+    }
+}
+
+.list-item{
+    text-align: center;
+}
+
+//------------------------------
+//* Photo section
+.home-photos{
+    margin-bottom: 100px;
+    @media screen and (min-width:$tablet){
+        margin-bottom: 168px;
+    }
+
+    h2{
+        @include subheading();
+        margin-bottom: 30px;
+        @media screen and (min-width:$tablet){
+            margin-bottom: 42px;
+        }
+
+    }
+}
+
+//----------------------------------
+//* Contact us section
+
+.contact-us{
+    background-color: $bg-light-color;
+    padding-top: 36px;
+    padding-bottom: 56px;
+    @media screen and (min-width:$tablet){
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    h3{
+        @include uppercase-heading();
+    }
+
+    a{
+        margin-top: 12px;
+        font-family: Kaisei Decol;
+        font-size: 24px;
+        line-height: 35px;
+        @media screen and (min-width:$tablet) {
+            font-size: 36px;
+            line-height: 52px;
+            margin-top: 24px;
+        }
+    }
+
+    .contact-information-list{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 39px;
+
+        @media screen and (min-width:$tablet) {
+            flex-direction: row;
+            justify-content:space-between;
+            margin-bottom: 69px;
+        }
+    }
+
+    .contact-information-item{
+        margin-bottom: 39px;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    .social-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-item{
+        padding: 26px 27px;
+        border: 1px solid $black;
+        border-radius:50%;
+        margin-right: 16px;
+    }
+    
+    .contact-us-bottom-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+
+        p{
+            display: none;
+            @media screen and (min-width:$tablet) {
+                display: inline-block;
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                color:$black;
+                margin-top: 12px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+}

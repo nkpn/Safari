@@ -1,0 +1,17 @@
+.contact-us-btn{
+    font-size: inherit;
+    padding: 5px 30px;
+    background-color: inherit;
+    border: 1px solid $white;
+    border-radius: 100px;
+    color: inherit;
+
+    @media screen and (min-width:$desktop){
+        padding: 8px 60px;
+    }
+
+    &:hover{
+        border: 1px solid $button-light-hover;
+    }
+}
+
