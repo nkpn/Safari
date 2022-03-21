@@ -173,6 +173,9 @@
     }
 }
 
+//----------------------------------
+//* Second section
+
 .wildlife-second-section{
     position: relative;
     p{
@@ -192,6 +195,15 @@
     background-position: 100% 95%;
     @media screen and (min-width:$tablet) {
         background-image: url('../../images/wildlife-safari-tours/zebra-hero-min.jpg');
+    }
+}
+
+//---------------------------------------
+//* camping-safari section
+.camping-safari{
+    margin-top: 100px;
+    @media screen and (min-width:$tablet) {
+        margin-top: 148px;
     }
 }
 

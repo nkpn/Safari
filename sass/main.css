@@ -1820,6 +1820,16 @@ hr {
   }
 }
 
+.camping-safari {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .camping-safari {
+    margin-top: 148px;
+  }
+}
+
 .topic-fixed-picture {
   display: -webkit-box;
   display: -ms-flexbox;
