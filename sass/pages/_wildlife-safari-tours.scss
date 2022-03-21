@@ -1,0 +1,196 @@
+.wildlife-hero{
+    background-color: $black;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        padding-bottom: 36px;
+    }
+
+    h1{
+        margin-bottom: 16px;
+        @include heading();
+        max-width: 150px;
+
+        @media screen and (min-width:$tablet) {
+            max-width: 220px;
+            margin-bottom: 28px;
+        }
+    }
+
+    p{
+        @include text-description();
+        color:$white;
+        margin-bottom: 28px;
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 48px;
+        }
+    }
+
+    .wildlife-hero-wrapper{
+        @media screen and (max-width:$tablet) {
+                padding-top: 20px;
+        }
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    .contact-us-btn{
+        color:$white;
+        @media screen and (max-width:$tablet) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .hero-description{
+        margin-top: 24px;
+
+        @media screen and (max-width:$tablet) {
+            margin-top: 120px;
+        }
+        @media screen and (min-width:$desktop) {
+            flex-basis: 30%;
+        }
+        
+    }
+
+
+    //* Image wrapper
+    .wildlife-tiger{
+        grid-area: tiger;
+        overflow:hidden;
+        object-fit: contain;
+    }
+
+    .wildlife-car{
+        grid-area: car;
+        overflow:hidden;
+        object-fit: contain;
+    }
+
+    .wildlife-elephant{
+        grid-area: elephant;
+        overflow:hidden;
+        object-fit: contain;
+    }
+
+    .wildlife-lion{
+        grid-area: lion;
+        overflow:hidden;
+        object-fit: contain;
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .wildlife-zebras{
+        grid-area: zebras;
+        overflow:hidden;
+        object-fit: contain;
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .wildlife-kids{
+        overflow:hidden;
+        object-fit: contain;
+        grid-area: kids;
+    }
+
+    .wildlife-elephants{
+        overflow:hidden;
+        object-fit: contain;
+        grid-area: elephants;
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    
+
+
+    .wildlife-image-wrapper{
+        display: grid;
+        gap:4px;
+        grid-template-areas: "tiger tiger car car car car"
+        "tiger tiger car car car car"
+        "tiger tiger elephant elephant kids kids"
+        "tiger tiger elephant elephant kids kids";
+        @media screen and (min-width:$tablet) {
+            grid-template-areas:
+            "tiger car"
+        }
+        img{
+            height: 100%;
+        }
+    }
+
+    .mobile-image-wrapper{
+        display: grid;
+        @media screen and (min-width:$tablet) {
+            display: none;
+        }
+    }
+
+    .desktop-image-wrapper{
+        display: none;
+        @media screen and (min-width:$tablet) {
+            display: grid;
+            
+        }
+
+        @media screen and (min-width:$desktop) {
+            order: 1;
+            flex-basis: 60%;
+        }
+
+        .first-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: no-wrap;
+            gap: 8px;
+            img{
+                height: 100%;
+            }
+        }
+
+        .second-wrapper{
+            margin-top: 6px;
+            display: grid;
+            gap: 8px;
+            grid-template-areas: "elephant lion lion lion"
+                                "elephant zebras kids elephants";
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+.wildlife-second-section{
+    position: relative;
+    p{
+      @include text-description();
+      color:$black;  
+    }
+    padding-bottom: 362px;
+    padding-top: 60px;
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 120px; 
+    }
+    //* Background image
+    background-image: url('../../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 95%;
+    @media screen and (min-width:$tablet) {
+        background-image: url('../../images/wildlife-safari-tours/zebra-hero-min.jpg');
+    }
+}

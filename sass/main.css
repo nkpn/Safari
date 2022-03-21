@@ -314,13 +314,76 @@ img {
   max-width: 100%;
 }
 
+.two-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .two-columns {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.two-columns .first-column {
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: start;
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .two-columns .first-column {
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+}
+
+.two-columns .second-column {
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+@media screen and (min-width: 768px) {
+  .two-columns .second-column {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+}
+
 .contact-us-btn {
-  font-size: inherit;
+  font-size: 14px;
+  line-height: 24px;
   padding: 5px 30px;
   background-color: inherit;
   border: 1px solid #ffffff;
   border-radius: 100px;
   color: inherit;
+  font-family: Montserrat;
 }
 
 @media screen and (min-width: 1024px) {
@@ -359,6 +422,7 @@ header {
   font-size: 10px;
   line-height: 24px;
   letter-spacing: 3%;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -398,7 +462,7 @@ header {
   }
 }
 
-.mobile-nav-list {
+.mobile-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,13 +480,14 @@ header {
 }
 
 @media screen and (min-width: 769px) {
-  .mobile-nav-list {
+  .mobile-header {
     display: none;
   }
 }
 
 .is-active {
-  margin-bottom: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -436,9 +501,58 @@ header {
   }
 }
 
+.mobile-menu {
+  padding: 20px 20px 20px 40px;
+  display: none;
+  position: fixed;
+  height: 110vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 100;
+  -webkit-animation: growDown 200ms ease-in-out forwards;
+          animation: growDown 200ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+.active {
+  display: block;
+}
+
+.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 footer {
   height: 36px;
   background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+footer h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
 footer .footer-list {
@@ -465,6 +579,146 @@ footer .footer-list {
   footer {
     height: auto;
   }
+}
+
+footer .contact-information-item {
+  margin-bottom: 40px;
+}
+
+footer .contact-information-item a {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+footer .footer-navigation {
+  margin-bottom: 20px;
+}
+
+footer .footer-navigation a {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+footer .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .social-item {
+  padding: 13px;
+  border: 1px solid #F2FBFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  footer .social-item {
+    padding: 19px;
+    margin-right: 12px;
+  }
+}
+
+footer .twitter-item {
+  padding: 14px 13px;
+}
+
+@media screen and (min-width: 768px) {
+  footer .twitter-item {
+    padding: 20px 19px;
+  }
+}
+
+.mobile-nav-item {
+  font-family: Kaisei Decol;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 3%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-item img {
+  margin-left: 10px;
+}
+
+.mobile-nav-submenu-list {
+  display: none;
+  list-style: circle;
+  -webkit-animation: growDown 200ms ease-in-out forwards;
+          animation: growDown 200ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+@-webkit-keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.mobile-nav-submenu-item {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-submenu-item::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+hr {
+  opacity: 0.5;
 }
 
 .description h2 {
@@ -647,34 +901,46 @@ footer .footer-list {
 }
 
 .welcome {
-  margin-top: 60px;
+  padding-top: 60px;
   position: relative;
   z-index: 5;
-}
-
-.welcome::after {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  content: '';
-  background-position: -100%;
+  padding-bottom: 100px;
+  background-image: url("../../images/home-page/white-mountain-hero-min-mobile.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(196, 196, 196, 0)), to(#c4c4c4)), url("../../images/home-page/white-mountain-hero-min.jpg");
-  background-image: linear-gradient(to top, rgba(196, 196, 196, 0), #c4c4c4), url("../../images/home-page/white-mountain-hero-min.jpg");
-  opacity: 0.3;
-  width: 100%;
-  height: 161px;
-}
-
-@media screen and (min-width: 768px) {
-  .welcome::after {
-    height: 378px;
-  }
+  background-position: 100% 81%;
 }
 
 @media screen and (min-width: 768px) {
   .welcome {
-    margin-top: 80px;
+    background-image: url("../../images/home-page/white-mountain-hero-min.jpg");
+    background-position: 100% 89%;
+    padding-top: 80px;
+    padding-bottom: 168px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    background-position: 100% 73%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .welcome {
+    background-position: 100% 79%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome {
+    background-position: 100% 86%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .welcome {
+    background-position: 100% 86%;
   }
 }
 
@@ -718,7 +984,7 @@ footer .footer-list {
 
 .welcome .mount-kil {
   position: absolute;
-  right: -20px;
+  right: -15px;
   height: 330px;
 }
 
@@ -760,17 +1026,13 @@ footer .footer-list {
     margin-top: 0;
     height: auto;
     position: absolute;
-    top: -220px;
+    bottom: -120px;
   }
 }
 
-.tours-carousel {
-  margin-top: 100px;
-}
-
-@media screen and (min-width: 768px) {
-  .tours-carousel {
-    margin-top: 168px;
+@media screen and (min-width: 1024px) {
+  .welcome .home-giraffe {
+    bottom: -145px;
   }
 }
 
@@ -1159,6 +1421,26 @@ footer .footer-list {
   }
 }
 
+@media screen and (max-width: 390px) {
+  .contact-us .contact-information-item a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-information-item a {
+    font-size: 24px;
+    line-height: 37px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us .contact-information-item a {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
 .contact-us .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1169,7 +1451,7 @@ footer .footer-list {
           flex-direction: row;
 }
 
-.contact-us .social-item {
+.contact-us .contact-social-item {
   padding: 26px 27px;
   border: 1px solid #000000;
   border-radius: 50%;
@@ -1205,6 +1487,302 @@ footer .footer-list {
     margin-top: 12px;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+.wildlife-hero {
+  background-color: #000000;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero {
+    padding-bottom: 36px;
+  }
+}
+
+.wildlife-hero h1 {
+  margin-bottom: 16px;
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  max-width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero h1 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero h1 {
+    max-width: 220px;
+    margin-bottom: 28px;
+  }
+}
+
+.wildlife-hero p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero p {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wildlife-hero .wildlife-hero-wrapper {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wildlife-hero .wildlife-hero-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.wildlife-hero .contact-us-btn {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .wildlife-hero .contact-us-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.wildlife-hero .hero-description {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .wildlife-hero .hero-description {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wildlife-hero .hero-description {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+.wildlife-hero .wildlife-tiger {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tiger;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wildlife-hero .wildlife-car {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: car;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wildlife-hero .wildlife-elephant {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: elephant;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wildlife-hero .wildlife-lion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: lion;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .wildlife-hero .wildlife-lion {
+    display: none;
+  }
+}
+
+.wildlife-hero .wildlife-zebras {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: zebras;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .wildlife-hero .wildlife-zebras {
+    display: none;
+  }
+}
+
+.wildlife-hero .wildlife-kids {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: kids;
+}
+
+.wildlife-hero .wildlife-elephants {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: elephants;
+}
+
+@media screen and (max-width: 767px) {
+  .wildlife-hero .wildlife-elephants {
+    display: none;
+  }
+}
+
+.wildlife-hero .wildlife-image-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+      grid-template-areas: "tiger tiger car car car car" "tiger tiger car car car car" "tiger tiger elephant elephant kids kids" "tiger tiger elephant elephant kids kids";
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero .wildlife-image-wrapper {
+        grid-template-areas: "tiger car";
+  }
+}
+
+.wildlife-hero .wildlife-image-wrapper img {
+  height: 100%;
+}
+
+.wildlife-hero .mobile-image-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero .mobile-image-wrapper {
+    display: none;
+  }
+}
+
+.wildlife-hero .desktop-image-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-hero .desktop-image-wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wildlife-hero .desktop-image-wrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+.wildlife-hero .desktop-image-wrapper .first-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  gap: 8px;
+}
+
+.wildlife-hero .desktop-image-wrapper .first-wrapper img {
+  height: 100%;
+}
+
+.wildlife-hero .desktop-image-wrapper .second-wrapper {
+  margin-top: 6px;
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+      grid-template-areas: "elephant lion lion lion" "elephant zebras kids elephants";
+}
+
+.wildlife-hero .desktop-image-wrapper .second-wrapper img {
+  height: 100%;
+}
+
+.wildlife-second-section {
+  position: relative;
+  padding-bottom: 362px;
+  padding-top: 60px;
+  background-image: url("../../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 95%;
+}
+
+.wildlife-second-section p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-second-section {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wildlife-second-section {
+    background-image: url("../../images/wildlife-safari-tours/zebra-hero-min.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */

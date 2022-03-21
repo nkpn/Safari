@@ -1,10 +1,12 @@
 .contact-us-btn{
-    font-size: inherit;
+    font-size: 14px;
+    line-height: 24px;
     padding: 5px 30px;
     background-color: inherit;
     border: 1px solid $white;
     border-radius: 100px;
     color: inherit;
+    font-family: Montserrat;
 
     @media screen and (min-width:$desktop){
         padding: 8px 60px;

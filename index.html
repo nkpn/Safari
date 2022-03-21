@@ -14,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" src="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" src="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/html" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/html" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -48,16 +49,80 @@
     
     
               <!-- Mobile navigation -->
-              <ul class="mobile-nav-list">
+              <ul class="mobile-header">
                 <li>
                   <a href="index.html" class="nav-link">
                     <img src="./images/icons/logo.png" alt="Good Deeds Travel" class="header-logo">
                   </a>
                 </li>
-                <a href="#">
-                  <img src="./images/icons/burger-icon.svg" alt="menu">
-                </a>
+                <li>
+                    <img src="./images/icons/burger-icon.svg" alt="menu" class="burger">
+                </li>
               </ul>
+              <div class="mobile-menu">
+                <div class="img-wrapper">
+                  <img src="./images/icons/close-button.svg" alt="icon close" class="close-btn" width="18px">
+                </div>
+                <ul class="mobile-nav-list">
+                  <li class="mobile-nav-item"><a href="./index.html">Home</a></li>
+                  <hr>
+                  <li class="mobile-nav-item ">
+                    <a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a>
+                    <img src="./images/icons/list-arrow.svg" alt="to categories" class="wildlife">
+                  </li>
+                    <ul class="mobile-nav-submenu-list wildlife-list">
+                      <ol class="mobile-nav-submenu-item"><a href="#">Camping Safari</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Mid-Range Safari lodge</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">The Wilderness and Cultural experience safari</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Luxury Lodge Safari</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Classic Lodge Safari</a></ol>
+                    </ul>
+                    <hr>
+                  <li class="mobile-nav-item ">
+                    <a href="./day-trips-in-moshi.html">Day trips in Moshi</a>
+                    <img src="./images/icons/list-arrow.svg" alt="to categories" class="moshi">
+                  </li>
+                    <ul class="mobile-nav-submenu-list moshi-list">
+                      <ol class="mobile-nav-submenu-item"><a href="#">Arusha National Park Day trip</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Tarangire National Park</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Marangu waterfalls</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Chemka hot springs</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Materuni waterfalls and Village tour</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Lake Challa</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Chagga museum</a></ol>
+                      <ol class="mobile-nav-submenu-item"><a href="#">Arusha natural history Museum</a></ol>
+                    </ul>
+                    <hr>
+                  <li class="mobile-nav-item ">
+                    <a href="./kilimanjaro-mountain.html">The Kilimanjaro Mountain</a>
+                    <img src="./images/icons/list-arrow.svg" alt="to categories" class="kilimanjaro">
+                  </li>
+                  <ul class="mobile-nav-submenu-list kilimanjaro-list">
+                    <ol class="mobile-nav-submenu-item"><a href="#">Marangu Routes</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Machame Route</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Rongai Route</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Lemosho Route</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Umbwe Route</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Nothern Circuit</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Trekking Mount Meru</a></ol>
+                  </ul>
+                  <hr>
+                  <li class="mobile-nav-item ">
+                    <a href="./zanzibar-archipelago.html">Zanzibar Archipelago</a>
+                    <img src="./images/icons/list-arrow.svg" alt="to categories" class="zanzibar">
+                  </li>
+                  <ul class="mobile-nav-submenu-list zanzibar-list">
+                    <ol class="mobile-nav-submenu-item"><a href="#">Tarangire National park </a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Mto wa Mbu to Manyara national park</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Ngorongoro crater to Zanzibar Island</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Zanzibar beach</a></ol>
+                    <ol class="mobile-nav-submenu-item"><a href="#">Zanzibar beach to Stone town</a></ol>
+                  </ul>
+                  <hr>
+                  <li class="mobile-nav-item"><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+              
             </nav>
           </div>
         </header>
@@ -111,7 +176,7 @@
             <li>
               <a href="./zanzibar-archipelago.html">
                 <div class="carousel-card carousel-card-zanzibar">
-                  <a class="contact-us-btn hide" href="./zanzibar-archipelago.html">Read More</a>
+                  <a class="contact-us-btn hide" href="./contact-us.html">Read More</a>
                   <h3> Bush to Beach Safari</h3>
                   <p>Tanzania is located in East Africa and is a leading travel destination in the world, due to its scenery, magnificent wildlife.</p>
                 </div>
@@ -206,10 +271,10 @@
           <ul class="contact-us-bottom-list">
             <li>
               <ul class="social-list">
-              <li class="social-item"><img src="./images/icons/phone-black.svg" alt="phone-icon" class="social-img" width="20px"></li>
-              <li class="social-item"><img src="./images/icons/facebook-black.svg" alt="facebook-icon" class="social-img" width="20px"></li>
-              <li class="social-item"><img src="./images/icons/insta-black.svg" alt="instagram" class="social-img" width="20px"></li>
-              <li class="social-item"><img src="./images/icons/twitter-black.svg" alt="twitter" class="social-img" width="20px"></li>
+              <li class="contact-social-item"><img src="./images/icons/phone-black.svg" alt="phone-icon" class="social-img" width="20px"></li>
+              <li class="contact-social-item"><img src="./images/icons/facebook-black.svg" alt="facebook-icon" class="social-img" width="20px"></li>
+              <li class="contact-social-item"><img src="./images/icons/insta-black.svg" alt="instagram" class="social-img" width="20px"></li>
+              <li class="contact-social-item"><img src="./images/icons/twitter-black.svg" alt="twitter" class="social-img" width="20px"></li>
             </ul>
           </li>
             <li>
@@ -226,7 +291,7 @@
         <ul class="footer-list">
           <li class="footer-item">
             <ul>
-              <li class="footer-navigation">TOURS</li>
+              <li class="footer-navigation"><h3>TOURS</h3></li>
               <li class="footer-navigation"><a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a></li>
               <li class="footer-navigation"><a href="./kilimanjaro-mountain.html">The Kilimanjaro Mountain</a></li>
               <li class="footer-navigation"><a href="./day-trips-in-moshi.html">Day Trips Moshi</a></li>
@@ -236,23 +301,24 @@
           <li class="footer-item">
             <ul class="contact-information-list">
               <li class="contact-information-item">
-                <h3>email us</h3>
-                <a href="mailto:gooddeeds_travel@outlook.com">gooddeeds_travel@outlook.com</a>
+                <h3>call us</h3>
+                <a href="tel:+390121345768">+255 752 030 338</a>
               </li>
               <li class="contact-information-item">
-                <h3>phone</h3>
-                <a href="tel:+390121345768">+255 752 030 338</a>
+                <h3>email us</h3>
+                <a href="mailto:gooddeeds_travel@outlook.com">gooddeeds_travel@outlook.com</a>
               </li>
             </ul>
           </li>
           <li class="footer-item">
+            <h3>Follow us</h3>
             <ul class="contact-us-bottom-list">
               <li>
                 <ul class="social-list">
                 <li class="social-item"><img src="./images/icons/phone.svg" alt="phone-icon" class="social-img" width="20px"></li>
                 <li class="social-item"><img src="./images/icons/facebook.svg" alt="facebook-icon" class="social-img" width="20px"></li>
                 <li class="social-item"><img src="./images/icons/insta.svg" alt="instagram" class="social-img" width="20px"></li>
-                <li class="social-item"><img src="./images/icons/twitter.svg" alt="twitter" class="social-img" width="20px"></li>
+                <li class="social-item twitter-item"><img src="./images/icons/twitter.svg" alt="twitter" class="social-img" width="20px"></li>
               </ul>
           </li>
         </ul>

@@ -60,3 +60,36 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+.two-columns{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+  @media screen and (min-width:$tablet){
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .first-column{
+    max-width: 70%;
+    display: flex;
+    align-self: start;
+    margin-bottom: 44px;
+    @media screen and (min-width:$tablet){
+      margin-bottom: 0;
+      flex-basis: 35%;
+    }
+  }
+
+  .second-column{
+    max-width: 70%;
+    display: flex;
+    align-self:  end;
+    @media screen and (min-width:$tablet){
+      align-self: center;
+      flex-basis: 35%;
+    }
+  }
+}
