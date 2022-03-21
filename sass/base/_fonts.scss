@@ -32,12 +32,34 @@
     color: $text-primary-color;
 }
 
+@mixin heading-description{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color:$black;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
 @mixin uppercase-heading{
     font-family: Montserrat;
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+@mixin uppercase-list-heading{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:$text-primary-color;
 }
 
 @mixin mobile-list{

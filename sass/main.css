@@ -314,6 +314,10 @@ img {
   max-width: 100%;
 }
 
+hr {
+  background-color: #DBE7ED;
+}
+
 .two-columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,6 +398,66 @@ img {
 
 .contact-us-btn:hover {
   border: 1px solid #F1F1F1;
+}
+
+@-webkit-keyframes rotateMenu {
+  0% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  70% {
+    -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes rotateMenu {
+  0% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  70% {
+    -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  80% {
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .container {
@@ -665,36 +729,6 @@ footer .twitter-item {
           animation: growDown 200ms ease-in-out forwards;
   -webkit-transform-origin: top center;
           transform-origin: top center;
-}
-
-@-webkit-keyframes growDown {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  80% {
-    -webkit-transform: scaleY(1.1);
-            transform: scaleY(1.1);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
-@keyframes growDown {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  80% {
-    -webkit-transform: scaleY(1.1);
-            transform: scaleY(1.1);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
 }
 
 .mobile-nav-submenu-item {
@@ -1783,6 +1817,226 @@ hr {
 @media screen and (min-width: 768px) {
   .wildlife-second-section {
     background-image: url("../../images/wildlife-safari-tours/zebra-hero-min.jpg");
+  }
+}
+
+.topic-fixed-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 25px;
+  }
+}
+
+.topic-fixed-picture .topic-description {
+  padding-top: 12px;
+}
+
+.topic-fixed-picture .topic-description h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .topic-description h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.topic-fixed-picture .topic-description h5 {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .topic-description h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .topic-description {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    padding-top: 20px;
+  }
+}
+
+.topic-fixed-picture .fixed-image-wrapper {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .fixed-image-wrapper {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    max-width: 45%;
+  }
+}
+
+.topic-fixed-picture .relative-image-wrapper {
+  position: relative;
+}
+
+.topic-fixed-picture .mobile-only {
+  display: block;
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .mobile-only {
+    display: none;
+  }
+}
+
+.topic-fixed-picture .tablet-only {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .tablet-only {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+  }
+}
+
+.topic-fixed-picture .days-list {
+  margin-top: 46px;
+  margin-bottom: 32px;
+}
+
+.topic-fixed-picture .day-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .day-wrapper {
+    padding: 15px 10px;
+  }
+}
+
+.topic-fixed-picture .days-arrow {
+  display: block;
+}
+
+.topic-fixed-picture .days-item:hover {
+  cursor: pointer;
+}
+
+.topic-fixed-picture .day {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.topic-fixed-picture .day-description {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .day-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.topic-fixed-picture .camp-one-arr-bottom, .topic-fixed-picture .camp-three-arr-bottom, .topic-fixed-picture .camp-four-arr-bottom {
+  display: block;
+}
+
+.topic-fixed-picture .camp-one-arr-up, .topic-fixed-picture .camp-three-arr-up, .topic-fixed-picture .camp-four-arr-up {
+  display: none;
+}
+
+.topic-fixed-picture .hided-description-list {
+  display: none;
+  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
+          animation: rotateMenu 400ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+.topic-fixed-picture .hided-description-item {
+  margin-bottom: 18px;
+}
+
+.topic-fixed-picture .hided-description-item:not(:first-child) {
+  margin-top: 36px;
+}
+
+.topic-fixed-picture .hided-description-item:first-child {
+  margin-bottom: 23px;
+}
+
+.topic-fixed-picture .hided-description-item span {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.topic-fixed-picture .hided-description-item p {
+  margin-top: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .hided-description-item p {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */

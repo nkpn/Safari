@@ -61,6 +61,13 @@ img {
   max-width: 100%;
 }
 
+hr{
+  background-color:  $bg-main-color;
+}
+
+//* two space between columns
+//* it`s a column in a mobile, a row in a tablet
+
 .two-columns{
   display: flex;
   justify-content: space-between;
@@ -93,3 +100,6 @@ img {
     }
   }
 }
+
+
+
