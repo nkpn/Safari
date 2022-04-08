@@ -474,7 +474,7 @@
     background-color: $bg-light-color;
 
     //* only second element (text)
-    &:nth-child(2n){
+    &:first-child{
         @media screen and (max-width:767px) {
             height: 450px;
             top: 0;

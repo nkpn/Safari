@@ -796,7 +796,7 @@ hr {
 }
 
 .home-hero {
-  background-image: url("../../images/home-page/elephants-min.jpg");
+  background-image: url("../images/home-page/elephants-min.jpg");
   background-size: cover;
   background-position: 40% 50%;
   height: 600px;
@@ -2231,7 +2231,7 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-  .custom-background:nth-child(2n) {
+  .custom-background:first-child {
     height: 450px;
     top: 0;
     left: -20vw;
