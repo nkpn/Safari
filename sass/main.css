@@ -1180,7 +1180,7 @@ hr {
 .tours-carousel .carousel-card-zanzibar {
   width: 320px;
   height: 342px;
-  background-image: url("../../images/home-page/beach-safari-min.jpg");
+  background-image: url("../images/home-page/beach-safari-min.jpg");
   background-size: cover;
 }
 
@@ -1194,7 +1194,7 @@ hr {
 .tours-carousel .carousel-card-wildlife {
   width: 320px;
   height: 342px;
-  background-image: url("../../images/home-page/tanzania-safaris-min.jpg");
+  background-image: url("../images/home-page/tanzania-safaris-min.jpg");
   background-size: cover;
 }
 
@@ -1208,7 +1208,7 @@ hr {
 .tours-carousel .carousel-card-moshi {
   width: 320px;
   height: 342px;
-  background-image: url("../../images/home-page/moshi-min.jpg");
+  background-image: url("../images/home-page/moshi-min.jpg");
   background-size: cover;
 }
 
@@ -1222,7 +1222,7 @@ hr {
 .tours-carousel .carousel-card-kilimanjaro {
   width: 320px;
   height: 342px;
-  background-image: url("../../images/home-page/killimanjaro-min.jpg");
+  background-image: url("../images/home-page/killimanjaro-min.jpg");
   background-size: cover;
 }
 
