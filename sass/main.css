@@ -2186,6 +2186,10 @@ hr {
   }
 }
 
+.package-item-image img {
+  max-height: 600px;
+}
+
 .package-item-image picture {
   z-index: 5;
 }
@@ -2225,18 +2229,32 @@ hr {
   font-size: 10px;
 }
 
-.custom-background {
+.custom-blue-background {
   position: absolute;
   background-color: #F2FBFF;
 }
 
 @media screen and (max-width: 767px) {
-  .custom-background:first-child {
+  .custom-blue-background {
     height: 450px;
     top: 0;
     left: -20vw;
     width: 120vw;
     z-index: 0;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .custom-blue-background {
+    height: 620px;
+    top: 0;
+    right: 0vw;
+    width: 120vw;
+    z-index: 0;
+  }
+}
+
+.page-wildlife > .contact-us {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
