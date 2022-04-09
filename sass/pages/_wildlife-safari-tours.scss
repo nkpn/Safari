@@ -122,8 +122,7 @@
         "tiger tiger elephant elephant kids kids"
         "tiger tiger elephant elephant kids kids";
         @media screen and (min-width:$tablet) {
-            grid-template-areas:
-            "tiger car"
+            display: none;
         }
         img{
             height: 100%;
@@ -332,6 +331,7 @@
 
     .hided-description-item{
         margin-bottom: 18px;
+
         &:not(:first-child){
             margin-top: 36px;
         }
@@ -340,12 +340,24 @@
         }
         
         span{
+            display: block;
             @include uppercase-list-heading();
+
+            @media screen and (min-width:$desktop) {
+                margin-right: 28px;
+                min-width: 150px;
+            }
         }
 
         p{
             margin-top: 16px;
             @include heading-description();  
+        }
+
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
         }
     }
     
