@@ -574,3 +574,28 @@
     }
 
 }
+
+//------------------
+//* Carousel
+.slick-slide{
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+.carousel-buttons,.carousel-buttons-two{
+    padding-top: 15px;
+    display: flex;
+    justify-content: end;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 32px;
+    }
+
+    img{
+        cursor: pointer;
+    }
+}
+
+.slick-arrow:first-child{
+    margin-right: 10px;
+}

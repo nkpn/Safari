@@ -1599,18 +1599,47 @@ hr {
   }
 }
 
-.kilimonjaro-hero {
+.slick-slide {
+  max-width: 100%;
+  margin-left: 15px;
+}
+
+.carousel-buttons, .carousel-buttons-two {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-buttons, .carousel-buttons-two {
+    padding-top: 32px;
+  }
+}
+
+.carousel-buttons img, .carousel-buttons-two img {
+  cursor: pointer;
+}
+
+.slick-arrow:first-child {
+  margin-right: 10px;
+}
+
+.page-kilimonjaro .kilimonjaro-hero {
   background-color: #000000;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero {
+  .page-kilimonjaro .kilimonjaro-hero {
     padding-bottom: 36px;
   }
 }
 
-.kilimonjaro-hero h1 {
+.page-kilimonjaro .kilimonjaro-hero h1 {
   margin-bottom: 16px;
   font-family: Kaisei Decol;
   font-weight: 500;
@@ -1621,20 +1650,20 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero h1 {
+  .page-kilimonjaro .kilimonjaro-hero h1 {
     font-size: 48px;
     line-height: 55px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero h1 {
+  .page-kilimonjaro .kilimonjaro-hero h1 {
     max-width: 220px;
     margin-bottom: 28px;
   }
 }
 
-.kilimonjaro-hero p {
+.page-kilimonjaro .kilimonjaro-hero p {
   font-size: 14px;
   line-height: 24px;
   font-family: Montserrat;
@@ -1645,19 +1674,19 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero p {
+  .page-kilimonjaro .kilimonjaro-hero p {
     margin-bottom: 48px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .kilimonjaro-hero .kilimonjaro-hero-wrapper {
+  .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-hero-wrapper {
     padding-top: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .kilimonjaro-hero .kilimonjaro-hero-wrapper {
+  .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-hero-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1671,35 +1700,35 @@ hr {
   }
 }
 
-.kilimonjaro-hero .contact-us-btn {
+.page-kilimonjaro .kilimonjaro-hero .contact-us-btn {
   color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
-  .kilimonjaro-hero .contact-us-btn {
+  .page-kilimonjaro .kilimonjaro-hero .contact-us-btn {
     width: 100%;
     text-align: center;
   }
 }
 
-.kilimonjaro-hero .hero-description {
+.page-kilimonjaro .kilimonjaro-hero .hero-description {
   margin-top: 24px;
 }
 
 @media screen and (max-width: 768px) {
-  .kilimonjaro-hero .hero-description {
+  .page-kilimonjaro .kilimonjaro-hero .hero-description {
     margin-top: 120px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .kilimonjaro-hero .hero-description {
+  .page-kilimonjaro .kilimonjaro-hero .hero-description {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
 }
 
-.kilimonjaro-hero .kilimonjaro-mount {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mount {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -1710,7 +1739,7 @@ hr {
      object-fit: contain;
 }
 
-.kilimonjaro-hero .kilimonjaro-tables {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-tables {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -1720,7 +1749,7 @@ hr {
      object-fit: contain;
 }
 
-.kilimonjaro-hero .kilimonjaro-mountain {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mountain {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
@@ -1730,7 +1759,7 @@ hr {
      object-fit: contain;
 }
 
-.kilimonjaro-hero .kilimonjaro-trekking {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-trekking {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
@@ -1740,7 +1769,7 @@ hr {
      object-fit: contain;
 }
 
-.kilimonjaro-hero .kilimonjaro-person {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-person {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1750,7 +1779,7 @@ hr {
   grid-area: person;
 }
 
-.kilimonjaro-hero .kilimonjaro-mountains {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mountains {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1758,12 +1787,12 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-  .kilimonjaro-hero .kilimonjaro-mountains {
+  .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mountains {
     display: none;
   }
 }
 
-.kilimonjaro-hero .kilimonjaro-umbwe {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-umbwe {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1771,12 +1800,12 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-  .kilimonjaro-hero .kilimonjaro-umbwe {
+  .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-umbwe {
     display: none;
   }
 }
 
-.kilimonjaro-hero .kilimonjaro-person-green {
+.page-kilimonjaro .kilimonjaro-hero .kilimonjaro-person-green {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
@@ -1784,7 +1813,7 @@ hr {
   overflow: hidden;
 }
 
-.kilimonjaro-hero .mobile-image-wrapper {
+.page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper {
   display: -ms-grid;
   display: grid;
   gap: 4px;
@@ -1792,28 +1821,28 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero .mobile-image-wrapper {
+  .page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper {
     display: none;
   }
 }
 
-.kilimonjaro-hero .mobile-image-wrapper img {
+.page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper img {
   height: 100%;
 }
 
-.kilimonjaro-hero .desktop-image-wrapper {
+.page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .kilimonjaro-hero .desktop-image-wrapper {
+  .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper {
     display: -ms-grid;
     display: grid;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .kilimonjaro-hero .desktop-image-wrapper {
+  .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1822,18 +1851,18 @@ hr {
   }
 }
 
-.kilimonjaro-hero .desktop-image-wrapper .first-wrapper {
+.page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .first-wrapper {
   display: -ms-grid;
   display: grid;
   gap: 8px;
       grid-template-areas: "person person trekking trekking trekking";
 }
 
-.kilimonjaro-hero .desktop-image-wrapper .first-wrapper img {
+.page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .first-wrapper img {
   height: 100%;
 }
 
-.kilimonjaro-hero .desktop-image-wrapper .second-wrapper {
+.page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .second-wrapper {
   margin-top: 6px;
   display: -ms-grid;
   display: grid;
@@ -1842,11 +1871,11 @@ hr {
       grid-template-areas: "mount mount tables tables mountain mountain" "mount mount person person person person";
 }
 
-.kilimonjaro-hero .desktop-image-wrapper .second-wrapper img {
+.page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .second-wrapper img {
   height: 100%;
 }
 
-.kilimanjaro-second-section {
+.page-kilimonjaro .kilimanjaro-second-section {
   padding-bottom: 362px;
   padding-top: 60px;
   background-image: url("../../images/kilemanjaro/mountain-hero-mobile-min.jpg");
@@ -1855,7 +1884,7 @@ hr {
   background-position: 100% 85%;
 }
 
-.kilimanjaro-second-section p {
+.page-kilimonjaro .kilimanjaro-second-section p {
   font-size: 14px;
   line-height: 24px;
   font-family: Montserrat;
@@ -1865,25 +1894,25 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .kilimanjaro-second-section {
+  .page-kilimonjaro .kilimanjaro-second-section {
     padding-top: 120px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .kilimanjaro-second-section {
+  .page-kilimonjaro .kilimanjaro-second-section {
     background-image: url("../../images/kilemanjaro/mountain-hero-min.jpg");
     background-position: 100% 100%;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .kilimanjaro-second-section {
+  .page-kilimonjaro .kilimanjaro-second-section {
     background-size: cover;
   }
 }
 
-.topic-fixed-picture {
+.page-kilimonjaro .topic-fixed-picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1894,7 +1923,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture {
+  .page-kilimonjaro .topic-fixed-picture {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1907,16 +1936,16 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .topic-fixed-picture {
+  .page-kilimonjaro .topic-fixed-picture {
     gap: 60px;
   }
 }
 
-.topic-fixed-picture .topic-description {
+.page-kilimonjaro .topic-fixed-picture .topic-description {
   padding-top: 12px;
 }
 
-.topic-fixed-picture .topic-description h2 {
+.page-kilimonjaro .topic-fixed-picture .topic-description h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 28px;
@@ -1925,13 +1954,21 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .topic-description h2 {
+  .page-kilimonjaro .topic-fixed-picture .topic-description h2 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
-.topic-fixed-picture .topic-description h5 {
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .topic-description {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    padding-top: 20px;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .topic-description-text {
   margin-top: 10px;
   margin-bottom: 24px;
   font-family: Montserrat;
@@ -1942,53 +1979,45 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .topic-description h5 {
+  .page-kilimonjaro .topic-fixed-picture .topic-description-text {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .topic-fixed-picture .topic-description {
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-    padding-top: 20px;
-  }
-}
-
-.topic-fixed-picture .fixed-image-wrapper {
+.page-kilimonjaro .topic-fixed-picture .fixed-image-wrapper {
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .fixed-image-wrapper {
+  .page-kilimonjaro .topic-fixed-picture .fixed-image-wrapper {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     max-width: 45%;
   }
 }
 
-.topic-fixed-picture .relative-image-wrapper {
+.page-kilimonjaro .topic-fixed-picture .relative-image-wrapper {
   position: relative;
 }
 
-.topic-fixed-picture .mobile-only {
+.page-kilimonjaro .topic-fixed-picture .mobile-only {
   display: block;
   margin-bottom: 46px;
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .mobile-only {
+  .page-kilimonjaro .topic-fixed-picture .mobile-only {
     display: none;
   }
 }
 
-.topic-fixed-picture .tablet-only {
+.page-kilimonjaro .topic-fixed-picture .tablet-only {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .tablet-only {
+  .page-kilimonjaro .topic-fixed-picture .tablet-only {
     display: block;
     position: -webkit-sticky;
     position: sticky;
@@ -1996,12 +2025,12 @@ hr {
   }
 }
 
-.topic-fixed-picture .days-list {
+.page-kilimonjaro .topic-fixed-picture .days-list {
   margin-top: 46px;
   margin-bottom: 32px;
 }
 
-.topic-fixed-picture .day-wrapper {
+.page-kilimonjaro .topic-fixed-picture .day-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2015,22 +2044,26 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .day-wrapper {
+  .page-kilimonjaro .topic-fixed-picture .day-wrapper {
     padding: 15px 10px;
   }
 }
 
-.topic-fixed-picture .days-arrow {
+.page-kilimonjaro .topic-fixed-picture .day-wrapper p {
+  margin: 0;
+}
+
+.page-kilimonjaro .topic-fixed-picture .days-arrow {
   display: block;
 }
 
-.topic-fixed-picture .days-item:hover {
+.page-kilimonjaro .topic-fixed-picture .days-item:hover {
   cursor: pointer;
 }
 
-.topic-fixed-picture .day {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+.page-kilimonjaro .topic-fixed-picture .day {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
@@ -2041,9 +2074,9 @@ hr {
   font-weight: 500;
 }
 
-.topic-fixed-picture .day-description {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+.page-kilimonjaro .topic-fixed-picture .day-description {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   font-family: Montserrat;
   font-weight: 400;
   font-size: 12px;
@@ -2052,13 +2085,23 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .day-description {
+  .page-kilimonjaro .topic-fixed-picture .day-description {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
-.topic-fixed-picture .hided-description-list {
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .day-description {
+    max-width: 55%;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture hr {
+  margin: 0;
+}
+
+.page-kilimonjaro .topic-fixed-picture .hided-description-list {
   display: none;
   -webkit-animation: rotateMenu 400ms ease-in-out forwards;
           animation: rotateMenu 400ms ease-in-out forwards;
@@ -2066,19 +2109,19 @@ hr {
           transform-origin: top center;
 }
 
-.topic-fixed-picture .hided-description-item {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item {
   margin-bottom: 18px;
 }
 
-.topic-fixed-picture .hided-description-item:not(:first-child) {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item:not(:first-child) {
   margin-top: 36px;
 }
 
-.topic-fixed-picture .hided-description-item:first-child {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item:first-child {
   margin-bottom: 23px;
 }
 
-.topic-fixed-picture .hided-description-item h2 {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item h2 {
   display: block;
   font-family: Montserrat;
   font-size: 14px;
@@ -2089,13 +2132,13 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .topic-fixed-picture .hided-description-item h2 {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item h2 {
     margin-right: 28px;
     min-width: 150px;
   }
 }
 
-.topic-fixed-picture .hided-description-item .hided-description-day {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item .hided-description-day {
   display: block;
   font-family: Montserrat;
   font-size: 14px;
@@ -2105,7 +2148,13 @@ hr {
   color: #343434;
 }
 
-.topic-fixed-picture .hided-description-item p {
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item .hided-description-day {
+    padding-left: 10px;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .hided-description-item p {
   margin-top: 16px;
   font-family: Montserrat;
   font-weight: 400;
@@ -2115,14 +2164,20 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .hided-description-item p {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item p {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item p {
+    margin-top: 4px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  .topic-fixed-picture .hided-description-item {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2135,7 +2190,7 @@ hr {
   }
 }
 
-.topic-fixed-picture .wrapper-heading {
+.page-kilimonjaro .topic-fixed-picture .wrapper-heading {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
@@ -2144,7 +2199,7 @@ hr {
   color: #343434;
 }
 
-.topic-fixed-picture .wrapper-description {
+.page-kilimonjaro .topic-fixed-picture .wrapper-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2157,7 +2212,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .wrapper-description {
+  .page-kilimonjaro .topic-fixed-picture .wrapper-description {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2165,7 +2220,7 @@ hr {
   }
 }
 
-.topic-fixed-picture .wrapper-description p {
+.page-kilimonjaro .topic-fixed-picture .wrapper-description p {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 12px;
@@ -2173,12 +2228,176 @@ hr {
   color: #000000;
   display: block;
   margin-right: 8px;
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .wrapper-description p {
+  .page-kilimonjaro .topic-fixed-picture .wrapper-description p {
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #CDD9DF;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .prices-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.page-kilimonjaro .topic-fixed-picture .button-wrapper p {
+  margin: 0 11px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .button-wrapper {
+    display: none;
+    margin-bottom: 15px;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .marangu-arr-bottom, .page-kilimonjaro .topic-fixed-picture .marangu-price-arr-bottom, .page-kilimonjaro .topic-fixed-picture .machame-arr-bottom, .page-kilimonjaro .topic-fixed-picture .machame-price-arr-bottom,
+.page-kilimonjaro .topic-fixed-picture .rongai-arr-bottom, .page-kilimonjaro .topic-fixed-picture .rongai-price-arr-bottom, .page-kilimonjaro .topic-fixed-picture .lemosho-arr-bottom, .page-kilimonjaro .topic-fixed-picture .lemosho-price-arr-bottom, .page-kilimonjaro .topic-fixed-picture .umbwe-arr-bottom,
+.page-kilimonjaro .topic-fixed-picture .umbwe-price-arr-bottom, .page-kilimonjaro .topic-fixed-picture .northern-circuit-arr-bottom, .page-kilimonjaro .topic-fixed-picture .northern-circuit-price-arr-bottom,
+.page-kilimonjaro .topic-fixed-picture .meru-arr-bottom, .page-kilimonjaro .topic-fixed-picture .meru-price-arr-bottom {
+  display: block;
+}
+
+.page-kilimonjaro .topic-fixed-picture .marangu-arr-up, .page-kilimonjaro .topic-fixed-picture .marangu-price-arr-up, .page-kilimonjaro .topic-fixed-picture .machame-price-arr-up, .page-kilimonjaro .topic-fixed-picture .machame-arr-up,
+.page-kilimonjaro .topic-fixed-picture .rongai-arr-up, .page-kilimonjaro .topic-fixed-picture .rongai-price-arr-up, .page-kilimonjaro .topic-fixed-picture .lemosho-arr-up, .page-kilimonjaro .topic-fixed-picture .lemosho-price-arr-up, .page-kilimonjaro .topic-fixed-picture .umbwe-arr-up,
+.page-kilimonjaro .topic-fixed-picture .umbwe-price-arr-up, .page-kilimonjaro .topic-fixed-picture .northern-circuit-arr-up, .page-kilimonjaro .topic-fixed-picture .northern-circuit-price-arr-up, .page-kilimonjaro .topic-fixed-picture .meru-arr-up,
+.page-kilimonjaro .topic-fixed-picture .meru-price-arr-up {
+  display: none;
+}
+
+.page-kilimonjaro .topic-fixed-picture .marangu-table {
+  display: none;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-wrapper-list {
+  display: none;
+  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
+          animation: rotateMenu 400ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .prices-wrapper-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table {
+  display: none;
+  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
+          animation: rotateMenu 400ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .topic-fixed-picture .prices-table {
+    display: table;
+    text-align: left;
+  }
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table th:first-child {
+  padding-left: 20px;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table-item p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table-item b {
+  font-weight: 500;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table-item:nth-child(2n) {
+  background-color: #DBE7ED;
+}
+
+.page-kilimonjaro .topic-fixed-picture .prices-table-heading p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.page-kilimonjaro .marangu-section, .page-kilimonjaro .meru-section, .page-kilimonjaro .machame-section, .page-kilimonjaro .rongai-section,
+.page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .marangu-section, .page-kilimonjaro .meru-section, .page-kilimonjaro .machame-section, .page-kilimonjaro .rongai-section,
+  .page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section {
+    padding-top: 115px;
+  }
+}
+
+.page-kilimonjaro .meru-section {
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .meru-section {
+    padding-bottom: 188px;
   }
 }
 
