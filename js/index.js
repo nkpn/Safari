@@ -4,16 +4,24 @@ $(document).ready(function(){
         $('.mobile-menu').toggleClass('active')
         
     })
+
+    $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+        var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+        $('.progress-bar').css('background-size', calc + '% 100%')
+                    .attr('aria-valuenow', calc );
+    });
+
+    
+
     $('.carousel').slick({
-        infinite: true,
+        // infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        speed:700,
+        speed:400,
         variableWidth: true,
-        infinite:true,
         appendArrows:$('.carousel-buttons'),
         prevArrow:`<img src="../images/icons/left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="./images/icons/right-arrow.svg" alt="right">`,
+        nextArrow:`<img src="../images/icons/right-arrow.svg" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
@@ -46,7 +54,7 @@ $(document).ready(function(){
         speed:300,
         appendArrows:$('.carousel-buttons-two'),
         prevArrow:`<img src="../images/icons/left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="./images/icons/right-arrow.svg" alt="right">`,
+        nextArrow:`<img src="../images/icons/right-arrow.svg" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
@@ -76,7 +84,32 @@ $(document).ready(function(){
               },
             ]
     });
+
+    $('.package-list-mobile-wrapper').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        appendArrows:$('.package-list-buttons'),
+        prevArrow:`<img src="../images/icons/left-slider.svg" alt="left" class="left">`,
+        nextArrow:`<img src="../images/icons/right-slider.svg" alt="right" class="right">`,
+        // responsive: [
+        //     {
+        //         breakpoint:1023,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             slidesToScroll: 1,
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 1024,
+        //         settings: "unslick"
+        //     },
+            
+        // ] 
+    })
 })
+
+
 
 const wildlifeIcon = $('.wildlife');
 const wildlifeList = $('.wildlife-list');
@@ -440,4 +473,95 @@ Meru.click(()=>{
     MeruBottom.toggle();
     MeruUp.toggle();
     MeruList.toggle();
+})
+
+
+//-------------------------------------
+//* Helpful hints
+const HintsOne = $('.hints-one');
+const HintsOneBottom =$('.hints-one-bottom');
+const HintsOneUp = $('.hints-one-up');
+const HintsOneList = $('.hints-one-list');
+
+HintsOne.click(()=>{
+    HintsOneBottom.toggle();
+    HintsOneUp.toggle();
+    HintsOneList.toggle();
+})
+
+const HintsTwo = $('.hints-two');
+const HintsTwoBottom =$('.hints-two-bottom');
+const HintsTwoUp = $('.hints-two-up');
+const HintsTwoList = $('.hints-two-list');
+
+HintsTwo.click(()=>{
+    HintsTwoBottom.toggle();
+    HintsTwoUp.toggle();
+    HintsTwoList.toggle();
+})
+
+const HintsThree = $('.hints-three');
+const HintsThreeBottom =$('.hints-three-bottom');
+const HintsThreeUp = $('.hints-three-up');
+const HintsThreeList = $('.hints-three-list');
+
+HintsThree.click(()=>{
+    HintsThreeBottom.toggle();
+    HintsThreeUp.toggle();
+    HintsThreeList.toggle();
+})
+
+const HintsFour = $('.hints-four');
+const HintsFourBottom =$('.hints-four-bottom');
+const HintsFourUp = $('.hints-four-up');
+const HintsFourList = $('.hints-four-list');
+
+HintsFour.click(()=>{
+    HintsFourBottom.toggle();
+    HintsFourUp.toggle();
+    HintsFourList.toggle();
+})
+
+const HintsFive = $('.hints-five');
+const HintsFiveBottom =$('.hints-five-bottom');
+const HintsFiveUp = $('.hints-five-up');
+const HintsFiveList = $('.hints-five-list');
+
+HintsFive.click(()=>{
+    HintsFiveBottom.toggle();
+    HintsFiveUp.toggle();
+    HintsFiveList.toggle();
+})
+
+const HintsSix = $('.hints-six');
+const HintsSixBottom =$('.hints-six-bottom');
+const HintsSixUp = $('.hints-six-up');
+const HintsSixList = $('.hints-six-list');
+
+HintsSix.click(()=>{
+    HintsSixBottom.toggle();
+    HintsSixUp.toggle();
+    HintsSixList.toggle();
+})
+
+const HintsSeven = $('.hints-seven');
+const HintsSevenBottom =$('.hints-seven-bottom');
+const HintsSevenUp = $('.hints-seven-up');
+const HintsSevenList = $('.hints-seven-list');
+
+HintsSeven.click(()=>{
+    HintsSevenBottom.toggle();
+    HintsSevenUp.toggle();
+    HintsSevenList.toggle();
+})
+
+const HintsEight = $('.hints-eight');
+const HintsEightBottom =$('.hints-eight-bottom');
+const HintsEightUp = $('.hints-eight-up');
+const HintsEightList = $('.hints-eight-list');
+
+HintsEight.click(()=>{
+    HintsEightBottom.toggle();
+    HintsEightUp.toggle();
+    HintsEightList.toggle();
 })

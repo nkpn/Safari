@@ -122,7 +122,7 @@
             grid-template-areas: "mount mount tables tables mountain mountain"
             "mount mount tables tables mountain mountain"
             "mount mount person person person person";
-            @media screen and (min-width:$tablet) {
+            @media screen and (min-width:$desktop) {
                 display: none;
             }
             img{
@@ -133,7 +133,7 @@
 
         .desktop-image-wrapper{
             display: none;
-            @media screen and (min-width:$tablet) {
+            @media screen and (min-width:$desktop) {
                 display: grid;
 
             }
@@ -252,7 +252,7 @@
         display: block;
         margin-bottom: 46px;
             @media screen and (min-width:$tablet){
-            display: none;
+                display: none;
             }
         }
     
@@ -492,17 +492,308 @@
 
     //* Marangu section
     .marangu-section,.meru-section,.machame-section,.rongai-section,
-    .lemosho-section,.umbwe-section,.northern-circuit-section{
+    .lemosho-section,.umbwe-section,.northern-circuit-section,.section-hints
+    ,.mount-kilimanjaro-hero-bottom-section{
         padding-top: 80px;
         @media screen and (min-width:$tablet) {
             padding-top: 115px;
         }
     }
 
-    .meru-section{
-        padding-bottom: 100px;
+
+
+    //* Package section
+    .package-section{
+        padding-top: 100px;
         @media screen and (min-width:$tablet) {
-            padding-bottom: 188px;
+            padding-top: 169px;
         }
+
+        .mobile-only{
+            display: block;
+            @media screen and (min-width:$desktop) {
+                display: none;
+            }
+        }
+
+        .desktop-only{
+            display: none;
+            @media screen and (min-width:$desktop) {
+                display: flex;
+            }
+        }
+    }
+
+    .package-list-general{
+        flex-direction: column;
+        @media screen and (min-width:$desktop) {
+            flex-direction: row;
+        }
+
+        h2{
+            z-index: 10;
+            padding-left: 55px;
+            @media screen and (min-width:$desktop) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .package-list-wrapper{
+        z-index: 10;
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap:45px;
+        }
+    }
+
+
+    .package-list{
+        padding-left: 50px;
+        @media screen and (min-width:$desktop) {
+            max-width: 33%;
+            padding-left: 0;
+        }
+    }
+
+    @media screen and (min-width:$desktop) {
+        .price-includes-section{
+            flex-basis: 65%;
+            padding-right: 45px;
+        }
+
+        .price-excludes-section{
+            flex-basis: 35%;
+            padding-left: 45px;
+            background-color: $white;
+            ul{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .custom-blue-background{
+        position: absolute;
+        background-color: $bg-light-color;
+        z-index: 0;
+
+        height: 100%;
+        top: 0;
+        left: -20vw;
+        width: 120vw;
+
+        @media screen and (min-width:$desktop) {
+            left: -60vw;
+            width: 120vw;
+        }
+        @media screen and (min-width:2000px) {
+            left: -80vw;
+        }
+        @media screen and (min-width:2800px) {
+            left: -90vw;
+        }
+    }
+
+    .package-list-buttons{
+        cursor: pointer;
+        z-index: 10;
+        @media screen and (min-width:$desktop) {
+            display: none;
+        }
+        .left{
+            position: absolute;
+            top: 50%;
+            left: 0%;
+        }
+
+        .right{
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+    }
+
+    .package-item-heading{
+        padding-left: 0 !important;
+    }
+
+    //-------------------------------
+    //* hints sectoions
+    .section-hints{
+        h2{
+            @include subheading();
+            padding-bottom: 20px;
+
+            @media screen and (min-width:$tablet) {
+                padding-bottom: 34px;
+            }
+        }
+
+        h5{
+            @include uppercase-list-heading();
+        }
+
+        hr{
+            margin: 0;
+        }
+
+        .hints-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px 20px 0;
+
+            @media screen and (min-width:$tablet){
+                padding: 30px 10px 30px 0px;
+            }
+        }
+
+        .hints-list{
+            display: flex;
+            flex-direction:column;
+            @media screen and (min-width:$desktop){
+                display: grid;
+                grid-template-areas: "one five"
+                "two six"
+                "three seven"
+                "four eight";
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hints-item{
+            @media screen and (min-width:$desktop){
+                margin-right: 30px;
+            }
+        }
+
+        .one{
+            grid-area: one;
+        }
+        .two{
+            grid-area:two;
+        }
+        .three{
+            grid-area: three;
+        }
+        .four{
+            grid-area: four;
+        }
+        .five{
+            grid-area: five;
+        }
+        .six{
+            grid-area: six;
+        }
+        .seven{
+            grid-area: seven;
+        }
+        .eight{
+            grid-area: eight;
+        }
+
+        .hints-one-bottom,.hints-two-bottom,.hints-three-bottom,
+        .hints-four-bottom,.hints-five-bottom,.hints-six-bottom,
+        .hints-seven-bottom,.hints-eight-bottom{
+            display: block;
+        }
+        
+        .hints-one-up,.hints-two-up,.hints-three-up,.hints-four-up,
+        .hints-five-up,.hints-six-up,.hints-seven-up,.hints-eight-up{
+            display: none;
+        }
+
+        .hints-hided{
+            display: none;
+            animation: rotateMenu 400ms ease-in-out forwards;
+            transform-origin: top center;
+            padding-bottom: 23px;
+        }
+
+        .hints-hided-item{
+            @include text-description();
+            padding-left: 15px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '●';
+                display: block;
+                margin-left: 8px;
+                top: 0%;
+                left: -10px;
+                font-size: 10px;
+            }
+
+            p{
+                padding-top: 0;
+            }
+        }
+        .hints-hided-item:not(:last-child){
+            margin-bottom: 10px;
+        }
+
+        .hints-description{
+            @include text-description();
+            padding-top: 28px;
+
+            b{
+                font-weight: 500;
+            }
+        }
+
+        .hints-description:not(:last-child){
+            padding-bottom: 10px;
+        }
+    }
+
+
+
+    //* Mount kilimonharo hero bottom section
+    .mount-kilimanjaro-hero-bottom-section{
+        padding-bottom: 362px;
+        padding-top: 60px;
+
+        @media screen and (min-width:$tablet) {
+            padding-top: 120px; 
+        }
+        //* Background image
+        background-image: url('../../images/kilemanjaro/hero-bottom-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 15%;
+        @media screen and (min-width:$tablet) {
+            background-size: contain;
+            background-image: url('../../images/kilemanjaro/hero-bottom-desktop.jpg');
+            background-position: 100% 100%;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                @include subheading();
+                text-align: center;
+                @media screen and (min-width:$desktop) {
+                    max-width: 80%;
+                }
+            }
+
+            .contact-us-btn-blue{
+                margin-top: 40px;
+            }
+        }
+    }
+
+    //------
+    //* Contact us section
+    .contact-us{
+        background-color: $white;
     }
 }

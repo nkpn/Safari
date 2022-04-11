@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -399,6 +400,53 @@ hr {
 
 .contact-us-btn:hover {
   border: 1px solid #F1F1F1;
+  color: #F1F1F1;
+}
+
+.contact-us-btn-blue {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 5px 30px;
+  background-color: inherit;
+  border: 1px solid #0C4AE9;
+  border-radius: 100px;
+  color: #0C4AE9;
+  font-family: Montserrat;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us-btn-blue {
+    padding: 8px 60px;
+  }
+}
+
+.contact-us-btn-blue:hover {
+  border: 1px solid #467AFF;
+  color: #467AFF;
+}
+
+.button-to-top {
+  display: none;
+  width: 74px;
+  height: 74px;
+  background-color: #CDD9DF;
+}
+
+@media screen and (min-width: 768px) {
+  .button-to-top {
+    position: absolute;
+    bottom: 14px;
+    right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @-webkit-keyframes rotateMenu {
@@ -1145,6 +1193,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .tours-carousel {
+    padding-top: 108px;
+  }
+}
+
 .tours-carousel h2 {
   text-align: center;
   font-family: Kaisei Decol;
@@ -1461,6 +1515,7 @@ hr {
 }
 
 .contact-us {
+  position: relative;
   background-color: #F2FBFF;
   padding-top: 36px;
   padding-bottom: 56px;
@@ -1604,7 +1659,7 @@ hr {
   margin-left: 15px;
 }
 
-.carousel-buttons, .carousel-buttons-two {
+.carousel-buttons-wrapper, .carousel-buttons-wrapper-two {
   padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,17 +1670,32 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel-buttons, .carousel-buttons-two {
+  .carousel-buttons-wrapper, .carousel-buttons-wrapper-two {
     padding-top: 32px;
   }
 }
 
-.carousel-buttons img, .carousel-buttons-two img {
+.carousel-buttons-wrapper img, .carousel-buttons-wrapper-two img {
   cursor: pointer;
 }
 
 .slick-arrow:first-child {
   margin-right: 10px;
+}
+
+.progress-bar, .progress-bar-two {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .4s ease-in-out;
+  transition: background-size .4s ease-in-out;
 }
 
 .page-kilimonjaro .kilimonjaro-hero {
@@ -1820,7 +1890,7 @@ hr {
       grid-template-areas: "mount mount tables tables mountain mountain" "mount mount tables tables mountain mountain" "mount mount person person person person";
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper {
     display: none;
   }
@@ -1834,7 +1904,7 @@ hr {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper {
     display: -ms-grid;
     display: grid;
@@ -2380,25 +2450,428 @@ hr {
 }
 
 .page-kilimonjaro .marangu-section, .page-kilimonjaro .meru-section, .page-kilimonjaro .machame-section, .page-kilimonjaro .rongai-section,
-.page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section {
+.page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section, .page-kilimonjaro .section-hints
+, .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
   padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .marangu-section, .page-kilimonjaro .meru-section, .page-kilimonjaro .machame-section, .page-kilimonjaro .rongai-section,
-  .page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section {
+  .page-kilimonjaro .lemosho-section, .page-kilimonjaro .umbwe-section, .page-kilimonjaro .northern-circuit-section, .page-kilimonjaro .section-hints
+, .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
     padding-top: 115px;
   }
 }
 
-.page-kilimonjaro .meru-section {
-  padding-bottom: 100px;
+.page-kilimonjaro .package-section {
+  padding-top: 100px;
 }
 
 @media screen and (min-width: 768px) {
-  .page-kilimonjaro .meru-section {
-    padding-bottom: 188px;
+  .page-kilimonjaro .package-section {
+    padding-top: 169px;
   }
+}
+
+.page-kilimonjaro .package-section .mobile-only {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-section .mobile-only {
+    display: none;
+  }
+}
+
+.page-kilimonjaro .package-section .desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-section .desktop-only {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.page-kilimonjaro .package-list-general {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list-general {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.page-kilimonjaro .package-list-general h2 {
+  z-index: 10;
+  padding-left: 55px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list-general h2 {
+    padding-left: 0;
+  }
+}
+
+.page-kilimonjaro .package-list-wrapper {
+  z-index: 10;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 45px;
+  }
+}
+
+.page-kilimonjaro .package-list {
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list {
+    max-width: 33%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .price-includes-section {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    padding-right: 45px;
+  }
+  .page-kilimonjaro .price-excludes-section {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    padding-left: 45px;
+    background-color: #ffffff;
+  }
+  .page-kilimonjaro .price-excludes-section ul {
+    max-width: 100%;
+  }
+}
+
+.page-kilimonjaro .custom-blue-background {
+  position: absolute;
+  background-color: #F2FBFF;
+  z-index: 0;
+  height: 100%;
+  top: 0;
+  left: -20vw;
+  width: 120vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .custom-blue-background {
+    left: -60vw;
+    width: 120vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .page-kilimonjaro .custom-blue-background {
+    left: -80vw;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .page-kilimonjaro .custom-blue-background {
+    left: -90vw;
+  }
+}
+
+.page-kilimonjaro .package-list-buttons {
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list-buttons {
+    display: none;
+  }
+}
+
+.page-kilimonjaro .package-list-buttons .left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.page-kilimonjaro .package-list-buttons .right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.page-kilimonjaro .package-item-heading {
+  padding-left: 0 !important;
+}
+
+.page-kilimonjaro .section-hints h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .section-hints h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .section-hints h2 {
+    padding-bottom: 34px;
+  }
+}
+
+.page-kilimonjaro .section-hints h5 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.page-kilimonjaro .section-hints hr {
+  margin: 0;
+}
+
+.page-kilimonjaro .section-hints .hints-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .section-hints .hints-wrapper {
+    padding: 30px 10px 30px 0px;
+  }
+}
+
+.page-kilimonjaro .section-hints .hints-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .section-hints .hints-list {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "one five" "two six" "three seven" "four eight";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .section-hints .hints-item {
+    margin-right: 30px;
+  }
+}
+
+.page-kilimonjaro .section-hints .one {
+  grid-area: one;
+}
+
+.page-kilimonjaro .section-hints .two {
+  grid-area: two;
+}
+
+.page-kilimonjaro .section-hints .three {
+  grid-area: three;
+}
+
+.page-kilimonjaro .section-hints .four {
+  grid-area: four;
+}
+
+.page-kilimonjaro .section-hints .five {
+  grid-area: five;
+}
+
+.page-kilimonjaro .section-hints .six {
+  grid-area: six;
+}
+
+.page-kilimonjaro .section-hints .seven {
+  grid-area: seven;
+}
+
+.page-kilimonjaro .section-hints .eight {
+  grid-area: eight;
+}
+
+.page-kilimonjaro .section-hints .hints-one-bottom, .page-kilimonjaro .section-hints .hints-two-bottom, .page-kilimonjaro .section-hints .hints-three-bottom,
+.page-kilimonjaro .section-hints .hints-four-bottom, .page-kilimonjaro .section-hints .hints-five-bottom, .page-kilimonjaro .section-hints .hints-six-bottom,
+.page-kilimonjaro .section-hints .hints-seven-bottom, .page-kilimonjaro .section-hints .hints-eight-bottom {
+  display: block;
+}
+
+.page-kilimonjaro .section-hints .hints-one-up, .page-kilimonjaro .section-hints .hints-two-up, .page-kilimonjaro .section-hints .hints-three-up, .page-kilimonjaro .section-hints .hints-four-up,
+.page-kilimonjaro .section-hints .hints-five-up, .page-kilimonjaro .section-hints .hints-six-up, .page-kilimonjaro .section-hints .hints-seven-up, .page-kilimonjaro .section-hints .hints-eight-up {
+  display: none;
+}
+
+.page-kilimonjaro .section-hints .hints-hided {
+  display: none;
+  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
+          animation: rotateMenu 400ms ease-in-out forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  padding-bottom: 23px;
+}
+
+.page-kilimonjaro .section-hints .hints-hided-item {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  padding-left: 15px;
+  position: relative;
+}
+
+.page-kilimonjaro .section-hints .hints-hided-item::before {
+  position: absolute;
+  content: '●';
+  display: block;
+  margin-left: 8px;
+  top: 0%;
+  left: -10px;
+  font-size: 10px;
+}
+
+.page-kilimonjaro .section-hints .hints-hided-item p {
+  padding-top: 0;
+}
+
+.page-kilimonjaro .section-hints .hints-hided-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.page-kilimonjaro .section-hints .hints-description {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  padding-top: 28px;
+}
+
+.page-kilimonjaro .section-hints .hints-description b {
+  font-weight: 500;
+}
+
+.page-kilimonjaro .section-hints .hints-description:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
+  padding-bottom: 362px;
+  padding-top: 60px;
+  background-image: url("../../images/kilemanjaro/hero-bottom-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 15%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
+    background-size: contain;
+    background-image: url("../../images/kilemanjaro/hero-bottom-desktop.jpg");
+    background-position: 100% 100%;
+  }
+}
+
+.page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper h2 {
+    max-width: 80%;
+  }
+}
+
+.page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper .contact-us-btn-blue {
+  margin-top: 40px;
+}
+
+.page-kilimonjaro .contact-us {
+  background-color: #ffffff;
 }
 
 .wildlife-hero {

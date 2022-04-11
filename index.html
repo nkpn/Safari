@@ -22,7 +22,7 @@
   <body class="page">
     <body>
       <section class="home-hero">
-        <header>
+        <header id="header">
           <div class="container">
             <nav>
               <ul class="nav-list">
@@ -147,12 +147,13 @@
               </li>
             </ul>
           </div>
-          <img src="./images/icons/arrow-bottom.svg" class="bottom-arrow" alt="To Welcome to our World">
+          <a href="./index.html#welcome-section"><img src="./images/icons/arrow-bottom.svg" class="bottom-arrow" alt="To Welcome to our World"></a>
+          
         </div>
        
       </section>
 
-      <section class="welcome">
+      <section class="welcome" id="welcome-section">
         <div class="container">
           <div class="welcome-to-our-world">
             <div class="description welcome-desc">
@@ -211,7 +212,11 @@
               </a>
             </li>
           </ul>
-          <div class="carousel-buttons"></div>
+          <div class="carousel-buttons-wrapper">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <span class="slider__label sr-only"></span></div>
+            <div class="carousel-buttons"></div>
+          </div>
         </div>
       </section>
 
@@ -253,7 +258,11 @@
               <img src="./images/home-page/fruits-min.jpg" alt="Tiger family" loading="lazy"> 
             </li>
           </ul>
-          <div class="carousel-buttons-two">
+          <div class="carousel-buttons-wrapper-two">
+            <!-- <div class="progress-bar-two" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <span class="slider__label sr-only"></span></div> -->
+            <div class="carousel-buttons-two"></div>
+          </div>
            
             
           </div>
@@ -284,7 +293,10 @@
             <li>
               <p>We always aim to reply within 24 hours.</p>
             </li>
-        </ul>
+          </ul>
+          <a href="./#header" class="button-to-top">
+            <img src="./images/icons/top-arrow.svg" alt="to the top of page">
+          </a>
         </div>
       </section>
       
@@ -325,6 +337,7 @@
               </ul>
           </li>
         </ul>
+        
       </div>
     </footer>
      <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
