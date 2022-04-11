@@ -1948,7 +1948,7 @@ hr {
 .page-kilimonjaro .kilimanjaro-second-section {
   padding-bottom: 362px;
   padding-top: 60px;
-  background-image: url("../../images/kilemanjaro/mountain-hero-mobile-min.jpg");
+  background-image: url("../images/kilemanjaro/mountain-hero-mobile-min.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 85%;
@@ -1971,7 +1971,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .kilimanjaro-second-section {
-    background-image: url("../../images/kilemanjaro/mountain-hero-min.jpg");
+    background-image: url("../images/kilemanjaro/mountain-hero-min.jpg");
     background-position: 100% 100%;
   }
 }
@@ -2808,7 +2808,7 @@ hr {
 .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
   padding-bottom: 362px;
   padding-top: 60px;
-  background-image: url("../../images/kilemanjaro/hero-bottom-mobile.jpg");
+  background-image: url("../images/kilemanjaro/hero-bottom-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 15%;
@@ -2823,7 +2823,7 @@ hr {
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
     background-size: contain;
-    background-image: url("../../images/kilemanjaro/hero-bottom-desktop.jpg");
+    background-image: url("../images/kilemanjaro/hero-bottom-desktop.jpg");
     background-position: 100% 100%;
   }
 }
@@ -3143,7 +3143,7 @@ hr {
   position: relative;
   padding-bottom: 362px;
   padding-top: 60px;
-  background-image: url("../../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg");
+  background-image: url("../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 95%;
@@ -3166,7 +3166,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .wildlife-second-section {
-    background-image: url("../../images/wildlife-safari-tours/zebra-hero-min.jpg");
+    background-image: url("../images/wildlife-safari-tours/zebra-hero-min.jpg");
   }
 }
 

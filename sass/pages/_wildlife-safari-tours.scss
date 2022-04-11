@@ -188,12 +188,12 @@
         padding-top: 120px; 
     }
     //* Background image
-    background-image: url('../../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
+    background-image: url('../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 95%;
     @media screen and (min-width:$tablet) {
-        background-image: url('../../images/wildlife-safari-tours/zebra-hero-min.jpg');
+        background-image: url('../images/wildlife-safari-tours/zebra-hero-min.jpg');
     }
 }
 

@@ -183,12 +183,12 @@
             padding-top: 120px; 
         }
         //* Background image
-        background-image: url('../../images/kilemanjaro/mountain-hero-mobile-min.jpg');
+        background-image: url('../images/kilemanjaro/mountain-hero-mobile-min.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 100% 85%;
         @media screen and (min-width:$tablet) {
-            background-image: url('../../images/kilemanjaro/mountain-hero-min.jpg');
+            background-image: url('../images/kilemanjaro/mountain-hero-min.jpg');
             background-position: 100% 100%;
         }
         @media screen and (min-width:1600px) {
@@ -761,13 +761,13 @@
             padding-top: 120px; 
         }
         //* Background image
-        background-image: url('../../images/kilemanjaro/hero-bottom-mobile.jpg');
+        background-image: url('../images/kilemanjaro/hero-bottom-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 100% 15%;
         @media screen and (min-width:$tablet) {
             background-size: contain;
-            background-image: url('../../images/kilemanjaro/hero-bottom-desktop.jpg');
+            background-image: url('../images/kilemanjaro/hero-bottom-desktop.jpg');
             background-position: 100% 100%;
         }
 
