@@ -20,8 +20,8 @@ $(document).ready(function(){
         speed:400,
         variableWidth: true,
         appendArrows:$('.carousel-buttons'),
-        prevArrow:`<img src="../../images/icons/left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="../../images/icons/right-arrow.svg" alt="right">`,
+        prevArrow:`<img src="./left-arrow.svg" alt="left">`,
+        nextArrow:`<img src="./right-arrow.svg" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
