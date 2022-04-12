@@ -20,8 +20,8 @@ $(document).ready(function(){
         speed:400,
         variableWidth: true,
         appendArrows:$('.carousel-buttons'),
-        prevArrow:`<img src="./left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="./right-arrow.svg" alt="right">`,
+        prevArrow:`<img src="./left-arrow.png" alt="left">`,
+        nextArrow:`<img src="./right-arrow.png" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
@@ -53,8 +53,8 @@ $(document).ready(function(){
         slidesToScroll: 3,
         speed:300,
         appendArrows:$('.carousel-buttons-two'),
-        prevArrow:`<img src="../../images/icons/left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="../../images/icons/right-arrow.svg" alt="right">`,
+        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
+        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
