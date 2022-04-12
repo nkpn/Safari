@@ -121,7 +121,7 @@
         "tiger tiger car car car car"
         "tiger tiger elephant elephant kids kids"
         "tiger tiger elephant elephant kids kids";
-        @media screen and (min-width:$tablet) {
+        @media screen and (min-width:$desktop) {
             display: none;
         }
         img{
@@ -131,14 +131,14 @@
 
     .mobile-image-wrapper{
         display: grid;
-        @media screen and (min-width:$tablet) {
+        @media screen and (min-width:$desktop) {
             display: none;
         }
     }
 
     .desktop-image-wrapper{
         display: none;
-        @media screen and (min-width:$tablet) {
+        @media screen and (min-width:$desktop) {
             display: grid;
             
         }

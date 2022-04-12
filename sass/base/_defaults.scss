@@ -102,7 +102,17 @@ hr{
   }
 }
 
+.mobile-only{
+  display: block;
+    @media screen and (min-width:$tablet){
+      display: none;
+  }
+}
 
-
-
+.tablet-only{
+  display: none;
+  @media screen and (min-width:$tablet){
+    display: block;
+  }
+}
 

@@ -1,0 +1,297 @@
+.moshi-hero{}
+
+
+.desktop-image-wrapper{
+    display: none;
+    @media screen and (min-width:$desktop) {
+        display: grid;
+
+    }
+
+    @media screen and (min-width:$desktop) {
+        order: 1;
+        flex-basis: 60%;
+    }
+
+    .first-wrapper{
+        display: grid;
+        gap: 8px;
+        grid-template-areas: "person person trekking trekking trekking";
+        img{
+            height: 100%;
+        }
+    }
+
+    .second-wrapper-moshi{
+        margin-top: 8px;
+        display: grid;
+        gap: 8px;
+        max-height: 450px;
+        grid-template-areas: "mount mount tables tables mountain mountain"
+                            "mount mount person person person person";
+        img{
+            height: 100%;
+        }
+    }
+}
+
+//* Image wrapper
+.kilimonjaro-mount{
+    grid-area: mount;
+    overflow:hidden;
+    object-fit: contain;
+}
+
+.kilimonjaro-tables{
+    grid-area: tables;
+    overflow:hidden;
+    object-fit: contain;
+}
+
+.kilimonjaro-mountain{
+    grid-area: mountain;
+    overflow:hidden;
+    object-fit: contain;
+}
+
+.kilimonjaro-trekking{
+    grid-area: trekking;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+.kilimonjaro-person{
+    overflow:hidden;
+    object-fit: contain;
+    grid-area: person;
+}
+
+.kilimonjaro-mountains{
+    overflow:hidden;
+    object-fit: contain;
+    grid-area: mountains;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+.kilimonjaro-umbwe{
+    overflow:hidden;
+    object-fit: contain;
+    grid-area: umbwe;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+.kilimonjaro-person-green{
+    grid-area: person;
+    overflow:hidden;
+}
+
+
+
+.mobile-image-wrapper{
+    display: grid;
+    gap:4px;
+    grid-template-areas: "mount mount tables tables mountain mountain"
+    "mount mount tables tables mountain mountain"
+    "mount mount person person person person";
+    @media screen and (min-width:$desktop) {
+        display: none;
+    }
+    img{
+        height: 100%;
+    }
+}
+
+//-------------------------------------------
+//* Sections
+
+//* Arusha
+.arusha-section{
+    padding-top: 80px;
+    @media screen and (min-width:$tablet) {
+        padding-top: 115px;
+    }
+
+    h2{
+        @include subheading();
+        margin-bottom: 14px;
+        max-width: 35%;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+            max-width: 27%;
+        }
+    }
+}
+
+.arusha-wrapper{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    p{
+        @include heading-description();
+        text-align: left;
+    }
+}
+
+.arusha-first{
+    @media screen and (min-width:$tablet) {
+        flex-basis: 65%;
+    }
+    p{
+        margin-bottom: 32px;
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 57px;
+            max-width: 65%;
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:$tablet) {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+
+        .mobile-only{
+            max-width: 75%;
+        }
+
+        .img-width-wrapper{
+            // max-width: 55%;
+        }
+
+        p{
+            padding-top: 32px;
+            max-width: 75%; 
+            align-self: end;
+
+            @media screen and (min-width:$tablet) {
+                max-width: 65%;
+                padding-top: 0;
+                align-self:unset;
+                padding-left: 32px;
+            }
+        }
+
+        
+        
+    }
+}
+
+.arusha-second{
+    flex-basis: 35%;
+
+    img{
+        max-height: 475px;
+    }
+}
+
+//------------------------------
+//* Tarangire
+.tarangire-section{
+    padding-top: 80px;
+    @media screen and (min-width:$tablet) {
+        padding-top: 115px;
+    }  
+
+    .two-columns{
+       gap: 55px;
+       @media screen and (min-width:$desktop) {
+           gap: 130px;
+       }
+    }
+
+    .first{
+        flex-basis: 75%;
+    }
+
+    h2{
+        @include subheading();
+        margin-bottom: 14px;
+        max-width: 55%;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+            max-width: 85%;
+        }
+    }
+
+    p{
+        @include heading-description();
+        text-align: left;
+        padding-bottom: 24px;
+    }
+
+    .tarangire-wrapper{
+        @media screen and (min-width:$tablet) {
+            flex-basis: 65%;
+        }
+
+        .mobile-only{
+            max-width: 75%;
+            margin-bottom: 24px;
+        }
+
+        .tablet-only{
+            margin-top: 48px;
+            @media screen and (min-width:$desktop) {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+//---------------------
+//* Contact us HERO section
+.moshi-hero-section{
+    margin-top: 80px;
+    padding-bottom: 120px;
+    background-image: url('../../images/moshi/moshi-hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 115px;
+        background-size: contain;
+        background-image: url('../../images/moshi/moshi-hero-desktop.jpg');
+        background-position: 100%;
+    }
+
+    h2{
+        @include subheading();
+        margin-bottom: 14px;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    p{
+        @include heading-description();
+        margin-bottom: 28px;
+        
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .wrapper{
+        max-width: 75%;
+        @media screen and (min-width:$tablet) {
+            max-width: 450px;
+        }
+    }
+}

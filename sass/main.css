@@ -381,6 +381,26 @@ hr {
   }
 }
 
+.mobile-only {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.tablet-only {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-only {
+    display: block;
+  }
+}
+
 .contact-us-btn {
   font-size: 14px;
   line-height: 24px;
@@ -1805,7 +1825,7 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mount {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: mount;
@@ -1816,6 +1836,7 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-tables {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: tables;
@@ -1826,6 +1847,7 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mountain {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: mountain;
@@ -1848,7 +1870,7 @@ hr {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
@@ -1881,7 +1903,7 @@ hr {
 }
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-person-green {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
@@ -2880,6 +2902,460 @@ hr {
   background-color: #ffffff;
 }
 
+.desktop-image-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-image-wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-image-wrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+.desktop-image-wrapper .first-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+      grid-template-areas: "person person trekking trekking trekking";
+}
+
+.desktop-image-wrapper .first-wrapper img {
+  height: 100%;
+}
+
+.desktop-image-wrapper .second-wrapper-moshi {
+  margin-top: 8px;
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  max-height: 450px;
+      grid-template-areas: "mount mount tables tables mountain mountain" "mount mount person person person person";
+}
+
+.desktop-image-wrapper .second-wrapper-moshi img {
+  height: 100%;
+}
+
+.kilimonjaro-mount {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mount;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.kilimonjaro-tables {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: tables;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.kilimonjaro-mountain {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: mountain;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.kilimonjaro-trekking {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: trekking;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kilimonjaro-person {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: person;
+}
+
+.kilimonjaro-mountains {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  grid-area: mountains;
+}
+
+@media screen and (max-width: 767px) {
+  .kilimonjaro-mountains {
+    display: none;
+  }
+}
+
+.kilimonjaro-umbwe {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  grid-area: umbwe;
+}
+
+@media screen and (max-width: 767px) {
+  .kilimonjaro-umbwe {
+    display: none;
+  }
+}
+
+.kilimonjaro-person-green {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: person;
+  overflow: hidden;
+}
+
+.mobile-image-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+      grid-template-areas: "mount mount tables tables mountain mountain" "mount mount tables tables mountain mountain" "mount mount person person person person";
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-image-wrapper {
+    display: none;
+  }
+}
+
+.mobile-image-wrapper img {
+  height: 100%;
+}
+
+.arusha-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-section {
+    padding-top: 115px;
+  }
+}
+
+.arusha-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+  max-width: 35%;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-section h2 {
+    margin-bottom: 20px;
+    max-width: 27%;
+  }
+}
+
+.arusha-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.arusha-wrapper p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-wrapper p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-first {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.arusha-first p {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-first p {
+    margin-bottom: 57px;
+    max-width: 65%;
+  }
+}
+
+.arusha-first .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-first .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.arusha-first .wrapper .mobile-only {
+  max-width: 75%;
+}
+
+.arusha-first .wrapper p {
+  padding-top: 32px;
+  max-width: 75%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-first .wrapper p {
+    max-width: 65%;
+    padding-top: 0;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    padding-left: 32px;
+  }
+}
+
+.arusha-second {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.arusha-second img {
+  max-height: 475px;
+}
+
+.tarangire-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .tarangire-section {
+    padding-top: 115px;
+  }
+}
+
+.tarangire-section .two-columns {
+  gap: 55px;
+}
+
+@media screen and (min-width: 1024px) {
+  .tarangire-section .two-columns {
+    gap: 130px;
+  }
+}
+
+.tarangire-section .first {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.tarangire-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+  max-width: 55%;
+}
+
+@media screen and (min-width: 768px) {
+  .tarangire-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tarangire-section h2 {
+    margin-bottom: 20px;
+    max-width: 85%;
+  }
+}
+
+.tarangire-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .tarangire-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tarangire-section .tarangire-wrapper {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.tarangire-section .tarangire-wrapper .mobile-only {
+  max-width: 75%;
+  margin-bottom: 24px;
+}
+
+.tarangire-section .tarangire-wrapper .tablet-only {
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 1024px) {
+  .tarangire-section .tarangire-wrapper .tablet-only {
+    max-width: 90%;
+  }
+}
+
+.moshi-hero-section {
+  margin-top: 80px;
+  padding-bottom: 120px;
+  background-image: url("../../images/moshi/moshi-hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section {
+    margin-top: 115px;
+    background-size: contain;
+    background-image: url("../../images/moshi/moshi-hero-desktop.jpg");
+    background-position: 100%;
+  }
+}
+
+.moshi-hero-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.moshi-hero-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section p {
+    margin-bottom: 32px;
+  }
+}
+
+.moshi-hero-section .wrapper {
+  max-width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .moshi-hero-section .wrapper {
+    max-width: 450px;
+  }
+}
+
 .wildlife-hero {
   background-color: #000000;
   padding-bottom: 60px;
@@ -3074,7 +3550,7 @@ hr {
       grid-template-areas: "tiger tiger car car car car" "tiger tiger car car car car" "tiger tiger elephant elephant kids kids" "tiger tiger elephant elephant kids kids";
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .wildlife-hero .wildlife-image-wrapper {
     display: none;
   }
@@ -3089,7 +3565,7 @@ hr {
   display: grid;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .wildlife-hero .mobile-image-wrapper {
     display: none;
   }
@@ -3099,7 +3575,7 @@ hr {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .wildlife-hero .desktop-image-wrapper {
     display: -ms-grid;
     display: grid;
