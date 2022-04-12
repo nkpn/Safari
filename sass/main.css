@@ -1395,14 +1395,12 @@ hr {
 @media screen and (min-width: 768px) {
   .advantages .list-item {
     max-width: 30%;
-    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .advantages .list-item {
     max-width: 30%;
-    margin-right: 100px;
   }
 }
 
@@ -1413,6 +1411,13 @@ hr {
 @media screen and (min-width: 768px) {
   .advantages .list-item:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .advantages .list-item:not(:last-child) {
+    margin-right: 100px;
   }
 }
 
@@ -2664,6 +2669,7 @@ hr {
 }
 
 .page-kilimonjaro .section-hints .hints-wrapper {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

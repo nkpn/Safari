@@ -393,12 +393,12 @@
 
         @media screen and (min-width:$tablet) {
             max-width: 30%;
-            margin-right: 30px;
+            
         }
 
         @media screen and (min-width:$desktop) {
             max-width: 30%;
-            margin-right: 100px;
+            // margin-right: 100px;
         }
 
         &:not(:last-child){
@@ -406,6 +406,10 @@
 
             @media screen and (min-width:$tablet) {
                 margin-bottom: 0;
+                margin-right: 30px;
+            }
+            @media screen and (min-width:$desktop) {
+                margin-right: 100px;
             }
         }
         

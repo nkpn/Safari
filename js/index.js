@@ -21,7 +21,7 @@ $(document).ready(function(){
         variableWidth: true,
         appendArrows:$('.carousel-buttons'),
         prevArrow:`<img src="../images/icons/left-arrow.svg" alt="left">`,
-        nextArrow:`<img src="../images/icons/right-arrow.svg" alt="right">`,
+        nextArrow:`<p>🠒</p>`,
         responsive: [
             {
                 breakpoint: 2048,
