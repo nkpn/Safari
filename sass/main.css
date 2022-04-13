@@ -3061,6 +3061,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .arusha-section {
+    padding-top: 168px;
+  }
+}
+
 .arusha-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
@@ -3206,6 +3212,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .tarangire-section {
+    padding-top: 168px;
+  }
+}
+
 .tarangire-section .two-columns {
   gap: 55px;
 }
@@ -3302,6 +3314,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .moshi-hero-section {
+    margin-top: 168px;
+  }
+}
+
 .moshi-hero-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
@@ -3356,27 +3374,33 @@ hr {
   }
 }
 
-.marangu-wateralls {
+.marangu-wateralls-section {
   padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls {
+  .marangu-wateralls-section {
     padding-top: 115px;
   }
 }
 
-.marangu-wateralls .two-columns {
+@media screen and (min-width: 1024px) {
+  .marangu-wateralls-section {
+    padding-top: 168px;
+  }
+}
+
+.marangu-wateralls-section .two-columns {
   gap: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls .two-columns {
+  .marangu-wateralls-section .two-columns {
     gap: 32px;
   }
 }
 
-.marangu-wateralls .first-marangu {
+.marangu-wateralls-section .first-marangu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3387,18 +3411,18 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls .first-marangu {
+  .marangu-wateralls-section .first-marangu {
     max-width: 60%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .marangu-wateralls .second-marangu {
+  .marangu-wateralls-section .second-marangu {
     padding-right: 60px;
   }
 }
 
-.marangu-wateralls h2 {
+.marangu-wateralls-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 28px;
@@ -3408,19 +3432,19 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls h2 {
+  .marangu-wateralls-section h2 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls h2 {
+  .marangu-wateralls-section h2 {
     margin-bottom: 20px;
   }
 }
 
-.marangu-wateralls p {
+.marangu-wateralls-section p {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 12px;
@@ -3431,30 +3455,30 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls p {
+  .marangu-wateralls-section p {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
-.marangu-wateralls .full-width {
+.marangu-wateralls-section .full-width {
   max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls .full-width {
+  .marangu-wateralls-section .full-width {
     max-width: inherit;
   }
 }
 
-.marangu-wateralls .mobile-only {
-  max-width: 80%;
+.marangu-wateralls-section .mobile-only {
+  max-width: 90%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 24px;
 }
 
-.marangu-wateralls .second-image {
+.marangu-wateralls-section .second-image {
   display: block;
   max-width: 80%;
   -ms-flex-item-align: start;
@@ -3463,7 +3487,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls .second-image {
+  .marangu-wateralls-section .second-image {
     margin-top: 24px;
     max-width: 60%;
     -ms-flex-item-align: end;
@@ -3472,9 +3496,530 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .marangu-wateralls .second-image {
+  .marangu-wateralls-section .second-image {
     margin-top: 54px;
   }
+}
+
+.chemka-section {
+  padding-top: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #F2FBFF), color-stop(10%, #ffffff));
+  background: linear-gradient(to bottom, #F2FBFF 90%, #ffffff 10%);
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section {
+    padding-top: 115px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #F2FBFF), color-stop(5%, #ffffff));
+    background: linear-gradient(to bottom, #F2FBFF 95%, #ffffff 5%);
+    margin-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .chemka-section {
+    margin-top: 168px;
+  }
+}
+
+.chemka-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.chemka-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.chemka-section .two-columns {
+  gap: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section .two-columns {
+    gap: 106px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section .first-wrapper {
+    max-width: 40%;
+  }
+}
+
+.chemka-section .first-wrapper img {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .chemka-section .first-wrapper img {
+    margin-bottom: 0;
+    margin-top: 160px;
+  }
+}
+
+.materuni-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .materuni-section {
+    padding-top: 168px;
+  }
+}
+
+.materuni-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.materuni-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.materuni-section .mobile-only {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section .mobile-only {
+    display: none;
+  }
+}
+
+.materuni-section .mobile-only p {
+  max-width: 60%;
+}
+
+.materuni-section .mobile-only p:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section .two-columns {
+    gap: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section .first p {
+    max-width: 80%;
+    margin-bottom: 40px;
+  }
+}
+
+.materuni-section .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.materuni-section .second img {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section .second img {
+    max-width: 80%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .materuni-section .second p {
+    max-width: 80%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.lake-challa-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lake-challa-section {
+    padding-top: 168px;
+  }
+}
+
+.lake-challa-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.lake-challa-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.lake-challa-section .two-columns {
+  gap: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section .two-columns {
+    gap: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section .first {
+    max-width: 50%;
+  }
+}
+
+.lake-challa-section .first p {
+  max-width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section .first p {
+    max-width: 100%;
+  }
+}
+
+.lake-challa-section .first img {
+  max-width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section .first img {
+    margin-top: 84px;
+  }
+}
+
+.lake-challa-section .first .mobile-only {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .lake-challa-section .first .mobile-only {
+    display: none;
+  }
+}
+
+.lake-challa-section .first .mobile-only p {
+  margin-top: 24px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.lake-challa-section .second {
+  max-width: 70%;
+}
+
+.chagga-museum-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .chagga-museum-section {
+    padding-top: 168px;
+  }
+}
+
+.chagga-museum-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+  max-width: 55%;
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section h2 {
+    margin-bottom: 20px;
+    max-width: 85%;
+  }
+}
+
+.chagga-museum-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section p {
+    padding-bottom: 0;
+  }
+}
+
+.chagga-museum-section .two-columns {
+  gap: 75px;
+}
+
+@media screen and (min-width: 1024px) {
+  .chagga-museum-section .two-columns {
+    gap: 140px;
+  }
+}
+
+.chagga-museum-section .first {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .chagga-museum-section .tarangire-wrapper {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.chagga-museum-section .tarangire-wrapper .mobile-only {
+  max-width: 85%;
+  margin-bottom: 24px;
+}
+
+.chagga-museum-section .tarangire-wrapper .mobile-only:nth-child(2) {
+  max-width: 100%;
+}
+
+.chagga-museum-section .tarangire-wrapper .full-width {
+  max-width: 100%;
+}
+
+.chagga-museum-section .tarangire-wrapper .tablet-only {
+  margin-top: 62px;
+}
+
+.arusha-museum {
+  padding-top: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #F2FBFF), color-stop(10%, #ffffff));
+  background: linear-gradient(to bottom, #F2FBFF 90%, #ffffff 10%);
+  padding-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum {
+    padding-bottom: 72px;
+    padding-top: 115px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #F2FBFF), color-stop(0%, #ffffff));
+    background: linear-gradient(to bottom, #F2FBFF 100%, #ffffff 0%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .arusha-museum {
+    padding-top: 168px;
+  }
+}
+
+.arusha-museum h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.arusha-museum p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.arusha-museum .wrapper {
+  margin-top: 24px;
+  margin-left: auto;
+  max-width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum .wrapper {
+    margin-top: 150px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.arusha-museum .two-columns {
+  gap: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .arusha-museum .first {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .arusha-museum .second {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.page-moshi > .contact-us {
+  background-color: #ffffff;
 }
 
 .wildlife-hero {
