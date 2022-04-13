@@ -3834,12 +3834,14 @@ hr {
 @media screen and (min-width: 768px) {
   .chagga-museum-section {
     padding-top: 115px;
+    margin-bottom: 115px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .chagga-museum-section {
     padding-top: 168px;
+    margin-bottom: 168px;
   }
 }
 
@@ -3930,7 +3932,7 @@ hr {
 }
 
 .arusha-museum {
-  padding-top: 80px;
+  padding-top: 60px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #F2FBFF), color-stop(10%, #ffffff));
   background: linear-gradient(to bottom, #F2FBFF 90%, #ffffff 10%);
   padding-bottom: 56px;
@@ -3939,7 +3941,7 @@ hr {
 @media screen and (min-width: 768px) {
   .arusha-museum {
     padding-bottom: 72px;
-    padding-top: 115px;
+    padding-top: 72px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #F2FBFF), color-stop(0%, #ffffff));
     background: linear-gradient(to bottom, #F2FBFF 100%, #ffffff 0%);
   }

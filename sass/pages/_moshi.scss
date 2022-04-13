@@ -586,10 +586,12 @@
     padding-top: 80px;
     @media screen and (min-width:$tablet) {
         padding-top: 115px;
+        margin-bottom: 115px;
     }
 
     @media screen and (min-width:$desktop) {
         padding-top: 168px;
+        margin-bottom: 168px;
     }
  
     h2{
@@ -649,13 +651,13 @@
 }
 
 .arusha-museum{
-    padding-top: 80px;
+    padding-top: 60px;
     background:linear-gradient(to bottom, $bg-light-color 90%, $white 10%);
     padding-bottom: 56px;
 
     @media screen and (min-width:$tablet) {
         padding-bottom: 72px;
-        padding-top: 115px;
+        padding-top: 72px;
         background:linear-gradient(to bottom, $bg-light-color 100%, $white 0%);
     }
     @media screen and (min-width:$desktop) {
