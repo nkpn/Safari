@@ -295,3 +295,77 @@
         }
     }
 }
+
+//-------------------------------
+//* Marangu waterfalls
+.marangu-wateralls{
+    padding-top: 80px;
+    @media screen and (min-width:$tablet) {
+        padding-top: 115px;
+    }
+
+    .two-columns{
+        gap: 25px;
+        @media screen and (min-width:$tablet) {
+            gap: 32px;
+        }
+    }
+
+    .first-marangu{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:$tablet) {
+            max-width: 60%;
+        }
+    }
+
+    .second-marangu{
+        @media screen and (min-width:$desktop) {
+            padding-right: 60px;
+        }
+    }
+
+     h2{
+        @include subheading();
+        margin-bottom: 14px;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    p{
+        @include heading-description();
+        margin-bottom: 24px;
+        max-width: 75%;
+    }
+
+    .full-width{
+        max-width: 100%;
+        @media screen and (min-width:$tablet) {
+            max-width: inherit;
+        }
+    }
+
+    .mobile-only{
+        max-width: 80%;
+        align-self:flex-end;
+        margin-bottom: 24px;
+    }
+
+    .second-image{
+        display: block;
+        max-width: 80%;
+        align-self: start;
+        @media screen and (min-width:$tablet) {
+           margin-top: 24px;
+           max-width: 60%;
+           align-self: flex-end;
+        }
+
+        @media screen and (min-width:$desktop) {
+            margin-top: 54px;
+        }
+    }
+}

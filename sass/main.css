@@ -3356,6 +3356,127 @@ hr {
   }
 }
 
+.marangu-wateralls {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls {
+    padding-top: 115px;
+  }
+}
+
+.marangu-wateralls .two-columns {
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls .two-columns {
+    gap: 32px;
+  }
+}
+
+.marangu-wateralls .first-marangu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls .first-marangu {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .marangu-wateralls .second-marangu {
+    padding-right: 60px;
+  }
+}
+
+.marangu-wateralls h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.marangu-wateralls p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+  max-width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.marangu-wateralls .full-width {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls .full-width {
+    max-width: inherit;
+  }
+}
+
+.marangu-wateralls .mobile-only {
+  max-width: 80%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 24px;
+}
+
+.marangu-wateralls .second-image {
+  display: block;
+  max-width: 80%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+@media screen and (min-width: 768px) {
+  .marangu-wateralls .second-image {
+    margin-top: 24px;
+    max-width: 60%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .marangu-wateralls .second-image {
+    margin-top: 54px;
+  }
+}
+
 .wildlife-hero {
   background-color: #000000;
   padding-bottom: 60px;
