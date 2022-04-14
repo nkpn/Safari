@@ -4779,4 +4779,323 @@ hr {
 .page-wildlife > .contact-us {
   background-color: #ffffff;
 }
+
+.page-zanzibar .zanzibar-hero p:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.page-zanzibar .zanzibar-hero-section {
+  margin-top: 60px;
+  padding-bottom: 120px;
+  background-image: url("../images/moshi/moshi-hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-hero-section {
+    margin-top: 120px;
+    background-size: contain;
+    background-image: url("../images/moshi/moshi-hero-desktop.jpg");
+    background-position: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .zanzibar-hero-section {
+    margin-top: 168px;
+  }
+}
+
+.page-zanzibar .zanzibar-hero-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-hero-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-hero-section p {
+    margin-bottom: 32px;
+  }
+}
+
+.page-zanzibar .zanzibar-hero-section .wrapper {
+  max-width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-hero-section .wrapper {
+    max-width: 450px;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .zanzibar-tarangire-section {
+    padding-top: 168px;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  max-width: 75%;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section p {
+    margin-bottom: 32px;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section .day {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section .day {
+    margin-bottom: 16px;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section .two-columns {
+  gap: 55px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .zanzibar-tarangire-section .two-columns {
+    gap: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .zanzibar-tarangire-section .first {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+.page-zanzibar .zanzibar-tarangire-section .second {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.page-zanzibar .zanzibar-tarangire-section .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-zanzibar .zanzibar-tarangire-section .img-wrapper img {
+  max-width: 80%;
+}
+
+.page-zanzibar .zanzibar-tarangire-section .img-wrapper .mobile-only {
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .zanzibar-tarangire-section .img-wrapper .elephant {
+    margin-top: 120px;
+    max-width: 65%;
+    margin-left: auto;
+  }
+}
+
+.page-zanzibar .mwowambu-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .mwowambu-section {
+    padding-top: 168px;
+  }
+}
+
+.page-zanzibar .mwowambu-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.page-zanzibar .mwowambu-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  max-width: 95%;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .mwowambu-section p {
+    margin-bottom: 97px;
+  }
+}
+
+.page-zanzibar .mwowambu-section .day {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section .day {
+    margin-bottom: 16px;
+  }
+}
+
+.page-zanzibar .mwowambu-section .two-columns {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section .first {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .page-zanzibar .mwowambu-section .first img {
+    max-width: 80%;
+  }
+}
+
+.page-zanzibar .mwowambu-section .second {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.page-zanzibar .mwowambu-section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-zanzibar .mwowambu-section .wrapper img {
+  max-width: 80%;
+}
+
+.page-zanzibar .mwowambu-section .wrapper .mobile-only {
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.page-zanzibar .mwowambu-section .wrapper .lions {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section .wrapper .lions {
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
