@@ -279,6 +279,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   position: relative;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -589,7 +590,7 @@ header {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .nav-list {
     display: none;
   }
@@ -686,7 +687,7 @@ header {
   color: #ffffff;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1023px) {
   .mobile-header {
     display: none;
   }
@@ -917,7 +918,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .description h2 {
-    max-width: 210px;
+    max-width: 222px;
     margin-bottom: 24px;
   }
 }
@@ -1279,6 +1280,10 @@ hr {
   }
 }
 
+.tours-carousel .carousel-card-wildlife:hover + .contact-us-btn {
+  display: block;
+}
+
 .tours-carousel .carousel-card-moshi {
   width: 320px;
   height: 342px;
@@ -1309,6 +1314,12 @@ hr {
 
 .tours-carousel .hide {
   display: none;
+}
+
+.tours-carousel .hide:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tours-carousel .carousel-card:hover + .hide {
@@ -1684,28 +1695,23 @@ hr {
   margin-left: 15px;
 }
 
-.carousel-buttons-wrapper, .carousel-buttons-wrapper-two {
-  padding-top: 15px;
+.carousel-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
-@media screen and (min-width: 1024px) {
-  .carousel-buttons-wrapper, .carousel-buttons-wrapper-two {
-    padding-top: 32px;
-  }
-}
-
-.carousel-buttons-wrapper img, .carousel-buttons-wrapper-two img {
+.text-arrow {
+  color: #CDD9DF !important;
   cursor: pointer;
+  font-size: 25px;
 }
 
-.slick-arrow:first-child {
-  margin-right: 10px;
+.text-arrow:last-child {
+  margin-left: 15px;
 }
 
 .progress-bar, .progress-bar-two {
@@ -4814,7 +4820,7 @@ hr {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -4886,7 +4892,7 @@ hr {
   color: #000000;
   display: block;
   max-width: 75%;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -5015,7 +5021,7 @@ hr {
   color: #000000;
   display: block;
   max-width: 95%;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -5097,5 +5103,338 @@ hr {
   .page-zanzibar .mwowambu-section .wrapper .lions {
     margin-left: 0;
   }
+}
+
+.page-zanzibar .ngorongoro-section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .ngorongoro-section {
+    padding-top: 168px;
+  }
+}
+
+.page-zanzibar .ngorongoro-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #343434;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.page-zanzibar .ngorongoro-section p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  max-width: 75%;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section p {
+    max-width: 100%;
+  }
+}
+
+.page-zanzibar .ngorongoro-section .day {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .day {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .two-columns {
+    gap: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .ngorongoro-section .two-columns {
+    gap: 140px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .first {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.page-zanzibar .ngorongoro-section .second {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .second {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    margin-top: 0;
+  }
+}
+
+.page-zanzibar .ngorongoro-section .second .mobile-only {
+  display: block;
+  margin-left: auto;
+}
+
+.page-zanzibar .ngorongoro-section .zanzibar-island {
+  display: block;
+  max-width: 70%;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .zanzibar-island {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+.page-zanzibar .stone-town-section {
+  margin-bottom: 56px;
+}
+
+.page-zanzibar .stone-town-section .day {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #343434;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .stone-town-section .day {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .stone-town-section .two-columns {
+    gap: 138px;
+  }
+}
+
+.page-zanzibar .stone-town-section .img-wrapper img {
+  max-width: 100%;
+}
+
+.page-zanzibar .stone-town-section .img-wrapper picture {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .stone-town-section .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .stone-town-section .zanzibar-island {
+    margin-top: 130px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .stone-town-section .zanzibar-island {
+    margin-top: 230px;
+  }
+}
+
+.page-zanzibar .contact-us {
+  background-color: #ffffff;
+}
+
+.contact-page .home-hero {
+  background-image: url("../../images/contact-us/contact-us-hero-min.jpg");
+  background-size: cover;
+  background-position: 40% 50%;
+  height: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero {
+    height: 805px;
+    background-position: center;
+  }
+}
+
+.contact-page .home-hero .home-hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .home-hero-container {
+    margin-top: 360px;
+  }
+}
+
+.contact-page .home-hero .contact-hero-text {
+  letter-spacing: 0.03em;
+}
+
+.contact-page .home-hero .contact-hero-text h1 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text h1 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text h1 {
+    margin-bottom: 24px;
+    font-size: 83px;
+    line-height: 83px;
+  }
+}
+
+.contact-page .home-hero .contact-hero-text span {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: none;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text span {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+.contact-page .home-hero .contact-hero-text p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text p {
+    max-width: 50%;
+  }
+}
+
+.contact-page .home-hero .bottom-arrow {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .bottom-arrow {
+    display: block;
+  }
+}
+
+.contact-page .nav-link {
+  position: relative;
+}
+
+.contact-page .nav-link::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #F2FBFF;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-page .nav-link:hover::after, .contact-page .nav-link:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.contact-page .contact-us {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
         margin-bottom: 12px; 
 
         @media screen and (min-width:$tablet) {
-            max-width: 210px;
+            max-width: 222px;
             margin-bottom: 24px; 
         }
     }
@@ -292,6 +292,10 @@
         }
     }
 
+    .carousel-card-wildlife:hover + .contact-us-btn{
+        display: block;
+    }
+
     .carousel-card-moshi{
         width: 320px;
         height: 342px;
@@ -318,6 +322,9 @@
 
     .hide{
         display: none;
+        &:hover{
+            display: flex;
+        }
     }
 
     .carousel-card:hover + .hide{
@@ -590,23 +597,40 @@
     margin-left: 15px;
 }
 
-.carousel-buttons-wrapper,.carousel-buttons-wrapper-two{
-    padding-top: 15px;
+//* For SVG
+// .carousel-buttons-wrapper,.carousel-buttons-wrapper-two{
+//     padding-top: 15px;
+//     display: flex;
+//     justify-content: end;
+
+//     @media screen and (min-width:$desktop) {
+//         padding-top: 32px;
+//     }
+
+//     img{
+//         cursor: pointer;
+//     }
+// }
+
+//* for P tag
+.carousel-buttons{
     display: flex;
-    justify-content: end;
-
-    @media screen and (min-width:$desktop) {
-        padding-top: 32px;
-    }
-
-    img{
-        cursor: pointer;
-    }
+    justify-content: flex-end;
 }
 
-.slick-arrow:first-child{
-    margin-right: 10px;
-}
+.text-arrow{
+    color:$bg-dark-color !important;
+    cursor: pointer;
+    font-size: 25px;
+
+    &:last-child{
+        margin-left: 15px;
+    }
+  }
+
+// .slick-arrow:first-child{
+//     margin-right: 10px;
+// }
 
 .progress-bar,.progress-bar-two {
     display: block;

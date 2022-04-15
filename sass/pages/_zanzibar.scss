@@ -29,7 +29,7 @@
 
         p{
             @include heading-description();
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             
             @media screen and (min-width:$tablet) {
                 margin-bottom: 32px;
@@ -68,7 +68,7 @@
             @include heading-description();
             display: block;
             max-width: 75%;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             padding: 0;
             
             @media screen and (min-width:$tablet) {
@@ -129,80 +129,208 @@
     //* mwowambu section
     .mwowambu-section{
         padding-top: 80px;
+        @media screen and (min-width:$tablet) {
+            padding-top: 115px;
+        }  
+        @media screen and (min-width:$desktop) {
+            padding-top: 168px;
+        }
+
+        h2{
+            @include subheading();
+            margin-bottom: 14px;
+    
             @media screen and (min-width:$tablet) {
-                padding-top: 115px;
-            }  
-            @media screen and (min-width:$desktop) {
-                padding-top: 168px;
+                margin-bottom: 20px;
             }
-
-            h2{
-                @include subheading();
-                margin-bottom: 14px;
-        
-                @media screen and (min-width:$tablet) {
-                    margin-bottom: 20px;
-                }
-            }
-        
-            p{
-                @include heading-description();
-                display: block;
-                max-width: 95%;
-                margin-bottom: 28px;
-                padding: 0;
-                
-                @media screen and (min-width:$desktop) {
-                    margin-bottom: 97px;
-                }
-            }
+        }
     
-            .day{
-                @include uppercase-list-heading();
-                margin-bottom: 8px;
-                padding: 0;
-                @media screen and (min-width:$tablet) {
-                    margin-bottom: 16px;
-                }
-            }
-
-            .two-columns{
-                justify-content: unset;
-            }
-    
-            .first{
-                @media screen and (min-width:$tablet) {
-                    flex-basis: 60%;
-
-                    img{
-                        max-width: 80%;
-                    }
-                }
-            }
-    
-            .second{
-                flex-basis: 40%;
-            }
+        p{
+            @include heading-description();
+            display: block;
+            max-width: 95%;
+            margin-bottom: 24px;
+            padding: 0;
             
-            .wrapper{
-                display: flex;
-                flex-direction: column;
-                
+            @media screen and (min-width:$desktop) {
+                margin-bottom: 97px;
+            }
+        }
+
+        .day{
+            @include uppercase-list-heading();
+            margin-bottom: 8px;
+            padding: 0;
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .two-columns{
+            justify-content: unset;
+        }
+
+        .first{
+            @media screen and (min-width:$tablet) {
+                flex-basis: 60%;
+
                 img{
                     max-width: 80%;
                 }
-    
-                .mobile-only{
-                    margin-right: auto;
-                    margin-bottom: 24px;
-                }
+            }
+        }
 
-                .lions{
-                    margin-left: auto;
-                    @media screen and (min-width:$tablet) {
-                        margin-left: 0;
-                    }
+        .second{
+            flex-basis: 40%;
+        }
+        
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            
+            img{
+                max-width: 80%;
+            }
+
+            .mobile-only{
+                margin-right: auto;
+                margin-bottom: 24px;
+            }
+
+            .lions{
+                margin-left: auto;
+                @media screen and (min-width:$tablet) {
+                    margin-left: 0;
                 }
             }
+        }
+    }
+
+    //----------------------------------
+    //* Nrogorongoro crater section
+    .ngorongoro-section{
+        padding-top: 80px;
+        @media screen and (min-width:$tablet) {
+            padding-top: 115px;
+        }  
+        @media screen and (min-width:$desktop) {
+            padding-top: 168px;
+        }
+
+        h2{
+            @include subheading();
+            margin-bottom: 14px;
+    
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 20px;
+            }
+        }
+    
+        p{
+            @include heading-description();
+            display: block;
+            max-width: 75%;
+            margin-bottom: 24px;
+            padding: 0;
+            
+            @media screen and (min-width:$tablet) {
+                max-width: 100%;
+            }
+        }
+
+        .day{
+            @include uppercase-list-heading();
+            margin-bottom: 8px;
+            padding: 0;
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .two-columns{
+            @media screen and (min-width:$tablet) {
+                gap: 55px;
+            }
+            @media screen and (min-width:$desktop) {
+                gap: 140px;
+            }
+        }
+
+        .first{
+            @media screen and (min-width:$tablet) {
+                flex-basis: 65%;
+            }
+        }
+
+        .second{
+            margin-top: 24px;
+            @media screen and (min-width:$tablet) {
+                flex-basis: 65%;
+                margin-top: 0;
+            }
+
+            .mobile-only{
+                display: block;
+                margin-left:auto;
+            }
+        }
+
+        .zanzibar-island{
+            display: block;
+            max-width: 70%;
+            margin-right: auto;
+            @media screen and (min-width:$tablet) {
+                margin-right: 0;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .stone-town-section{
+        margin-bottom: 56px;
+        .day{
+            @include uppercase-list-heading();
+            margin-bottom: 8px;
+            padding: 0;
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .two-columns{
+            @media screen and (min-width:$desktop) {
+                gap:138px;
+            }
+        }
+
+        .img-wrapper{
+            img{
+                max-width: 100%;
+            }
+
+            picture{
+                max-width: 80%;
+            }
+        }
+
+        .mobile-only{
+            @media screen and (min-width:$tablet) {
+                display: none;
+            }
+        }
+
+        .zanzibar-island{
+            @media screen and (min-width:$tablet) {
+                margin-top: 130px;
+                margin-left:auto;
+            }
+            @media screen and (min-width:$desktop) {
+                margin-top: 230px;
+            }
+        }
+    }
+
+    .contact-us{
+        background-color: $white;
     }
 }
