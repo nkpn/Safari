@@ -53,8 +53,10 @@ $(document).ready(function(){
         slidesToScroll: 3,
         speed:300,
         appendArrows:$('.carousel-buttons-two'),
-        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
-        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+        // prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
+        // nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+        prevArrow:`<p class="text-arrow">←</p>`,
+        nextArrow:`<p class="text-arrow">→</p>`,
         responsive: [
             {
                 breakpoint: 2048,
@@ -92,20 +94,6 @@ $(document).ready(function(){
         appendArrows:$('.package-list-buttons'),
         prevArrow:`<img src="../images/icons/left-slider.svg" alt="left" class="left">`,
         nextArrow:`<img src="../images/icons/right-slider.svg" alt="right" class="right">`,
-        // responsive: [
-        //     {
-        //         breakpoint:1023,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1024,
-        //         settings: "unslick"
-        //     },
-            
-        // ] 
     })
 })
 
