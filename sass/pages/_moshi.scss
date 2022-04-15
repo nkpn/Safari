@@ -409,6 +409,15 @@
         margin-bottom: 24px;
     }
 
+    .day{
+        @include uppercase-list-heading();
+        margin-bottom: 8px;
+        padding: 0;
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 16px;
+        }
+    }
+
     .two-columns{
         gap: 75px;
         @media screen and (min-width:$tablet) {
