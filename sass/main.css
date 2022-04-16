@@ -1663,10 +1663,14 @@ hr {
 }
 
 .contact-us .contact-social-item {
-  padding: 26px 27px;
+  padding: 26px 26px;
   border: 1px solid #000000;
   border-radius: 50%;
   margin-right: 16px;
+}
+
+.contact-us .contact-social-item img {
+  height: 100%;
 }
 
 .contact-us .contact-us-bottom-list {
