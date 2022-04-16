@@ -133,6 +133,7 @@ header{
     z-index: 100;
     animation: growDown 200ms ease-in-out forwards;
     transform-origin: top center;
+    overflow: auto;
 }
 
 .active{

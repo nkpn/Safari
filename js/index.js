@@ -22,10 +22,8 @@ $(document).ready(function(){
         speed:400,
         variableWidth: true,
         appendArrows:$('.carousel-buttons'),
-        // prevArrow:`<p class="text-arrow">←</p>`,
-        // nextArrow:`<p class="text-arrow">→</p>`,
-        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
-        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+        prevArrow: $('.slider-left'),
+        nextArrow: $('.slider-right'),
         responsive: [
             {
                 breakpoint: 2048,
@@ -57,12 +55,9 @@ $(document).ready(function(){
         slidesToScroll: 3,
         speed:300,
         appendArrows:$('.carousel-buttons-two'),
-        // prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
-        // nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
-        prevArrow:`<svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" fill="#676767" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                    </svg>`,
-        nextArrow:`<p class="text-arrow">→</p>`,
+        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
+        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+
         responsive: [
             {
                 breakpoint: 2048,

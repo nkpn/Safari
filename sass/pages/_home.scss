@@ -632,6 +632,13 @@
     justify-content: flex-end;
 }
 
+.slider-left, .slider-right{
+    fill:black;
+    color:black;
+    height: 15px;
+    width: 55px;
+}
+
 .text-arrow{
     color:$bg-dark-color !important;
     cursor: pointer;
