@@ -1711,16 +1711,27 @@ hr {
   margin-left: 15px;
 }
 
-.carousel-buttons {
+.carousel-buttons, .carousel-buttons-two {
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: end;
 }
 
-.slider-left, .slider-right {
+@media screen and (min-width: 1024px) {
+  .carousel-buttons, .carousel-buttons-two {
+    padding-top: 32px;
+  }
+}
+
+.carousel-buttons img, .carousel-buttons-two img {
+  cursor: pointer;
+}
+
+.slider-left, .slider-left-two, .slider-right, .slider-right-two {
   fill: black;
   color: black;
   height: 15px;

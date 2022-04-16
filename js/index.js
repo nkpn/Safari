@@ -55,8 +55,8 @@ $(document).ready(function(){
         slidesToScroll: 3,
         speed:300,
         appendArrows:$('.carousel-buttons-two'),
-        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
-        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+        prevArrow: $('.slider-left-two'),
+        nextArrow: $('.slider-right-two'),
 
         responsive: [
             {
@@ -103,16 +103,31 @@ $(document).ready(function(){
 $('.carousel-card-zanzibar').hover(()=>{
     $('.hide-zanzibar').toggle();
 })
+$('.carousel-card-zanzibar').focus(()=>{
+    $('.hide-zanzibar').toggle();
+})
+
 
 $('.carousel-card-wildlife').hover(()=>{
     $('.hide-safari').toggle();
 })
+$('.carousel-card-wildlife').focus(()=>{
+    $('.hide-safari').toggle();
+})
+
 
 $('.carousel-card-moshi').hover(()=>{
     $('.hide-moshi').toggle();
 })
+$('.carousel-card-moshi').focus(()=>{
+    $('.hide-moshi').toggle();
+})
+
 
 $('.carousel-card-kilimanjaro').hover(()=>{
+    $('.hide-kilimonjaro').toggle();
+})
+$('.carousel-card-kilimanjaro').focus(()=>{
     $('.hide-kilimonjaro').toggle();
 })
 

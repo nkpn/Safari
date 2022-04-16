@@ -612,27 +612,22 @@
 }
 
 //* For SVG
-// .carousel-buttons-wrapper,.carousel-buttons-wrapper-two{
-//     padding-top: 15px;
-//     display: flex;
-//     justify-content: end;
-
-//     @media screen and (min-width:$desktop) {
-//         padding-top: 32px;
-//     }
-
-//     img{
-//         cursor: pointer;
-//     }
-// }
-
-//* for P tag
-.carousel-buttons{
+.carousel-buttons,.carousel-buttons-two{
+    padding-top: 15px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 32px;
+    }
+
+    img{
+        cursor: pointer;
+    }
 }
 
-.slider-left, .slider-right{
+
+.slider-left,.slider-left-two, .slider-right,.slider-right-two{
     fill:black;
     color:black;
     height: 15px;
