@@ -1,4 +1,6 @@
 console.log('Hi! If you need a website - please contact me : illinmikita@gmail.com , or by telegram : https://t.me/nk_pn')
+//-------------------------------
+//* Init slick slider
 $(document).ready(function(){
     $('.burger,.close-btn').click(function(event){
         $('.mobile-menu').toggleClass('active')
@@ -22,8 +24,8 @@ $(document).ready(function(){
         appendArrows:$('.carousel-buttons'),
         // prevArrow:`<p class="text-arrow">←</p>`,
         // nextArrow:`<p class="text-arrow">→</p>`,
-        prevArrow:`<img src="../left-arrow.png" alt="left">`,
-        nextArrow:`<img src="../right-arrow.png" alt="right">`,
+        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
+        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
@@ -99,7 +101,8 @@ $(document).ready(function(){
     })
 })
 
-
+//---------------------------------------------------------
+//* DOM elements for dropdown items
 
 const wildlifeIcon = $('.wildlife');
 const wildlifeList = $('.wildlife-list');
@@ -182,7 +185,7 @@ const ClassLodgeFourBottom = $('.class-lodge-four-arr-bottom');
 const ClassLodgeFourUp = $('.class-lodge-four-arr-up');
 const ClassLodgeFourList = $('.class-lodge-four-list');
 
-
+//* Dropdown functions
 
 wildlifeIcon.click(()=>{
     wildlifeList.toggle();
