@@ -22,8 +22,8 @@ $(document).ready(function(){
         appendArrows:$('.carousel-buttons'),
         // prevArrow:`<p class="text-arrow">←</p>`,
         // nextArrow:`<p class="text-arrow">→</p>`,
-        prevArrow:`<img src="../js/left-arrow.png" alt="left">`,
-        nextArrow:`<img src="../js/right-arrow.png" alt="right">`,
+        prevArrow:`<img src="./left-arrow.png" alt="left">`,
+        nextArrow:`<img src="./right-arrow.png" alt="right">`,
         responsive: [
             {
                 breakpoint: 2048,
