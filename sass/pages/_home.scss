@@ -248,6 +248,9 @@
 
 .tours-carousel{
 
+    .container{
+        position: relative;
+    }
     @media screen and (min-width:$tablet) {
         padding-top: 108px;
     }
@@ -262,6 +265,7 @@
     }
 
     .carousel{
+        position: relative;
         margin-top: 30px;
         @media screen and (min-width:$tablet) {
             margin-top: 42px;
@@ -333,18 +337,23 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        padding: 0 31px 32px 16px;
+        // padding: 0 31px 32px 16px;
+        //* Custom justify-content:end for Safari, etc
+        padding:227px 31px 32px 16px;
+        @media screen and (min-width:$tablet) {
+            padding:331px 31px 32px 16px;
+        }
 
         .contact-us-btn{
             color: $white;
             max-width: 210px;
             margin: 0 auto;
-            margin-bottom: 45px;
             transition: transform 250ms $animation-timing-function;
+            position: absolute;
+            top: 46%;
+            right: 30%;
 
-            @media screen and (min-width:$tablet) {
-                margin-bottom: 75px;
-            }
+            
         }
     }
     
@@ -613,14 +622,14 @@
 
 //* For SVG
 .carousel-buttons,.carousel-buttons-two{
-    padding-top: 15px;
     display: flex;
     justify-content: end;
-
+    position: absolute;
+    bottom: -25px;
+    right: 15px;
     @media screen and (min-width:$desktop) {
-        padding-top: 32px;
+        bottom: -35px;
     }
-
     img{
         cursor: pointer;
     }
@@ -644,6 +653,29 @@
     }
   }
 
+  .slick-dots{
+    @media screen and (min-width:$desktop) {
+        bottom: -35px;
+    }
+  }
+
+  .slick-dots li{
+      width: 18%;
+      height: 1px;
+      background-color: $bg-dark-color;
+      margin: 0;
+  }
+
+  .slick-dots li button{
+    width: 18%;
+    height: 1px;
+}
+
+.slick-dots .slick-active{
+    height: 3px !important;
+    background-color: $bg-dark-color !important;
+}
+
 // .slick-arrow:first-child{
 //     margin-right: 10px;
 // }
@@ -661,4 +693,8 @@
     background-size: 0 100%;
     
     transition: background-size .4s ease-in-out;
+  }
+
+  .carousel-card {
+      position: relative;
   }

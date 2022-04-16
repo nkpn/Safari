@@ -4,16 +4,14 @@ console.log('Hi! If you need a website - please contact me : illinmikita@gmail.c
 $(document).ready(function(){
     $('.burger,.close-btn').click(function(event){
         $('.mobile-menu').toggleClass('active')
-        
     })
 
-    $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-        var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-        $('.progress-bar').css('background-size', calc + '% 100%')
-                    .attr('aria-valuenow', calc );
-    });
-
-    
+    //* progress bar
+    // $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    //     var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    //     $('.progress-bar').css('background-size', calc + '% 100%')
+    //                 .attr('aria-valuenow', calc );
+    // });
 
     $('.carousel').slick({
         infinite: true,
@@ -21,6 +19,9 @@ $(document).ready(function(){
         slidesToScroll: 3,
         speed:400,
         variableWidth: true,
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         appendArrows:$('.carousel-buttons'),
         prevArrow: $('.slider-left'),
         nextArrow: $('.slider-right'),
@@ -57,6 +58,8 @@ $(document).ready(function(){
         appendArrows:$('.carousel-buttons-two'),
         prevArrow: $('.slider-left-two'),
         nextArrow: $('.slider-right-two'),
+        autoplay: true,
+        autoplaySpeed: 2000,
 
         responsive: [
             {
@@ -82,7 +85,6 @@ $(document).ready(function(){
                   slidesToShow: 2,
                   slidesToScroll:1,
                   infinite: true,
-                  dots: true
                 }
               },
             ]
@@ -93,8 +95,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         mobileFirst: true,
         appendArrows:$('.package-list-buttons'),
-        prevArrow:`<img src="../images/icons/left-arrow.png" alt="left" class="left">`,
-        nextArrow:`<img src="../images/icons/right-arrow.svg" alt="right" class="right">`,
+        prevArrow: $('.slider-left-two'),
+        nextArrow: $('.slider-right-two'),
     })
 })
 
