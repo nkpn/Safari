@@ -1764,15 +1764,27 @@ hr {
 }
 
 .slick-dots li {
-  width: 18%;
+  width: 12%;
   height: 1px;
   background-color: #CDD9DF;
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .slick-dots li {
+    width: 18%;
+  }
+}
+
 .slick-dots li button {
-  width: 18%;
+  width: 12%;
   height: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  .slick-dots li button {
+    width: 18%;
+  }
 }
 
 .slick-dots .slick-active {
