@@ -320,11 +320,9 @@
         }
     }
 
-    .hide{
+    .hide-zanzibar,.hide-safari,.hide-moshi,.hide-kilimonjaro{
         display: none;
-        &:hover{
-            display: flex;
-        }
+       
     }
 
     .carousel-card:hover + .hide{
@@ -339,6 +337,14 @@
 
         .contact-us-btn{
             color: $white;
+            max-width: 210px;
+            margin: 0 auto;
+            margin-bottom: 45px;
+            transition: transform 250ms $animation-timing-function;
+
+            @media screen and (min-width:$tablet) {
+                margin-bottom: 75px;
+            }
         }
     }
     

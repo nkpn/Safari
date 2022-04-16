@@ -96,9 +96,27 @@ $(document).ready(function(){
         slidesToScroll: 1,
         mobileFirst: true,
         appendArrows:$('.package-list-buttons'),
-        prevArrow:`<img src="../images/icons/left-slider.svg" alt="left" class="left">`,
-        nextArrow:`<img src="../images/icons/right-slider.svg" alt="right" class="right">`,
+        prevArrow:`<img src="../images/icons/left-arrow.png" alt="left" class="left">`,
+        nextArrow:`<img src="../images/icons/right-arrow.svg" alt="right" class="right">`,
     })
+})
+
+//--------------------------------------------------------
+//* carousel card hover function
+$('.carousel-card-zanzibar').hover(()=>{
+    $('.hide-zanzibar').toggle();
+})
+
+$('.carousel-card-wildlife').hover(()=>{
+    $('.hide-safari').toggle();
+})
+
+$('.carousel-card-moshi').hover(()=>{
+    $('.hide-moshi').toggle();
+})
+
+$('.carousel-card-kilimanjaro').hover(()=>{
+    $('.hide-kilimonjaro').toggle();
 })
 
 //---------------------------------------------------------
