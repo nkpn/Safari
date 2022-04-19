@@ -143,12 +143,12 @@
     padding-bottom: 100px;
 
     //* Background image
-    background-image: url('../../images/home-page/white-mountain-hero-min-mobile.jpg');
+    background-image: url('../images/home-page/white-mountain-hero-min-mobile.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 81%;
     @media screen and (min-width:$tablet) {
-        background-image: url('../../images/home-page/white-mountain-hero-min.jpg');
+        background-image: url('../images/home-page/white-mountain-hero-min.jpg');
         background-position: 100% 89%;
         padding-top: 80px;
         padding-bottom: 168px;

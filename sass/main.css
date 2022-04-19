@@ -1084,7 +1084,7 @@ hr {
   position: relative;
   z-index: 5;
   padding-bottom: 100px;
-  background-image: url("../../images/home-page/white-mountain-hero-min-mobile.jpg");
+  background-image: url("../images/home-page/white-mountain-hero-min-mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 81%;
@@ -1092,7 +1092,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .welcome {
-    background-image: url("../../images/home-page/white-mountain-hero-min.jpg");
+    background-image: url("../images/home-page/white-mountain-hero-min.jpg");
     background-position: 100% 89%;
     padding-top: 80px;
     padding-bottom: 168px;
