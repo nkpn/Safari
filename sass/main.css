@@ -829,7 +829,7 @@ footer .social-list {
 }
 
 footer .social-item {
-  padding: 13px;
+  padding: 13px 14px;
   border: 1px solid #F2FBFF;
   border-radius: 50%;
   margin-right: 10px;
@@ -837,19 +837,17 @@ footer .social-item {
 
 @media screen and (min-width: 768px) {
   footer .social-item {
-    padding: 19px;
+    padding: 19px 20px;
     margin-right: 12px;
   }
 }
 
-footer .twitter-item {
-  padding: 14px 13px;
+footer .social-item img {
+  height: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  footer .twitter-item {
-    padding: 20px 19px;
-  }
+footer .social-item:hover {
+  background-color: #D3DBDF25;
 }
 
 .mobile-nav-item {
@@ -1069,6 +1067,10 @@ hr {
   }
 }
 
+.home-hero .social-nav-item:hover {
+  background-color: #D3DBDF25;
+}
+
 .home-hero .facebook {
   padding: 16px 18px;
 }
@@ -1094,8 +1096,8 @@ hr {
   .welcome {
     background-image: url("../images/home-page/white-mountain-hero-min.jpg");
     background-position: 100% 89%;
-    padding-top: 80px;
-    padding-bottom: 168px;
+    padding-top: 120px;
+    padding-bottom: 178px;
   }
 }
 
@@ -1267,6 +1269,13 @@ hr {
 
 @media screen and (min-width: 768px) {
   .tours-carousel .carousel-card-zanzibar {
+    width: 375px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tours-carousel .carousel-card-zanzibar {
     width: 499px;
     height: 473px;
   }
@@ -1280,6 +1289,13 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-wildlife {
+    width: 375px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .tours-carousel .carousel-card-wildlife {
     width: 499px;
     height: 473px;
@@ -1299,6 +1315,13 @@ hr {
 
 @media screen and (min-width: 768px) {
   .tours-carousel .carousel-card-moshi {
+    width: 375px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tours-carousel .carousel-card-moshi {
     width: 499px;
     height: 473px;
   }
@@ -1312,6 +1335,13 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card-kilimanjaro {
+    width: 375px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .tours-carousel .carousel-card-kilimanjaro {
     width: 499px;
     height: 473px;
@@ -1337,6 +1367,7 @@ hr {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
   padding: 227px 31px 32px 16px;
 }
 
@@ -1396,7 +1427,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .advantages {
-    margin-top: 171px;
+    margin-top: 185px;
   }
 }
 
@@ -1544,6 +1575,7 @@ hr {
 @media screen and (min-width: 768px) {
   .home-photos {
     margin-bottom: 168px;
+    margin-top: 140px;
   }
 }
 
@@ -1671,14 +1703,22 @@ hr {
 }
 
 .contact-us .contact-social-item {
-  padding: 26px 26px;
-  border: 1px solid #000000;
+  padding: 26px 27px;
+  border: 1px solid #DBE7ED;
   border-radius: 50%;
   margin-right: 16px;
+  margin-top: 0;
+  font-size: 0;
+  line-height: 0;
+  margin-top: 0;
 }
 
 .contact-us .contact-social-item img {
   height: 100%;
+}
+
+.contact-us .contact-social-item:hover {
+  background-color: #D3DBDF25;
 }
 
 .contact-us .contact-us-bottom-list {
@@ -1713,12 +1753,16 @@ hr {
   }
 }
 
+.home-photos .container {
+  position: relative;
+}
+
 .slick-slide {
   max-width: 100%;
   margin-left: 15px;
 }
 
-.carousel-buttons, .carousel-buttons-two {
+.carousel-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1731,12 +1775,34 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel-buttons, .carousel-buttons-two {
+  .carousel-buttons {
     bottom: -35px;
   }
 }
 
-.carousel-buttons img, .carousel-buttons-two img {
+.carousel-buttons img {
+  cursor: pointer;
+}
+
+.carousel-buttons-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: absolute;
+  right: 15px;
+  bottom: -25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-buttons-two {
+    bottom: -35px;
+  }
+}
+
+.carousel-buttons-two img {
   cursor: pointer;
 }
 
@@ -1791,6 +1857,10 @@ hr {
   height: 1px;
 }
 
+.slick-dots li button::before {
+  content: '';
+}
+
 @media screen and (min-width: 1024px) {
   .slick-dots li button {
     width: 18%;
@@ -1815,10 +1885,6 @@ hr {
   background-size: 0 100%;
   -webkit-transition: background-size .4s ease-in-out;
   transition: background-size .4s ease-in-out;
-}
-
-.carousel-card {
-  position: relative;
 }
 
 .page-kilimonjaro .kilimonjaro-hero {
@@ -2103,7 +2169,8 @@ hr {
 
 @media screen and (min-width: 1600px) {
   .page-kilimonjaro .kilimanjaro-second-section {
-    background-size: cover;
+    padding-bottom: 480px;
+    background-position: 100% 115%;
   }
 }
 
@@ -2676,7 +2743,7 @@ hr {
 @media screen and (min-width: 1024px) {
   .page-kilimonjaro .package-list {
     max-width: 33%;
-    padding-left: 0;
+    padding-left: 2px;
   }
 }
 

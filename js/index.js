@@ -6,22 +6,12 @@ $(document).ready(function(){
         $('.mobile-menu').toggleClass('active')
     })
 
-    //* progress bar
-    // $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    //     var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-    //     $('.progress-bar').css('background-size', calc + '% 100%')
-    //                 .attr('aria-valuenow', calc );
-    // });
-
     $('.carousel').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        speed:400,
+        speed:600,
         variableWidth: true,
-        dots:true,
-        autoplay: true,
-        autoplaySpeed: 2000,
         appendArrows:$('.carousel-buttons'),
         prevArrow: $('.slider-left'),
         nextArrow: $('.slider-right'),
@@ -30,7 +20,10 @@ $(document).ready(function(){
                 breakpoint: 2048,
                 settings: {
                   slidesToShow: 3,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  dots:true,
+                //   autoplay: true,
+                //     autoplaySpeed: 2000,
                 }
               },
             
@@ -54,12 +47,10 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        speed:300,
+        speed:600,
         appendArrows:$('.carousel-buttons-two'),
         prevArrow: $('.slider-left-two'),
         nextArrow: $('.slider-right-two'),
-        autoplay: true,
-        autoplaySpeed: 2000,
 
         responsive: [
             {
@@ -132,6 +123,10 @@ $('.carousel-card-kilimanjaro').hover(()=>{
 $('.carousel-card-kilimanjaro').focus(()=>{
     $('.hide-kilimonjaro').toggle();
 })
+
+//---------------------------------------
+//* Scroll Reveal
+ScrollReveal().reveal('.page');
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items

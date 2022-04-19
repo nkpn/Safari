@@ -123,6 +123,11 @@
                 margin-bottom: 24px;
             }
         }
+
+        &:hover{
+            background-color: $social-icon-hero-cover;
+            // opacity: 0.15;
+        }
     }
 
     .facebook{
@@ -150,8 +155,8 @@
     @media screen and (min-width:$tablet) {
         background-image: url('../images/home-page/white-mountain-hero-min.jpg');
         background-position: 100% 89%;
-        padding-top: 80px;
-        padding-bottom: 168px;
+        padding-top: 120px;
+        padding-bottom: 178px;
     }
     @media screen and (min-width:$desktop) {
         background-position: 100% 73%;
@@ -279,6 +284,10 @@
         background-size: cover;
 
         @media screen and (min-width:$tablet) {
+            width: 375px;
+            height: auto;
+        }
+        @media screen and (min-width:$desktop) {
             width: 499px;
             height: 473px;
         }
@@ -291,6 +300,10 @@
         background-size: cover;
 
         @media screen and (min-width:$tablet) {
+            width: 375px;
+            height: auto;
+        }
+        @media screen and (min-width:$desktop) {
             width: 499px;
             height: 473px;
         }
@@ -307,6 +320,10 @@
         background-size: cover;
 
         @media screen and (min-width:$tablet) {
+            width: 375px;
+            height: auto;
+        }
+        @media screen and (min-width:$desktop) {
             width: 499px;
             height: 473px;
         }
@@ -319,6 +336,10 @@
         background-size: cover;
 
         @media screen and (min-width:$tablet) {
+            width: 375px;
+            height: auto;
+        }
+        @media screen and (min-width:$desktop) {
             width: 499px;
             height: 473px;
         }
@@ -337,6 +358,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+        position: relative;
         // padding: 0 31px 32px 16px;
         //* Custom justify-content:end for Safari, etc
         padding:227px 31px 32px 16px;
@@ -391,7 +413,7 @@
 .advantages{
    margin-top: 100px;
    @media screen and (min-width:$tablet) {
-        margin-top: 171px;
+        margin-top: 185px;
     }
 
     h2{
@@ -498,6 +520,7 @@
     margin-bottom: 100px;
     @media screen and (min-width:$tablet){
         margin-bottom: 168px;
+        margin-top: 140px;
     }
 
     h2{
@@ -581,14 +604,20 @@
     }
 
     .contact-social-item{
-        padding: 26px 26px;
-        border: 1px solid $black;
+        padding: 26px 27px;
+        border: 1px solid $bg-main-color;
         border-radius:50%;
         margin-right: 16px;
-
+        margin-top: 0;
+        font-size: 0;
+        line-height: 0;
+        margin-top: 0;
         img{
             height: 100%;
         }
+        &:hover{
+            background-color: $social-icon-hero-cover;
+        } 
     }
     
     .contact-us-bottom-list{
@@ -615,18 +644,37 @@
 
 //------------------
 //* Carousel
+.home-photos .container{
+    position: relative;
+}
+
 .slick-slide{
     max-width: 100%;
     margin-left: 15px;
 }
 
 //* For SVG
-.carousel-buttons,.carousel-buttons-two{
+.carousel-buttons{
     display: flex;
     justify-content: end;
     position: absolute;
     bottom: -25px;
     right: 15px;
+    @media screen and (min-width:$desktop) {
+        bottom: -35px;
+    }
+    img{
+        cursor: pointer;
+    }
+}
+
+.carousel-buttons-two{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 15px;
+    bottom: -25px;
+
     @media screen and (min-width:$desktop) {
         bottom: -35px;
     }
@@ -676,9 +724,14 @@
   .slick-dots li button{
     width: 12%;
     height: 1px;
+
+    &::before{
+        content:''
+    }
+    
     @media screen and (min-width:$desktop) {
         width: 18%;
-      }
+    }
 }
 
 .slick-dots .slick-active{
@@ -703,8 +756,4 @@
     background-size: 0 100%;
     
     transition: background-size .4s ease-in-out;
-  }
-
-  .carousel-card {
-      position: relative;
   }

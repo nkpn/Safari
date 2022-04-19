@@ -191,7 +191,8 @@
             background-position: 100% 100%;
         }
         @media screen and (min-width:1600px) {
-            background-size: cover;
+            padding-bottom: 480px;
+            background-position: 100% 115%;
         }
     }
 
@@ -554,7 +555,7 @@
         padding-left: 50px;
         @media screen and (min-width:$desktop) {
             max-width: 33%;
-            padding-left: 0;
+            padding-left: 2px;
         }
     }
 
