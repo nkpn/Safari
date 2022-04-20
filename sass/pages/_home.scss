@@ -1,3 +1,40 @@
+//-----------------
+//* header
+.home-page{
+    .nav-link{
+        &:hover{
+            background-color: inherit;
+            color: white
+        }
+    }
+
+    .nav-link{
+        position: relative;
+    
+        &::after{
+            content: ' ';
+            display: inline-block;
+        
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+        
+            width: 100%;
+            height: 1px;
+            border-radius: 2px;
+            background-color: $bg-light-color; 
+    
+            transform: scale(0);
+            transition: transform 250ms $animation-timing-function;
+        }
+    
+        &:hover::after,
+        &:focus::after{
+            transform: scale(1);
+        }
+    }
+}
+
 .description{
     h2{
         @include subheading();

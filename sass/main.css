@@ -972,6 +972,38 @@ hr {
   opacity: 0.5;
 }
 
+.home-page .nav-link:hover {
+  background-color: inherit;
+  color: white;
+}
+
+.home-page .nav-link {
+  position: relative;
+}
+
+.home-page .nav-link::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #F2FBFF;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.home-page .nav-link:hover::after, .home-page .nav-link:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .description h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
@@ -1964,11 +1996,18 @@ hr {
 .page-kilimonjaro .kilimonjaro-hero {
   background-color: #000000;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .kilimonjaro-hero {
     padding-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .kilimonjaro-hero {
+    padding-top: 80px;
   }
 }
 
@@ -5553,6 +5592,18 @@ hr {
   background-color: #ffffff;
 }
 
+.contact-page .nav-link:hover {
+  background-color: inherit;
+  color: white;
+}
+
+.contact-page .submenu-link::after {
+  display: none !important;
+  width: 0;
+  height: 0;
+  background-color: inherit;
+}
+
 .contact-page .home-hero {
   background-image: url("../images/contact-us/contact-us-hero-min.jpg");
   background-size: cover;
@@ -5578,13 +5629,6 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 230px;
-}
-
-@media screen and (min-width: 768px) {
-  .contact-page .home-hero .home-hero-container {
-    margin-top: 360px;
-  }
 }
 
 .contact-page .home-hero .contact-hero-text {
@@ -5697,5 +5741,17 @@ hr {
 
 .contact-page .contact-us {
   background-color: #ffffff;
+}
+
+.contact-us-page .nav-link:hover {
+  background-color: inherit;
+  color: white;
+}
+
+.contact-us-page .submenu-link::after {
+  display: none !important;
+  width: 0;
+  height: 0;
+  background-color: inherit;
 }
 /*# sourceMappingURL=main.css.map */
