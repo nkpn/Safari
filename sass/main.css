@@ -2030,7 +2030,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .kilimonjaro-hero h1 {
-    max-width: 220px;
+    max-width: unset;
     margin-bottom: 28px;
   }
 }
@@ -2095,8 +2095,8 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .page-kilimonjaro .kilimonjaro-hero .hero-description {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
   }
 }
 
@@ -4360,7 +4360,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .wildlife-hero h1 {
-    max-width: 220px;
+    max-width: unset;
     margin-bottom: 28px;
   }
 }
@@ -4425,8 +4425,8 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .wildlife-hero .hero-description {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
   }
 }
 
@@ -5093,7 +5093,7 @@ hr {
 .page-zanzibar .zanzibar-hero-section {
   margin-top: 60px;
   padding-bottom: 120px;
-  background-image: url("../images/moshi/moshi-hero-mobile.jpg");
+  background-image: url("../images/zanzibar/hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -5103,7 +5103,7 @@ hr {
   .page-zanzibar .zanzibar-hero-section {
     margin-top: 120px;
     background-size: contain;
-    background-image: url("../images/moshi/moshi-hero-desktop.jpg");
+    background-image: url("../images/zanzibar/hero-desktop.jpg");
     background-position: 100%;
   }
 }

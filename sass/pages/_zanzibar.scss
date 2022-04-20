@@ -11,7 +11,7 @@
     .zanzibar-hero-section{
         margin-top: 60px;
         padding-bottom: 120px;
-        background-image: url('../images/moshi/moshi-hero-mobile.jpg');
+        background-image: url('../images/zanzibar/hero-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 100%;
@@ -19,7 +19,7 @@
         @media screen and (min-width:$tablet) {
             margin-top: 120px;
             background-size: contain;
-            background-image: url('../images/moshi/moshi-hero-desktop.jpg');
+            background-image: url('../images/zanzibar/hero-desktop.jpg');
             background-position: 100%;
         }
 
