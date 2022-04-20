@@ -124,9 +124,23 @@ $('.carousel-card-kilimanjaro').focus(()=>{
     $('.hide-kilimonjaro').toggle();
 })
 
-//---------------------------------------
-//* Scroll Reveal
-ScrollReveal().reveal('.page');
+//--------------------------------------------------------
+//* header nav
+ $('.nav-link-safari').hover(()=>{
+    $('.nav-submenu-safari').toggleClass('flex');
+ })
+
+ $('.nav-link-kilimonjaro').hover(()=>{
+    $('.nav-submenu-kilimonjaro').toggleClass('flex');
+ })
+
+ $('.nav-link-moshi').hover(()=>{
+    $('.nav-submenu-moshi').toggleClass('flex');
+ })
+
+ $('.nav-link-zanzibar').hover(()=>{
+    $('.nav-submenu-zanzibar').toggleClass('flex');
+ })
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items
@@ -585,3 +599,7 @@ HintsEight.click(()=>{
     HintsEightUp.toggle();
     HintsEightList.toggle();
 })
+
+//---------------------------------------
+//* Scroll Reveal
+ScrollReveal().reveal('.page');

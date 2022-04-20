@@ -38,11 +38,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 230px;
+        padding-top: 230px;
         align-items: end;
 
         @media screen and (min-width:$tablet) {
-            margin-top: 360px;
+            padding-top: 360px;
         }
     }
     

@@ -282,6 +282,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.page {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -428,10 +432,10 @@ hr {
   font-size: 14px;
   line-height: 24px;
   padding: 5px 30px;
-  background-color: inherit;
+  background-color: #0C4AE9;
   border: 1px solid #0C4AE9;
   border-radius: 100px;
-  color: #0C4AE9;
+  color: #ffffff;
   font-family: Montserrat;
 }
 
@@ -443,7 +447,7 @@ hr {
 
 .contact-us-btn-blue:hover {
   border: 1px solid #467AFF;
-  color: #467AFF;
+  background-color: #467AFF;
 }
 
 .button-to-top {
@@ -556,20 +560,53 @@ header {
   font-size: 10px;
   line-height: 24px;
   letter-spacing: 3%;
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  position: fixed;
+  z-index: 10;
+  width: 95%;
+  height: 60px;
 }
 
 @media screen and (min-width: 1024px) {
   header {
+    max-width: 1180px;
+    padding: 0;
     font-size: 14px;
+    height: 80px;
+    width: 100%;
+  }
+}
+
+.header-background {
+  position: fixed;
+  z-index: 10;
+  height: 60px;
+  left: 0;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-background {
+    height: 80px;
+    width: 150vw;
+    height: 80px;
+  }
+}
+
+.header-absolute {
+  position: fixed;
+  top: 10px;
+  z-index: 555;
+  height: 60px;
+  width: 96%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-absolute {
+    max-width: 1220px;
+    padding: 0 10px 0 30px;
+    width: 100%;
   }
 }
 
@@ -587,7 +624,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
@@ -596,7 +632,25 @@ header {
   }
 }
 
-.nav-submenu {
+.nav-link-kilimonjaro:hover + .nav-submenu-kilimonjaro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-submenu-kilimonjaro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.nav-submenu, .nav-submenu-kilimonjaro, .nav-submenu-safari, .nav-submenu-moshi, .nav-submenu-zanzibar {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -608,21 +662,20 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: #F2FBFF77;
   background-color: #161616;
   -webkit-animation: growDown 200ms ease-in-out forwards;
           animation: growDown 200ms ease-in-out forwards;
   -webkit-transform-origin: top center;
           transform-origin: top center;
+  position: absolute;
+  height: 80px;
+  bottom: -74px;
+  left: 0;
+  width: 100%;
 }
 
-.nav-submenu:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-list:hover + .nav-submenu {
+.nav-submenu:hover, .nav-submenu-kilimonjaro:hover, .nav-submenu-safari:hover, .nav-submenu-moshi:hover, .nav-submenu-zanzibar:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,17 +683,40 @@ header {
 
 .submenu-background {
   background-color: #161616;
-  height: 68px;
+  height: 80px;
   position: absolute;
   left: -20vw;
   width: 150vw;
   z-index: 0;
 }
 
+.nav-link {
+  padding: 25px 1px;
+  color: #F2FBFF77;
+}
+
+@media screen and (min-width: 1162px) {
+  .nav-link {
+    padding: 28px 20px;
+  }
+}
+
+.nav-link:hover {
+  background-color: #161616;
+}
+
+.contact-us-btn {
+  color: #ffffff;
+}
+
 .nav-submenu-item {
   padding-top: 22px;
   padding-bottom: 22px;
   z-index: 5;
+}
+
+.nav-submenu-item:hover {
+  color: #ffffff;
 }
 
 .submenu-link {
@@ -694,9 +770,7 @@ header {
 }
 
 .is-active {
-  padding-bottom: 4px;
-  padding-top: 4px;
-  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .header-logo {
@@ -963,7 +1037,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 230px;
+  padding-top: 230px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -971,7 +1045,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .home-hero .home-hero-container {
-    margin-top: 360px;
+    padding-top: 360px;
   }
 }
 
@@ -2999,7 +3073,7 @@ hr {
 }
 
 .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
-  padding-bottom: 362px;
+  padding-bottom: 432px;
   padding-top: 60px;
   background-image: url("../images/kilemanjaro/hero-bottom-mobile.jpg");
   background-size: cover;
@@ -3009,7 +3083,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
-    padding-top: 120px;
+    padding-top: 220px;
   }
 }
 
@@ -4207,13 +4281,24 @@ hr {
 }
 
 .wildlife-hero {
+  padding-top: 60px;
   background-color: #000000;
   padding-bottom: 60px;
+}
+
+.wildlife-hero .container {
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .wildlife-hero {
     padding-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wildlife-hero {
+    padding-top: 80px;
   }
 }
 
