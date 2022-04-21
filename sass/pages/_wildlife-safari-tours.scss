@@ -188,7 +188,7 @@
       @include text-description();
       color:$black;  
     }
-    padding-bottom: 362px;
+    padding-bottom: 482px;
     padding-top: 60px;
 
     @media screen and (min-width:$tablet) {
@@ -196,7 +196,7 @@
     }
     //* Background image
     background-image: url('../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 95%;
     @media screen and (min-width:$tablet) {
