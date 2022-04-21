@@ -350,7 +350,7 @@ hr {
 }
 
 .two-columns .first-column {
-  max-width: 70%;
+  max-width: 780%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +368,7 @@ hr {
 }
 
 .two-columns .second-column {
-  max-width: 70%;
+  max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,6 +933,7 @@ footer .social-item:hover {
   letter-spacing: 3%;
   margin-top: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .mobile-nav-item img {
@@ -1011,7 +1012,7 @@ hr {
 .description h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   max-width: 50%;
@@ -1341,7 +1342,7 @@ hr {
   text-align: center;
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
 }
@@ -1545,7 +1546,7 @@ hr {
   text-align: center;
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
 }
@@ -1692,7 +1693,7 @@ hr {
 .home-photos h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 30px;
@@ -1813,7 +1814,7 @@ hr {
 }
 
 .contact-us .contact-social-item {
-  padding: 26px 27px;
+  padding: 16px 17px;
   border: 1px solid #DBE7ED;
   border-radius: 50%;
   margin-right: 16px;
@@ -1829,6 +1830,12 @@ hr {
 
 .contact-us .contact-social-item:hover {
   background-color: #D3DBDF25;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-social-item {
+    padding: 26px 27px;
+  }
 }
 
 .contact-us .contact-us-bottom-list {
@@ -2026,7 +2033,6 @@ hr {
   font-size: 28px;
   line-height: 36px;
   color: #ffffff;
-  max-width: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2038,7 +2044,6 @@ hr {
 
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .kilimonjaro-hero h1 {
-    max-width: unset;
     margin-bottom: 28px;
   }
 }
@@ -2097,7 +2102,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .page-kilimonjaro .kilimonjaro-hero .hero-description {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -2331,7 +2336,7 @@ hr {
 .page-kilimonjaro .topic-fixed-picture .topic-description h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
 }
@@ -2916,7 +2921,16 @@ hr {
 
 .page-kilimonjaro .package-list-buttons {
   cursor: pointer;
-  z-index: 10;
+  z-index: 888;
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2925,16 +2939,9 @@ hr {
   }
 }
 
-.page-kilimonjaro .package-list-buttons .left {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-}
-
-.page-kilimonjaro .package-list-buttons .right {
-  position: absolute;
-  top: 50%;
-  right: 0;
+.page-kilimonjaro .package-list-buttons .kilimonjaro-slider-buttons {
+  height: 35px;
+  width: 15px;
 }
 
 .page-kilimonjaro .package-item-heading {
@@ -2944,7 +2951,7 @@ hr {
 .page-kilimonjaro .section-hints h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   padding-bottom: 20px;
@@ -3161,7 +3168,7 @@ hr {
 .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section .wrapper h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   text-align: center;
@@ -3356,11 +3363,10 @@ hr {
 .arusha-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
-  max-width: 35%;
 }
 
 @media screen and (min-width: 768px) {
@@ -3373,7 +3379,6 @@ hr {
 @media screen and (min-width: 768px) {
   .arusha-section h2 {
     margin-bottom: 20px;
-    max-width: 27%;
   }
 }
 
@@ -3522,11 +3527,10 @@ hr {
 .tarangire-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
-  max-width: 55%;
 }
 
 @media screen and (min-width: 768px) {
@@ -3539,7 +3543,6 @@ hr {
 @media screen and (min-width: 768px) {
   .tarangire-section h2 {
     margin-bottom: 20px;
-    max-width: 85%;
   }
 }
 
@@ -3609,7 +3612,7 @@ hr {
 .moshi-hero-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -3711,7 +3714,7 @@ hr {
 .marangu-wateralls-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -3811,7 +3814,7 @@ hr {
 .chemka-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -3909,7 +3912,7 @@ hr {
 .materuni-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -4033,7 +4036,7 @@ hr {
 .lake-challa-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -4151,11 +4154,10 @@ hr {
 .chagga-museum-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
-  max-width: 55%;
 }
 
 @media screen and (min-width: 768px) {
@@ -4168,7 +4170,6 @@ hr {
 @media screen and (min-width: 768px) {
   .chagga-museum-section h2 {
     margin-bottom: 20px;
-    max-width: 85%;
   }
 }
 
@@ -4259,7 +4260,7 @@ hr {
 .arusha-museum h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -4427,7 +4428,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .wildlife-hero .hero-description {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -4605,10 +4606,10 @@ hr {
 
 .wildlife-second-section {
   position: relative;
-  padding-bottom: 482px;
+  padding-bottom: 282px;
   padding-top: 60px;
   background-image: url("../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 95%;
 }
@@ -4631,6 +4632,8 @@ hr {
 @media screen and (min-width: 768px) {
   .wildlife-second-section {
     background-image: url("../images/wildlife-safari-tours/zebra-hero-min.jpg");
+    background-size: cover;
+    padding-bottom: 482px;
   }
 }
 
@@ -4680,7 +4683,7 @@ hr {
 .topic-fixed-picture .topic-description h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
 }
@@ -5002,7 +5005,7 @@ hr {
 .package-item-general h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 18px;
@@ -5173,7 +5176,7 @@ hr {
 .page-zanzibar .zanzibar-tarangire-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -5302,7 +5305,7 @@ hr {
 .page-zanzibar .mwowambu-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
@@ -5433,7 +5436,7 @@ hr {
 .page-zanzibar .ngorongoro-section h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;

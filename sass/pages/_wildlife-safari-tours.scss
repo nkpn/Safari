@@ -57,7 +57,7 @@
         margin-top: 24px;
 
         @media screen and (max-width:$tablet) {
-            margin-top: 120px;
+            margin-top: 60px;
         }
         @media screen and (min-width:$desktop) {
             flex-basis: 33%;
@@ -188,7 +188,7 @@
       @include text-description();
       color:$black;  
     }
-    padding-bottom: 482px;
+    padding-bottom: 282px;
     padding-top: 60px;
 
     @media screen and (min-width:$tablet) {
@@ -196,11 +196,13 @@
     }
     //* Background image
     background-image: url('../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 95%;
     @media screen and (min-width:$tablet) {
         background-image: url('../images/wildlife-safari-tours/zebra-hero-min.jpg');
+        background-size: cover;
+        padding-bottom: 482px;
     }
 }
 

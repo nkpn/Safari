@@ -294,6 +294,7 @@ footer{
     @include mobile-list();
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
     img{
         margin-left: 10px;
     }

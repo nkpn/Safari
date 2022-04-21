@@ -86,8 +86,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         mobileFirst: true,
         appendArrows:$('.package-list-buttons'),
-        prevArrow: $('.slider-left-two'),
-        nextArrow: $('.slider-right-two'),
+        prevArrow: $('.slider-left'),
+        nextArrow: $('.slider-right'),
     })
 })
 

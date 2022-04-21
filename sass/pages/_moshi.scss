@@ -121,11 +121,9 @@
     h2{
         @include subheading();
         margin-bottom: 14px;
-        max-width: 35%;
 
         @media screen and (min-width:$tablet) {
             margin-bottom: 20px;
-            max-width: 27%;
         }
     }
 }
@@ -226,11 +224,9 @@
     h2{
         @include subheading();
         margin-bottom: 14px;
-        max-width: 55%;
 
         @media screen and (min-width:$tablet) {
             margin-bottom: 20px;
-            max-width: 85%;
         }
     }
 
@@ -606,11 +602,9 @@
     h2{
         @include subheading();
         margin-bottom: 14px;
-        max-width: 55%;
  
          @media screen and (min-width:$tablet) {
             margin-bottom: 20px;
-            max-width: 85%; 
         }
     }
  

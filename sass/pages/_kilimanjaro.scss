@@ -12,10 +12,8 @@
         h1{
             margin-bottom: 16px;
             @include heading();
-            max-width: 150px;
 
             @media screen and (min-width:$tablet) {
-                max-width: unset;
                 margin-bottom: 28px;
             }
         }
@@ -53,7 +51,7 @@
             margin-top: 24px;
 
             @media screen and (max-width:$tablet) {
-                margin-top: 120px;
+                margin-top:60px;
             }
             @media screen and (min-width:$desktop) {
                 flex-basis: 33%;
@@ -236,13 +234,13 @@
     
         .fixed-image-wrapper{
             position: relative;
-        @media screen and (min-width:$tablet){
-            flex-basis: 45%;
-            max-width: 45%;
+            @media screen and (min-width:$tablet){
+                flex-basis: 45%;
+                max-width: 45%;
             // position: absolute;
             // top: 10%;
             // right: -15%;
-        }
+            }
         }
 
         .relative-image-wrapper{
@@ -601,20 +599,18 @@
 
     .package-list-buttons{
         cursor: pointer;
-        z-index: 10;
+        z-index: 888;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         @media screen and (min-width:$desktop) {
             display: none;
         }
-        .left{
-            position: absolute;
-            top: 50%;
-            left: 0%;
-        }
-
-        .right{
-            position: absolute;
-            top: 50%;
-            right: 0;
+        .kilimonjaro-slider-buttons{
+            height: 35px;
+            width: 15px;
         }
     }
 
