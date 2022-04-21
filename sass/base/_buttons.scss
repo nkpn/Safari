@@ -13,8 +13,10 @@
     }
 
     &:hover{
-        border: 1px solid $button-light-hover;
-        color:$button-light-hover;
+        // border: 1px solid $button-light-hover;
+        // color:$button-light-hover;
+        border: 1px solid $social-icon-hover;
+        color:$social-icon-hover;
     }
 }
 

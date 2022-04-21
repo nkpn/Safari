@@ -42,14 +42,15 @@
             letter-spacing: 0.03em;
             h1{
                 @include heading();
+
                 color: $white;
                 text-align: start;
                 margin-bottom: 12px;
     
                 @media screen and (min-width:$tablet) {
                     margin-bottom: 24px;
-                    font-size: 83px;
-                    line-height: 83px;
+                    font-size: 64px;
+                    line-height: 72px;
                 }
             }
 
@@ -57,6 +58,8 @@
                 @include heading();
                 text-transform: none;
                 font-weight: 300;
+                font-size: 64px !important;
+                line-height: 72px !important;
             }
 
             p{
@@ -66,6 +69,7 @@
                 max-width: 80%;
                 @media screen and (min-width:$tablet) {
                     max-width: 50%;
+
                 }
             }
     

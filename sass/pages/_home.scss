@@ -33,6 +33,10 @@
             transform: scale(1);
         }
     }
+
+    .header-background{
+        background-color: inherit;
+    }
 }
 
 .description{
@@ -793,4 +797,8 @@
     background-size: 0 100%;
     
     transition: background-size .4s ease-in-out;
+  }
+
+  .black-background{
+      background-color: $black !important;
   }

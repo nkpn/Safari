@@ -210,6 +210,7 @@
     //* Nrogorongoro crater section
     .ngorongoro-section{
         padding-top: 80px;
+        padding-bottom: 60px;
         @media screen and (min-width:$tablet) {
             padding-top: 115px;
         }  
@@ -272,6 +273,17 @@
             .mobile-only{
                 display: block;
                 margin-left:auto;
+                @media screen and (min-width:$tablet) {
+                    display: none;
+                }
+            }
+
+            .tablet-only{
+                margin-top: 48px;
+                display: none;
+                @media screen and (min-width:$tablet) {
+                    display: block;
+                }
             }
         }
 

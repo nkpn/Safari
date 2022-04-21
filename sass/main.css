@@ -424,8 +424,8 @@ hr {
 }
 
 .contact-us-btn:hover {
-  border: 1px solid #F1F1F1;
-  color: #F1F1F1;
+  border: 1px solid #CECECE;
+  color: #CECECE;
 }
 
 .contact-us-btn-blue {
@@ -1002,6 +1002,10 @@ hr {
 .home-page .nav-link:hover::after, .home-page .nav-link:focus::after {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.home-page .header-background {
+  background-color: inherit;
 }
 
 .description h2 {
@@ -1991,6 +1995,10 @@ hr {
   background-size: 0 100%;
   -webkit-transition: background-size .4s ease-in-out;
   transition: background-size .4s ease-in-out;
+}
+
+.black-background {
+  background-color: #000000 !important;
 }
 
 .page-kilimonjaro .kilimonjaro-hero {
@@ -5407,6 +5415,7 @@ hr {
 
 .page-zanzibar .ngorongoro-section {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -5519,6 +5528,23 @@ hr {
 .page-zanzibar .ngorongoro-section .second .mobile-only {
   display: block;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .second .mobile-only {
+    display: none;
+  }
+}
+
+.page-zanzibar .ngorongoro-section .second .tablet-only {
+  margin-top: 48px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .ngorongoro-section .second .tablet-only {
+    display: block;
+  }
 }
 
 .page-zanzibar .ngorongoro-section .zanzibar-island {
@@ -5656,8 +5682,8 @@ hr {
 @media screen and (min-width: 768px) {
   .contact-page .home-hero .contact-hero-text h1 {
     margin-bottom: 24px;
-    font-size: 83px;
-    line-height: 83px;
+    font-size: 64px;
+    line-height: 72px;
   }
 }
 
@@ -5669,6 +5695,8 @@ hr {
   color: #ffffff;
   text-transform: none;
   font-weight: 300;
+  font-size: 64px !important;
+  line-height: 72px !important;
 }
 
 @media screen and (min-width: 768px) {
