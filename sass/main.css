@@ -1930,33 +1930,37 @@ hr {
   width: 55px;
 }
 
-.text-arrow {
+.carousel-two .slick-slide {
+  margin-left: 0;
+}
+
+.home-page .text-arrow {
   color: #CDD9DF !important;
   cursor: pointer;
   font-size: 25px;
 }
 
-.text-arrow:last-child {
+.home-page .text-arrow:last-child {
   margin-left: 15px;
 }
 
-.slick-dots {
+.home-page .slick-dots {
   width: 90%;
 }
 
 @media screen and (min-width: 768px) {
-  .slick-dots {
+  .home-page .slick-dots {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .slick-dots {
+  .home-page .slick-dots {
     bottom: -35px;
   }
 }
 
-.slick-dots li {
+.home-page .slick-dots li {
   width: 12%;
   height: 1px;
   background-color: #CDD9DF;
@@ -1964,27 +1968,27 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .slick-dots li {
+  .home-page .slick-dots li {
     width: 18%;
   }
 }
 
-.slick-dots li button {
+.home-page .slick-dots li button {
   width: 12%;
   height: 1px;
 }
 
-.slick-dots li button::before {
+.home-page .slick-dots li button::before {
   content: '';
 }
 
 @media screen and (min-width: 1024px) {
-  .slick-dots li button {
+  .home-page .slick-dots li button {
     width: 18%;
   }
 }
 
-.slick-dots .slick-active {
+.home-page .slick-dots .slick-active {
   height: 3px !important;
   background-color: #CDD9DF !important;
 }
@@ -2115,7 +2119,7 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mount {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: mount;
@@ -2126,7 +2130,6 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-tables {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: tables;
@@ -2137,7 +2140,6 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-mountain {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: mountain;
@@ -2160,7 +2162,7 @@ hr {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
@@ -2193,18 +2195,11 @@ hr {
 }
 
 .page-kilimonjaro .kilimonjaro-hero .kilimonjaro-person-green {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
   overflow: hidden;
-}
-
-.page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper {
-  display: -ms-grid;
-  display: grid;
-  gap: 4px;
-      grid-template-areas: "mount mount tables tables mountain mountain" "mount mount tables tables mountain mountain" "mount mount person person person person";
 }
 
 @media screen and (min-width: 1024px) {
@@ -2213,8 +2208,31 @@ hr {
   }
 }
 
-.page-kilimonjaro .kilimonjaro-hero .mobile-image-wrapper img {
-  height: 100%;
+.page-kilimonjaro .kilimonjaro-hero .slick-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 11px;
+}
+
+.page-kilimonjaro .kilimonjaro-hero .slick-dots li {
+  width: 25%;
+  height: 1px;
+  background-color: #CDD9DF;
+  margin: 0;
+}
+
+.page-kilimonjaro .kilimonjaro-hero .slick-dots li button {
+  display: none;
+}
+
+.page-kilimonjaro .kilimonjaro-hero .slick-dots .slick-active {
+  height: 3px !important;
+  background-color: #CDD9DF !important;
 }
 
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper {
@@ -3195,6 +3213,37 @@ hr {
   background-color: #ffffff;
 }
 
+.page-moshi .slick-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 11px;
+}
+
+.page-moshi .slick-dots li {
+  width: 25%;
+  height: 1px;
+  background-color: #CDD9DF;
+  margin: 0;
+}
+
+.page-moshi .slick-dots li button {
+  display: none;
+}
+
+.page-moshi .slick-dots .slick-active {
+  height: 3px !important;
+  background-color: #CDD9DF !important;
+}
+
+.page-moshi .slick-slide {
+  margin-left: 0;
+}
+
 .desktop-image-wrapper {
   display: none;
 }
@@ -3242,7 +3291,7 @@ hr {
 
 .kilimonjaro-mount {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: mount;
@@ -3253,7 +3302,6 @@ hr {
 
 .kilimonjaro-tables {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: tables;
@@ -3264,7 +3312,6 @@ hr {
 
 .kilimonjaro-mountain {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: mountain;
@@ -3287,7 +3334,7 @@ hr {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
@@ -3320,28 +3367,17 @@ hr {
 }
 
 .kilimonjaro-person-green {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: person;
   overflow: hidden;
 }
 
-.mobile-image-wrapper {
-  display: -ms-grid;
-  display: grid;
-  gap: 4px;
-      grid-template-areas: "mount mount tables tables mountain mountain" "mount mount tables tables mountain mountain" "mount mount person person person person";
-}
-
 @media screen and (min-width: 1024px) {
   .mobile-image-wrapper {
     display: none;
   }
-}
-
-.mobile-image-wrapper img {
-  height: 100%;
 }
 
 .arusha-section {
@@ -4543,11 +4579,6 @@ hr {
   height: 100%;
 }
 
-.wildlife-hero .mobile-image-wrapper {
-  display: -ms-grid;
-  display: grid;
-}
-
 @media screen and (min-width: 1024px) {
   .wildlife-hero .mobile-image-wrapper {
     display: none;
@@ -5097,6 +5128,37 @@ hr {
   background-color: #ffffff;
 }
 
+.page-wildlife .slick-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 11px;
+}
+
+.page-wildlife .slick-dots li {
+  width: 25%;
+  height: 1px;
+  background-color: #CDD9DF;
+  margin: 0;
+}
+
+.page-wildlife .slick-dots li button {
+  display: none;
+}
+
+.page-wildlife .slick-dots .slick-active {
+  height: 3px !important;
+  background-color: #CDD9DF !important;
+}
+
+.page-wildlife .slick-slide {
+  margin-left: 0;
+}
+
 .page-zanzibar .zanzibar-hero p:nth-child(2) {
   margin-bottom: 24px;
 }
@@ -5619,6 +5681,37 @@ hr {
 
 .page-zanzibar .contact-us {
   background-color: #ffffff;
+}
+
+.page-zanzibar .slick-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 11px;
+}
+
+.page-zanzibar .slick-dots li {
+  width: 25%;
+  height: 1px;
+  background-color: #CDD9DF;
+  margin: 0;
+}
+
+.page-zanzibar .slick-dots li button {
+  display: none;
+}
+
+.page-zanzibar .slick-dots .slick-active {
+  height: 3px !important;
+  background-color: #CDD9DF !important;
+}
+
+.page-zanzibar .slick-slide {
+  margin-left: 0;
 }
 
 .contact-page .nav-link:hover {

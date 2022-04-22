@@ -137,7 +137,6 @@
     }
 
     .mobile-image-wrapper{
-        display: grid;
         @media screen and (min-width:$desktop) {
             display: none;
         }
@@ -517,4 +516,34 @@
 //* Contact us for Wildlife page
 .page-wildlife > .contact-us{
     background-color: $white;
+}
+
+
+.page-wildlife{ 
+    .slick-dots{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 11px;
+    }
+    
+      .slick-dots li{
+          width: 25%;
+          height: 1px;
+          background-color: $bg-dark-color;
+          margin: 0;
+      }
+    
+      .slick-dots li button{
+        display: none;
+    }
+    
+    .slick-dots .slick-active{
+        height: 3px !important;
+        background-color: $bg-dark-color !important;
+    }
+
+    .slick-slide{
+        margin-left: 0;
+    }
 }

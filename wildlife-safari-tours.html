@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/html" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/html" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -179,67 +178,15 @@
       <section class="wildlife-hero">
         <div class="container">
             <div class="wildlife-hero-wrapper">
-                <div class="wildlife-image-wrapper mobile-image-wrapper">
-                   <picture class="wildlife-tiger">
-                       <source
-                        srcset="./images/wildlife-safari-tours/tiger-mobile-min.jpg"
-                        media="(max-width:767px)"
-                        type="image/jpg" 
-                       />
-                       <source
-                        srcset="./images/wildlife-safari-tours/tiger-desktop-min.jpg"
-                        media="(min-width:768px)"
-                        type="image/jpg" 
-                       />
-                       <img 
-                       src="./images/wildlife-safari-tours/tiger-mobile-min.jpg"
-                       alt="tiger">
-                   </picture>
-                   <picture class="wildlife-car">
-                        <source
-                        srcset="./images/wildlife-safari-tours/car-safari-mobile-min.jpg"
-                        media="(max-width:767px)"
-                        type="image/jpg" 
-                        />
-                        <source
-                        srcset="./images/wildlife-safari-tours/car-desktop-min.jpg"
-                        media="(min-width:768px)"
-                        type="image/jpg" 
-                        />
-                        <img 
-                        src="./images/wildlife-safari-tours/car-safari-mobile-min.jpg"
-                        alt="safari car">
-                    </picture>
-                    <picture class="wildlife-elephant">
-                        <source
-                         srcset="./images/wildlife-safari-tours/elephant-mobile-min.jpg"
-                         media="(max-width:767px)"
-                         type="image/jpg" 
-                        />
-                        <source
-                         srcset="./images/wildlife-safari-tours/elephant-desktop-min.jpg"
-                         media="(min-width:768px)"
-                         type="image/jpg" 
-                        />
-                        <img 
-                        src="./images/wildlife-safari-tours/elephant-mobile-min.jpg"
-                        alt="elephant">
-                    </picture>
-                    <picture class="wildlife-kids">
-                        <source
-                         srcset="./images/wildlife-safari-tours/kids-mobile-min.jpg"
-                         media="(max-width:767px)"
-                         type="image/jpg" 
-                        />
-                        <source
-                         srcset="./images/wildlife-safari-tours/kids-desktop-min.jpg"
-                         media="(min-width:768px)"
-                         type="image/jpg" 
-                        />
-                        <img 
-                        src="./images/wildlife-safari-tours/kids-mobile-min.jpg"
-                        alt="kids">
-                    </picture>
+                <div class="mobile-image-wrapper">
+                  <img src="./images/wildlife-safari-tours/tiger-mobile.jpg" alt="Tiger">
+                  <img src="./images/wildlife-safari-tours/car-mobile.jpg" alt="Car">
+                  <img src="./images/wildlife-safari-tours/elephant-mobile.jpg" alt="Elephant">
+                  <img src="./images/wildlife-safari-tours/lion-mobile.jpg" alt="Lion">
+                  <img src="./images/wildlife-safari-tours/zebras-mobile.jpg" alt="Zebras">
+                  <img src="./images/wildlife-safari-tours/kids-mobile.jpg" alt="Kids">
+                </div>
+                <div class="mobile-image-buttons">
                 </div>
 
                 <!-- DESCTOP IMAGE WRAPPER -->
@@ -1158,7 +1105,8 @@
         </ul>
       </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/index.js"></script>
   </body>

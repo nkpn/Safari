@@ -91,6 +91,21 @@ $(document).ready(function(){
     })
 })
 
+//-----------------
+//* Hero images slick
+$('.mobile-image-wrapper').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed:600,
+    appendArrows:$('.mobile-image-buttons'),
+    prevArrow: $('.slider-left'),
+    nextArrow: $('.slider-right'),
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots:true,
+});
+
 //--------------------------------------------------------
 //* carousel card hover function
 $('.carousel-card-zanzibar').hover(()=>{

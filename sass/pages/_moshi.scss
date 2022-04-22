@@ -1,4 +1,31 @@
-.moshi-hero{}
+.page-moshi{
+    .slick-dots{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 11px;
+  }
+  
+    .slick-dots li{
+        width: 25%;
+        height: 1px;
+        background-color: $bg-dark-color;
+        margin: 0;
+    }
+  
+    .slick-dots li button{
+      display: none;
+  }
+  
+  .slick-dots .slick-active{
+      height: 3px !important;
+      background-color: $bg-dark-color !important;
+  }
+
+  .slick-slide{
+      margin-left: 0;
+  }
+}
 
 
 .desktop-image-wrapper{
@@ -91,17 +118,9 @@
 
 
 
-.mobile-image-wrapper{
-    display: grid;
-    gap:4px;
-    grid-template-areas: "mount mount tables tables mountain mountain"
-    "mount mount tables tables mountain mountain"
-    "mount mount person person person person";
+.mobile-image-wrapper{ 
     @media screen and (min-width:$desktop) {
         display: none;
-    }
-    img{
-        height: 100%;
     }
 }
 
