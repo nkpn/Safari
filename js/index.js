@@ -617,4 +617,4 @@ HintsEight.click(()=>{
 
 //---------------------------------------
 //* Scroll Reveal
-ScrollReveal().reveal('.page');
+ScrollReveal().reveal('img');

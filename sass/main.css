@@ -794,10 +794,8 @@ header {
   background-color: #000000;
   color: #ffffff;
   z-index: 100;
-  -webkit-animation: growDown 200ms ease-in-out forwards;
-          animation: growDown 200ms ease-in-out forwards;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
   overflow: auto;
 }
 
@@ -931,8 +929,8 @@ footer .social-item:hover {
   font-weight: 500;
   color: #ffffff;
   letter-spacing: 3%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   cursor: pointer;
 }
 
@@ -943,10 +941,8 @@ footer .social-item:hover {
 .mobile-nav-submenu-list {
   display: none;
   list-style: circle;
-  -webkit-animation: growDown 200ms ease-in-out forwards;
-          animation: growDown 200ms ease-in-out forwards;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 .mobile-nav-submenu-item {
@@ -956,17 +952,7 @@ footer .social-item:hover {
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.mobile-nav-submenu-item::before {
-  content: '';
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  margin-right: 5px;
-  margin-bottom: 2px;
+  padding-left: 15px;
 }
 
 hr {
@@ -2296,6 +2282,13 @@ hr {
   font-weight: 400;
   color: #343434;
   color: #000000;
+  max-width: 85%;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .kilimanjaro-second-section p {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3213,6 +3206,10 @@ hr {
   background-color: #ffffff;
 }
 
+.prices {
+  font-weight: 500 !important;
+}
+
 .page-moshi .slick-dots {
   width: 100%;
   display: -webkit-box;
@@ -4001,7 +3998,7 @@ hr {
 }
 
 .materuni-section .mobile-only p {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .materuni-section .mobile-only p:nth-child(2) {
@@ -4124,7 +4121,7 @@ hr {
 }
 
 .lake-challa-section .first p {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -5165,9 +5162,9 @@ hr {
 
 .page-zanzibar .zanzibar-hero-section {
   margin-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 160px;
   background-image: url("../images/zanzibar/hero-mobile.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
@@ -5766,6 +5763,8 @@ hr {
   color: #ffffff;
   text-align: start;
   margin-bottom: 12px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -5791,14 +5790,21 @@ hr {
   color: #ffffff;
   text-transform: none;
   font-weight: 300;
-  font-size: 64px !important;
-  line-height: 72px !important;
+  font-size: 36px !important;
+  line-height: 40px !important;
 }
 
 @media screen and (min-width: 768px) {
   .contact-page .home-hero .contact-hero-text span {
     font-size: 48px;
     line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .contact-hero-text span {
+    font-size: 64px !important;
+    line-height: 72px !important;
   }
 }
 
@@ -5811,6 +5817,7 @@ hr {
   color: #ffffff;
   font-weight: 400;
   max-width: 80%;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {

@@ -197,8 +197,9 @@ header{
     background-color: $black;
     color:$white;
     z-index: 100;
-    animation: growDown 200ms ease-in-out forwards;
-    transform-origin: top center;
+    // animation: growDown 200ms ease-in-out forwards;
+    // transform-origin: top center;
+    animation-duration: 250ms;
     overflow: auto;
 }
 
@@ -292,8 +293,8 @@ footer{
 //---------------------------
 .mobile-nav-item{
     @include mobile-list();
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
     img{
         margin-left: 10px;
@@ -304,23 +305,15 @@ footer{
     display: none;
     list-style: circle;
 
-    animation: growDown 200ms ease-in-out forwards;
-    transform-origin: top center;
+    animation-duration: 300ms
+    // animation: growDown 200ms ease-in-out forwards;
+    // transform-origin: top center;
 }
 
 .mobile-nav-submenu-item{
     @include mobile-submenu-item();
     margin-bottom: 20px;
-    &::before{
-        content: '';
-        display: inline-block;
-        width: 4px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: $white;
-        margin-right: 5px;
-        margin-bottom: 2px;
-     }
+    padding-left: 15px;
 }
 
 hr{
