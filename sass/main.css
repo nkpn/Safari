@@ -588,7 +588,6 @@ header {
 
 @media screen and (min-width: 1024px) {
   .header-background {
-    height: 80px;
     width: 150vw;
     height: 80px;
   }
@@ -1998,6 +1997,10 @@ hr {
   background-color: #000000 !important;
 }
 
+.page-kilimonjaro .container {
+  overflow: hidden;
+}
+
 .page-kilimonjaro .kilimonjaro-hero {
   background-color: #000000;
   padding-bottom: 60px;
@@ -3204,6 +3207,10 @@ hr {
 
 .page-kilimonjaro .contact-us {
   background-color: #ffffff;
+}
+
+.page-kilimonjaro .slick-list {
+  overflow: hidden;
 }
 
 .prices {
@@ -5131,6 +5138,10 @@ hr {
 
 .page-wildlife > .contact-us {
   background-color: #ffffff;
+}
+
+.page-wildlife .slick-list {
+  overflow: hidden;
 }
 
 .page-wildlife .slick-dots {

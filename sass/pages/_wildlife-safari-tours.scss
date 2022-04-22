@@ -522,6 +522,9 @@
 
 
 .page-wildlife{ 
+    .slick-list{
+        overflow: hidden
+    }
     .slick-dots{
           width: 100%;
           display: flex;

@@ -1,4 +1,7 @@
 .page-kilimonjaro{
+    .container{
+        overflow: hidden
+    }
     .kilimonjaro-hero{
         background-color: $black;
         padding-bottom: 60px;
@@ -813,6 +816,10 @@
     //* Contact us section
     .contact-us{
         background-color: $white;
+    }
+
+    .slick-list{
+        overflow: hidden
     }
 }
 
