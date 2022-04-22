@@ -4423,6 +4423,10 @@ hr {
   }
 }
 
+.wildlife-hero .wildlife-hero-wrapper {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .wildlife-hero .wildlife-hero-wrapper {
     padding-top: 20px;
