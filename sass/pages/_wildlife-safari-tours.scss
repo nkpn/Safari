@@ -138,6 +138,7 @@
     }
 
     .mobile-image-wrapper{
+        display: block;
         @media screen and (min-width:$desktop) {
             display: none;
         }
@@ -501,8 +502,8 @@
      @media screen and (max-width:767px) {
         height: 450px;
         top: 0;
-        left: -20vw;
-        width: 120vw;
+        right: 0;
+        width: 100%;
         z-index: 0;
     }
     @media screen and (min-width:$tablet) {
@@ -521,9 +522,6 @@
 
 
 .page-wildlife{ 
-
-
-
     .slick-dots{
           width: 100%;
           display: flex;

@@ -4580,6 +4580,10 @@ hr {
   height: 100%;
 }
 
+.wildlife-hero .mobile-image-wrapper {
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
   .wildlife-hero .mobile-image-wrapper {
     display: none;
@@ -5109,8 +5113,8 @@ hr {
   .custom-blue-background {
     height: 450px;
     top: 0;
-    left: -20vw;
-    width: 120vw;
+    right: 0;
+    width: 100%;
     z-index: 0;
   }
 }
