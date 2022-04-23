@@ -2,6 +2,14 @@
     .container{
         overflow: hidden
     }
+
+    //* fix bug with overhflow hidden for position slicky
+    .marangu-section,.machame-section,.rongai-section,.lemosho-section,.umbwe-section,.northern-circuit-section,.meru-section{
+        .container{
+            overflow: visible;
+        }
+    }
+
     .kilimonjaro-hero{
         background-color: $black;
         padding-bottom: 60px;

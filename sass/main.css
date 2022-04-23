@@ -2001,6 +2001,10 @@ hr {
   overflow: hidden;
 }
 
+.page-kilimonjaro .marangu-section .container, .page-kilimonjaro .machame-section .container, .page-kilimonjaro .rongai-section .container, .page-kilimonjaro .lemosho-section .container, .page-kilimonjaro .umbwe-section .container, .page-kilimonjaro .northern-circuit-section .container, .page-kilimonjaro .meru-section .container {
+  overflow: visible;
+}
+
 .page-kilimonjaro .kilimonjaro-hero {
   background-color: #000000;
   padding-bottom: 60px;
