@@ -2254,6 +2254,9 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .first-wrapper img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .second-wrapper {
@@ -2267,6 +2270,9 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .second-wrapper img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .page-kilimonjaro .kilimanjaro-second-section {
@@ -3278,6 +3284,9 @@ hr {
 
 .desktop-image-wrapper .first-wrapper img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .desktop-image-wrapper .second-wrapper-moshi {
@@ -3291,6 +3300,9 @@ hr {
 
 .desktop-image-wrapper .second-wrapper-moshi img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .kilimonjaro-mount {
@@ -4633,6 +4645,9 @@ hr {
 
 .wildlife-hero .desktop-image-wrapper .first-wrapper img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .wildlife-hero .desktop-image-wrapper .second-wrapper {
@@ -4645,6 +4660,9 @@ hr {
 
 .wildlife-hero .desktop-image-wrapper .second-wrapper img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .wildlife-second-section {

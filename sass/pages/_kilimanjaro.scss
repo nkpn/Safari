@@ -167,6 +167,7 @@
                 grid-template-areas: "person person trekking trekking trekking";
                 img{
                     height: 100%;
+                    width: fit-content;
                 }
             }
 
@@ -179,6 +180,7 @@
                                     "mount mount person person person person";
                 img{
                     height: 100%;
+                    width: fit-content;
                 }
             }
         }
