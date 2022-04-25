@@ -1025,7 +1025,7 @@ hr {
   font-weight: 400;
   color: #343434;
   margin-bottom: 12px;
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {

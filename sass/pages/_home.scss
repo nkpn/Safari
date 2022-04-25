@@ -54,7 +54,7 @@
     p{
         @include text-description();
         margin-bottom: 12px;
-        text-align: justify;
+        text-align:left;
 
         @media screen and (min-width:$tablet) {
             margin-bottom: 24px; 
