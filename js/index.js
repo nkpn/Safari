@@ -11,7 +11,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         speed:600,
-        variableWidth: true,
+        // 
         appendArrows:$('.carousel-buttons'),
         prevArrow: $('.slider-left'),
         nextArrow: $('.slider-right'),
@@ -22,6 +22,7 @@ $(document).ready(function(){
                   slidesToShow: 3,
                   slidesToScroll: 1,
                   dots:true,
+                //   variableWidth: true,
                 //   autoplay: true,
                 //     autoplaySpeed: 2000,
                 }
@@ -51,7 +52,6 @@ $(document).ready(function(){
         appendArrows:$('.carousel-buttons-two'),
         prevArrow: $('.slider-left-two'),
         nextArrow: $('.slider-right-two'),
-
         responsive: [
             {
                 breakpoint: 2048,
@@ -59,7 +59,8 @@ $(document).ready(function(){
                   slidesToShow: 3,
                   slidesToScroll: 1,
                   infinite: true,
-                  dots: true
+                  dots: true,
+                //   variableWidth: true,
                 }
               },
             

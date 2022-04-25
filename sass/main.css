@@ -562,7 +562,7 @@ header {
   letter-spacing: 3%;
   position: fixed;
   z-index: 10;
-  width: 95%;
+  width: 93%;
   height: 60px;
 }
 
@@ -1357,45 +1357,15 @@ hr {
 }
 
 .tours-carousel .carousel-card-zanzibar {
-  width: 320px;
-  height: 342px;
+  width: 100%;
   background-image: url("../images/home-page/beach-safari-min.jpg");
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
-  .tours-carousel .carousel-card-zanzibar {
-    width: 375px;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .tours-carousel .carousel-card-zanzibar {
-    width: 499px;
-    height: 473px;
-  }
-}
-
 .tours-carousel .carousel-card-wildlife {
-  width: 320px;
-  height: 342px;
+  width: 100%;
   background-image: url("../images/home-page/tanzania-safaris-min.jpg");
   background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .tours-carousel .carousel-card-wildlife {
-    width: 375px;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .tours-carousel .carousel-card-wildlife {
-    width: 499px;
-    height: 473px;
-  }
 }
 
 .tours-carousel .carousel-card-wildlife:hover + .contact-us-btn {
@@ -1403,45 +1373,15 @@ hr {
 }
 
 .tours-carousel .carousel-card-moshi {
-  width: 320px;
-  height: 342px;
+  width: 100%;
   background-image: url("../images/home-page/moshi-min.jpg");
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
-  .tours-carousel .carousel-card-moshi {
-    width: 375px;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .tours-carousel .carousel-card-moshi {
-    width: 499px;
-    height: 473px;
-  }
-}
-
 .tours-carousel .carousel-card-kilimanjaro {
-  width: 320px;
-  height: 342px;
+  width: 100%;
   background-image: url("../images/home-page/killimanjaro-min.jpg");
   background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .tours-carousel .carousel-card-kilimanjaro {
-    width: 375px;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .tours-carousel .carousel-card-kilimanjaro {
-    width: 499px;
-    height: 473px;
-  }
 }
 
 .tours-carousel .hide-zanzibar, .tours-carousel .hide-safari, .tours-carousel .hide-moshi, .tours-carousel .hide-kilimonjaro {
@@ -1917,6 +1857,12 @@ hr {
 
 .carousel-two .slick-slide {
   margin-left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .carousel-two-item:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .home-page .text-arrow {
