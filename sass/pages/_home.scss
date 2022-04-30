@@ -322,12 +322,20 @@
         width: 100%;
         background-image: url('../images/home-page/beach-safari-min.jpg');
         background-size: cover;
+        height: 342px;
+        @media screen and (min-width:$tablet) {
+            height: 500px;
+        }
     }
 
     .carousel-card-wildlife{
         width: 100%;
         background-image: url('../images/home-page/tanzania-safaris-min.jpg');
         background-size: cover;
+        height: 342px;
+        @media screen and (min-width:$tablet) {
+            height: 500px;
+        }
     }
 
     .carousel-card-wildlife:hover + .contact-us-btn{
@@ -338,12 +346,20 @@
         width: 100%;
         background-image: url('../images/home-page/moshi-min.jpg');
         background-size: cover;
+        height: 342px;
+        @media screen and (min-width:$tablet) {
+            height: 500px;
+        }
     }
 
     .carousel-card-kilimanjaro{
         width: 100%;
         background-image: url('../images/home-page/killimanjaro-min.jpg');
         background-size: cover;
+        height: 342px;
+        @media screen and (min-width:$tablet) {
+            height: 500px;
+        }
     }
 
     .hide-zanzibar,.hide-safari,.hide-moshi,.hide-kilimonjaro{
