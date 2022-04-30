@@ -1,5 +1,10 @@
 console.log('Hi! If you need a website - please contact me : illinmikita@gmail.com , or by telegram : https://t.me/nk_pn')
 //-------------------------------
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+//---------------
 //* Init slick slider
 $(document).ready(function(){
     $('.burger,.close-btn').click(function(event){
