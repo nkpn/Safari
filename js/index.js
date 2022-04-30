@@ -141,22 +141,77 @@ $('.carousel-card-kilimanjaro').focus(()=>{
 })
 
 //--------------------------------------------------------
-//* header nav
- $('.nav-link-safari').hover(()=>{
-    $('.nav-submenu-safari').toggleClass('flex');
- })
+//* Header nav
 
- $('.nav-link-kilimonjaro').hover(()=>{
-    $('.nav-submenu-kilimonjaro').toggleClass('flex');
+ $('.nav-link-safari').mouseenter(()=>{
+    $('.nav-submenu-safari').css('display',"flex")
  })
+ $('.nav-link-safari').mouseleave(()=>{
+    $('.nav-submenu-safari').css('display','none')
+ })
+ $('.nav-submenu-safari').mouseenter(()=>{
+    $('.nav-submenu-safari').css('display',"flex")
+ })
+ $('.nav-submenu-safari').mouseleave(()=>{
+    $('.nav-submenu-safari').css('display','none')
+ })
+//---------
+ $('.nav-link-kilimonjaro').mouseenter(()=>{
+    $('.nav-submenu-kilimonjaro').css('display',"flex")
+ })
+ $('.nav-link-kilimonjaro').mouseleave(()=>{
+    $('.nav-submenu-kilimonjaro').css('display','none')
+ })
+ $('.nav-submenu-kilimonjaro').mouseenter(()=>{
+    $('.nav-submenu-kilimonjaro').css('display',"flex")
+ })
+ $('.nav-submenu-kilimonjaro').mouseleave(()=>{
+    $('.nav-submenu-kilimonjaro').css('display','none')
+ })
+//----------
+ $('.nav-link-moshi').mouseenter(()=>{
+    $('.nav-submenu-moshi').css('display',"flex")
+ })
+ $('.nav-link-moshi').mouseleave(()=>{
+    $('.nav-submenu-moshi').css('display','none')
+ })
+ $('.nav-submenu-moshi').mouseenter(()=>{
+    $('.nav-submenu-moshi').css('display',"flex")
+ })
+ $('.nav-submenu-moshi').mouseleave(()=>{
+    $('.nav-submenu-moshi').css('display','none')
+ })
+//-----
+$('.nav-link-zanzibar').mouseenter(()=>{
+    $('.nav-submenu-zanzibar').css('display',"flex")
+ })
+ $('.nav-link-zanzibar').mouseleave(()=>{
+    $('.nav-submenu-zanzibar').css('display','none')
+ })
+ $('.nav-submenu-zanzibar').mouseenter(()=>{
+    $('.nav-submenu-zanzibar').css('display',"flex")
+ })
+ $('.nav-submenu-zanzibar').mouseleave(()=>{
+    $('.nav-submenu-zanzibar').css('display','none')
+ })
+//-----
 
- $('.nav-link-moshi').hover(()=>{
-    $('.nav-submenu-moshi').toggleClass('flex');
- })
+ //* version 1 - zalipaet 
+// $('.nav-link-safari').hover(()=>{
+//     $('.nav-submenu-safari').toggleClass('flex');
+//  })
 
- $('.nav-link-zanzibar').hover(()=>{
-    $('.nav-submenu-zanzibar').toggleClass('flex');
- })
+//  $('.nav-link-kilimonjaro').hover(()=>{
+//     $('.nav-submenu-kilimonjaro').toggleClass('flex');
+//  })
+
+//  $('.nav-link-moshi').hover(()=>{
+//     $('.nav-submenu-moshi').toggleClass('flex');
+//  })
+
+//  $('.nav-link-zanzibar').hover(()=>{
+//     $('.nav-submenu-zanzibar').toggleClass('flex');
+//  })
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items
