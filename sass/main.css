@@ -499,7 +499,7 @@ header {
   display: flex;
 }
 
-.nav-submenu, .nav-submenu-kilimonjaro, .nav-submenu-safari, .nav-submenu-moshi, .nav-submenu-zanzibar {
+.nav-submenu-kilimonjaro, .nav-submenu-safari, .nav-submenu-moshi, .nav-submenu-zanzibar {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -524,7 +524,7 @@ header {
   width: 100%;
 }
 
-.nav-submenu:hover, .nav-submenu-kilimonjaro:hover, .nav-submenu-safari:hover, .nav-submenu-moshi:hover, .nav-submenu-zanzibar:hover {
+.nav-submenu-kilimonjaro:hover, .nav-submenu-safari:hover, .nav-submenu-moshi:hover, .nav-submenu-zanzibar:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5900,5 +5900,23 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.active-section::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #F2FBFF;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=main.css.map */
