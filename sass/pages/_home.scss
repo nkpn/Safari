@@ -110,7 +110,7 @@
             font-style: italic;
             font-size: 24px;
             line-height: 44px;
-            letter-spacing: 3%;
+            letter-spacing: 0.03em;
             color:inherit;
             text-transform: none;
             font-weight: 100;
@@ -200,7 +200,7 @@
         padding-bottom: 178px;
     }
     @media screen and (min-width:$desktop) {
-        background-position: 100% 73%;
+        background-position: 100% 70.03em;
     }
     @media screen and (min-width:1240px) {
         background-position: 100% 79%;
@@ -563,7 +563,7 @@
         padding-bottom: 120px;
     }
 
-    h3{
+    p{
         @include uppercase-heading();
     }
 

@@ -415,7 +415,7 @@ header {
   font-weight: 500;
   font-size: 10px;
   line-height: 24px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   position: fixed;
   z-index: 10;
   width: 92%;
@@ -673,7 +673,7 @@ footer {
   }
 }
 
-footer h3 {
+footer p {
   font-family: Montserrat;
   font-size: 18px;
   line-height: 22px;
@@ -777,7 +777,7 @@ footer .social-item:hover {
   line-height: 24px;
   font-weight: 500;
   color: #ffffff;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
@@ -945,7 +945,7 @@ hr {
   font-style: italic;
   font-size: 24px;
   line-height: 44px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   color: inherit;
   text-transform: none;
   font-weight: 100;
@@ -1049,7 +1049,7 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .welcome {
-    background-position: 100% 73%;
+    background-position: 100% 70.03em;
   }
 }
 
@@ -1529,7 +1529,7 @@ hr {
   }
 }
 
-.contact-us h3 {
+.contact-us p {
   font-family: Montserrat;
   font-size: 18px;
   line-height: 22px;
@@ -4466,8 +4466,8 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: 8px;
 }
 
