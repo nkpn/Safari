@@ -661,6 +661,10 @@ header {
           justify-content: end;
 }
 
+.img-wrapper img {
+  margin-right: 10px;
+}
+
 footer {
   height: 36px;
   background-color: #000000;

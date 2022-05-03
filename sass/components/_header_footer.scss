@@ -207,6 +207,10 @@ header{
 .img-wrapper{
     display: flex;
     justify-content: end;
+
+    img{
+        margin-right: 10px;
+    }
 }
 
 footer{
