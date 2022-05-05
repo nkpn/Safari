@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://gooddeeds.travel/index.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gooddeeds.travel/wildlife-safari-tours.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gooddeeds.travel/kilimanjaro-mountain.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gooddeeds.travel/day-trips-in-moshi.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gooddeeds.travel/zanzibar-archipelago.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gooddeeds.travel/contact-us.html</loc>
+  <lastmod>2022-05-05T19:53:07+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
