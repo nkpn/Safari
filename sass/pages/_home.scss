@@ -301,10 +301,10 @@
         padding-top: 108px;
     }
 
-    h2{
+    h3{
         text-align: center;
         @include subheading();
-
+        color:$black;
         @media screen and (min-width:$tablet) {
             text-align: right;
         }
@@ -390,13 +390,13 @@
             transition: transform 250ms $animation-timing-function;
             position: absolute;
             top: 46%;
-            right: 30%;
+            right: 25%;
 
             
         }
     }
     
-    h3{
+    h4{
         font-family: Kaisei Decol;
         font-weight: 400;
         font-size: 20px;
@@ -433,12 +433,12 @@
         margin-top: 185px;
     }
 
-    h2{
+    h3{
         text-align: center;
         @include subheading();
     }
 
-    h3{
+    h4{
         @include uppercase-heading();
     }
 
@@ -540,7 +540,7 @@
         margin-top: 140px;
     }
 
-    h2{
+    h3{
         @include subheading();
         margin-bottom: 30px;
         @media screen and (min-width:$tablet){

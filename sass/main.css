@@ -1177,24 +1177,25 @@ hr {
   }
 }
 
-.tours-carousel h2 {
+.tours-carousel h3 {
   text-align: center;
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
   line-height: 37px;
   color: #343434;
+  color: #000000;
 }
 
 @media screen and (min-width: 768px) {
-  .tours-carousel h2 {
+  .tours-carousel h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .tours-carousel h2 {
+  .tours-carousel h3 {
     text-align: right;
   }
 }
@@ -1305,10 +1306,10 @@ hr {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 46%;
-  right: 30%;
+  right: 25%;
 }
 
-.tours-carousel h3 {
+.tours-carousel h4 {
   font-family: Kaisei Decol;
   font-weight: 400;
   font-size: 20px;
@@ -1317,7 +1318,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .tours-carousel h3 {
+  .tours-carousel h4 {
     font-size: 24px;
     line-height: 35px;
   }
@@ -1349,7 +1350,7 @@ hr {
   }
 }
 
-.advantages h2 {
+.advantages h3 {
   text-align: center;
   font-family: Kaisei Decol;
   font-weight: 500;
@@ -1359,13 +1360,13 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .advantages h2 {
+  .advantages h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
-.advantages h3 {
+.advantages h4 {
   font-family: Montserrat;
   font-size: 18px;
   line-height: 22px;
@@ -1497,7 +1498,7 @@ hr {
   }
 }
 
-.home-photos h2 {
+.home-photos h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -1507,14 +1508,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .home-photos h2 {
+  .home-photos h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .home-photos h2 {
+  .home-photos h3 {
     margin-bottom: 42px;
   }
 }
@@ -2185,7 +2186,7 @@ hr {
   padding-top: 12px;
 }
 
-.page-kilimonjaro .topic-fixed-picture .topic-description h2 {
+.page-kilimonjaro .topic-fixed-picture .topic-description h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -2194,7 +2195,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .page-kilimonjaro .topic-fixed-picture .topic-description h2 {
+  .page-kilimonjaro .topic-fixed-picture .topic-description h3 {
     font-size: 36px;
     line-height: 48px;
   }
@@ -2361,7 +2362,7 @@ hr {
   margin-bottom: 23px;
 }
 
-.page-kilimonjaro .topic-fixed-picture .hided-description-item h2 {
+.page-kilimonjaro .topic-fixed-picture .hided-description-item h4 {
   display: block;
   font-family: Montserrat;
   font-size: 14px;
@@ -2372,7 +2373,7 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .page-kilimonjaro .topic-fixed-picture .hided-description-item h2 {
+  .page-kilimonjaro .topic-fixed-picture .hided-description-item h4 {
     margin-right: 28px;
     min-width: 150px;
   }
@@ -2437,6 +2438,7 @@ hr {
   font-weight: 500;
   text-transform: uppercase;
   color: #343434;
+  margin: 0;
 }
 
 .page-kilimonjaro .topic-fixed-picture .wrapper-description {
@@ -2681,13 +2683,13 @@ hr {
   }
 }
 
-.page-kilimonjaro .package-list-general h2 {
+.page-kilimonjaro .package-list-general h3 {
   z-index: 10;
   padding-left: 55px;
 }
 
 @media screen and (min-width: 1024px) {
-  .page-kilimonjaro .package-list-general h2 {
+  .page-kilimonjaro .package-list-general h3 {
     padding-left: 0;
   }
 }
@@ -2822,7 +2824,7 @@ hr {
   }
 }
 
-.page-kilimonjaro .section-hints h5 {
+.page-kilimonjaro .section-hints h3 {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
@@ -3408,7 +3410,7 @@ hr {
       flex-basis: 75%;
 }
 
-.tarangire-section h2 {
+.tarangire-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3418,14 +3420,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .tarangire-section h2 {
+  .tarangire-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .tarangire-section h2 {
+  .tarangire-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -3493,7 +3495,7 @@ hr {
   }
 }
 
-.moshi-hero-section h2 {
+.moshi-hero-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3503,14 +3505,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .moshi-hero-section h2 {
+  .moshi-hero-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .moshi-hero-section h2 {
+  .moshi-hero-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -3595,7 +3597,7 @@ hr {
   }
 }
 
-.marangu-wateralls-section h2 {
+.marangu-wateralls-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3605,14 +3607,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls-section h2 {
+  .marangu-wateralls-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .marangu-wateralls-section h2 {
+  .marangu-wateralls-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -3695,7 +3697,7 @@ hr {
   }
 }
 
-.chemka-section h2 {
+.chemka-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3705,14 +3707,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .chemka-section h2 {
+  .chemka-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .chemka-section h2 {
+  .chemka-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -3793,7 +3795,7 @@ hr {
   }
 }
 
-.materuni-section h2 {
+.materuni-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3803,14 +3805,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .materuni-section h2 {
+  .materuni-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .materuni-section h2 {
+  .materuni-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -3917,7 +3919,7 @@ hr {
   }
 }
 
-.lake-challa-section h2 {
+.lake-challa-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -3927,14 +3929,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .lake-challa-section h2 {
+  .lake-challa-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .lake-challa-section h2 {
+  .lake-challa-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -4035,7 +4037,7 @@ hr {
   }
 }
 
-.chagga-museum-section h2 {
+.chagga-museum-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -4045,14 +4047,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .chagga-museum-section h2 {
+  .chagga-museum-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .chagga-museum-section h2 {
+  .chagga-museum-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -4141,7 +4143,7 @@ hr {
   }
 }
 
-.arusha-museum h2 {
+.arusha-museum h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -4151,14 +4153,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .arusha-museum h2 {
+  .arusha-museum h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .arusha-museum h2 {
+  .arusha-museum h3 {
     margin-bottom: 20px;
   }
 }
@@ -4588,7 +4590,22 @@ hr {
   }
 }
 
-.topic-fixed-picture .topic-description h5 {
+.topic-fixed-picture .topic-description h3 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 37px;
+  color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .topic-fixed-picture .topic-description h3 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.topic-fixed-picture .topic-description h4 {
   margin-top: 10px;
   margin-bottom: 24px;
   font-family: Montserrat;
@@ -4599,7 +4616,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .topic-fixed-picture .topic-description h5 {
+  .topic-fixed-picture .topic-description h4 {
     font-size: 14px;
     line-height: 24px;
   }
@@ -4895,7 +4912,7 @@ hr {
   }
 }
 
-.package-item-general h2 {
+.package-item-general h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -4906,14 +4923,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .package-item-general h2 {
+  .package-item-general h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .package-item-general h2 {
+  .package-item-general h3 {
     margin-bottom: 24px;
   }
 }
@@ -5102,7 +5119,7 @@ hr {
   }
 }
 
-.page-zanzibar .zanzibar-tarangire-section h2 {
+.page-zanzibar .zanzibar-tarangire-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -5112,14 +5129,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .zanzibar-tarangire-section h2 {
+  .page-zanzibar .zanzibar-tarangire-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .zanzibar-tarangire-section h2 {
+  .page-zanzibar .zanzibar-tarangire-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -5231,7 +5248,7 @@ hr {
   }
 }
 
-.page-zanzibar .mwowambu-section h2 {
+.page-zanzibar .mwowambu-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -5241,14 +5258,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .mwowambu-section h2 {
+  .page-zanzibar .mwowambu-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .mwowambu-section h2 {
+  .page-zanzibar .mwowambu-section h3 {
     margin-bottom: 20px;
   }
 }
@@ -5362,7 +5379,7 @@ hr {
   }
 }
 
-.page-zanzibar .ngorongoro-section h2 {
+.page-zanzibar .ngorongoro-section h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 26px;
@@ -5372,14 +5389,14 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .ngorongoro-section h2 {
+  .page-zanzibar .ngorongoro-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-zanzibar .ngorongoro-section h2 {
+  .page-zanzibar .ngorongoro-section h3 {
     margin-bottom: 20px;
   }
 }

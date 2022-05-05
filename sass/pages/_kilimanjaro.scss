@@ -248,7 +248,7 @@
         .topic-description{
             padding-top: 12px;
 
-            h2{
+            h3{
                 @include subheading();
             }
 
@@ -359,7 +359,7 @@
                 margin-bottom: 23px;
             }
         
-            h2{
+            h4{
                 display: block;
                 @include uppercase-list-heading();
                 @media screen and (min-width:$desktop) {
@@ -395,6 +395,7 @@
 
         .wrapper-heading{
             @include uppercase-list-heading(); 
+            margin: 0;
         }
 
         .wrapper-description{
@@ -562,7 +563,7 @@
             flex-direction: row;
         }
 
-        h2{
+        h3{
             z-index: 10;
             padding-left: 55px;
             @media screen and (min-width:$desktop) {
@@ -662,7 +663,7 @@
             }
         }
 
-        h5{
+        h3{
             @include uppercase-list-heading();
         }
 
