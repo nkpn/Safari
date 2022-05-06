@@ -300,6 +300,10 @@ footer{
     img{
         margin-left: 10px;
     }
+
+    p{
+        display: inline-block;
+    }
 }
 
 .mobile-nav-submenu-list{
@@ -344,3 +348,56 @@ hr{
     border-radius: 100px;
 }
 
+.for-all-os, .for-windows{
+    display: none;
+}
+
+.lang-list li{
+    @include mobile-submenu-item();
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.lang-mobile-eng,.lang-mobile-uk,.lang-mobile-fr,.lang-mobile-de{
+    position: relative;
+}
+
+.lang-mobile-eng::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -25px;
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/icons/eng.svg');
+}
+
+.lang-mobile-uk::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -25px;
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/icons/ukr.svg;')
+}
+
+.lang-mobile-de::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -25px;
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/icons/de.svg');
+}
+
+.lang-mobile-fr::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -25px;
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/icons/fr.svg');
+}

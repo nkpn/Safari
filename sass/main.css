@@ -791,6 +791,10 @@ footer .social-item:hover {
   margin-left: 10px;
 }
 
+.mobile-nav-item p {
+  display: inline-block;
+}
+
 .mobile-nav-submenu-list {
   display: none;
   list-style: circle;
@@ -832,6 +836,64 @@ hr {
   background-color: #161616;
   color: #ffffff;
   border-radius: 100px;
+}
+
+.for-all-os, .for-windows {
+  display: none;
+}
+
+.lang-list li {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.lang-mobile-eng, .lang-mobile-uk, .lang-mobile-fr, .lang-mobile-de {
+  position: relative;
+}
+
+.lang-mobile-eng::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: -25px;
+  width: 18px;
+  height: 12px;
+  background-image: url("../images/icons/eng.svg");
+}
+
+.lang-mobile-uk::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: -25px;
+  width: 18px;
+  height: 12px;
+  background-image: url("../images/icons/ukr.svg;");
+}
+
+.lang-mobile-de::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: -25px;
+  width: 18px;
+  height: 12px;
+  background-image: url("../images/icons/de.svg");
+}
+
+.lang-mobile-fr::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: -25px;
+  width: 18px;
+  height: 12px;
+  background-image: url("../images/icons/fr.svg");
 }
 
 .home-page .nav-link:hover {

@@ -4,6 +4,7 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+  
 //---------------
 //* Init slick slider
 $(document).ready(function(){
@@ -217,6 +218,14 @@ $('.nav-link-zanzibar').mouseenter(()=>{
 //  $('.nav-link-zanzibar').hover(()=>{
 //     $('.nav-submenu-zanzibar').toggleClass('flex');
 //  })
+//---------------------------------------------------
+if (navigator.userAgent.indexOf("Win") != -1){
+    console.log('Windows!')
+    $('.for-windows').css('display','block');
+    $('.for-all-os').css('display','none');
+} else{
+    $('.for-all-os').css('display','block');
+}
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items

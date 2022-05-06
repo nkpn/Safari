@@ -52,11 +52,17 @@
                 <a href="./contact-us.html" class="contact-us-btn">Contact Us</a>
             </li>
             <li>
-              <select name="lang" id="lang">
-                <option value="en" id="en">🇬🇧 ENG</option>
-                <option value="ua" id="ua">🇺🇦 UA</option>
-                <option value="fr" id="fr">🇫🇷 FR</option>
-                <option value="de" id="de">🇩🇪 DE</option>
+              <select name="lang" id="lang" class="for-all-os">
+                <option value="en" id="en"><span class="flag">🇬🇧</span> ENG</option>
+                <option value="ua" id="ua"><span class="flag">🇺🇦</span> UA</option>
+                <option value="fr" id="fr"><span class="flag">🇫🇷</span> FR</option>
+                <option value="de" id="de"><span class="flag">🇩🇪</span> DE</option>
+              </select>
+              <select name="lang" id="lang" class="for-windows">
+                <option value="en" id="en">ENG</option>
+                <option value="ua" id="ua">UA</option>
+                <option value="fr" id="fr">FR</option>
+                <option value="de" id="de">DE</option>
               </select>
             </li>
           </ul>
@@ -142,13 +148,18 @@
               </li>
               <li><hr></li>
               <li class="mobile-nav-item animate__animated animate__fadeInRight"><a href="./contact-us.html">Contact Us</a></li>
+              <li><hr></li>
+              <li class="mobile-nav-item animate__animated animate__fadeInRight">
+                <p>Language</p>
+                <img loading="lazy" src="./images/icons/list-arrow.svg" alt="to categories" class="">
+              </li>
               <li>
-                <select name="lang" id="lang">
-                  <option value="en" id="en">🇬🇧 ENG</option>
-                  <option value="ua" id="ua">🇺🇦 UA</option>
-                  <option value="fr" id="fr">🇫🇷 FR</option>
-                  <option value="de" id="de">🇩🇪 DE</option>
-                </select>
+                <ul class="lang-list">
+                  <li><a href="" class="lang-mobile-eng">English</a></li>
+                  <li><a href="" class="lang-mobile-uk">Ukrainian</a></li>
+                  <li><a href="" class="lang-mobile-de">German</a></li>
+                  <li><a href="" class="lang-mobile-fr">French</a></li>
+                </ul>
               </li>
             </ul>
           </div>
