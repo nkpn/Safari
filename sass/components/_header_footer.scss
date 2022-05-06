@@ -193,7 +193,7 @@ header{
     left: 0;
     background-color: $black;
     color:$white;
-    z-index: 100;
+    z-index: 999;
     // animation: growDown 200ms ease-in-out forwards;
     // transform-origin: top center;
     animation-duration: 250ms;
@@ -352,10 +352,16 @@ hr{
     display: none;
 }
 
+.lang-list{
+    display: flex;
+    flex-wrap: wrap
+}
+
 .lang-list li{
     @include mobile-submenu-item();
     margin-bottom: 20px;
     padding-left: 25px;
+    width: 50%;
 }
 
 .lang-mobile-eng,.lang-mobile-uk,.lang-mobile-fr,.lang-mobile-de{
@@ -379,7 +385,7 @@ hr{
     left: -25px;
     width: 18px;
     height: 12px;
-    background-image: url('../images/icons/ukr.svg;')
+    background-image: url('../images/icons/ukr.svg')
 }
 
 .lang-mobile-de::before{
