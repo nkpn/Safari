@@ -812,6 +812,28 @@ hr {
   opacity: 0.5;
 }
 
+#lang {
+  padding: 8px 20px 8px 20px;
+  background-color: inherit;
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+  position: relative;
+}
+
+#lang:hover, #lang:focus {
+  border: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0 inherit;
+          box-shadow: 0 0 0 0 inherit;
+}
+
+#lang option {
+  background-color: #161616;
+  color: #ffffff;
+  border-radius: 100px;
+}
+
 .home-page .nav-link:hover {
   background-color: inherit;
   color: white;

@@ -320,3 +320,27 @@ footer{
 hr{
   opacity: 0.5;
 }
+
+
+#lang{
+    padding: 8px 20px 8px 20px;
+    background-color: inherit;
+    border-radius: 100px;
+    border:none; 
+    // color:#F2FBFF77;
+    color:$white;
+    position: relative;
+
+    &:hover,&:focus{
+        border:none;
+        outline: 0;
+        box-shadow: 0 0 0 0 inherit;
+    }
+}
+
+#lang option{
+    background-color: $submenu-dark-bg-color;
+    color :$white;
+    border-radius: 100px;
+}
+
