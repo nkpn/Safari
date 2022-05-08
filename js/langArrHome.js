@@ -14,7 +14,7 @@ const langArrHome = {
   },
   "hero-h2": {
     en: "Delightful, unusual, wild",
-    ua: "Чудовий, незвичайний, дикий",
+    ua: "Чудова, незвичайна, дика",
     fr: "fr Delightful, unusual, wild",
     de: "de Delightful, unusual, wild",
   },
