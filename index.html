@@ -295,29 +295,53 @@
     <section class="contact-us">
       <h2 class="hided">contact us</h2>
       <div class="container">
-        <ul class="contact-information-list">
-          <li class="contact-information-item">
-            <p>email us</p>
-            <a href="mailto:gooddeeds_travel@outlook.com">gooddeeds_travel@outlook.com</a>
-          </li>
-          <li class="contact-information-item">
-            <p>phone</p>
-            <a href="tel:+255685592915">+255685 592 915</a>
-          </li>
+        <ul class="two-columns">
+          <ul class="contact-us-form">
+            <li class="contact-information-item ">
+              <h3>Contact Us</h3>
+            </li>
+            <form action="autorespond.php" method="post" id="form_message">
+              <div class="form-field">
+                <label for="name" class="form-label">Enter your name</label>
+                <input type="text" name="name" class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="name" class="form-label">Enter your email</label>
+                <input type="text" name="email" class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="name" class="form-label">Comment or question</label>
+                <textarea name="message" class="form-input message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send</button>
+            </form>
+          </ul>
+
+
+          <ul class="contact-information-list">
+            <li class="contact-information-item">
+              <h3>Contacts</h3>
+            </li>
+            <li class="contact-information-item">
+              <p>phone</p>
+              <a href="tel:+255685592915">+255685 592 915</a>
+            </li>
+            <li class="contact-information-item">
+              <p>social</p>
+              <ul class="social-list">
+                <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/phone-black.svg" alt="phone-icon" class="social-img" width="20"></a></li>
+                <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/facebook-black.svg" alt="facebook-icon" class="social-img" width="20"></a></li>
+                <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/insta-black.svg" alt="instagram" class="social-img" width="20"></a></li>
+                <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/twitter-black.svg" alt="twitter" class="social-img" width="20"></a></li>
+              </ul>
+            </li>
+            <li class="social-list-bottom-text">
+              <p>We always aim to reply within 24 hours.</p>
+            </li>
+          </ul>
         </ul>
-        <ul class="contact-us-bottom-list">
-          <li>
-            <ul class="social-list">
-              <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/phone-black.svg" alt="phone-icon" class="social-img" width="20"></a></li>
-              <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/facebook-black.svg" alt="facebook-icon" class="social-img" width="20"></a></li>
-              <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/insta-black.svg" alt="instagram" class="social-img" width="20"></a></li>
-              <li><a class="contact-social-item" href="#"><img loading="lazy" src="./images/icons/twitter-black.svg" alt="twitter" class="social-img" width="20"></a></li>
-            </ul>
-          </li>
-          <li>
-            <p>We always aim to reply within 24 hours.</p>
-          </li>
-        </ul>
+        
+       
         <a href="#" class="button-to-top" onclick="topFunction()">
           <img loading="lazy" src="./images/icons/top-arrow.svg" alt="to the top of page">
         </a>

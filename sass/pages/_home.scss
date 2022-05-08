@@ -65,7 +65,7 @@
 //* HOME HERO SECTION
 //--------------------------
 .home-hero{
-    background-image: url('../images/home-page/elephants-min.jpg');
+    background-image: url('../images/home-page/elephants-min.png');
     background-size: cover;
     background-position: 40% 50%;
     height: 600px;
@@ -383,6 +383,10 @@
             padding:331px 31px 32px 16px;
         }
 
+        h4{
+            margin-bottom: 0;
+        }
+
         .contact-us-btn{
             color: $white;
             max-width: 210px;
@@ -390,9 +394,15 @@
             transition: transform 250ms $animation-timing-function;
             position: absolute;
             top: 46%;
-            right: 25%;
+            right: 30%;
 
-            
+            @media screen and (min-width:$tablet) {
+                right: 33%;
+            }
+
+            @media screen and (min-width:$desktop) {
+                right: 25%;  
+            }
         }
     }
     
@@ -563,8 +573,17 @@
         padding-bottom: 120px;
     }
 
+    h3{
+        font-family: Kaisei Decol;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        color: $black;  
+    }
+
     p{
         @include uppercase-heading();
+        font-size: 14px;
     }
 
     a{
@@ -580,22 +599,29 @@
     }
 
     .contact-information-list{
+        margin-top: 45px;
         display: flex;
         flex-direction: column;
         margin-bottom: 39px;
 
         @media screen and (min-width:$tablet) {
-            flex-direction: row;
-            justify-content:space-between;
             margin-bottom: 69px;
+            flex-basis: 45%;
+            margin-top: 0;
+        }
+    }
+
+    .two-columns{
+        @media screen and (min-width:$tablet) {
+            justify-content: space-between;
         }
     }
 
     .contact-information-item{
-        margin-bottom: 39px;
+        margin-bottom: 30px;
 
         @media screen and (min-width:$tablet) {
-            margin-bottom: 0;
+            margin-bottom: 40px;
         }
 
         a{
@@ -621,22 +647,27 @@
     }
 
     .contact-social-item{
-        padding: 16px 17px;
         border: 1px solid $bg-main-color;
         border-radius:50%;
         margin-right: 16px;
-        margin-top: 0;
+        margin-top: 24px;
         font-size: 0;
         line-height: 0;
-        margin-top: 0;
+        width: 73px;
+        height: 73px;
+        display: flex;
+        justify-content: center;
         img{
             height: 100%;
         }
         &:hover{
             background-color: $social-icon-hero-cover;
         } 
+    }
+
+    .social-list-bottom-text{
         @media screen and (min-width:$tablet) {
-            padding: 26px 27px;
+           margin-top: 100px; 
         }
     }
     
@@ -660,7 +691,51 @@
         }
     }
 
+    .contact-us-form{
+        @media screen and (min-width:$tablet) {
+            flex-basis: 50%;
+        }
+    }
+
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .form-label{
+        @include text-description();
+        margin-bottom: 4px;
+    }
+
+    .form-input{
+        width: 100%;
+        background-color: inherit;
+        border-radius:100px;
+        padding:5px 10px;
+        border: 1px solid $bg-dark-color;
+        @include text-description();
+
+        &:hover, &:focus{
+            border:1px solid $button-light-color;
+            outline: none;
+        }
+    }
+
+    .form-input:-webkit-autofill,
+    .form-input:-webkit-autofill:hover, 
+    .form-input:-webkit-autofill:focus, 
+    .form-input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px $bg-light-color inset !important;
 }
+
+    .message{
+        resize: none;
+        border-radius: 33px;
+        padding: 10px 15px;
+    }
+}
+
 
 //------------------
 //* Carousel

@@ -271,6 +271,7 @@ summary {
   border-radius: 100px;
   color: inherit;
   font-family: Montserrat;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -293,6 +294,7 @@ summary {
   border-radius: 100px;
   color: #ffffff;
   font-family: Montserrat;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -311,6 +313,7 @@ summary {
   width: 74px;
   height: 74px;
   background-color: #CDD9DF;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -328,6 +331,29 @@ summary {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.submit-button {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 5px 60px;
+  background-color: #0C4AE940;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .submit-button {
+    padding: 8px 105px;
+  }
+}
+
+.submit-button:hover {
+  border: 1px solid #467AFF;
+  background-color: #467AFF;
 }
 
 @-webkit-keyframes rotateMenu {
@@ -982,7 +1008,7 @@ hr {
 }
 
 .home-hero {
-  background-image: url("../images/home-page/elephants-min.jpg");
+  background-image: url("../images/home-page/elephants-min.png");
   background-size: cover;
   background-position: 40% 50%;
   height: 600px;
@@ -1389,6 +1415,10 @@ hr {
   }
 }
 
+.tours-carousel .carousel-card h4 {
+  margin-bottom: 0;
+}
+
 .tours-carousel .carousel-card .contact-us-btn {
   color: #ffffff;
   max-width: 210px;
@@ -1399,7 +1429,19 @@ hr {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 46%;
-  right: 25%;
+  right: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card .contact-us-btn {
+    right: 33%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tours-carousel .carousel-card .contact-us-btn {
+    right: 25%;
+  }
 }
 
 .tours-carousel h4 {
@@ -1627,12 +1669,21 @@ hr {
   }
 }
 
+.contact-us h3 {
+  font-family: Kaisei Decol;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+}
+
 .contact-us p {
   font-family: Montserrat;
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .contact-us a {
@@ -1651,6 +1702,7 @@ hr {
 }
 
 .contact-us .contact-information-list {
+  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1663,24 +1715,28 @@ hr {
 
 @media screen and (min-width: 768px) {
   .contact-us .contact-information-list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    margin-bottom: 69px;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .two-columns {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 69px;
   }
 }
 
 .contact-us .contact-information-item {
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .contact-us .contact-information-item {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -1715,14 +1771,20 @@ hr {
 }
 
 .contact-us .contact-social-item {
-  padding: 16px 17px;
   border: 1px solid #DBE7ED;
   border-radius: 50%;
   margin-right: 16px;
-  margin-top: 0;
+  margin-top: 24px;
   font-size: 0;
   line-height: 0;
-  margin-top: 0;
+  width: 73px;
+  height: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-us .contact-social-item img {
@@ -1734,8 +1796,8 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .contact-us .contact-social-item {
-    padding: 26px 27px;
+  .contact-us .social-list-bottom-text {
+    margin-top: 100px;
   }
 }
 
@@ -1769,6 +1831,64 @@ hr {
     font-size: 14px;
     line-height: 24px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us .contact-us-form {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.contact-us .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.contact-us .form-label {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+  margin-bottom: 4px;
+}
+
+.contact-us .form-input {
+  width: 100%;
+  background-color: inherit;
+  border-radius: 100px;
+  padding: 5px 10px;
+  border: 1px solid #CDD9DF;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #343434;
+}
+
+.contact-us .form-input:hover, .contact-us .form-input:focus {
+  border: 1px solid #467AFF;
+  outline: none;
+}
+
+.contact-us .form-input:-webkit-autofill,
+.contact-us .form-input:-webkit-autofill:hover,
+.contact-us .form-input:-webkit-autofill:focus,
+.contact-us .form-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #F2FBFF inset !important;
+}
+
+.contact-us .message {
+  resize: none;
+  border-radius: 33px;
+  padding: 10px 15px;
 }
 
 .home-photos .container {
