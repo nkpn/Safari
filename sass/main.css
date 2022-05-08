@@ -1839,8 +1839,8 @@ hr {
 
 @media screen and (min-width: 768px) {
   .contact-us .contact-us-form {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 
