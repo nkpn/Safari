@@ -62,19 +62,26 @@
     font-size: 14px;
     line-height: 24px;
     padding: 5px 60px;
-    background-color: #0C4AE940;
+    background-color: #0C4AE9;
     border: none;
     border-radius: 100px;
     color: $white;
     font-family: Montserrat;
-    cursor: pointer;
+    
 
     @media screen and (min-width:$desktop){
         padding: 8px 105px;
     }
 
+    &:disabled,
+    &[disabled]{
+        background-color: #0C4AE940;
+    }
+
     &:hover{
+        cursor: pointer;
         border: 1px solid $button-light-color;
         background-color: $button-light-color;
     }
 }
+

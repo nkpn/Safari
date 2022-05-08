@@ -220,12 +220,12 @@ $('.nav-link-zanzibar').mouseenter(()=>{
 //  })
 //---------------------------------------------------
 if (navigator.userAgent.indexOf("Win") != -1){
-    console.log('Windows!')
     $('.for-windows').css('display','block');
     $('.for-all-os').css('display','none');
 } else{
     $('.for-all-os').css('display','block');
 }
+
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items
@@ -688,3 +688,23 @@ HintsEight.click(()=>{
 //---------------------------------------
 //* Scroll Reveal
 // ScrollReveal().reveal('img');
+//-----------------------------------------------
+//* submit button disable
+let inputName = $('#name');
+let inputEmail = $('#email');
+let inputMessage = $('#message');
+let submitButton = document.querySelector('.submit-button');
+submitButton.disabled = true;
+
+inputName.on('change', stateHandle);
+inputMessage.on('change', stateHandle);
+inputEmail.on('change', stateHandle);
+
+
+function stateHandle(){
+        if ((inputName.val() != '') && (inputEmail.val() != '') && (inputMessage.val() != '')){
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+}

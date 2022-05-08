@@ -337,12 +337,11 @@ summary {
   font-size: 14px;
   line-height: 24px;
   padding: 5px 60px;
-  background-color: #0C4AE940;
+  background-color: #0C4AE9;
   border: none;
   border-radius: 100px;
   color: #ffffff;
   font-family: Montserrat;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -351,7 +350,12 @@ summary {
   }
 }
 
+.submit-button:disabled, .submit-button[disabled] {
+  background-color: #0C4AE940;
+}
+
 .submit-button:hover {
+  cursor: pointer;
   border: 1px solid #467AFF;
   background-color: #467AFF;
 }
