@@ -945,7 +945,7 @@ hr {
 }
 
 .home-page .nav-link::after {
-  content: ' ';
+  content: " ";
   display: inline-block;
   position: absolute;
   left: 0;
@@ -1073,7 +1073,7 @@ hr {
   font-size: 24px;
   line-height: 44px;
   letter-spacing: 0.03em;
-  color: inherit;
+  color: #ffffff;
   text-transform: none;
   font-weight: 100;
 }
@@ -1202,13 +1202,13 @@ hr {
   z-index: 5;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'description' 'wrapper' 'giraffe';
+      grid-template-areas: "description" "wrapper" "giraffe";
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .welcome .welcome-to-our-world {
-        grid-template-areas: 'description wrapper' 'giraffe .';
+        grid-template-areas: "description wrapper" "giraffe .";
     grid-gap: 100px;
   }
 }
@@ -1390,7 +1390,10 @@ hr {
   }
 }
 
-.tours-carousel .hide-zanzibar, .tours-carousel .hide-safari, .tours-carousel .hide-moshi, .tours-carousel .hide-kilimonjaro {
+.tours-carousel .hide-zanzibar,
+.tours-carousel .hide-safari,
+.tours-carousel .hide-moshi,
+.tours-carousel .hide-kilimonjaro {
   display: none;
 }
 
@@ -1561,7 +1564,7 @@ hr {
 }
 
 .advantages .list-item:not(:last-child)::after {
-  content: ' ';
+  content: " ";
   display: inline-block;
   position: absolute;
   bottom: -36px;
@@ -1948,7 +1951,10 @@ hr {
   cursor: pointer;
 }
 
-.slider-left, .slider-left-two, .slider-right, .slider-right-two {
+.slider-left,
+.slider-left-two,
+.slider-right,
+.slider-right-two {
   fill: black;
   color: black;
   height: 15px;
@@ -2010,7 +2016,7 @@ hr {
 }
 
 .home-page .slick-dots li button::before {
-  content: '';
+  content: "";
 }
 
 @media screen and (min-width: 1024px) {
@@ -2024,7 +2030,8 @@ hr {
   background-color: #CDD9DF !important;
 }
 
-.progress-bar, .progress-bar-two {
+.progress-bar,
+.progress-bar-two {
   display: block;
   width: 100%;
   height: 10px;
@@ -2035,8 +2042,8 @@ hr {
   background-image: linear-gradient(to right, black, black);
   background-repeat: no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size .4s ease-in-out;
-  transition: background-size .4s ease-in-out;
+  -webkit-transition: background-size 0.4s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
 }
 
 .black-background {

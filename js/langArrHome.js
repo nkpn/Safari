@@ -1,11 +1,5 @@
 const langArrHome = {
   //* hero section
-  "hero-h1-span": {
-    en: "visit ",
-    ua: "вітаємо ",
-    fr: "fr visit",
-    de: "de visit",
-  },
   "hero-h1": {
     en: " Unusual Tanzania",
     ua: "Танзанія",
@@ -17,6 +11,12 @@ const langArrHome = {
     ua: "Чудова, незвичайна, дика",
     fr: "fr Delightful, unusual, wild",
     de: "de Delightful, unusual, wild",
+  },
+  "hero-h1-span": {
+    en: "visit ",
+    ua: "вітаємо ",
+    fr: "fr visit",
+    de: "de visit",
   },
   //* welcome section
   "welcome-h2": {

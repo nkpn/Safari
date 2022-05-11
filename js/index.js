@@ -2,52 +2,52 @@ console.log(
   "Hi! If you need a website - please contact me : illinmikita@gmail.com , or by telegram : https://t.me/nk_pn"
 );
 
-const selectFirst = document.querySelector(".for-all-os");
-const selectSecond = document.querySelector(".for-windows");
+// const selectFirst = document.querySelector(".for-all-os");
+// const selectSecond = document.querySelector(".for-windows");
 
-const allLang = ["en", "ua", "fr", "de"];
+// const allLang = ["en", "ua", "fr", "de"];
 
-//* push select value to the URL
-const changeURLLanguage = () => {
-  let lang = selectFirst.value;
-  location.href = window.location.pathname + "#" + lang;
-  location.reload();
-};
+// //* push select value to the URL
+// const changeURLLanguage = () => {
+//   let lang = selectFirst.value;
+//   location.href = window.location.pathname + "#" + lang;
+//   location.reload();
+// };
 
-const changeURLLanguageTwo = () => {
-  let lang = selectSecond.value;
-  location.href = window.location.pathname + "#" + lang;
-  location.reload();
-};
+// const changeURLLanguageTwo = () => {
+//   let lang = selectSecond.value;
+//   location.href = window.location.pathname + "#" + lang;
+//   location.reload();
+// };
 
-selectFirst.addEventListener("change", changeURLLanguage);
-selectSecond.addEventListener("change", changeURLLanguageTwo);
+// selectFirst.addEventListener("change", changeURLLanguage);
+// selectSecond.addEventListener("change", changeURLLanguageTwo);
 
-//* Change language
-const changeLanguage = () => {
-  let hash = window.location.hash;
-  hash = hash.substring(1);
+// //* Change language
+// const changeLanguage = () => {
+//   let hash = window.location.hash;
+//   hash = hash.substring(1);
 
-  if (!allLang.includes(hash)) {
-    location.href = window.location.pathname + "#en";
-    location.reload();
-  }
-  selectFirst.value = hash;
-  selectSecond.value = hash;
+//   if (!allLang.includes(hash)) {
+//     location.href = window.location.pathname + "#en";
+//     location.reload();
+//   }
+//   selectFirst.value = hash;
+//   selectSecond.value = hash;
 
-  //* set site languate
-  document.documentElement.setAttribute("lang", hash);
+//   //* set site languate
+//   document.documentElement.setAttribute("lang", hash);
 
-  //* change language
-  for (let key in langArrHome) {
-    let elem = document.querySelector(".lng-" + key);
-    if (elem) {
-      elem.innerHTML = langArrHome[key][hash];
-    }
-  }
-};
+//   //* change language
+//   for (let key in langArrHome) {
+//     let elem = document.querySelector(".lng-" + key);
+//     if (elem) {
+//       elem.innerHTML = langArrHome[key][hash];
+//     }
+//   }
+// };
 
-changeLanguage();
+// changeLanguage();
 //-------------------------------
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
