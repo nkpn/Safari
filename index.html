@@ -79,7 +79,9 @@
             </li>
 
             <li class="nav-item">
-              <a href="./contact-us.html" class="contact-us-btn">Contact Us</a>
+              <a href="./contact-us.html" class="nav-link contact-us-btn">
+                Contact Us</a
+              >
             </li>
             <li>
               <select name="lang" id="lang" class="for-all-os">
@@ -336,48 +338,21 @@
                 <a href="./contact-us.html">Contact Us</a>
               </li>
               <li><hr /></li>
-              <li
-                class="mobile-nav-item animate__animated animate__fadeInRight"
-              >
-                <p>Language</p>
-                <img
-                  loading="lazy"
-                  src="./images/icons/list-arrow.svg"
-                  alt="to categories"
-                  class=""
-                />
-              </li>
               <li>
-                <ul class="lang-list">
-                  <li>
-                    <a
-                      href=""
-                      class="lang-mobile-eng animate__animated animate__fadeInRight"
-                      >English</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="lang-mobile-uk animate__animated animate__fadeInRight"
-                      >Ukrainian</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="lang-mobile-fr animate__animated animate__fadeInRight"
-                      >French</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="lang-mobile-de animate__animated animate__fadeInRight"
-                      >German</a
-                    >
-                  </li>
-                </ul>
+                <select name="lang" id="lang" class="mobile-lang-select">
+                  <option value="en" id="en">
+                    <span class="flag">🇬🇧</span> ENG
+                  </option>
+                  <option value="ua" id="ua">
+                    <span class="flag">🇺🇦</span> UA
+                  </option>
+                  <option value="fr" id="fr">
+                    <span class="flag">🇫🇷</span> FR
+                  </option>
+                  <option value="de" id="de">
+                    <span class="flag">🇩🇪</span> DE
+                  </option>
+                </select>
               </li>
             </ul>
           </div>
@@ -651,7 +626,7 @@
                   name="message"
                   class="form-input message"
                   id="message"
-                  rows="5"
+                  rows="4"
                 ></textarea>
               </div>
               <button type="submit" class="submit-button">Send</button>
@@ -659,9 +634,6 @@
           </ul>
 
           <ul class="contact-information-list">
-            <li class="contact-information-item">
-              <h3>Contacts</h3>
-            </li>
             <li class="contact-information-item">
               <p>phone</p>
               <a href="tel:+255685592915">+255685 592 915</a>
@@ -711,8 +683,9 @@
                 </li>
               </ul>
             </li>
-            <li class="social-list-bottom-text">
-              <p>We always aim to reply within 24 hours.</p>
+            <li class="contact-information-item">
+              <p>address</p>
+              <p class="address">Muthaiga, Limuru Road, 674</p>
             </li>
           </ul>
         </ul>
@@ -730,84 +703,19 @@
     <footer>
       <div class="container">
         <ul class="footer-list">
-          <li class="footer-item">
-            <ul>
-              <li class="footer-navigation"><p>TOURS</p></li>
-              <li class="footer-navigation">
-                <a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a>
-              </li>
-              <li class="footer-navigation">
-                <a href="./kilimanjaro-mountain.html"
-                  >The Kilimanjaro Mountain</a
-                >
-              </li>
-              <li class="footer-navigation">
-                <a href="./day-trips-in-moshi.html">Day Trips Moshi</a>
-              </li>
-              <li class="footer-navigation">
-                <a href="./zanzibar-archipelago.html">Zanzibar Archipelago</a>
-              </li>
-            </ul>
+          <li class="footer-navigation">
+            <a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a>
           </li>
-          <li class="footer-item">
-            <ul class="contact-information-list">
-              <li class="contact-information-item">
-                <p>call us</p>
-                <a href="tel:+255685592915">+255685 592 915</a>
-              </li>
-              <li class="contact-information-item">
-                <p>email us</p>
-                <a href="mailto:gooddeeds_travel@outlook.com"
-                  >gooddeeds_travel@outlook.com</a
-                >
-              </li>
-            </ul>
+          <li class="footer-navigation">
+            <a href="./kilimanjaro-mountain.html">The Kilimanjaro Mountain</a>
           </li>
-          <li class="footer-item">
-            <p>Follow us</p>
-            <ul class="contact-us-bottom-list">
-              <li>
-                <ul class="social-list">
-                  <li class="social-item">
-                    <img
-                      loading="lazy"
-                      src="./images/icons/phone.svg"
-                      alt="phone-icon"
-                      class="social-img"
-                      width="20"
-                    />
-                  </li>
-                  <li class="social-item">
-                    <img
-                      loading="lazy"
-                      src="./images/icons/facebook.svg"
-                      alt="facebook-icon"
-                      class="social-img"
-                      width="20"
-                    />
-                  </li>
-                  <li class="social-item">
-                    <img
-                      loading="lazy"
-                      src="./images/icons/insta.svg"
-                      alt="instagram"
-                      class="social-img"
-                      width="20"
-                    />
-                  </li>
-                  <li class="social-item twitter-item">
-                    <img
-                      loading="lazy"
-                      src="./images/icons/twitter.svg"
-                      alt="twitter"
-                      class="social-img"
-                      width="20"
-                    />
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <li class="footer-navigation">
+            <a href="./day-trips-in-moshi.html">Day Trips Moshi</a>
           </li>
+          <li class="footer-navigation">
+            <a href="./zanzibar-archipelago.html">Zanzibar Archipelago</a>
+          </li>
+          <li><p class="footer-copyright">© Good Deeds Travel 2022</p></li>
         </ul>
       </div>
     </footer>

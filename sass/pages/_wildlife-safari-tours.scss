@@ -1,561 +1,577 @@
-.wildlife-hero{
-    .container{
-        position: relative;
+.wildlife-hero {
+  .container {
+    position: relative;
+  }
+  padding-top: 60px;
+  background-color: $black;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+    @include heading();
+    max-width: 150px;
+
+    @media screen and (min-width: $tablet) {
+      max-width: unset;
+      margin-bottom: 28px;
     }
-    padding-top: 60px;
-    background-color: $black;
-    padding-bottom: 60px;
+  }
 
-    @media screen and (min-width:$tablet) {
-        padding-bottom: 36px;
+  p {
+    @include text-description();
+    color: $white;
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 48px;
     }
-    @media screen and (min-width:$desktop) {
-        padding-top: 80px;
+  }
+
+  .wildlife-hero-wrapper {
+    display: block;
+    @media screen and (max-width: $tablet) {
+      padding-top: 20px;
     }
-
-    h1{
-        margin-bottom: 16px;
-        @include heading();
-        max-width: 150px;
-
-        @media screen and (min-width:$tablet) {
-            max-width: unset;
-            margin-bottom: 28px;
-        }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
+  }
 
-    p{
-        @include text-description();
-        color:$white;
-        margin-bottom: 28px;
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 48px;
-        }
+  .contact-us-btn {
+    color: $white;
+
+    &::before {
+      background-image: url("../images/icons/envelop-grey.svg");
     }
-
-    .wildlife-hero-wrapper{
-        display: block;
-        @media screen and (max-width:$tablet) {
-                padding-top: 20px;
-        }
-        @media screen and (min-width:$desktop) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      text-align: center;
     }
+  }
 
-    .contact-us-btn{
-        color:$white;
-        @media screen and (max-width:$tablet) {
-            width: 100%;
-            text-align: center;
-        }
+  .hero-description {
+    margin-top: 24px;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 60px;
     }
-
-    .hero-description{
-        margin-top: 24px;
-
-        @media screen and (max-width:$tablet) {
-            margin-top: 60px;
-        }
-        @media screen and (min-width:$desktop) {
-            flex-basis: 33%;
-        }
-        
+    @media screen and (min-width: $desktop) {
+      flex-basis: 33%;
     }
+  }
 
+  //* Image wrapper
+  .wildlife-tiger {
+    grid-area: tiger;
+    overflow: hidden;
+    object-fit: contain;
+  }
 
-    //* Image wrapper
-    .wildlife-tiger{
-        grid-area: tiger;
-        overflow:hidden;
-        object-fit: contain;
+  .wildlife-car {
+    grid-area: car;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .wildlife-elephant {
+    grid-area: elephant;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .wildlife-lion {
+    grid-area: lion;
+    overflow: hidden;
+    object-fit: contain;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    .wildlife-car{
-        grid-area: car;
-        overflow:hidden;
-        object-fit: contain;
+  .wildlife-zebras {
+    grid-area: zebras;
+    overflow: hidden;
+    object-fit: contain;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    .wildlife-elephant{
-        grid-area: elephant;
-        overflow:hidden;
-        object-fit: contain;
+  .wildlife-kids {
+    overflow: hidden;
+    object-fit: contain;
+    grid-area: kids;
+  }
+
+  .wildlife-elephants {
+    overflow: hidden;
+    object-fit: contain;
+    grid-area: elephants;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    .wildlife-lion{
-        grid-area: lion;
-        overflow:hidden;
-        object-fit: contain;
-        @media screen and (max-width:767px) {
-            display: none;
-        }
+  .wildlife-image-wrapper {
+    display: grid;
+    gap: 4px;
+    grid-template-areas:
+      "tiger tiger car car car car"
+      "tiger tiger car car car car"
+      "tiger tiger elephant elephant kids kids"
+      "tiger tiger elephant elephant kids kids";
+    @media screen and (min-width: $desktop) {
+      display: none;
     }
-
-    .wildlife-zebras{
-        grid-area: zebras;
-        overflow:hidden;
-        object-fit: contain;
-        @media screen and (max-width:767px) {
-            display: none;
-        }
+    img {
+      height: 100%;
     }
+  }
 
-    .wildlife-kids{
-        overflow:hidden;
-        object-fit: contain;
-        grid-area: kids;
+  .mobile-image-wrapper {
+    display: block;
+    @media screen and (min-width: $desktop) {
+      display: none;
     }
+  }
 
-    .wildlife-elephants{
-        overflow:hidden;
-        object-fit: contain;
-        grid-area: elephants;
-        @media screen and (max-width:767px) {
-            display: none;
-        }
-    }
-
-    
-
-
-    .wildlife-image-wrapper{
-        display: grid;
-        gap:4px;
-        grid-template-areas: "tiger tiger car car car car"
-        "tiger tiger car car car car"
-        "tiger tiger elephant elephant kids kids"
-        "tiger tiger elephant elephant kids kids";
-        @media screen and (min-width:$desktop) {
-            display: none;
-        }
-        img{
-            height: 100%;
-        }
+  .desktop-image-wrapper {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: grid;
     }
 
-    .mobile-image-wrapper{
-        display: block;
-        @media screen and (min-width:$desktop) {
-            display: none;
-        }
+    @media screen and (min-width: $desktop) {
+      order: 1;
+      flex-basis: 60%;
     }
 
-    .desktop-image-wrapper{
-        display: none;
-        @media screen and (min-width:$desktop) {
-            display: grid;
-            
-        }
-
-        @media screen and (min-width:$desktop) {
-            order: 1;
-            flex-basis: 60%;
-        }
-
-        .first-wrapper{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap: 8px;
-            img{
-                height: 100%;
-                width: fit-content;
-            }
-        }
-
-        .second-wrapper{
-            margin-top: 8px;
-            display: grid;
-            gap: 8px;
-            grid-template-areas: "elephant lion lion lion"
-                                "elephant zebras kids elephants";
-
-            img{
-                height: 100%;
-                width: fit-content;
-            }
-        }
+    .first-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 8px;
+      img {
+        height: 100%;
+        width: fit-content;
+      }
     }
+
+    .second-wrapper {
+      margin-top: 8px;
+      display: grid;
+      gap: 8px;
+      grid-template-areas:
+        "elephant lion lion lion"
+        "elephant zebras kids elephants";
+
+      img {
+        height: 100%;
+        width: fit-content;
+      }
+    }
+  }
 }
 
 //----------------------------------
 //* Second section
 
-.wildlife-second-section{
-    position: relative;
-    p{
-      @include text-description();
-      color:$black;  
-    }
-    padding-bottom: 282px;
-    padding-top: 60px;
+.wildlife-second-section {
+  position: relative;
+  p {
+    @include text-description();
+    color: $black;
+  }
+  padding-bottom: 282px;
+  padding-top: 60px;
 
-    @media screen and (min-width:$tablet) {
-        padding-top: 120px; 
-    }
-    //* Background image
-    background-image: url('../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100% 95%;
-    @media screen and (min-width:$tablet) {
-        background-image: url('../images/wildlife-safari-tours/zebra-hero-min.jpg');
-        background-size: cover;
-        padding-bottom: 482px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-top: 120px;
+  }
+  //* Background image
+  background-image: url("../images/wildlife-safari-tours/zebra-hero-min-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 95%;
+  @media screen and (min-width: $tablet) {
+    background-image: url("../images/wildlife-safari-tours/zebra-hero-min.jpg");
+    background-size: cover;
+    padding-bottom: 482px;
+  }
 }
 
 //---------------------------------------
 //* camping-safari section
-.camping-safari{
-    padding-top: 100px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 148px;
-    }
+.camping-safari {
+  padding-top: 100px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 148px;
+  }
 }
 
-.topic-fixed-picture{
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width:$tablet){
-      flex-direction: row;
-      justify-content: space-between;
-      gap:10vw;
+.topic-fixed-picture {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 60px;
+  }
+
+  .topic-description {
+    padding-top: 12px;
+
+    h2 {
+      @include subheading();
+    }
+    h3 {
+      @include subheading();
     }
 
-    @media screen and (min-width:$desktop){
-        gap: 60px;
-      }
-    
-    .topic-description{
-        padding-top: 12px;
-        
-        h2{
-            @include subheading();
-        }
-        h3{
-            @include subheading();
-        }
-
-        h4{
-            margin-top: 10px;
-            margin-bottom: 24px;
-            @include heading-description();
-        }
-
-        @media screen and (min-width:$tablet){
-            flex-basis: 55%;
-            padding-top: 20px;
-        }
-    }
-  
-    .fixed-image-wrapper{
-        position: relative;
-      @media screen and (min-width:$tablet){
-        flex-basis: 45%;
-        max-width: 45%;
-        // position: absolute;
-        // top: 10%;
-        // right: -15%;
-      }
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 24px;
+      @include heading-description();
     }
 
-    .relative-image-wrapper{
-        position: relative;
+    @media screen and (min-width: $tablet) {
+      flex-basis: 55%;
+      padding-top: 20px;
     }
-  
-  
-    .mobile-only{
-      display: block;
-      margin-bottom: 46px;
-        @media screen and (min-width:$tablet){
-          display: none;
-      }
+  }
+
+  .fixed-image-wrapper {
+    position: relative;
+    @media screen and (min-width: $tablet) {
+      flex-basis: 45%;
+      max-width: 45%;
+      // position: absolute;
+      // top: 10%;
+      // right: -15%;
     }
-  
-    .tablet-only{
+  }
+
+  .relative-image-wrapper {
+    position: relative;
+  }
+
+  .mobile-only {
+    display: block;
+    margin-bottom: 46px;
+    @media screen and (min-width: $tablet) {
       display: none;
-      @media screen and (min-width:$tablet){
-        display: block;
-        position: sticky;
-        top: 15px;
+    }
+  }
+
+  .tablet-only {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: sticky;
+      top: 15px;
+    }
+  }
+
+  .days-list {
+    margin-top: 46px;
+    margin-bottom: 32px;
+  }
+
+  .day-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10px;
+    @media screen and (min-width: $tablet) {
+      padding: 15px 10px;
+    }
+  }
+
+  .days-arrow {
+    display: block;
+  }
+
+  .days-item:hover {
+    cursor: pointer;
+  }
+
+  .day {
+    flex-basis: 20%;
+    @include uppercase-list-heading();
+    color: $text-primary-color;
+    font-weight: 500;
+  }
+
+  .day-description {
+    flex-basis: 60%;
+    @include heading-description();
+  }
+
+  .camp-one-arr-bottom,
+  .camp-three-arr-bottom,
+  .camp-four-arr-bottom,
+  .mid-range-two-arr-bottom,
+  .mid-range-three-bottom,
+  .mid-range-four-arr-bottom,
+  .mid-range-five-arr-bottom,
+  .wilderness-two-arr-bottom,
+  .lux-lodge-two-arr-bottom,
+  .lux-lodge-three-bottom,
+  .lux-lodge-four-arr-bottom,
+  .lux-lodge-five-arr-bottom,
+  .class-lodge-four-arr-bottom,
+  .class-lodge-three-arr-bottom {
+    display: block;
+  }
+
+  .camp-one-arr-up,
+  .camp-three-arr-up,
+  .camp-four-arr-up,
+  .mid-range-two-arr-up,
+  .mid-range-three-up,
+  .mid-range-four-arr-up,
+  .mid-range-five-arr-up,
+  .wilderness-two-arr-up,
+  .lux-lodge-two-arr-up,
+  .lux-lodge-three-up,
+  .lux-lodge-five-arr-up,
+  .lux-lodge-four-arr-up,
+  .class-lodge-four-arr-up,
+  .class-lodge-three-arr-up {
+    display: none;
+  }
+
+  .hided-description-list {
+    display: none;
+    animation: rotateMenu 400ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  .hided-description-item {
+    margin-bottom: 18px;
+
+    &:not(:first-child) {
+      margin-top: 36px;
+    }
+    &:first-child {
+      margin-bottom: 23px;
+    }
+
+    span {
+      display: block;
+      @include uppercase-list-heading();
+
+      @media screen and (min-width: $desktop) {
+        margin-right: 28px;
+        min-width: 150px;
       }
     }
 
-    .days-list{
-       margin-top: 46px; 
-       margin-bottom: 32px;
+    p {
+      margin-top: 16px;
+      @include heading-description();
     }
 
-    .day-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 22px 10px;
-        @media screen and (min-width:$tablet){
-            padding: 15px 10px;
-        }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
-
-    .days-arrow{
-        display: block;
-
-    }
-
-    .days-item:hover{
-        cursor: pointer;
-    }
-
-    .day{
-       flex-basis: 20%;
-        @include uppercase-list-heading();
-        color:$text-primary-color;
-        font-weight: 500;
-    }
-
-    .day-description{
-        flex-basis: 60%;
-        @include heading-description();
-    }
-    
-    .camp-one-arr-bottom, .camp-three-arr-bottom, .camp-four-arr-bottom, 
-    .mid-range-two-arr-bottom,.mid-range-three-bottom,.mid-range-four-arr-bottom,
-    .mid-range-five-arr-bottom,.wilderness-two-arr-bottom,.lux-lodge-two-arr-bottom,
-    .lux-lodge-three-bottom, .lux-lodge-four-arr-bottom,.lux-lodge-five-arr-bottom,
-    .class-lodge-four-arr-bottom,.class-lodge-three-arr-bottom{
-        display: block;
-    }
-
-    .camp-one-arr-up, .camp-three-arr-up, .camp-four-arr-up, 
-    .mid-range-two-arr-up,.mid-range-three-up,.mid-range-four-arr-up,
-    .mid-range-five-arr-up,.wilderness-two-arr-up,.lux-lodge-two-arr-up,
-    .lux-lodge-three-up, .lux-lodge-five-arr-up,.lux-lodge-four-arr-up,
-    .class-lodge-four-arr-up,.class-lodge-three-arr-up{
-        display: none;
-    }
-
-    .hided-description-list{
-        display: none;
-        animation: rotateMenu 400ms ease-in-out forwards;
-        transform-origin: top center;
-    }
-
-
-    .hided-description-item{
-        margin-bottom: 18px;
-
-        &:not(:first-child){
-            margin-top: 36px;
-        }
-        &:first-child{
-            margin-bottom: 23px;
-        }
-        
-        span{
-            display: block;
-            @include uppercase-list-heading();
-
-            @media screen and (min-width:$desktop) {
-                margin-right: 28px;
-                min-width: 150px;
-            }
-        }
-
-        p{
-            margin-top: 16px;
-            @include heading-description();  
-        }
-
-        @media screen and (min-width:$desktop) {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-    }
-    
+  }
 }
-
 
 //----------------------------------
 //* Mid Range Safari section
 
-.mid-range-safari{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }
+.mid-range-safari {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
 }
-
 
 //------------------------------------------
 //* Wilderness and cultural experience section
-.wilderness-safari{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }
+.wilderness-safari {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
 }
 
 //------------------------------------------
 //* Luxury Lodge Safari
-.luxury-lodge-safari{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }
+.luxury-lodge-safari {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
 }
 
 //----------------------------------
 //* Classic lodge safari
-.class-lodge-safari{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }
+.class-lodge-safari {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
 }
 
 //---------------------------
 //* package section
-.package-section{
-    padding-top: 100px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 169px;
-    }
-
-
+.package-section {
+  padding-top: 100px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 169px;
+  }
 }
 
-.package-list-general{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.package-list-general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 
-    @media screen and (min-width:$tablet) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
-.package-item-general{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    
-    @media screen and (max-width:$tablet) {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+.package-item-general {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
 
-    h3{
-        @include subheading(); 
-        margin-bottom: 18px;
-        z-index: 5;
-        @media screen and (max-width:$tablet) {
-            margin-bottom: 24px;
-        }
-    }
-}
+  @media screen and (max-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.package-item-image{
-    img{
-        max-height: 600px;
-    }
-
-    picture{
-        z-index: 5;
-    }
-    
-    @media screen and (max-width:767px) {
-        order:3;
-    }
-}
-
-.package-item-text{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.package-list{
+  h3 {
+    @include subheading();
+    margin-bottom: 18px;
     z-index: 5;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
-.package-item{
-    @include text-description();
+.package-item-image {
+  img {
+    max-height: 600px;
+  }
 
-    &:not(:last-child){
-        margin-bottom: 20px;
-    }
+  picture {
+    z-index: 5;
+  }
 
-    span{
-        color:$button-main-color;
-        margin-right: 10px;
-        font-size: 10px;
-    }
-    
+  @media screen and (max-width: 767px) {
+    order: 3;
+  }
 }
 
-.custom-blue-background{
-    position: absolute;
-    background-color: $bg-light-color;
+.package-item-text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
-     @media screen and (max-width:767px) {
-        height: 450px;
-        top: 0;
-        right: 0;
-        width: 100%;
-        z-index: 0;
-    }
-    @media screen and (min-width:$tablet) {
-        height: 620px;
-        top: 0;
-        right: 0vw;
-        width: 120vw;
-        z-index: 0;
-    }
+.package-list {
+  z-index: 5;
+}
+
+.package-item {
+  @include text-description();
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: $button-main-color;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+}
+
+.custom-blue-background {
+  position: absolute;
+  background-color: $bg-light-color;
+
+  @media screen and (max-width: 767px) {
+    height: 450px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 620px;
+    top: 0;
+    right: 0vw;
+    width: 120vw;
+    z-index: 0;
+  }
 }
 
 //* Contact us for Wildlife page
-.page-wildlife > .contact-us{
-    background-color: $white;
+.page-wildlife > .contact-us {
+  background-color: $white;
 }
 
+.page-wildlife {
+  .contact-us-btn {
+    &::before {
+      background-image: url("../images/icons/envelop-grey.svg");
+    }
+  }
 
-.page-wildlife{ 
-    .slick-list{
-        overflow: hidden
-    }
-    .slick-dots{
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          margin-top: 11px;
-    }
-    
-      .slick-dots li{
-          width: 25%;
-          height: 1px;
-          background-color: $bg-dark-color;
-          margin: 0;
-      }
-    
-      .slick-dots li button{
-        display: none;
-    }
-    
-    .slick-dots .slick-active{
-        height: 3px !important;
-        background-color: $bg-dark-color !important;
-    }
+  #lang {
+    color: #f2fbff77;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-dots {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+  }
 
-    .slick-slide{
-        margin-left: 10px;
-        margin-right: 0px;
-    }
+  .slick-dots li {
+    width: 25%;
+    height: 1px;
+    background-color: $bg-dark-color;
+    margin: 0;
+  }
+
+  .slick-dots li button {
+    display: none;
+  }
+
+  .slick-dots .slick-active {
+    height: 3px !important;
+    background-color: $bg-dark-color !important;
+  }
+
+  .slick-slide {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
 }

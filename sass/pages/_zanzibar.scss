@@ -1,4 +1,12 @@
 .page-zanzibar {
+  .contact-us-btn {
+    &::before {
+      background-image: url("../images/icons/envelop-grey.svg");
+    }
+  }
+  #lang {
+    color: #f2fbff77;
+  }
   //* Zanzibar hero
   .zanzibar-hero {
     p:nth-child(2) {

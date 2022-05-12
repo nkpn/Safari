@@ -1,736 +1,733 @@
-.page-moshi{
-    .slick-dots{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 11px;
-  }
-  
-    .slick-dots li{
-        width: 25%;
-        height: 1px;
-        background-color: $bg-dark-color;
-        margin: 0;
+.page-moshi {
+  .contact-us-btn {
+    &::before {
+      background-image: url("../images/icons/envelop-grey.svg");
     }
-  
-    .slick-dots li button{
-      display: none;
   }
-  
-  .slick-dots .slick-active{
-      height: 3px !important;
-      background-color: $bg-dark-color !important;
+  #lang {
+    color: #f2fbff77;
+  }
+  .slick-dots {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
   }
 
-  .slick-slide{
-      margin-left: 0;
+  .slick-dots li {
+    width: 25%;
+    height: 1px;
+    background-color: $bg-dark-color;
+    margin: 0;
+  }
+
+  .slick-dots li button {
+    display: none;
+  }
+
+  .slick-dots .slick-active {
+    height: 3px !important;
+    background-color: $bg-dark-color !important;
+  }
+
+  .slick-slide {
+    margin-left: 0;
   }
 }
 
+.desktop-image-wrapper {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: grid;
+  }
 
-.desktop-image-wrapper{
-    display: none;
-    @media screen and (min-width:$desktop) {
-        display: grid;
+  @media screen and (min-width: $desktop) {
+    order: 1;
+    flex-basis: 60%;
+  }
 
+  .first-wrapper {
+    display: grid;
+    gap: 8px;
+    grid-template-areas: "person person trekking trekking trekking";
+    img {
+      height: 100%;
+      width: fit-content;
     }
+  }
 
-    @media screen and (min-width:$desktop) {
-        order: 1;
-        flex-basis: 60%;
+  .second-wrapper-moshi {
+    margin-top: 8px;
+    display: grid;
+    gap: 8px;
+    max-height: 450px;
+    grid-template-areas:
+      "mount mount tables tables mountain mountain"
+      "mount mount person person person person";
+    img {
+      height: 100%;
+      width: fit-content;
     }
-
-    .first-wrapper{
-        display: grid;
-        gap: 8px;
-        grid-template-areas: "person person trekking trekking trekking";
-        img{
-            height: 100%;
-            width: fit-content;
-        }
-    }
-
-    .second-wrapper-moshi{
-        margin-top: 8px;
-        display: grid;
-        gap: 8px;
-        max-height: 450px;
-        grid-template-areas: "mount mount tables tables mountain mountain"
-                            "mount mount person person person person";
-        img{
-            height: 100%;
-            width: fit-content;
-        }
-    }
+  }
 }
 
 //* Image wrapper
-.kilimonjaro-mount{
-    grid-area: mount;
-    overflow:hidden;
-    object-fit: contain;
+.kilimonjaro-mount {
+  grid-area: mount;
+  overflow: hidden;
+  object-fit: contain;
 }
 
-.kilimonjaro-tables{
-    grid-area: tables;
-    overflow:hidden;
-    object-fit: contain;
+.kilimonjaro-tables {
+  grid-area: tables;
+  overflow: hidden;
+  object-fit: contain;
 }
 
-.kilimonjaro-mountain{
-    grid-area: mountain;
-    overflow:hidden;
-    object-fit: contain;
+.kilimonjaro-mountain {
+  grid-area: mountain;
+  overflow: hidden;
+  object-fit: contain;
 }
 
-.kilimonjaro-trekking{
-    grid-area: trekking;
-    overflow:hidden;
-    object-fit: cover;
+.kilimonjaro-trekking {
+  grid-area: trekking;
+  overflow: hidden;
+  object-fit: cover;
 }
 
-.kilimonjaro-person{
-    overflow:hidden;
-    object-fit: contain;
-    grid-area: person;
+.kilimonjaro-person {
+  overflow: hidden;
+  object-fit: contain;
+  grid-area: person;
 }
 
-.kilimonjaro-mountains{
-    overflow:hidden;
-    object-fit: contain;
-    grid-area: mountains;
-    @media screen and (max-width:767px) {
-        display: none;
-    }
+.kilimonjaro-mountains {
+  overflow: hidden;
+  object-fit: contain;
+  grid-area: mountains;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.kilimonjaro-umbwe{
-    overflow:hidden;
-    object-fit: contain;
-    grid-area: umbwe;
-    @media screen and (max-width:767px) {
-        display: none;
-    }
+.kilimonjaro-umbwe {
+  overflow: hidden;
+  object-fit: contain;
+  grid-area: umbwe;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.kilimonjaro-person-green{
-    grid-area: person;
-    overflow:hidden;
+.kilimonjaro-person-green {
+  grid-area: person;
+  overflow: hidden;
 }
 
-
-
-.mobile-image-wrapper{ 
-    @media screen and (min-width:$desktop) {
-        display: none;
-    }
+.mobile-image-wrapper {
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 //-------------------------------------------
 //* Sections
 
 //* Arusha
-.arusha-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
-    }
+.arusha-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
 
-    h2{
-        @include subheading();
-        margin-bottom: 14px;
+  h2 {
+    @include subheading();
+    margin-bottom: 14px;
 
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
+  }
 }
 
-.arusha-wrapper{
+.arusha-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  p {
+    @include heading-description();
+    text-align: left;
+  }
+}
+
+.arusha-first {
+  @media screen and (min-width: $tablet) {
+    flex-basis: 65%;
+  }
+  p {
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 57px;
+      max-width: 65%;
+    }
+  }
+
+  .wrapper {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width:$tablet) {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: space-between;
+      flex-direction: row;
     }
 
-    p{
-        @include heading-description();
-        text-align: left;
+    .mobile-only {
+      max-width: 75%;
     }
+
+    .img-width-wrapper {
+      // max-width: 55%;
+    }
+
+    p {
+      padding-top: 32px;
+      max-width: 75%;
+      align-self: end;
+
+      @media screen and (min-width: $tablet) {
+        max-width: 65%;
+        padding-top: 0;
+        align-self: unset;
+        padding-left: 32px;
+      }
+    }
+  }
 }
 
-.arusha-first{
-    @media screen and (min-width:$tablet) {
-        flex-basis: 65%;
-    }
-    p{
-        margin-bottom: 32px;
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 57px;
-            max-width: 65%;
-        }
-    }
+.arusha-second {
+  flex-basis: 35%;
 
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width:$tablet) {
-            justify-content: space-between;
-            flex-direction: row;
-        }
-
-
-        .mobile-only{
-            max-width: 75%;
-        }
-
-        .img-width-wrapper{
-            // max-width: 55%;
-        }
-
-        p{
-            padding-top: 32px;
-            max-width: 75%; 
-            align-self: end;
-
-            @media screen and (min-width:$tablet) {
-                max-width: 65%;
-                padding-top: 0;
-                align-self:unset;
-                padding-left: 32px;
-            }
-        }
-
-        
-        
-    }
-}
-
-.arusha-second{
-    flex-basis: 35%;
-
-    img{
-        max-height: 475px;
-    }
+  img {
+    max-height: 475px;
+  }
 }
 
 //------------------------------
 //* Tarangire
-.tarangire-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-    }  
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
+.tarangire-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
+
+  .two-columns {
+    gap: 55px;
+    @media screen and (min-width: $desktop) {
+      gap: 130px;
+    }
+  }
+
+  .first {
+    flex-basis: 75%;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    @include heading-description();
+    text-align: left;
+    padding-bottom: 24px;
+  }
+
+  .tarangire-wrapper {
+    @media screen and (min-width: $tablet) {
+      flex-basis: 65%;
     }
 
-    .two-columns{
-       gap: 55px;
-       @media screen and (min-width:$desktop) {
-           gap: 130px;
-       }
+    .mobile-only {
+      max-width: 75%;
+      margin-bottom: 24px;
     }
 
-    .first{
-        flex-basis: 75%;
+    .tablet-only {
+      margin-top: 48px;
+      @media screen and (min-width: $desktop) {
+        max-width: 90%;
+      }
     }
-
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
-    }
-
-    p{
-        @include heading-description();
-        text-align: left;
-        padding-bottom: 24px;
-    }
-
-    .tarangire-wrapper{
-        @media screen and (min-width:$tablet) {
-            flex-basis: 65%;
-        }
-
-        .mobile-only{
-            max-width: 75%;
-            margin-bottom: 24px;
-        }
-
-        .tablet-only{
-            margin-top: 48px;
-            @media screen and (min-width:$desktop) {
-                max-width: 90%;
-            }
-        }
-    }
+  }
 }
 
 //---------------------
 //* Contact us HERO section
-.moshi-hero-section{
-    margin-top: 80px;
-    padding-bottom: 120px;
-    background-image: url('../images/moshi/moshi-hero-mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+.moshi-hero-section {
+  margin-top: 80px;
+  padding-bottom: 120px;
+  background-image: url("../images/moshi/moshi-hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
-    @media screen and (min-width:$tablet) {
-        margin-top: 115px;
-        background-size: contain;
-        background-image: url('../images/moshi/moshi-hero-desktop.jpg');
-        background-position: 100%;
+  @media screen and (min-width: $tablet) {
+    margin-top: 115px;
+    background-size: contain;
+    background-image: url("../images/moshi/moshi-hero-desktop.jpg");
+    background-position: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
+  }
 
-    @media screen and (min-width:$desktop) {
-        margin-top: 168px;
+  p {
+    @include heading-description();
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
     }
+  }
 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
+  .wrapper {
+    max-width: 75%;
+    @media screen and (min-width: $tablet) {
+      max-width: 450px;
     }
-
-    p{
-        @include heading-description();
-        margin-bottom: 28px;
-        
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 32px;
-        }
-    }
-
-    .wrapper{
-        max-width: 75%;
-        @media screen and (min-width:$tablet) {
-            max-width: 450px;
-        }
-    }
+  }
 }
 
 //-------------------------------
 //* Marangu waterfalls
-.marangu-wateralls-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
+.marangu-wateralls-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
+  .two-columns {
+    gap: 25px;
+    @media screen and (min-width: $tablet) {
+      gap: 32px;
     }
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
+  }
+
+  .first-marangu {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      max-width: 60%;
     }
-    .two-columns{
-        gap: 25px;
-        @media screen and (min-width:$tablet) {
-            gap: 32px;
-        }
+  }
+
+  .second-marangu {
+    @media screen and (min-width: $desktop) {
+      padding-right: 60px;
+    }
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    @include heading-description();
+    margin-bottom: 24px;
+    max-width: 75%;
+  }
+
+  .full-width {
+    max-width: 100%;
+    @media screen and (min-width: $tablet) {
+      max-width: inherit;
+    }
+  }
+
+  .mobile-only {
+    max-width: 90%;
+    align-self: flex-end;
+    margin-bottom: 24px;
+  }
+
+  .second-image {
+    display: block;
+    max-width: 80%;
+    align-self: start;
+    @media screen and (min-width: $tablet) {
+      margin-top: 24px;
+      max-width: 60%;
+      align-self: flex-end;
     }
 
-    .first-marangu{
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width:$tablet) {
-            max-width: 60%;
-        }
+    @media screen and (min-width: $desktop) {
+      margin-top: 54px;
     }
-
-    .second-marangu{
-        @media screen and (min-width:$desktop) {
-            padding-right: 60px;
-        }
-    }
-
-     h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
-    }
-
-    p{
-        @include heading-description();
-        margin-bottom: 24px;
-        max-width: 75%;
-    }
-
-    .full-width{
-        max-width: 100%;
-        @media screen and (min-width:$tablet) {
-            max-width: inherit;
-        }
-    }
-
-    .mobile-only{
-        max-width: 90%;
-        align-self:flex-end;
-        margin-bottom: 24px;
-    }
-
-    .second-image{
-        display: block;
-        max-width: 80%;
-        align-self: start;
-        @media screen and (min-width:$tablet) {
-           margin-top: 24px;
-           max-width: 60%;
-           align-self: flex-end;
-        }
-
-        @media screen and (min-width:$desktop) {
-            margin-top: 54px;
-        }
-    }
+  }
 }
 
-.chemka-section{
-    padding-top: 80px;
-    background:linear-gradient(to bottom, $bg-light-color 90%, $white 10%);
-    
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-        background:linear-gradient(to bottom, $bg-light-color 95%, $white 5%);
-        margin-top: 115px;
+.chemka-section {
+  padding-top: 80px;
+  background: linear-gradient(to bottom, $bg-light-color 90%, $white 10%);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+    background: linear-gradient(to bottom, $bg-light-color 95%, $white 5%);
+    margin-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
-    @media screen and (min-width:$desktop) {
-        margin-top: 168px;
+  }
+
+  p {
+    @include heading-description();
+    margin-bottom: 24px;
+  }
+
+  .day {
+    @include uppercase-list-heading();
+    margin-bottom: 8px;
+    padding: 0;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .two-columns {
+    gap: 75px;
+    @media screen and (min-width: $tablet) {
+      gap: 106px;
+    }
+  }
+
+  .first-wrapper {
+    @media screen and (min-width: $tablet) {
+      max-width: 40%;
     }
 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
+    img {
+      margin-bottom: 24px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+        margin-top: 160px;
+      }
     }
-
-    p{
-        @include heading-description();
-        margin-bottom: 24px;
-    }
-
-    .day{
-        @include uppercase-list-heading();
-        margin-bottom: 8px;
-        padding: 0;
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 16px;
-        }
-    }
-
-    .two-columns{
-        gap: 75px;
-        @media screen and (min-width:$tablet) {
-            gap: 106px;
-        }
-    }
-
-    .first-wrapper{
-        @media screen and (min-width:$tablet) {
-            max-width: 40%;
-        }
-
-        img{
-            margin-bottom: 24px;
-            @media screen and (min-width:$tablet) {
-                margin-bottom: 0;
-                margin-top: 160px;
-            }
-        }
-    }
+  }
 }
 
 //-----------------------
 //* Materuni section
-.materuni-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
+.materuni-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
+  }
+
+  p {
+    @include heading-description();
+    margin-bottom: 24px;
+  }
+
+  .mobile-only {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+    p {
+      max-width: 80%;
+
+      &:nth-child(2) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .two-columns {
+    @media screen and (min-width: $tablet) {
+      gap: 35px;
+    }
+  }
+
+  .first {
+    p {
+      @media screen and (min-width: $tablet) {
+        max-width: 80%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      display: block;
+      @media screen and (min-width: $tablet) {
+        max-width: 80%;
+        align-self: flex-end;
+        margin-bottom: 53px;
+      }
     }
 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
+    p {
+      @media screen and (min-width: $tablet) {
+        max-width: 80%;
+        align-self: flex-start;
+      }
     }
-
-    p{
-        @include heading-description();
-        margin-bottom: 24px;
-    }
-
-    .mobile-only{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width:$tablet) {
-            display: none;
-        }
-        p{
-            max-width: 80%;
-
-            &:nth-child(2){
-                align-self: flex-end;
-            }
-        }
-    }
-
-    .two-columns{
-        @media screen and (min-width:$tablet) {
-            gap: 35px;
-        }
-    }
-
-    .first{
-       p{
-            @media screen and (min-width:$tablet) {
-                max-width: 80%;
-                margin-bottom: 40px; 
-            }
-       } 
-    }
-    
-    .second{
-        display: flex;
-        flex-direction: column;
-
-        img{
-            display: block;
-            @media screen and (min-width:$tablet) {
-                max-width: 80%;
-                align-self: flex-end;
-                margin-bottom: 53px;
-            }
-        }
-
-        p{
-            @media screen and (min-width:$tablet) {
-                max-width: 80%;
-                align-self: flex-start;
-            }
-        }
-    }
+  }
 }
 
 //-----------------------------
 //* Lake Challa
-.lake-challa-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
+.lake-challa-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
+  }
+
+  p {
+    @include heading-description();
+    margin-bottom: 24px;
+  }
+
+  .two-columns {
+    gap: 10%;
+    @media screen and (min-width: $tablet) {
+      gap: 15%;
     }
+  }
 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
+  .first {
+    @media screen and (min-width: $tablet) {
+      max-width: 50%;
     }
-
-    p{
-        @include heading-description();
-        margin-bottom: 24px;
-    }
-    
-    .two-columns{
-        gap: 10%;
-        @media screen and (min-width:$tablet) {
-            gap: 15%;
-        }
-    }
-
-    .first{
-        @media screen and (min-width:$tablet) {
-            max-width: 50%;
-        }
-        p{
-            max-width: 80%;
-            @media screen and (min-width:$tablet) {
-                max-width: 100%;
-            }
-        }
-
-        img{
-            max-width: 70%;
-            @media screen and (min-width:$tablet) {
-                margin-top:84px;
-            }
-        }
-
-        .mobile-only{
-            display: flex;
-            flex-direction: column;
-            @media screen and (min-width:$tablet) {
-                display: none;
-            }
-
-            p{
-                margin-top: 24px;
-                align-self: flex-end;
-            }
-        }
-
+    p {
+      max-width: 80%;
+      @media screen and (min-width: $tablet) {
+        max-width: 100%;
+      }
     }
 
-    .second{
-        max-width: 70%;
+    img {
+      max-width: 70%;
+      @media screen and (min-width: $tablet) {
+        margin-top: 84px;
+      }
     }
+
+    .mobile-only {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
+
+      p {
+        margin-top: 24px;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .second {
+    max-width: 70%;
+  }
 }
 
 //---------------------------------------
 //* Chagga museum section
-.chagga-museum-section{
-    padding-top: 80px;
-    @media screen and (min-width:$tablet) {
-        padding-top: 115px;
-        margin-bottom: 115px;
+.chagga-museum-section {
+  padding-top: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 115px;
+    margin-bottom: 115px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+    margin-bottom: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    @include heading-description();
+    text-align: left;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 0;
+    }
+  }
+
+  .two-columns {
+    gap: 75px;
+    @media screen and (min-width: $desktop) {
+      gap: 140px;
+    }
+  }
+
+  .first {
+    flex-basis: 75%;
+  }
+
+  .tarangire-wrapper {
+    @media screen and (min-width: $tablet) {
+      flex-basis: 65%;
     }
 
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
-        margin-bottom: 168px;
-    }
- 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
- 
-         @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
-    }
- 
-     p{
-         @include heading-description();
-         text-align: left;
-         padding-bottom: 24px;
-
-         @media screen and (min-width:$tablet) {
-            padding-bottom: 0;
-        }
+    .mobile-only {
+      max-width: 85%;
+      margin-bottom: 24px;
     }
 
-    .two-columns{
-        gap: 75px;
-        @media screen and (min-width:$desktop) {
-            gap: 140px;
-        }
+    .mobile-only:nth-child(2) {
+      max-width: 100%;
     }
 
-     .first{
-         flex-basis: 75%;
-     }
- 
-     .tarangire-wrapper{
-         @media screen and (min-width:$tablet) {
-             flex-basis: 65%;
-         }
- 
-         .mobile-only{
-             max-width: 85%;
-             margin-bottom: 24px;
-         }
-
-         .mobile-only:nth-child(2){
-            max-width: 100%;
-        }
- 
-         .full-width{
-             max-width: 100%;
-         }
-
-         .tablet-only{
-             margin-top: 62px;
-         }
+    .full-width {
+      max-width: 100%;
     }
+
+    .tablet-only {
+      margin-top: 62px;
+    }
+  }
 }
 
-.arusha-museum{
-    padding-top: 60px;
-    background:linear-gradient(to bottom, $bg-light-color 90%, $white 10%);
-    padding-bottom: 56px;
+.arusha-museum {
+  padding-top: 60px;
+  background: linear-gradient(to bottom, $bg-light-color 90%, $white 10%);
+  padding-bottom: 56px;
 
-    @media screen and (min-width:$tablet) {
-        padding-bottom: 72px;
-        padding-top: 72px;
-        background:linear-gradient(to bottom, $bg-light-color 100%, $white 0%);
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 72px;
+    padding-top: 72px;
+    background: linear-gradient(to bottom, $bg-light-color 100%, $white 0%);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 168px;
+  }
+
+  h3 {
+    @include subheading();
+    margin-bottom: 14px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
     }
-    @media screen and (min-width:$desktop) {
-        padding-top: 168px;
+  }
+
+  p {
+    @include heading-description();
+    margin-bottom: 24px;
+  }
+
+  .wrapper {
+    margin-top: 24px;
+    margin-left: auto;
+    max-width: 70%;
+    @media screen and (min-width: $tablet) {
+      margin-top: 150px;
+      margin-left: 0;
+      margin-right: auto;
     }
+  }
 
+  .two-columns {
+    gap: 10%;
+  }
 
-    h3{
-        @include subheading();
-        margin-bottom: 14px;
-
-        @media screen and (min-width:$tablet) {
-            margin-bottom: 20px;
-        }
-    }
-
-    p{
-        @include heading-description();
-        margin-bottom: 24px;
-    }
-
-    .wrapper{
-        margin-top: 24px; 
-        margin-left: auto;
-        max-width: 70%;
-        @media screen and (min-width:$tablet) {
-            margin-top: 150px;
-            margin-left: 0;
-            margin-right: auto;
-        }
-    }
-
-    .two-columns{
-        gap: 10%;
-    }
-
-    @media screen and (min-width:$tablet) {
-        .first{
-            flex-basis: 70%;
-        }
-    
-        .second{
-            flex-basis: 65%;
-        }
+  @media screen and (min-width: $tablet) {
+    .first {
+      flex-basis: 70%;
     }
 
-    
+    .second {
+      flex-basis: 65%;
+    }
+  }
 }
 
-.page-moshi > .contact-us{
-    background-color: $white;
+.page-moshi > .contact-us {
+  background-color: $white;
 }
