@@ -1108,6 +1108,10 @@ hr {
   }
 }
 
+.home-hero .hero-text {
+  position: relative;
+}
+
 .home-hero .hero-text h1 {
   max-width: 265px;
   font-family: Kaisei Decol;
@@ -1136,6 +1140,8 @@ hr {
   color: #ffffff;
   text-transform: none;
   font-weight: 100;
+  display: block;
+  text-align: end;
 }
 
 @media screen and (min-width: 768px) {
@@ -1407,6 +1413,19 @@ hr {
   }
 }
 
+.tours-carousel .carousel-card-zanzibar:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/home-page/beach-safari-min.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/home-page/beach-safari-min.png");
+}
+
+.tours-carousel .carousel-card-zanzibar:hover > .lng-carousel-h4-beach {
+  color: grey;
+}
+
+.tours-carousel .carousel-card-zanzibar:hover > .lng-carousel-p-beach {
+  color: grey;
+}
+
 .tours-carousel .carousel-card-wildlife {
   width: 100%;
   background-image: url("../images/home-page/tanzania-safaris-min.png");
@@ -1420,7 +1439,20 @@ hr {
   }
 }
 
-.tours-carousel .carousel-card-wildlife:hover + .contact-us-btn {
+.tours-carousel .carousel-card-wildlife:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/home-page/tanzania-safaris-min.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/home-page/tanzania-safaris-min.png");
+}
+
+.tours-carousel .carousel-card-wildlife:hover > .lng-carousel-h4-tanzania {
+  color: grey;
+}
+
+.tours-carousel .carousel-card-wildlife:hover > .lng-carousel-p-tanzania {
+  color: grey;
+}
+
+.tours-carousel .carousel-card-wildlife:hover + .book-btn {
   display: block;
 }
 
@@ -1437,6 +1469,19 @@ hr {
   }
 }
 
+.tours-carousel .carousel-card-moshi:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/home-page/moshi-min.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/home-page/moshi-min.png");
+}
+
+.tours-carousel .carousel-card-moshi:hover > .lng-carousel-h4-moshi {
+  color: grey;
+}
+
+.tours-carousel .carousel-card-moshi:hover > .lng-carousel-p-moshi {
+  color: grey;
+}
+
 .tours-carousel .carousel-card-kilimanjaro {
   width: 100%;
   background-image: url("../images/home-page/killimanjaro-min.png");
@@ -1448,6 +1493,24 @@ hr {
   .tours-carousel .carousel-card-kilimanjaro {
     height: 500px;
   }
+}
+
+.tours-carousel .carousel-card-kilimanjaro:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/home-page/killimanjaro-min.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/home-page/killimanjaro-min.png");
+}
+
+.tours-carousel .carousel-card-kilimanjaro:hover > .lng-carousel-h4-kilimonjaro {
+  color: grey;
+}
+
+.tours-carousel .carousel-card-kilimanjaro:hover > .lng-carousel-p-kilimonjaro {
+  color: grey;
+}
+
+.tours-carousel .darkBG {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
 .tours-carousel .hide-zanzibar,
@@ -1486,8 +1549,9 @@ hr {
   margin-bottom: 0;
 }
 
-.tours-carousel .carousel-card .contact-us-btn {
-  color: #ffffff;
+.tours-carousel .carousel-card .book-btn {
+  background-color: #ffffff;
+  color: #000000;
   max-width: 210px;
   margin: 0 auto;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1497,16 +1561,17 @@ hr {
   position: absolute;
   top: 46%;
   right: 30%;
+  z-index: 20;
 }
 
 @media screen and (min-width: 768px) {
-  .tours-carousel .carousel-card .contact-us-btn {
+  .tours-carousel .carousel-card .book-btn {
     right: 33%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .tours-carousel .carousel-card .contact-us-btn {
+  .tours-carousel .carousel-card .book-btn {
     right: 25%;
   }
 }

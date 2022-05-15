@@ -120,6 +120,7 @@ $(".mobile-image-wrapper").slick({
 //* carousel card hover function
 $(".carousel-card-zanzibar").hover(() => {
   $(".hide-zanzibar").toggle();
+  $(".carousel-item").toggleClass("darkBG");
 });
 $(".carousel-card-zanzibar").focus(() => {
   $(".hide-zanzibar").toggle();

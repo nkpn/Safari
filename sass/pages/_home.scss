@@ -89,6 +89,7 @@
   }
 
   .hero-text {
+    position: relative;
     h1 {
       max-width: 265px;
       font-family: Kaisei Decol;
@@ -115,6 +116,8 @@
       color: $white;
       text-transform: none;
       font-weight: 100;
+      display: block;
+      text-align: end;
 
       @media screen and (min-width: $tablet) {
         font-size: 36px;
@@ -326,6 +329,20 @@
     @media screen and (min-width: $tablet) {
       height: 500px;
     }
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/home-page/beach-safari-min.png");
+    }
+    &:hover > .lng-carousel-h4-beach {
+      color: grey;
+    }
+    &:hover > .lng-carousel-p-beach {
+      color: grey;
+    }
   }
 
   .carousel-card-wildlife {
@@ -336,9 +353,23 @@
     @media screen and (min-width: $tablet) {
       height: 500px;
     }
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/home-page/tanzania-safaris-min.png");
+    }
+    &:hover > .lng-carousel-h4-tanzania {
+      color: grey;
+    }
+    &:hover > .lng-carousel-p-tanzania {
+      color: grey;
+    }
   }
 
-  .carousel-card-wildlife:hover + .contact-us-btn {
+  .carousel-card-wildlife:hover + .book-btn {
     display: block;
   }
 
@@ -350,6 +381,20 @@
     @media screen and (min-width: $tablet) {
       height: 500px;
     }
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/home-page/moshi-min.png");
+    }
+    &:hover > .lng-carousel-h4-moshi {
+      color: grey;
+    }
+    &:hover > .lng-carousel-p-moshi {
+      color: grey;
+    }
   }
 
   .carousel-card-kilimanjaro {
@@ -360,6 +405,25 @@
     @media screen and (min-width: $tablet) {
       height: 500px;
     }
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/home-page/killimanjaro-min.png");
+    }
+    &:hover > .lng-carousel-h4-kilimonjaro {
+      color: grey;
+    }
+    &:hover > .lng-carousel-p-kilimonjaro {
+      color: grey;
+    }
+  }
+
+  .darkBG {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   }
 
   .hide-zanzibar,
@@ -389,14 +453,16 @@
       margin-bottom: 0;
     }
 
-    .contact-us-btn {
-      color: $white;
+    .book-btn {
+      background-color: $white;
+      color: $black;
       max-width: 210px;
       margin: 0 auto;
       transition: transform 250ms $animation-timing-function;
       position: absolute;
       top: 46%;
       right: 30%;
+      z-index: 20;
 
       @media screen and (min-width: $tablet) {
         right: 33%;
