@@ -283,6 +283,7 @@ summary {
 }
 
 .book-btn {
+  max-width: 200px;
   font-size: 14px;
   line-height: 24px;
   padding: 5px 30px;
@@ -297,6 +298,7 @@ summary {
 @media screen and (min-width: 1024px) {
   .book-btn {
     padding: 8px 60px;
+    max-width: 250px;
   }
 }
 
@@ -2301,6 +2303,16 @@ hr {
 
 .page-kilimonjaro .kilimonjaro-hero .hero-description {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -4746,6 +4758,16 @@ hr {
 
 .wildlife-hero .hero-description {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

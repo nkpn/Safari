@@ -73,7 +73,9 @@
 
     .hero-description {
       margin-top: 24px;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       @media screen and (max-width: $tablet) {
         margin-top: 60px;
       }

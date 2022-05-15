@@ -19,6 +19,7 @@
 }
 
 .book-btn {
+  max-width: 200px;
   font-size: 14px;
   line-height: 24px;
   padding: 5px 30px;
@@ -29,8 +30,11 @@
   font-family: Montserrat;
   cursor: pointer;
 
+  @media screen and (min-width: $tablet) {
+  }
   @media screen and (min-width: $desktop) {
     padding: 8px 60px;
+    max-width: 250px;
   }
 
   &:hover {

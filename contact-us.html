@@ -191,25 +191,31 @@
       </section>
 
 
-      <section class="contact-us">
+       <section class="contact-us">
       <h2 class="hided">contact us</h2>
       <div class="container">
         <ul class="two-columns">
           <ul class="contact-us-form">
             <li class="contact-information-item">
-              <h3>Contact Us</h3>
+              <h3 class="lng-contact-us-h3">Contact Us</h3>
             </li>
             <form action="autorespond.php" method="post" id="form_message">
               <div class="form-field">
-                <label for="name" class="form-label">Enter your name</label>
+                <label for="name" class="form-label lng-label-name"
+                  >Enter your name</label
+                >
                 <input type="text" name="name" id="name" class="form-input" />
               </div>
               <div class="form-field">
-                <label for="name" class="form-label">Enter your email</label>
+                <label for="name" class="form-label lng-label-email"
+                  >Enter your email</label
+                >
                 <input type="text" name="email" id="email" class="form-input" />
               </div>
               <div class="form-field">
-                <label for="name" class="form-label">Comment or question</label>
+                <label for="name" class="form-label lng-label-textarea"
+                  >Comment or question</label
+                >
                 <textarea
                   name="message"
                   class="form-input message"
@@ -217,17 +223,19 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button type="submit" class="submit-button">Send</button>
+              <button type="submit" class="submit-button lng-label-submit">
+                Send
+              </button>
             </form>
           </ul>
 
           <ul class="contact-information-list">
             <li class="contact-information-item">
-              <p>phone</p>
+              <p class="lng-contact-phone">phone</p>
               <a href="tel:+255685592915">+255685 592 915</a>
             </li>
             <li class="contact-information-item">
-              <p>social</p>
+              <p class="lng-contact-social">social</p>
               <ul class="social-list">
                 <li>
                   <a class="contact-social-item" href="#"
@@ -272,11 +280,19 @@
               </ul>
             </li>
             <li class="contact-information-item">
-              <p>address</p>
+              <p class="lng-contact-address">address</p>
               <p class="address">Muthaiga, Limuru Road, 674</p>
             </li>
           </ul>
         </ul>
+
+        <a href="#" class="button-to-top" onclick="topFunction()">
+          <img
+            loading="lazy"
+            src="./images/icons/top-arrow.svg"
+            alt="to the top of page"
+          />
+        </a>
       </div>
     </section>
 
@@ -284,16 +300,24 @@
       <div class="container">
         <ul class="footer-list">
           <li class="footer-navigation">
-            <a href="./wildlife-safari-tours.html">Wildlife Safari Tours</a>
+            <a href="./wildlife-safari-tours.html" class="lng-footer-wildlife"
+              >Wildlife Safari Tours</a
+            >
           </li>
           <li class="footer-navigation">
-            <a href="./kilimanjaro-mountain.html">The Kilimanjaro Mountain</a>
+            <a href="./kilimanjaro-mountain.html" class="lng-footer-kilimanjaro"
+              >The Kilimanjaro Mountain</a
+            >
           </li>
           <li class="footer-navigation">
-            <a href="./day-trips-in-moshi.html">Day Trips Moshi</a>
+            <a href="./day-trips-in-moshi.html" class="lng-footer-moshi"
+              >Day Trips Moshi</a
+            >
           </li>
           <li class="footer-navigation">
-            <a href="./zanzibar-archipelago.html">Zanzibar Archipelago</a>
+            <a href="./zanzibar-archipelago.html" class="lng-footer-zanzibar"
+              >The Zanzibar Archipelago</a
+            >
           </li>
           <li><p class="footer-copyright">© Good Deeds Travel 2022</p></li>
         </ul>
