@@ -1152,9 +1152,9 @@ const langArrWildlife = {
   //* Luxury
   "lux-h3": {
     en: "Luxury Lodge Safari",
-    ua: "Сафарі-лодж середнього класу",
-    fr: "Pavillon de safari de moyenne gamme",
-    de: "Safari-Pavillon der Mittelklasse",
+    ua: "Luxury Lodge Safari",
+    fr: "Safari en lodge de luxe",
+    de: "Safari in einer Luxuslodge",
   },
   "lux-h4": {
     en: "This particular safari involves camping at Tarangire, Lake Manyara, Ngorongoro, and Serengeti",
@@ -1170,9 +1170,9 @@ const langArrWildlife = {
   },
   "lux-one-day-desc": {
     en: "Luxury Lodge safari in Tarangire and Ngorongoro National Parks",
-    ua: "Сафарі середнього класу в Тарангірі та Нгоронгоро",
-    fr: "Safari dans un lodge de moyenne gamme au Tarangire et au Ngorongoro.",
-    de: "Safari in einer Mittelklasse-Lodge in Tarangire und Ngorongoro.",
+    ua: "Це особливе сафарі включає кемпінг в Тарангіре, озері Маньяра, Нгоронгоро та Серенгеті.",
+    fr: "Safari en lodge de luxe dans les parcs nationaux du Tarangiré et du Ngorongoro.",
+    de: "Safari in einer luxuriösen Lodge in den Nationalparks Tarangire und Ngorongoro.",
   },
   "lux-one-span1": {
     en: "DAY 1: ARRIVAL, AIRPORT PICK UP",
@@ -1226,14 +1226,14 @@ const langArrWildlife = {
   "lux-two-days": {
     en: "3 DAYS",
     ua: "3 ДНІ",
-    fr: "3 JOURS",
+    fr: "3 JOUR",
     de: "3 TAGE",
   },
   "lux-two-day-desc": {
     en: "Luxury Lodge Safari in Tarangire, Ngorongoro, and Lake Manyara Parks",
-    ua: "Сафарі в лоджі середнього рівня в Тарангірі, кратері Нгоронгоро та озері Маньяра",
-    fr: "Safari en lodge de moyenne gamme dans le Tarangire, le cratère du Ngorongoro et le lac Manyara.",
-    de: "Safari in einer Mittelklasse-Lodge in Tarangire, dem Ngorongoro-Krater und dem Lake Manyara.",
+    ua: "Розкішний лодж Safari в парках Тарангіре, Нгоронгоро та озера Маньяра",
+    fr: "Safari en lodge de luxe dans les parcs du Tarangire, du Ngorongoro et du lac Manyara",
+    de: "Safari in einer Luxuslodge in den Parks Tarangire, Ngorongoro und Lake Manyara",
   },
   "lux-two-span1": {
     en: "DAY 1: ARRIVAL, AIRPORT PICK UP",
@@ -1304,9 +1304,9 @@ const langArrWildlife = {
   },
   "lux-three-day-desc": {
     en: "Luxury Lodge Safari in Tarangire, Ngorongoro, and Serengeti National Parks",
-    ua: "Сафарі в Тарангірі, Серенгеті та Нгоронгоро",
-    fr: "Safari dans le Tarangire, le Serengeti et le Ngorongoro.",
-    de: "Safari im Tarangire, in der Serengeti und im Ngorongoro.",
+    ua: "Розкішний лодж Safari в національних парках Тарангіре, Нгоронгоро та Серенгеті",
+    fr: "Safari en lodge de luxe dans les parcs nationaux de Tarangire, Ngorongoro et Serengeti.",
+    de: "Safari in einer luxuriösen Lodge in den Nationalparks Tarangire, Ngorongoro und Serengeti.",
   },
   "lux-three-span1": {
     en: "DAY 1: ARRIVAL, AIRPORT PICK UP",
@@ -1389,9 +1389,9 @@ const langArrWildlife = {
   },
   "lux-four-day-desc": {
     en: "lux-range Lodge Safari in Tarangire, Serengeti, and Ngorongoro",
-    ua: "Lodge Safari середнього класу в Тарангіре, Серенгеті та Нгоронгоро",
-    fr: "Safari en lodge de moyenne gamme à Tarangire, Serengeti, et Ngorongoro",
-    de: "Safari in mittelgroßen Lodges in Tarangire, Serengeti und Ngorongoro",
+    ua: "Розкішний лодж Safari в національних парках Тарангіре, Нгоронгоро та Серенгеті",
+    fr: "Safari en lodge de luxe dans les parcs nationaux de Tarangire, Ngorongoro et Serengeti.",
+    de: "Safari in einer luxuriösen Lodge in den Nationalparks Tarangire, Ngorongoro und Serengeti.",
   },
   "lux-four-span1": {
     en: "DAY 1: ARRIVAL, AIRPORT PICK UP",
