@@ -496,13 +496,28 @@
 
 .package-list {
   z-index: 5;
+
+  p {
+    display: inline-block;
+  }
 }
 
 .package-item {
   @include text-description();
-
+  padding-left: 15px;
+  position: relative;
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "●";
+    display: block;
+    width: 3px;
+    height: 3px;
+    top: 0%;
+    left: -3px;
   }
 
   span {

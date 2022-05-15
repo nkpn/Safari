@@ -1484,6 +1484,257 @@ const langArrWildlife = {
     de: "Wenn Sie ein anderes Reisekonzept im Kopf haben, lassen Sie uns wissen, wie Sie Ihr Paket individuell gestalten möchten, und wir werden unser Bestes tun, um dies zu erreichen.",
   },
   //* Classic lodge safari
+  "class-h3": {
+    en: "Classic Lodge Safari",
+    ua: "Класичний лодж сафарі",
+    fr: "Safari en lodge classique",
+    de: "Safari in einer klassischen Lodge",
+  },
+  "class-h4": {
+    en: "This particular safari involves camping at Tarangire, Lake Manyara, Ngorongoro, and Serengeti",
+    ua: "Це особливе сафарі включає кемпінг в Тарангіре, озері Маньяра, Нгоронгоро та Серенгеті.",
+    fr: "Ce safari particulier implique de camper au Tarangire, au lac Manyara, au Ngorongoro et au Serengeti.",
+    de: "Diese besondere Safari beinhaltet das Zelten in Tarangire, Lake Manyara, Ngorongoro und Serengeti.",
+  },
+  "class-one-days": {
+    en: "3 DAYS",
+    ua: "3 ДНІ",
+    fr: "3 JOURS",
+    de: "3 TAG",
+  },
+  "class-one-day-desc": {
+    en: "Classic Lodge Safari",
+    ua: "Класичний лодж сафарі",
+    fr: "Safari en lodge classique",
+    de: "Safari in einer klassischen Lodge",
+  },
+  "class-one-span1": {
+    en: "DAY 1: ARUSHA NATIONAL PARK /CULTURAL EXPERIENCE (OPTIONAL)",
+    ua: "ДЕНЬ 1: НАЦІОНАЛЬНИЙ ПАРК АРУША / КУЛЬТУРНИЙ ДОСВІД (НЕОБОВ'ЯЗКОВО)",
+    fr: "JOUR 1 : PARC NATIONAL D'ARUSHA / EXPÉRIENCE CULTURELLE (FACULTATIF)",
+    de: "TAG 1: ARUSHA-NATIONALPARK / KULTURELLES ERLEBNIS (FAKULTATIV)",
+  },
+  "class-one-p1": {
+    en: "We provide you with a variety of options from which to choose. On this day, you can combine various natural and cultural experiences.",
+    ua: "Ми пропонуємо вам різноманітні варіанти, з яких можна вибрати. У цей день можна поєднати різноманітні природні та культурні враження.",
+    fr: "Nous vous proposons une variété d'options parmi lesquelles choisir. Ce jour-là, vous pourrez combiner diverses expériences naturelles et culturelles.",
+    de: "Wir bieten Ihnen eine Vielzahl von Optionen, aus denen Sie wählen können. An diesem Tag können Sie verschiedene Natur- und Kulturerlebnisse miteinander verbinden.",
+  },
+  "class-one-span2": {
+    en: "DAY 2: NGORONGORO CRATER",
+    ua: "ДЕНЬ 2: КРАТЕР НГОРОНГОРО",
+    fr: "JOUR 2 : CRATERE DU NGORONGORO",
+    de: "TAG 2: NGORONGORO KRATER",
+  },
+  "class-one-p2": {
+    en: "Morning game drive on the floor of the Ngorongoro Crater, followed by a picnic lunch stop. Drive to the lodge for an overnight stay near Karatu/Mto wa mbu before nightfall.",
+    ua: "Ранкова прогулянка на підлозі кратера Нгоронгоро, після чого зупинка на пікнік. Поїздка до будиночка для ночівлі поблизу Карату/Мто ва Мбу до настання ночі.",
+    fr: "Safari matinal au fond du cratère du Ngorongoro, suivi d'un arrêt pour un déjeuner pique-nique. Conduisez jusqu'au lodge pour passer la nuit près de Karatu/Mto wa mbu avant la tombée de la nuit.",
+    de: "Frühmorgendliche Safari zum Boden des Ngorongoro-Kraters, gefolgt von einem Halt für ein Picknick-Mittagessen. Fahren Sie zur Lodge, um vor Einbruch der Dunkelheit in der Nähe von Karatu/Mto wa mbu zu übernachten.",
+  },
+  "class-one-span3": {
+    en: "DAY 3: OPTIONAL ACTIVITIES",
+    ua: "ДЕНЬ 3: ФАКЦІОНАЛЬНІ ДІЯЛЬНІСТЬ",
+    fr: "JOUR 3 : ACTIVITÉS OPTIONNELLES",
+    de: "TAG 3: OPTIONALE AKTIVITÄTEN",
+  },
+  "class-one-p3": {
+    en: "Cycling at Lake Manyara National Park, walking excursions, and ziplining in Mto wa Mbu are just a few examples. It is also possible to add Lake Natron to the safari as an optional extra.",
+    ua: "Велосипедні прогулянки в національному парку озера Маньяра, пішохідні екскурсії та катання на зиплайні на горі Мто ва Мбу – це лише кілька прикладів. Також можна додати озеро Натрон до сафарі як додаткову опцію.",
+    fr: "Le cyclisme au parc national du lac Manyara, les excursions à pied et la tyrolienne à Mto wa Mbu ne sont que quelques exemples. Il est également possible d'ajouter le lac Natron au safari en option.",
+    de: "Radfahren im Lake Manyara Nationalpark, Wanderausflüge und Ziplining in Mto wa Mbu sind nur einige Beispiele. Optional kann auch der Lake Natron zur Safari hinzugefügt werden.",
+  },
+  //---
+  "class-two-days": {
+    en: "4 DAYS",
+    ua: "4 ДНІ",
+    fr: "4 JOUR",
+    de: "4 TAGE",
+  },
+  "class-two-day-desc": {
+    en: "Classic Lodge Safari",
+    ua: "Класичний лодж сафарі",
+    fr: "Safari en lodge classique",
+    de: "Safari in einer klassischen Lodge",
+  },
+  "class-two-span1": {
+    en: "DAY 1: ARRIVAL, AIRPORT PICK UP",
+    ua: "ДЕНЬ 1: ПРИБУТТЯ, ВИЇЗД З АЕРОПОРТУ",
+    fr: "JOUR 1 : ARRIVÉE/ACCUEIL À L'AÉROPORT",
+    de: "TAG 1: ANKUNFT/EMPFANG AM FLUGHAFEN",
+  },
+  "class-two-p1": {
+    en: "After you arrive at either Kilimanjaro or Arusha airport and clear all customs, our professional driver will transport you to the lodge, where you will receive all the necessary information about your trip, have dinner and an overnight stay.",
+    ua: "Після того, як ви прибудете в аеропорт Кіліманджаро або Аруші та отямитеся, наш професійний водій доставить вас до лоджі, де ви отримаєте всю необхідну інформацію про вашу поїздку, пообідаєте та переночуєте.",
+    fr: "Après votre arrivée à l'aéroport du Kilimandjaro ou d'Arusha et le passage des formalités douanières, notre chauffeur professionnel vous conduira au lodge, où vous recevrez toutes les informations nécessaires sur votre voyage, dînerez et passerez la nuit.",
+    de: "Nach Ihrer Ankunft am Flughafen Kilimanjaro oder Arusha und der Zollabfertigung bringt Sie unser professioneller Fahrer zur Lodge, wo Sie alle notwendigen Informationen über Ihre Reise erhalten, zu Abend essen und die Nacht verbringen werden.",
+  },
+  "class-two-span2": {
+    en: "DAY 2: MOSHI/ARUSHA TO ARUSHA NATIONAL PARK",
+    ua: "ДЕНЬ 2: МОШІ/АРУША ДО НАЦІОНАЛЬНОГО ПАРКУ АРУША",
+    fr: "JOUR 2 : MOSHI/ARUSHA AU PARC NATIONAL D'ARUSHA",
+    de: "TAG 2: MOSHI/ARUSHA IM ARUSHA-NATIONALPARK",
+  },
+  "class-two-p2": {
+    en: "On this day, after breakfast, you will drive from your lodge to Arusha National Park for a mix of walking safari and game drive. You will be accompanied by a park ranger to guide you through the rainforest towards the waterfall, where you will be able to spot the black and white colobus monkeys going about their day. In the late afternoon, drive back to the lodge in Moshi/Arusha for dinner and an overnight stay.",
+    ua: "У цей день, після сніданку, ви поїдете від свого будиночка до національного парку Аруша, щоб поєднати пішохідне сафарі та поїздку. Вас супроводжуватиме рейнджер парку, який проведе вас через тропічний ліс до водоспаду, де ви зможете помітити чорно-білих мавп-колобусів, які гуляють день. Пізно вдень поверніться до лоджу в Моші/Аруша на вечерю та ночівлю.",
+    fr: "Ce jour-là, après le petit-déjeuner, vous quitterez votre lodge pour vous rendre au parc national d'Arusha pour un safari à pied et en voiture. Vous serez accompagné d'un garde forestier qui vous guidera à travers la forêt tropicale vers la cascade, où vous pourrez apercevoir les singes colobes noirs et blancs qui vaquent à leurs occupations. En fin d'après-midi, retour au lodge de Moshi/Arusha pour le dîner et la nuit.",
+    de: "An diesem Tag verlassen Sie nach dem Frühstück Ihre Lodge und machen sich auf den Weg zum Arusha-Nationalpark, wo Sie eine Safari zu Fuß und mit dem Auto unternehmen. Sie werden von einem Ranger begleitet, der Sie durch den Regenwald zu einem Wasserfall führt, wo Sie schwarze und weiße Colobus-Affen sehen können, die ihrer Arbeit nachgehen. Am späten Nachmittag kehren Sie zum Abendessen und zur Übernachtung in die Lodge in Moshi/Arusha zurück.",
+  },
+  "class-two-span3": {
+    en: "DAY 3: ARUSHA TO TARANGIRE NATIONAL PARK",
+    ua: "ДЕНЬ 3: АРУША ДО НАЦІОНАЛЬНОГО ПАРКУ ТАРАНГІРЕ",
+    fr: "JOUR 3: D'ARUSHA AU PARC NATIONAL DE TARANGIRE",
+    de: "TAG 3: VON ARUSHA ZUM TARANGIRE-NATIONALPARK",
+  },
+  "class-two-p3": {
+    en: "This is the second day of your tour, and you will travel from Moshi/Arusha to Tarangire National Park for a half-day of game viewing. Tarangire National Park is beautiful at any time of year, and the Tarangire River's permanent waters are home to many migratory wildlife species. Huge herds of wildebeest, zebras, elephants, elands, and giraffes gather there until the rains arrive, at which point they relocate to better grazing places. Dinner and an overnight stay in a lodge near the Ngorongoro Conservation Area.",
+    ua: "Це другий день вашого туру, і ви помандруватимете з Моші/Аруші до національного парку Тарангіре, щоб побачити гру протягом півдня. Національний парк Тарангіре прекрасний у будь-який час року, а постійні води річки Тарангір є домом для багатьох мігруючих видів дикої природи. Величезні стада антилоп гну, зебр, слонів, канів і жирафів збираються там, поки не прийдуть дощі, після чого вони переселяються на кращі місця випасу. Вечеря та ночівля в будиночку біля заповідника Нгоронгоро.",
+    fr: "Le deuxième jour de votre circuit, vous quitterez Moshi/Arusha pour vous rendre au parc national de Tarangire pour une demi-journée d'observation des animaux. Le parc national de Tarangire est magnifique à tout moment de l'année, et les eaux permanentes de la rivière Tarangire abritent de nombreuses espèces sauvages migratrices. D'énormes troupeaux de gnous, de zèbres, d'éléphants, d'élands et de girafes s'y rassemblent jusqu'à l'arrivée des pluies, après quoi ils se déplacent vers de meilleurs pâturages. Dîner et nuit dans un lodge près de la zone de conservation de Ngorongoro.",
+    de: "Am zweiten Tag Ihrer Rundreise verlassen Sie Moshi/Arusha und fahren zum Tarangire-Nationalpark, wo Sie einen halben Tag lang Tiere beobachten können. Der Tarangire-Nationalpark ist zu jeder Jahreszeit wunderschön, und das permanente Wasser des Tarangire-Flusses bietet vielen wandernden Wildtieren eine Heimat. Riesige Herden von Gnus, Zebras, Elefanten, Elenantilopen und Giraffen versammeln sich hier bis zum Einsetzen der Regenzeit, dann ziehen sie weiter zu besseren Weidegründen. Abendessen und Übernachtung in einer Lodge in der Nähe des Ngorongoro-Schutzgebiets.",
+  },
+  "class-two-span4": {
+    en: "DAY 4: DRIVE FROM NGORONGORO CRATER TO LAKE EYASI - HADZA TRIBE",
+    ua: "ДЕНЬ 4: ПОЇЗДКА ВІД КРАТЕРА НГОРОНГОРО ДО ОЗЕРА ЕЯСІ - ПЛЕМЕНІ ХАДЗА",
+    fr: "JOUR 4: CONDUITE DU CRATÈRE DE NGORONGORO AU LAC EYASI - TRIBU HADZA",
+    de: "TAG 4: FAHRT VOM NGORONGORO-KRATER ZUM EYASI-SEE - HADZA-STAMM",
+  },
+  "class-two-p4": {
+    en: "After an early breakfast, drive to the crater floor for a morning game drive. Without a doubt, Ngorongoro is one of the few spots in the world where you can spot rare rhinos, not to mention the pride of lions and the magnificent black-maned lions. Many other animal and bird species, such as leopards, hippos, flamingos, antelopes, and various small mammals, are also likely to be seen. After lunch, you will drive towards Lake Eyasi and stay at the lodge for dinner and an overnight stay.",
+    ua: "Після раннього сніданку вирушайте на дно кратера для ранкової ігрової поїздки. Без сумніву, Нгоронгоро — одне з небагатьох місць у світі, де можна помітити рідкісних носорогів, не кажучи вже про прайд левів і чудових чорногривих левів. Також, ймовірно, можна побачити багато інших видів тварин і птахів, таких як леопарди, бегемоти, фламінго, антилопи та різні дрібні ссавці. Після обіду ви поїдете до озера Еясі і залишитеся в лоджі на вечерю та ночівлю.",
+    fr: "Après un petit-déjeuner matinal, vous vous dirigez vers le fond du cratère pour un safari matinal. Le Ngorongoro est sans aucun doute l'un des rares endroits au monde où l'on peut observer des rhinocéros rares, sans parler de la fierté des lions et des magnifiques lions à crinière noire. De nombreuses autres espèces d'animaux et d'oiseaux, comme les léopards, les hippopotames, les flamants roses, les antilopes et divers petits mammifères, sont également susceptibles d'être observées. Après le déjeuner, vous prendrez la route en direction du lac Eyasi et resterez au lodge pour le dîner et la nuit.",
+    de: "Nach einem frühen Frühstück machen Sie sich auf den Weg zum Kraterboden, um eine morgendliche Safari zu unternehmen. Der Ngorongoro ist zweifellos einer der wenigen Orte auf der Welt, an dem man seltene Nashörner beobachten kann, ganz zu schweigen von den stolzen Löwen und den wunderschönen Löwen mit schwarzer Mähne. Auch viele andere Tier- und Vogelarten wie Leoparden, Nilpferde, Flamingos, Antilopen und verschiedene kleine Säugetiere sind wahrscheinlich zu beobachten. Nach dem Mittagessen fahren Sie zum Eyasi-See und bleiben für das Abendessen und die Übernachtung in der Lodge.",
+  },
+  "class-two-span5": {
+    en: "DAY 4: DEPARTURE",
+    ua: "ДЕНЬ 5: ВИЇЗД",
+    fr: "JOUR 5 : DEPART",
+    de: "TAG 4: ABREISE",
+  },
+  "class-two-p5": {
+    en: "We will make sure you arrive at the airport safely, on time, and ready for your departure. Until we meet again. Asante!!",
+    ua: "Ми подбаємо про те, щоб ви прибули в аеропорт безпечно, вчасно та готові до вильоту. Поки ми не зустрінемося знову. Асанте!!",
+    fr: "Nous ferons en sorte que vous arriviez à l'aéroport en toute sécurité, à l'heure et prêt pour votre départ. Jusqu'à ce que nous nous rencontrions à nouveau. Asante !",
+    de: "Wir sorgen dafür, dass Sie sicher und pünktlich am Flughafen ankommen und bereit für Ihren Abflug sind. Bis wir uns wiedersehen. Asante!",
+  },
+  "class-day-desc": {
+    en: "If you have a different concept for a trip in mind, please let us know how you would like your package to be customized and we'll do our best to make it happen.",
+    ua: "Якщо ви маєте на увазі іншу концепцію подорожі, повідомте нам, як би ви хотіли, щоб ваш пакет був налаштований, і ми зробимо все можливе, щоб це сталося.",
+    fr: "Si vous avez un concept de voyage différent en tête, faites-nous savoir comment vous souhaitez que votre forfait soit personnalisé et nous ferons de notre mieux pour y parvenir.",
+    de: "Wenn Sie ein anderes Reisekonzept im Kopf haben, lassen Sie uns wissen, wie Sie Ihr Paket individuell gestalten möchten, und wir werden unser Bestes tun, um dies zu erreichen.",
+  },
+
+  //* Baloon Safari
+  "baloon-h3": {
+    en: "Balloon Safari</br> in Serengeti National park",
+    ua: "Повітряна куля Сафарі</br> в національному парку Серенгеті",
+    fr: "Safari en ballon</br> dans le parc national du Serengeti",
+    de: "Ballonsafari</br> im Serengeti-Nationalpark",
+  },
+  "baloon-h4": {
+    en: "A balloon safari will allow you to see endless plains from above. Aside from that, there is a lot more to this national park: exhilarating wildlife that you can observe from a close distance; the Great Migration, which is the world's largest wildlife spectacle; Serengeti Mara wildlife viewing at the Kenya border; Maasai culture; woodlands and open savannah in the Southeastern plains and Ndutu; and, of course, a luxury home away from home where you will stay, are just a few of the highlights of this wonderful destination.",
+    ua: "ДЕНЬ 5: ВИЇЗДСафарі на повітряній кулі – це надзвичайна можливість, яка трапляється раз у житті! Ви повинні вибрати найкращий для польоту для такого досвіду. Національний парк Серенгеті, або «Безкрайні рівнини», як його називають масаї, став, можливо, найвідомішим національним парком у світі, а також одним з найважливіших місць біорізноманіття на планеті. Він охоплює більшу екосистему Серенгеті, включаючи Масаї Мара, Груметі, заповідник Нгоронгоро та заповідники Масва.",
+    fr: "Un safari en montgolfière est une occasion extraordinaire qui ne se présente qu'une fois dans une vie ! Pour une telle expérience, vous devez choisir les meilleurs avec qui voler. Le parc national du Serengeti, ou 'les plaines infinies', comme l'appellent les Masaïs, est devenu probablement le parc national le plus célèbre du monde, ainsi que l'un des lieux de biodiversité les plus importants de la planète. Il englobe le grand écosystème du Serengeti, y compris les réserves de Masai Mara, Grumeti, Ngorongoro Conservation Area et Maswa Game.</br>Un safari en ballon vous permettra de voir les plaines infinies d'en haut. En outre, ce parc national offre bien d'autres possibilités : une faune sauvage exaltante que vous pouvez observer de près ; la Grande Migration, qui est le plus grand spectacle animalier du monde ; l'observation de la faune du Serengeti Mara à la frontière du Kenya ; la culture masaï ; les forêts et la savane ouverte dans les plaines du sud-est et à Ndutu ; et, bien sûr, une maison de luxe loin de chez vous où vous séjournerez, ne sont que quelques-uns des points forts de cette merveilleuse destination.",
+    de: "Eine Ballonsafari ist eine außergewöhnliche Gelegenheit, die sich nur einmal im Leben bietet! Für ein solches Erlebnis müssen Sie die besten auswählen, mit denen Sie fliegen können. Der Serengeti-Nationalpark oder 'die unendlichen Ebenen', wie er von den Massai genannt wird, ist wahrscheinlich zum berühmtesten Nationalpark der Welt und zu einem der wichtigsten Orte der biologischen Vielfalt auf der Erde geworden. Er umfasst das große Ökosystem der Serengeti, einschließlich der Reservate Masai Mara, Grumeti, Ngorongoro Conservation Area und Maswa Game.</br>Bei einer Ballonsafari können Sie die endlosen Ebenen von oben betrachten. Darüber hinaus hat dieser Nationalpark noch viel mehr zu bieten: eine aufregende Tierwelt, die Sie aus nächster Nähe beobachten können; die Große Migration, das größte Tierschauspiel der Welt; Tierbeobachtungen in der Serengeti Mara an der Grenze zu Kenia; die Kultur der Massai; Wälder und offene Savannen in den südöstlichen Ebenen und in Ndutu; und natürlich ein Luxushaus weit weg von zu Hause, in dem Sie übernachten werden - das sind nur einige der Höhepunkte dieses wunderbaren Reiseziels.",
+  },
+  "lng-baloon-desc": {
+    en: "Ballooning in the Serengeti is a once-in-a-lifetime event, and there is no better place to have it. The good news is that you can schedule this safari whenever you want!",
+    ua: "Сафарі на повітряній кулі дозволить вам побачити нескінченні рівнини згори. Крім цього, у цьому національному парку є багато іншого: захоплююча дика природа, яку можна спостерігати з близької відстані; Велике переселення народів, яке є найбільшим у світі видовищем дикої природи; Огляд дикої природи Серенгеті Мара на кордоні з Кенією; культура масаї; ліси та відкриті савани на південно-східних рівнинах і Ндуту; і, звісно, розкішний будинок далеко від дому, де ви будете зупинятися, – це лише деякі з основних моментів цього чудового місця.</br>Політ на повітряній кулі в Серенгеті – подія, яка трапляється раз у житті, і немає кращого місця для цього. Гарна новина полягає в тому, що ви можете запланувати це сафарі, коли захочете!",
+    fr: "Un vol en montgolfière dans le Serengeti est un événement unique dans une vie, et il n'y a pas de meilleur endroit pour le faire. La bonne nouvelle est que vous pouvez programmer ce safari quand vous le souhaitez !",
+    de: "Eine Ballonfahrt in der Serengeti ist ein einmaliges Ereignis im Leben, und es gibt keinen besseren Ort, um es zu tun. Die gute Nachricht ist, dass Sie diese Safari planen können, wann immer Sie wollen!",
+  },
+  //---------------------
+  //* Package includes
+  includes: {
+    en: "Package includes",
+    ua: "Пакет включає",
+    fr: "Le forfait comprend",
+    de: "Die Pauschale umfasst",
+  },
+  incl1: {
+    en: "Accommodation (full board)",
+    ua: "Проживання (повний пансіон)",
+    fr: "L'hébergement (en pension complète)",
+    de: "Die Unterkunft (Vollpension)",
+  },
+  incl2: {
+    en: "All national park fees",
+    ua: "Усі збори національного парку",
+    fr: "Tous les droits d'entrée dans les parcs nationaux",
+    de: "Alle Eintrittsgebühren für die Nationalparks",
+  },
+  incl3: {
+    en: "Full board basis",
+    ua: "Повний пансіон",
+    fr: "Base de la pension complète",
+    de: "Basis für Vollpension",
+  },
+  incl4: {
+    en: "Levies and taxes",
+    ua: "Збори та податки",
+    fr: "Les prélèvements et les taxes",
+    de: "Abgaben und Steuern",
+  },
+  incl5: {
+    en: "Professional English-speaking guide",
+    ua: "Професійний англомовний гід",
+    fr: "Guide professionnel anglophone.",
+    de: "Professioneller englischsprachiger Reiseführer",
+  },
+  incl6: {
+    en: "Lunch box and water",
+    ua: "Ланч-бокс і вода",
+    fr: "Boîte à lunch et eau",
+    de: "Lunchbox und Wasser",
+  },
+  incl7: {
+    en: "4x4 private safari jeep",
+    ua: "Приватний сафарі-джип 4x4",
+    fr: "Jeep de safari privée 4x4",
+    de: "Privater Safari-Jeep 4x4",
+  },
+  excludes: {
+    en: "Package excludes",
+    ua: "Пакет не включає",
+    fr: "Le forfait exclut",
+    de: "Die Pauschale schließt aus",
+  },
+  excl1: {
+    en: "Beverages",
+    ua: "Напої",
+    fr: "Boissons",
+    de: "Getränke",
+  },
+  excl2: {
+    en: "International and domestic flights",
+    ua: "Міжнародні та внутрішні рейси",
+    fr: "Vols internationaux et intérieurs",
+    de: "Internationale und inländische Flüge",
+  },
+  excl3: {
+    en: "Tips/Gratuities",
+    ua: "Поради/чайові",
+    fr: "Conseils/Gratuités",
+    de: "Tipps/Gratifikationen",
+  },
+  excl4: {
+    en: "Sleeping bag",
+    ua: "Спальний мішок",
+    fr: "Sac de couchage",
+    de: "Schlafsack",
+  },
+  excl5: {
+    en: "Personal care products",
+    ua: "Засоби особистої гігієни",
+    fr: "Produits de soins personnels",
+    de: "Produkte für die Körperpflege",
+  },
+  excl6: {
+    en: "Travel insurance and visa fees",
+    ua: "Страхування подорожей та візові збори",
+    fr: "Assurance voyage et frais de visa",
+    de: "Reiseversicherung und Visagebühren",
+  },
 };
 //---------------------------------------------
 //* Function

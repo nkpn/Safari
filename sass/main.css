@@ -5432,16 +5432,32 @@ hr {
   z-index: 5;
 }
 
+.package-list p {
+  display: inline-block;
+}
+
 .package-item {
   font-size: 14px;
   line-height: 24px;
   font-family: Montserrat;
   font-weight: 400;
   color: #343434;
+  padding-left: 15px;
+  position: relative;
 }
 
 .package-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.package-item::before {
+  position: absolute;
+  content: "●";
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 0%;
+  left: -3px;
 }
 
 .package-item span {
