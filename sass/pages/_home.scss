@@ -47,7 +47,7 @@
     margin-bottom: 12px;
 
     @media screen and (min-width: $tablet) {
-      max-width: 222px;
+      max-width: unset;
       margin-bottom: 24px;
     }
   }

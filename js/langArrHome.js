@@ -297,7 +297,7 @@ const langArrHome = {
   },
   "hero-span": {
     en: "visit",
-    ua: "відвідати",
+    ua: "відвідай",
     fr: "visitez",
     de: "besuchen",
   },
@@ -309,10 +309,10 @@ const langArrHome = {
   },
   //* welcome section
   "welcome-h2": {
-    en: "Welcome to our world",
-    ua: "Ласкаво просимо в наш світ",
-    fr: "Bienvenue dans notre monde",
-    de: "Willkommen in unserer Welt",
+    en: "Welcome to</br> our world",
+    ua: "Ласкаво просимо</br> в наш світ",
+    fr: "Bienvenue dans</br> notre monde",
+    de: "Willkommen in</br> unserer Welt",
   },
   "welcome-p1": {
     en: "Good Deeds Travel is a tour operator that specializes in quality Tanzania vacations. We offer services in lodge and camping safaris in all National Parks, as well as mountain trekking, beach safaris, cultural activities, and lodging reservations.",
