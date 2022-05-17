@@ -2785,6 +2785,7 @@ hr {
 }
 
 .page-kilimonjaro .topic-fixed-picture .hided-description-item p {
+  display: inline-block;
   margin-top: 16px;
   font-family: Montserrat;
   font-weight: 400;

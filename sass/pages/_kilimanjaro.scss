@@ -381,6 +381,7 @@
       }
 
       p {
+        display: inline-block;
         margin-top: 16px;
         @include heading-description();
 
