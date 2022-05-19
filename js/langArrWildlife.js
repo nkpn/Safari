@@ -451,7 +451,7 @@ const langArrWildlife = {
   //---------------------------------
   //* hero section
   "hero-h1": {
-    en: "Tanzania Safaris",
+    en: "Tanzania </br>Safaris",
     ua: "Сафарі в Танзанії",
     fr: "Safaris en Tanzanie",
     de: "Safaris in Tansania",

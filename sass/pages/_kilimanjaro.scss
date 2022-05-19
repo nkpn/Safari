@@ -688,6 +688,7 @@
 
     h3 {
       @include uppercase-list-heading();
+      font-size: 13px;
     }
 
     hr {
