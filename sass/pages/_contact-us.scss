@@ -63,28 +63,29 @@
       letter-spacing: 0.03em;
       h1 {
         @include heading();
-
         color: $white;
         text-align: start;
-        margin-bottom: 12px;
+
         font-size: 36px;
         line-height: 40px;
+        text-transform: uppercase;
         @media screen and (min-width: $tablet) {
-          margin-bottom: 24px;
           font-size: 64px;
           line-height: 72px;
         }
       }
 
-      span {
+      h2 {
         @include heading();
         text-transform: none;
         font-weight: 300;
         font-size: 36px !important;
         line-height: 40px !important;
+        margin-bottom: 12px;
         @media screen and (min-width: $tablet) {
           font-size: 64px !important;
           line-height: 72px !important;
+          margin-bottom: 24px;
         }
       }
 

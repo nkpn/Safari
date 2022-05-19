@@ -5895,6 +5895,7 @@ hr {
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
+  max-width: 285px;
 }
 
 @media screen and (min-width: 768px) {
@@ -5907,6 +5908,7 @@ hr {
 @media screen and (min-width: 768px) {
   .page-zanzibar .ngorongoro-section h3 {
     margin-bottom: 20px;
+    max-width: 550px;
   }
 }
 
@@ -6036,6 +6038,16 @@ hr {
 @media screen and (min-width: 768px) {
   .page-zanzibar .stone-town-section .day {
     margin-bottom: 16px;
+  }
+}
+
+.page-zanzibar .stone-town-section h3 {
+  max-width: 285px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-zanzibar .stone-town-section h3 {
+    max-width: 550px;
   }
 }
 
@@ -6182,9 +6194,9 @@ hr {
   color: #ffffff;
   color: #ffffff;
   text-align: start;
-  margin-bottom: 12px;
   font-size: 36px;
   line-height: 40px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -6196,13 +6208,12 @@ hr {
 
 @media screen and (min-width: 768px) {
   .contact-page .home-hero .contact-hero-text h1 {
-    margin-bottom: 24px;
     font-size: 64px;
     line-height: 72px;
   }
 }
 
-.contact-page .home-hero .contact-hero-text span {
+.contact-page .home-hero .contact-hero-text h2 {
   font-family: Kaisei Decol;
   font-weight: 500;
   font-size: 28px;
@@ -6212,19 +6223,21 @@ hr {
   font-weight: 300;
   font-size: 36px !important;
   line-height: 40px !important;
+  margin-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-page .home-hero .contact-hero-text span {
+  .contact-page .home-hero .contact-hero-text h2 {
     font-size: 48px;
     line-height: 55px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact-page .home-hero .contact-hero-text span {
+  .contact-page .home-hero .contact-hero-text h2 {
     font-size: 64px !important;
     line-height: 72px !important;
+    margin-bottom: 24px;
   }
 }
 
