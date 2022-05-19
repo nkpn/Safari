@@ -16,10 +16,10 @@
   h1 {
     margin-bottom: 16px;
     @include heading();
-    max-width: 150px;
+    max-width: 265px;
 
     @media screen and (min-width: $tablet) {
-      max-width: unset;
+      max-width: 550px;
       margin-bottom: 28px;
     }
   }
