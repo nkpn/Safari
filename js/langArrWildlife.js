@@ -46,7 +46,7 @@ const langArrWildlife = {
   "subhead-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme.",
+    fr: "Le safari en lodge de moyenne gamme",
     de: "Die Safari in einer Lodge der Mittelklasse",
   },
   "subhead-wildlife-wilderness": {
@@ -83,7 +83,7 @@ const langArrWildlife = {
   "subnav-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme.",
+    fr: "Le safari en lodge de moyenne gamme",
     de: "Die Safari in einer Lodge der Mittelklasse",
   },
   "subnav-wildlife-wilderness": {
@@ -1152,7 +1152,7 @@ const langArrWildlife = {
   //* Luxury
   "lux-h3": {
     en: "Luxury Lodge Safari",
-    ua: "Luxury Lodge Safari",
+    ua: "Люкс-лодж сафарі",
     fr: "Safari en lodge de luxe",
     de: "Safari in einer Luxuslodge",
   },

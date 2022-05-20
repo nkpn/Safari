@@ -46,7 +46,7 @@ const langArrMoshi = {
   "subhead-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme.",
+    fr: "Le safari en lodge de moyenne gamme",
     de: "Die Safari in einer Lodge der Mittelklasse",
   },
   "subhead-wildlife-wilderness": {
@@ -83,7 +83,7 @@ const langArrMoshi = {
   "subnav-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme.",
+    fr: "Le safari en lodge de moyenne gamme",
     de: "Die Safari in einer Lodge der Mittelklasse",
   },
   "subnav-wildlife-wilderness": {

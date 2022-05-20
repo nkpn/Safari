@@ -18,7 +18,7 @@
 
       position: absolute;
       left: 0;
-      bottom: -4px;
+      bottom: 4px;
 
       width: 100%;
       height: 1px;
@@ -456,13 +456,16 @@
     .book-btn {
       background-color: $white;
       color: $black;
-      max-width: 210px;
+      max-width: 250px;
       margin: 0 auto;
       transition: transform 250ms $animation-timing-function;
       position: absolute;
       top: 46%;
       right: 30%;
       z-index: 20;
+      @media screen and (min-width: 600px) {
+        right: 28%;
+      }
 
       @media screen and (min-width: $tablet) {
         right: 33%;

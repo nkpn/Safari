@@ -710,3 +710,14 @@ function stateHandle() {
     submitButton.disabled = true;
   }
 }
+
+//------------------------
+// //* change header background height if lang=ua,fr
+// if ($(window).width() < 1280) {
+//   if (
+//     (document.documentElement.lang = "fr") ||
+//     (document.documentElement.lang = "ua")
+//   ) {
+//     $(".header-background").css("height", "100px");
+//   } else false;
+// }

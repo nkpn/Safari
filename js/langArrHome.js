@@ -52,7 +52,7 @@ const langArrHome = {
   "subnav-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme.",
+    fr: "Le safari en lodge de moyenne gamme",
     de: "Die Safari in einer Lodge der Mittelklasse",
   },
   "subnav-wildlife-wilderness": {
@@ -494,6 +494,8 @@ const changeLanguage = () => {
   let hash = window.location.hash;
   hash = hash.substring(1);
 
+  let localLng = localStorage.getItem("lang");
+
   if (!allLang.includes(hash)) {
     location.href = window.location.pathname + "#en";
     location.reload();
@@ -501,6 +503,9 @@ const changeLanguage = () => {
   selectFirst.value = hash;
   selectSecond.value = hash;
   mobileSelect.value = hash;
+  // selectFirst.value = localStorage.setItem("lang", value);
+  // selectSecond.value = localStorage.setItem("lang", value);
+  // mobileSelect.value = localStorage.setItem("lang", value);
 
   //* set site languate
   document.documentElement.setAttribute("lang", hash);

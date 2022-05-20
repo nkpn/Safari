@@ -17,7 +17,7 @@ header {
     max-width: 1180px;
     // padding: 5px 35px 0 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 13px;
     height: 80px;
     width: 100%;
   }
@@ -35,6 +35,13 @@ header {
   @media screen and (min-width: $desktop) {
     width: 150vw;
     height: 80px;
+  }
+}
+
+html[lang="fr"],
+html[lang="ua"] > .header-background {
+  @media screen and (min-width: $desktop) {
+    height: 100px;
   }
 }
 
@@ -112,7 +119,7 @@ header {
   padding: 25px 1px;
   color: inherit;
   @media screen and (min-width: 1162px) {
-    padding: 28px 20px;
+    padding: 28px 18px;
   }
 
   &:hover {
@@ -253,7 +260,6 @@ footer {
   }
 
   .footer-navigation {
-    min-width: 15%;
     a {
       @include text-description();
       color: $white;
@@ -418,4 +424,19 @@ hr {
   width: 18px;
   height: 12px;
   background-image: url("../images/icons/fr.svg");
+}
+
+.for-all-os,
+.for-windows,
+option {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.mobile-lang-select {
+  @include mobile-list();
 }

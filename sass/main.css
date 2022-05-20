@@ -277,7 +277,7 @@ summary {
   width: 16px;
   height: 12px;
   position: absolute;
-  left: -5px;
+  left: -2px;
   top: 44%;
   background-image: url("../images/icons/envelop.svg");
 }
@@ -480,7 +480,7 @@ header {
   header {
     max-width: 1180px;
     padding: 0;
-    font-size: 14px;
+    font-size: 13px;
     height: 80px;
     width: 100%;
   }
@@ -500,6 +500,13 @@ header {
   .header-background {
     width: 150vw;
     height: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html[lang="fr"],
+  html[lang="ua"] > .header-background {
+    height: 100px;
   }
 }
 
@@ -610,7 +617,7 @@ header {
 
 @media screen and (min-width: 1162px) {
   .nav-link {
-    padding: 28px 20px;
+    padding: 28px 18px;
   }
 }
 
@@ -792,10 +799,6 @@ footer .contact-information-item a {
   color: #343434;
   color: #ffffff;
   opacity: 0.7;
-}
-
-footer .footer-navigation {
-  min-width: 15%;
 }
 
 footer .footer-navigation a {
@@ -992,6 +995,26 @@ hr {
   background-image: url("../images/icons/fr.svg");
 }
 
+.for-all-os,
+.for-windows,
+option {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.mobile-lang-select {
+  font-family: Kaisei Decol;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
 .home-page .nav-link,
 .home-page .contact-us-btn {
   color: white;
@@ -1011,7 +1034,7 @@ hr {
   display: inline-block;
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 4px;
   width: 100%;
   height: 1px;
   border-radius: 2px;
@@ -1554,7 +1577,7 @@ hr {
 .tours-carousel .carousel-card .book-btn {
   background-color: #ffffff;
   color: #000000;
-  max-width: 210px;
+  max-width: 250px;
   margin: 0 auto;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1564,6 +1587,12 @@ hr {
   top: 46%;
   right: 30%;
   z-index: 20;
+}
+
+@media screen and (min-width: 600px) {
+  .tours-carousel .carousel-card .book-btn {
+    right: 28%;
+  }
 }
 
 @media screen and (min-width: 768px) {
