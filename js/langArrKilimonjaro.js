@@ -4187,18 +4187,21 @@ const allLang = ["en", "ua", "fr", "de"];
 //* push select value to the URL
 const changeURLLanguage = () => {
   let lang = selectFirst.value;
+  localStorage.setItem("lang", lang);
   location.href = window.location.pathname + "#" + lang;
   location.reload();
 };
 
 const changeURLLanguageTwo = () => {
   let lang = selectSecond.value;
+  localStorage.setItem("lang", lang);
   location.href = window.location.pathname + "#" + lang;
   location.reload();
 };
 
 const changeURLLanguageThree = () => {
   let lang = mobileSelect.value;
+  localStorage.setItem("lang", lang);
   location.href = window.location.pathname + "#" + lang;
   location.reload();
 };
@@ -4207,27 +4210,27 @@ selectFirst.addEventListener("change", changeURLLanguage);
 selectSecond.addEventListener("change", changeURLLanguageTwo);
 mobileSelect.addEventListener("change", changeURLLanguageThree);
 
-//* Change language
 const changeLanguage = () => {
   let hash = window.location.hash;
   hash = hash.substring(1);
+  let lang = localStorage.getItem("lang");
+  console.log(lang);
 
-  if (!allLang.includes(hash)) {
+  if (!allLang.includes(lang)) {
     location.href = window.location.pathname + "#en";
     location.reload();
   }
-  selectFirst.value = hash;
-  selectSecond.value = hash;
-  mobileSelect.value = hash;
 
-  //* set site languate
-  document.documentElement.setAttribute("lang", hash);
+  selectFirst.value = lang;
+  selectSecond.value = lang;
+  mobileSelect.value = lang;
+  location.href = window.location.pathname + "#" + lang;
 
   //* change language
   for (let key in langArrKilimonjaro) {
     let elem = document.querySelector(".lng-" + key);
     if (elem) {
-      elem.innerHTML = langArrKilimonjaro[key][hash];
+      elem.innerHTML = langArrKilimonjaro[key][lang];
     }
   }
 };
