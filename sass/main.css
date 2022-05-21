@@ -1591,7 +1591,7 @@ option {
 
 @media screen and (min-width: 600px) {
   .tours-carousel .carousel-card .book-btn {
-    right: 28%;
+    right: 24%;
   }
 }
 
@@ -6188,12 +6188,12 @@ option {
   background-image: url("../images/contact-us/contact-us-hero-min.jpg");
   background-size: cover;
   background-position: 40% 50%;
-  height: 600px;
+  height: 311px;
 }
 
 @media screen and (min-width: 768px) {
   .contact-page .home-hero {
-    height: 805px;
+    height: 500px;
     background-position: center;
   }
 }
@@ -6209,6 +6209,13 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .home-hero .home-hero-container {
+    padding-top: 150px;
+  }
 }
 
 .contact-page .home-hero .contact-hero-text {
