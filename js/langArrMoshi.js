@@ -699,18 +699,25 @@ mobileSelect.addEventListener("change", changeURLLanguageThree);
 const changeLanguage = () => {
   let hash = window.location.hash;
   hash = hash.substring(1);
-  let lang = localStorage.getItem("lang");
-  console.log(lang);
+  let lang = "en";
+
+  if (localStorage.getItem("lang") === null) {
+    localStorage.setItem("lang", lang);
+    location.href = window.location.pathname + "#" + lang;
+    location.reload();
+  } else {
+    lang = localStorage.getItem("lang");
+    location.href = window.location.pathname + "#" + lang;
+  }
 
   if (!allLang.includes(lang)) {
     location.href = window.location.pathname + "#en";
     location.reload();
   }
-
+  //* set all selects to our lang
   selectFirst.value = lang;
   selectSecond.value = lang;
   mobileSelect.value = lang;
-  location.href = window.location.pathname + "#" + lang;
 
   //* change language
   for (let key in langArrMoshi) {
