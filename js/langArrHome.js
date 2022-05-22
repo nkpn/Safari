@@ -504,7 +504,6 @@ const changeLanguage = () => {
   } else {
     lang = localStorage.getItem("lang");
     location.href = window.location.pathname + "#" + lang;
-    console.log("not null");
   }
 
   if (!allLang.includes(lang)) {
