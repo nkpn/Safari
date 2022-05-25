@@ -6,6 +6,7 @@
   cursor: pointer;
   position: relative;
   padding: 28px 0 28px 20px !important;
+  text-align: center;
 
   &::before {
     content: "";
@@ -29,6 +30,7 @@
   color: $white;
   font-family: Montserrat;
   cursor: pointer;
+  text-align: center;
 
   @media screen and (min-width: $tablet) {
   }
@@ -54,6 +56,7 @@
   fill: $white;
   font-family: Montserrat;
   cursor: pointer;
+  text-align: center;
 
   @media screen and (min-width: $desktop) {
     padding: 8px 60px;

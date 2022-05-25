@@ -340,7 +340,7 @@ hr {
 }
 
 #lang {
-  padding: 8px 20px 8px 20px;
+  padding: 8px 20px 8px 0px;
   background-color: inherit;
   border-radius: 100px;
   border: none;
@@ -353,6 +353,10 @@ hr {
     border: none;
     outline: 0;
     box-shadow: 0 0 0 0 inherit;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 8px 20px 8px 20px;
   }
 }
 

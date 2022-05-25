@@ -204,10 +204,10 @@ const langArrWildlife = {
   },
   //* subhead kilimanjaro
   "subnav-kilimanjaro": {
-    en: "Marangu Routes",
-    ua: "Маршрути Марангу",
-    fr: "Routes Marangu",
-    de: "Marangu-Straßen",
+    en: "The Kilimanjaro Mountain",
+    ua: "Гора Кіліманджаро",
+    fr: "Le mont Kilimandjaro",
+    de: "Der Berg Kilimandscharo",
   },
   "subhead-kil-marangu": {
     en: "Marangu Routes",
@@ -328,10 +328,10 @@ const langArrWildlife = {
 
   //* subnav zanzibar
   "subnav-zanzibar": {
-    en: "The Kilimanjaro Mountain",
-    ua: "Гора Кіліманджаро",
-    fr: "Le mont Kilimandjaro",
-    de: "Der Berg Kilimandscharo",
+    en: "The Zanzibar Archipelago",
+    ua: "Архіпелаг Занзібар",
+    fr: "L'archipel de Zanzibar",
+    de: "Das Sansibar-Archipel",
   },
   "subnav-zanzibar-tarangire": {
     en: "Tarangire National Park",
@@ -451,7 +451,7 @@ const langArrWildlife = {
   //---------------------------------
   //* hero section
   "hero-h1": {
-    en: "Tanzania </br>Safaris",
+    en: "Tanzania Safaris",
     ua: "Сафарі в Танзанії",
     fr: "Safaris en Tanzanie",
     de: "Safaris in Tansania",

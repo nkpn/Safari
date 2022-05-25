@@ -328,10 +328,10 @@ const langArrContact = {
 
   //* subnav zanzibar
   "subnav-zanzibar": {
-    en: "The Kilimanjaro Mountain",
-    ua: "Гора Кіліманджаро",
-    fr: "Le mont Kilimandjaro",
-    de: "Der Berg Kilimandscharo",
+    en: "The Zanzibar Archipelago",
+    ua: "Архіпелаг Занзібар",
+    fr: "L'archipel de Zanzibar",
+    de: "Das Sansibar-Archipel",
   },
   "subnav-zanzibar-tarangire": {
     en: "Tarangire National Park",

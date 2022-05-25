@@ -204,10 +204,10 @@ const langArrMoshi = {
   },
   //* subhead kilimanjaro
   "subnav-kilimanjaro": {
-    en: "Marangu Routes",
-    ua: "Маршрути Марангу",
-    fr: "Routes Marangu",
-    de: "Marangu-Straßen",
+    en: "The Kilimanjaro Mountain",
+    ua: "Гора Кіліманджаро",
+    fr: "Le mont Kilimandjaro",
+    de: "Der Berg Kilimandscharo",
   },
   "subhead-kil-marangu": {
     en: "Marangu Routes",
@@ -328,10 +328,10 @@ const langArrMoshi = {
 
   //* subnav zanzibar
   "subnav-zanzibar": {
-    en: "The Kilimanjaro Mountain",
-    ua: "Гора Кіліманджаро",
-    fr: "Le mont Kilimandjaro",
-    de: "Der Berg Kilimandscharo",
+    en: "The Zanzibar Archipelago",
+    ua: "Архіпелаг Занзібар",
+    fr: "L'archipel de Zanzibar",
+    de: "Das Sansibar-Archipel",
   },
   "subnav-zanzibar-tarangire": {
     en: "Tarangire National Park",
@@ -451,10 +451,10 @@ const langArrMoshi = {
   //-----------------------------
   //* Hero
   "hero-h1": {
-    en: "Day trips </br>Moshi",
-    ua: "Одноденні екскурсії</br> в Моші",
-    fr: "Excursions d'une</br> journée à Moshi",
-    de: "Tagesausflüge</br> nach Moshi",
+    en: "Day trips Moshi",
+    ua: "Одноденні екскурсії в Моші",
+    fr: "Excursions d'une journée à Moshi",
+    de: "Tagesausflüge nach Moshi",
   },
   "hero-p1": {
     en: "Tanzania, the world's last major wildlife sanctuary, is a perfect destination for your holiday. In the Moshi and Arusha regions, there are numerous local activities to enjoy. Tours can be organized to visit the villages, coffee plantations, waterfalls, the Moshi forest, canoeing at Momela and Duluti Lakes, Maasai settlements, hot springs, Kilimanjaro, climbing, biking, shopping at local markets, and much more! These activities can be tailored to clients' budgets, interests, and fitness levels.",
@@ -490,9 +490,9 @@ const langArrMoshi = {
   },
   //* tarangire
   "tarangire-h3": {
-    en: "Tarangire</br> National Park",
-    ua: "Національний парк</br> Тарангіре",
-    fr: "Parc national</br> du Tarangiré",
+    en: "Tarangire National Park",
+    ua: "Національний парк Тарангіре",
+    fr: "Parc national du Tarangiré",
     de: "Tarangire-Nationalpark",
   },
   "tarangire-p1": {

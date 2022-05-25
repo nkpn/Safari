@@ -270,6 +270,7 @@ summary {
   cursor: pointer;
   position: relative;
   padding: 28px 0 28px 20px !important;
+  text-align: center;
 }
 
 .contact-us-btn::before {
@@ -293,6 +294,7 @@ summary {
   color: #ffffff;
   font-family: Montserrat;
   cursor: pointer;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -318,6 +320,7 @@ summary {
   fill: #ffffff;
   font-family: Montserrat;
   cursor: pointer;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -901,7 +904,7 @@ hr {
 }
 
 #lang {
-  padding: 8px 20px 8px 20px;
+  padding: 8px 20px 8px 0px;
   background-color: inherit;
   border-radius: 100px;
   border: none;
@@ -916,6 +919,12 @@ hr {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0 inherit;
           box-shadow: 0 0 0 0 inherit;
+}
+
+@media screen and (min-width: 768px) {
+  #lang {
+    padding: 8px 20px 8px 20px;
+  }
 }
 
 #lang option {
@@ -3251,7 +3260,9 @@ option {
   width: 15px;
 }
 
-.page-kilimonjaro .package-item-heading {
+.page-kilimonjaro .package-item-heading,
+.page-kilimonjaro .package-item-head2,
+.page-kilimonjaro .package-item-head3 {
   padding-left: 0 !important;
 }
 
@@ -4013,7 +4024,7 @@ option {
 }
 
 .moshi-hero-section .wrapper {
-  max-width: 75%;
+  max-width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -4716,7 +4727,6 @@ option {
   font-size: 28px;
   line-height: 36px;
   color: #ffffff;
-  max-width: 265px;
 }
 
 @media screen and (min-width: 768px) {
@@ -5926,7 +5936,6 @@ option {
   line-height: 37px;
   color: #343434;
   margin-bottom: 14px;
-  max-width: 285px;
 }
 
 @media screen and (min-width: 768px) {
@@ -6070,10 +6079,6 @@ option {
   .page-zanzibar .stone-town-section .day {
     margin-bottom: 16px;
   }
-}
-
-.page-zanzibar .stone-town-section h3 {
-  max-width: 285px;
 }
 
 @media screen and (min-width: 768px) {

@@ -204,10 +204,10 @@ const langArrZanzibar = {
   },
   //* subhead kilimanjaro
   "subnav-kilimanjaro": {
-    en: "Marangu Routes",
-    ua: "Маршрути Марангу",
-    fr: "Routes Marangu",
-    de: "Marangu-Straßen",
+    en: "The Kilimanjaro Mountain",
+    ua: "Гора Кіліманджаро",
+    fr: "Le mont Kilimandjaro",
+    de: "Der Berg Kilimandscharo",
   },
   "subhead-kil-marangu": {
     en: "Marangu Routes",
