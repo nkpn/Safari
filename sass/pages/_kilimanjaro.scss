@@ -2,13 +2,16 @@
   .container {
     overflow: hidden;
   }
-  #lang {
+  .nav-list #lang {
     color: #f2fbff77;
   }
   .contact-us-btn {
     &::before {
       background-image: url("../images/icons/envelop-grey.svg");
     }
+  }
+  .mobile-lang-select {
+    color: $white;
   }
 
   //* fix bug with overhflow hidden for position slicky
@@ -615,6 +618,13 @@
     }
   }
 
+  .package-list-exclude {
+    padding-left: 35px;
+    @media screen and (min-width: $desktop) {
+      padding-left: 2px;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     .price-includes-section {
       flex-basis: 65%;
@@ -627,6 +637,13 @@
       background-color: $white;
       ul {
         max-width: 100%;
+      }
+
+      h3 {
+        padding-left: 35px;
+        @media screen and (min-width: $desktop) {
+          padding-left: 0px;
+        }
       }
     }
   }

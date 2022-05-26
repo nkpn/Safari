@@ -2235,12 +2235,16 @@ option {
   overflow: hidden;
 }
 
-.page-kilimonjaro #lang {
+.page-kilimonjaro .nav-list #lang {
   color: #f2fbff77;
 }
 
 .page-kilimonjaro .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
+}
+
+.page-kilimonjaro .mobile-lang-select {
+  color: #ffffff;
 }
 
 .page-kilimonjaro .marangu-section .container,
@@ -3189,6 +3193,16 @@ option {
   }
 }
 
+.page-kilimonjaro .package-list-exclude {
+  padding-left: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-kilimonjaro .package-list-exclude {
+    padding-left: 2px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .page-kilimonjaro .price-includes-section {
     -ms-flex-preferred-size: 65%;
@@ -3203,6 +3217,15 @@ option {
   }
   .page-kilimonjaro .price-excludes-section ul {
     max-width: 100%;
+  }
+  .page-kilimonjaro .price-excludes-section h3 {
+    padding-left: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .page-kilimonjaro .price-excludes-section h3 {
+    padding-left: 0px;
   }
 }
 
@@ -3537,7 +3560,7 @@ option {
   background-image: url("../images/icons/envelop-grey.svg");
 }
 
-.page-moshi #lang {
+.page-moshi .nav-list #lang {
   color: #f2fbff77;
 }
 
@@ -5542,7 +5565,7 @@ option {
   background-image: url("../images/icons/envelop-grey.svg");
 }
 
-.page-wildlife #lang {
+.page-wildlife .nav-list #lang {
   color: #f2fbff77;
 }
 
@@ -5586,7 +5609,7 @@ option {
   background-image: url("../images/icons/envelop-grey.svg");
 }
 
-.page-zanzibar #lang {
+.page-zanzibar .nav-list #lang {
   color: #f2fbff77;
 }
 
