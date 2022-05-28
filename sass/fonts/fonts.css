@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Kaisei Decol Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""), url("./Kaisei_Decol/KaiseiDecol-Regular.eot") format("oet"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Regular.ttf")
+      format("ttf"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Regular.woff2")
+      format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Kaisei Decol";
+  font-style: normal;
+  font-weight: medium;
+  src: local(""), url("./Kaisei_Decol/KaiseiDecol-Medium.eot") format("oet"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Medium.ttf")
+      format("ttf"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Medium.woff2")
+      format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Kaisei Decol Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./Kaisei_Decol/KaiseiDecol-Bold.eot") format("oet"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Bold.ttf")
+      format("ttf"),
+    /* Super Modern Browsers */ url("./Kaisei_Decol/KaiseiDecol-Bold.woff2")
+      format("woff2"); /* Modern Browsers */
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""), url("./Montserrat/Montserrat-Medium.eot") format("oet"),
+    /* Super Modern Browsers */ url("./Montserrat/Montserrat-Medium.ttf")
+      format("ttf"),
+    /* Super Modern Browsers */ url("./Montserrat/Montserrat-Medium.woff")
+      format("woff"); /* Modern Browsers */
+}
