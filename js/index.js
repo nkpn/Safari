@@ -688,28 +688,28 @@ HintsEight.click(() => {
 //* Scroll Reveal
 // ScrollReveal().reveal('img');
 //-----------------------------------------------
-//* submit button disable
-let inputName = $("#name");
-let inputEmail = $("#email");
-let inputMessage = $("#message");
-let submitButton = document.querySelector(".submit-button");
-submitButton.disabled = true;
+// //* submit button disable
+// let inputName = $("#name");
+// let inputEmail = $("#email");
+// let inputMessage = $("#message");
+// let submitButton = document.querySelector(".submit-button");
+// submitButton.disabled = true;
 
-inputName.on("change", stateHandle);
-inputMessage.on("change", stateHandle);
-inputEmail.on("change", stateHandle);
+// inputName.on("change", stateHandle);
+// inputMessage.on("change", stateHandle);
+// inputEmail.on("change", stateHandle);
 
-function stateHandle() {
-  if (
-    inputName.val() != "" &&
-    inputEmail.val() != "" &&
-    inputMessage.val() != ""
-  ) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
-}
+// function stateHandle() {
+//   if (
+//     inputName.val() != "" &&
+//     inputEmail.val() != "" &&
+//     inputMessage.val() != ""
+//   ) {
+//     submitButton.disabled = false;
+//   } else {
+//     submitButton.disabled = true;
+//   }
+// }
 
 //------------------------
 // //* change header background height if lang=ua,fr
