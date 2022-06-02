@@ -76,6 +76,10 @@
     background-position: center;
   }
 
+  h2{
+    font-weight: 300 !important;
+  }
+
   .home-hero-container {
     display: flex;
     flex-direction: row;
@@ -152,7 +156,6 @@
   }
 
   .social-nav-item {
-    padding: 16px 17px;
     border: 1px solid $bg-light-color;
     border-radius: 50%;
 
@@ -160,9 +163,14 @@
       margin-bottom: 12px;
     }
 
-    @media screen and (min-width: $tablet) {
-      padding: 26px 27px;
+    a {
+      padding: 16px 17px;
+      @media screen and (min-width: $tablet) {
+        padding: 26px 27px;
+      }
+    }
 
+    @media screen and (min-width: $tablet) {
       &:not(:last-child) {
         margin-bottom: 24px;
       }
@@ -519,6 +527,7 @@
   h3 {
     text-align: center;
     @include subheading();
+    font-weight: 600;
   }
 
   h4 {

@@ -221,7 +221,7 @@ html[lang="ua"] > .header-background {
 }
 
 footer {
-  height: 36px;
+  height: 40px;
   background-color: $black;
   @media screen and (min-width: $tablet) {
     padding-top: 26px;
@@ -277,6 +277,26 @@ footer {
     color: $white;
     opacity: 0.7;
     margin-bottom: 0;
+    text-transform: none;
+
+    @media screen and (max-width:$tablet) {
+      margin-top: 5px;
+      display: block;
+    }
+  }
+
+  .footer-copyright-mobile{
+    padding-top: 5px;
+    text-align: center;
+    @include text-description();
+    color: $white;
+    opacity: 0.7;
+    margin-bottom: 0;
+    text-transform: none;
+
+    @media screen and (min-width:$tablet) {
+      display: none;
+    }
   }
 
   .social-list {

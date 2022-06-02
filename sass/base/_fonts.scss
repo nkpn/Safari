@@ -24,6 +24,19 @@
     }
 }
 
+@mixin heading-404{
+    font-family: Kaisei Decol;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    color:$text-primary-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size:120px;
+        line-height: 174px;
+    }
+}
+
 @mixin text-description{
     font-size: 14px;
     line-height: 24px;

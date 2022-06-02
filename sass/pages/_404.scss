@@ -1,0 +1,47 @@
+.error-page{
+    .contact-us-btn {
+        &::before {
+          background-image: url("../images/icons/envelop-grey.svg");
+        }
+      }
+}
+
+.error-hero{
+    padding-top: 290px;
+    padding-bottom: 336px;
+    background-image: url("/../images/404/404-mob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    
+
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 212px;
+        padding-bottom: 340px;
+        background-position: 100%;
+        background-image: url("/../images/404/404-desk.png");
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  h1{
+      @include heading-404();
+      text-align: center;
+  }
+
+  p{
+      margin-top: 8px;
+      @include text-description();
+      text-align: center;
+  }
+
+  a{
+     margin-top: 40px; 
+  }
+}
