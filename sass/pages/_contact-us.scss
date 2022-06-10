@@ -9,6 +9,10 @@
     }
   }
 
+  .header-background {
+    background-color: inherit;
+  }
+
   .contact-us-btn {
     &::after {
       content: " ";

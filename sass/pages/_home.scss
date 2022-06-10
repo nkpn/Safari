@@ -43,7 +43,7 @@
 .description {
   h2 {
     @include subheading();
-    max-width: 50%;
+    max-width: 65%;
     margin-bottom: 12px;
 
     @media screen and (min-width: $tablet) {

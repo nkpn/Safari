@@ -608,7 +608,7 @@ header {
   background-color: #161616;
   height: 80px;
   position: absolute;
-  left: -20vw;
+  left: -30vw;
   width: 150vw;
   z-index: 0;
 }
@@ -1099,7 +1099,7 @@ option {
   font-size: 26px;
   line-height: 37px;
   color: #343434;
-  max-width: 50%;
+  max-width: 65%;
   margin-bottom: 12px;
 }
 
@@ -6226,6 +6226,10 @@ option {
 .contact-page .contact-us-btn:hover {
   background-color: inherit;
   color: white;
+}
+
+.contact-page .header-background {
+  background-color: inherit;
 }
 
 .contact-page .contact-us-btn::after {
