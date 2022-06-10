@@ -7,8 +7,8 @@
 }
 
 .error-hero{
-    // padding-top: 290px;
-    // padding-bottom: 336px;
+    padding-top: 290px;
+    padding-bottom: 336px;
     background-image: url("/../images/404/404-mob.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,8 +17,8 @@
 
 
     @media screen and (min-width: $tablet) {
-        // padding-top: 212px;
-        // padding-bottom: 340px;
+        padding-top: 212px;
+        padding-bottom: 340px;
         background-position: 100%;
         background-image: url("/../images/404/404-desk.png");
     }
@@ -28,8 +28,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 96vh;
-    
     }
 
   h1{

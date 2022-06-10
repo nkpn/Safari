@@ -6436,6 +6436,8 @@ option {
 }
 
 .error-hero {
+  padding-top: 290px;
+  padding-bottom: 336px;
   background-image: url("/../images/404/404-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6444,6 +6446,8 @@ option {
 
 @media screen and (min-width: 768px) {
   .error-hero {
+    padding-top: 212px;
+    padding-bottom: 340px;
     background-position: 100%;
     background-image: url("/../images/404/404-desk.png");
   }
@@ -6463,7 +6467,6 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 96vh;
 }
 
 .error-hero h1 {
@@ -6501,6 +6504,8 @@ option {
 }
 
 .success-hero {
+  padding-top: 290px;
+  padding-bottom: 336px;
   background-image: url("/../images/404/success-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6509,6 +6514,8 @@ option {
 
 @media screen and (min-width: 768px) {
   .success-hero {
+    padding-top: 212px;
+    padding-bottom: 340px;
     background-position: 100%;
     background-image: url("/../images/404/success-desk.png");
   }
@@ -6528,7 +6535,6 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 96vh;
 }
 
 .success-hero h1 {

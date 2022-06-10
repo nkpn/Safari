@@ -1,4 +1,0 @@
-User-Agent: *  
-Disallow: 
-Host: http://gooddeeds.travel/
-Sitemap: http://gooddeeds.travel/sitemap.xml
