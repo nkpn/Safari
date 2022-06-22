@@ -1,3 +1,4 @@
-RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ https://www.http://gooddeeds.travel/ [R=301,L]
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?gooddeeds.travel
+RewriteRule ^(.*)$ https://gooddeeds.travel [R,L]

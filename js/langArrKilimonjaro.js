@@ -4162,7 +4162,7 @@ const langArrKilimonjaro = {
     de: "Erwarten Sie zu jeder Jahreszeit Regen und deutlich kühleres Wetter als an der Küste im gesamten Hochland Tansanias. Es ist notwendig, eine wasser- und winddichte Jacke sowie einen warmen Pullover zu tragen. Machen Sie alles wasserdicht, besonders Ihren Schlafsack, da es in den Bergen sehr schwierig ist, Dinge trocken zu bekommen. Der Kilimandscharo kann ganzjährig bestiegen werden, allerdings sollten die beiden Regenzeiten (Ende März bis Mitte Juni und Oktober bis Anfang Dezember) vermieden werden, da die Routen rutschig werden. Die besten Reisemonate sind Januar-Februar und September-Oktober, wenn das Wetter im Allgemeinen klar ist. </br>Der Kilimandscharo verändert nicht nur Ihren Körper, sondern auch Ihre Stimmung, Ihren Geist und Ihre Einstellung!",
   },
   //* mount kilimonjaro hero
-  "lng-h2-1": {
+  "h2-1": {
     en: "Mount Kilimanjaro not only changes your body, it changes your mood, mind and attitude!",
     ua: "Гора Кіліманджаро не тільки змінює ваше тіло, вона змінює настрій, розум і ставлення!",
     fr: "Le mont Kilimandjaro ne change pas seulement votre corps, il change votre humeur, votre esprit et votre attitude !",
