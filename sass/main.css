@@ -507,7 +507,7 @@ summary {
 }
 
 .container-100vw {
-  width: 102vw !important;
+  width: 101vw !important;
   left: calc( -50vw + 50%);
   overflow: hidden;
   position: relative;
@@ -1222,6 +1222,12 @@ option {
 
 .promo-close {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .promo-close {
+    margin-right: 5px;
+  }
 }
 
 .home-page .nav-link,

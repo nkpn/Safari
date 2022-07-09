@@ -10,3 +10,14 @@ $(document).on('scroll', function(){
         $headerBg.removeClass('black-background');
     }
 })
+
+//------------ Session storage function
+$(document).ready(function () {
+    if(!sessionStorage.getItem('firstVisit')) {   
+      $('.promo-header').show();  
+    }    // show modal if it first time
+    $('.promo-close').click(function() {
+      sessionStorage.setItem('firstVisit',true); // used to store the state across refreshes.
+      $('.promo-header').hide()
+    });
+  });

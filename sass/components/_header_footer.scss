@@ -541,4 +541,7 @@ option {
 
 .promo-close{
   cursor: pointer;
+  @media screen and (max-width:$tablet) {
+    margin-right: 5px;
+  }
 }
