@@ -2,6 +2,17 @@ console.log(
   "Hi! If you need a website - please contact me : illinmikita@gmail.com , or by telegram : https://t.me/nk_pn"
 );
 
+//------------ Session storage function
+$(document).ready(function () {
+  if(!sessionStorage.getItem('firstVisit')) {   
+    $('.promo-header').show();  
+  }    // show modal if it first time
+  $('.promo-close').click(function() {
+    sessionStorage.setItem('firstVisit',true); // used to store the state across refreshes.
+    $('.promo-header').hide()
+  });
+});
+
 //-------------------------------
 function topFunction() {
   document.body.scrollTop = 0; // For Safari

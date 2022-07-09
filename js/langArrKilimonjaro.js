@@ -3610,12 +3610,6 @@ const langArrKilimonjaro = {
     fr: "Taxes gouvernementales",
     de: "Staatliche Steuern",
   },
-  "includes-15": {
-    en: "Hot water for showering",
-    ua: "Гаряча вода для душу",
-    fr: "Eau chaude pour les douches",
-    de: "Warmwasser zum Duschen",
-  },
   "includes-16": {
     en: "Oxygen meter",
     ua: "Киснемір",
@@ -3627,12 +3621,6 @@ const langArrKilimonjaro = {
     ua: "Переносний унітаз зі змивом і наметами",
     fr: "Toilettes portables avec chasse d'eau avec et tentes",
     de: "Tragbare Spültoiletten mit und Zelten",
-  },
-  "includes-18": {
-    en: "Stethoscope",
-    ua: "Стетоскоп",
-    fr: "Stéthoscope",
-    de: "Stethoskop",
   },
   "includes-19": {
     en: "Mountain climbing certificates",
@@ -3725,12 +3713,6 @@ const langArrKilimonjaro = {
     fr: "Taxes gouvernementales",
     de: "Staatliche Steuern",
   },
-  "includes-15m": {
-    en: "Hot water for showering",
-    ua: "Гаряча вода для душу",
-    fr: "Eau chaude pour les douches",
-    de: "Warmwasser zum Duschen",
-  },
   "includes-16m": {
     en: "Oxygen meter",
     ua: "Киснемір",
@@ -3742,12 +3724,6 @@ const langArrKilimonjaro = {
     ua: "Переносний унітаз зі змивом і наметами",
     fr: "Toilettes portables avec chasse d'eau avec et tentes",
     de: "Tragbare Spültoiletten mit und Zelten",
-  },
-  "includes-18m": {
-    en: "Stethoscope",
-    ua: "Стетоскоп",
-    fr: "Stéthoscope",
-    de: "Stethoskop",
   },
   "includes-19m": {
     en: "Mountain climbing certificates",

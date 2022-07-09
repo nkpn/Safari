@@ -11,3 +11,33 @@
     max-width: 1220px;
   }
 }
+
+.container-1400{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1400px;
+    padding: 0 30;
+  }
+}
+
+.container-100vw {
+  width: 102vw !important;
+  left: calc( -50vw + 50% );
+  overflow: hidden;
+  position: relative;
+  @media screen and (min-width:$desktop) {
+    width: 100vw !important;
+  }
+
+  @media screen and (max-width: 1400px) {
+    left: calc(-50vw + 50%);
+    position: relative;
+  }
+}

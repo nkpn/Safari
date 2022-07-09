@@ -1,8 +1,7 @@
 //-------------------------------
 //* HEADER
 header {
-  padding-top: 14px;
-  padding-bottom: 14px;
+ 
   font-family: Montserrat;
   font-weight: 500;
   font-size: 10px;
@@ -169,6 +168,8 @@ html[lang="ua"] > .header-background {
 }
 
 .mobile-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -463,4 +464,81 @@ option {
 
 .mobile-lang-select {
   @include mobile-list();
+}
+
+//------
+//* promo header
+.promo-header{
+  background-color: $white;
+  display: none;
+
+  .container-1400{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .promo-center-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    @media screen and (min-width:$tablet) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      justify-content: space-between;
+    }
+  
+    p{
+      font-family: Laqonic;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 16px;
+      color: $black;
+
+      @media screen and (min-width:$tablet) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .donate-text{
+      margin-right: 32px;
+      @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+      }
+    }
+
+    .you-help{
+      display: none;
+      @media screen and (min-width: $tablet) {
+        display: inline-block;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+.come-back-icon{
+  display: none;
+  @media screen and (min-width:$tablet) {
+    display: block;
+    width: 95px;
+    margin-right: 40px;
+  }
+}
+
+.icon-heart{
+  width: 12px;
+  @media screen and (min-width:$tablet) {
+    width: 25px;
+  }
+}
+
+.promo-close{
+  cursor: pointer;
 }

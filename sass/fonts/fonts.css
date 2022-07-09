@@ -43,3 +43,15 @@
     /* Super Modern Browsers */ url("./Montserrat/Montserrat-Medium.woff")
       format("woff"); /* Modern Browsers */
 }
+
+
+@font-face {
+  font-family: "Laqonic";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""), url("./Laqonic/Laqonic4FUnicase-Medium.eot") format("oet"),
+    /* Super Modern Browsers */ url("./Laqonic/Laqonic4FUnicase-Medium.ttf")
+      format("ttf"),
+    /* Super Modern Browsers */ url("./Laqonic/Laqonic4FUnicase-Medium.woff")
+      format("woff"); /* Modern Browsers */
+}

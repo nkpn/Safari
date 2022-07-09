@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('Laqonic4FUnicase-Medium.eot');
+    src: local('Laqonic 4F Unicase Medium'), local('Laqonic4FUnicase-Medium'),
+        url('Laqonic4FUnicase-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Laqonic4FUnicase-Medium.woff2') format('woff2'),
+        url('Laqonic4FUnicase-Medium.woff') format('woff'),
+        url('Laqonic4FUnicase-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
