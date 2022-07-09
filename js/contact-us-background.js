@@ -15,11 +15,19 @@ $(document).ready(function () {
     if(!sessionStorage.getItem('firstVisit')) { 
         // show modal if it first time  
       $('.promo-header').show();  
-      $headerBg.css('height', '148px')
+      if ($(window).width() < 720) {
+        $headerBg.css('height', '108px')
+    } else {
+        $headerBg.css('height', '148px')
+    }
     }    
     $('.promo-close').click(function() {
       sessionStorage.setItem('firstVisit',true); // used to store the state across refreshes.
       $('.promo-header').hide();
-      $headerBg.css('height', '80px')
+      if ($(window).width() < 720) {
+        $headerBg.css('height', '60px')
+      } else{
+        $headerBg.css('height', '80px')
+      }
     });
   });
