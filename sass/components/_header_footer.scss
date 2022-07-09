@@ -537,6 +537,9 @@ option {
   @media screen and (min-width:$tablet) {
     width: 25px;
   }
+  @media screen and (max-width:$tablet) {
+    margin-left: 3px;
+  }
 }
 
 .promo-close{

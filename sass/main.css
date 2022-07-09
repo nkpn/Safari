@@ -1220,6 +1220,12 @@ option {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .icon-heart {
+    margin-left: 3px;
+  }
+}
+
 .promo-close {
   cursor: pointer;
 }
