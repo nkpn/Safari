@@ -3,13 +3,13 @@ const langArrHome = {
   "nav-home": {
     en: "Home",
     ua: "Головна",
-    fr: "Accueil",
+    fr: "Page d'accueil",
     de: "Startseite",
   },
   "nav-wildlife": {
     en: "Wildlife Safari Tours",
     ua: "Сафарі-тури дикої природи",
-    fr: "Safari de la vie sauvage",
+    fr: "Safari Animalier",
     de: "Wildlife Safari",
   },
   "nav-kilimonjaro": {
@@ -40,38 +40,38 @@ const langArrHome = {
   "sub-nav-wildlife": {
     en: "Wildlife Safari Tours",
     ua: "Сафарі-тури дикої природи",
-    fr: "Safari de la vie sauvage",
-    de: "Wildlife Safari",
+    fr: "Safari Animalier",
+    de: "Die Campingsafari",
   },
   "subnav-wildlife-camping": {
     en: "Camping Safari",
     ua: "Кемпінг Сафарі",
-    fr: "Le safari en camping",
+    fr: "Safari-camping",
     de: "Die Campingsafari",
   },
   "subnav-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme",
-    de: "Die Safari in einer Lodge der Mittelklasse",
+    fr: "Lodge de safari milieu de gamme",
+    de: "Die mittelklasse – Safari - Lodge ",
   },
   "subnav-wildlife-wilderness": {
     en: "The Wilderness and Cultural experience safari",
     ua: "Сафарі по пустелі та культурному досвіду",
-    fr: "Le safari en milieu sauvage et l'expérience culturelle",
-    de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+    fr: "Safari animalier et culturel",
+    de: "Wüstensafari – Erlebnisse",
   },
   "subnav-wildlife-lux": {
     en: "Luxury Lodge Safari",
     ua: "Люкс-лодж сафарі",
-    fr: "Le safari en lodge de luxe",
-    de: "Die Safari in einer Luxus-Lodge",
+    fr: "Lodge de safari haut de gamme",
+    de: "Der Luxus – Safari – Lodge ",
   },
   "subnav-wildlife-classic": {
     en: "Classic Lodge Safari",
     ua: "Класичний лодж сафарі",
-    fr: "Le safari en lodge classique",
-    de: "Die Safari in einer klassischen Lodge",
+    fr: "Lodge de safari classique",
+    de: "Die klassische Safari – Lodge ",
   },
   //* subnav moshi
   "sub-nav-moshi": {
@@ -84,129 +84,129 @@ const langArrHome = {
     en: "Arusha National Park",
     ua: "Національний парк Аруша",
     fr: "Parc national d'Arusha",
-    de: "Arusha-Nationalpark",
+    de: "Arusha Nationalpark",
   },
   "subnav-moshi-tarangire": {
     en: "Tarangire National Park",
     ua: "Національний парк Тарангіре",
-    fr: "Le parc national du Tarangiré",
-    de: "Der Tarangire-Nationalpark",
+    fr: "Parc national de Tarangire",
+    de: "Tarangire Nationalpark",
   },
   "subnav-moshi-marangu": {
     en: "Marangu waterfalls",
     ua: "Водоспад Марангу",
-    fr: "Les chutes d'eau de Marangu",
-    de: "Die Wasserfälle von Marangu",
+    fr: "Cascades de Marangu",
+    de: "Marangu Wasserfall",
   },
   "subnav-moshi-chemka": {
     en: "Chemka hot springs",
     ua: "Гарячі джерела Чемка",
-    fr: "Les sources chaudes de Chemka",
+    fr: "Sources chaudes de Chemka",
     de: "Die heißen Quellen von Chemka",
   },
   "subnav-moshi-materuni": {
     en: "Materuni waterfalls",
     ua: "Водоспади Матеруні",
-    fr: "Les chutes d'eau de Materuni",
-    de: "Die Wasserfälle von Materuni",
+    fr: "Cascades de Materuni",
+    de: "Materuni Wasserfälle",
   },
   "subnav-moshi-challa": {
     en: "Lake Challa",
     ua: "Озеро Чалла",
-    fr: "Le lac Challa",
+    fr: "Lac Challa",
     de: "Der Challa-See",
   },
   "subnav-moshi-chagga": {
     en: "Chagga museum",
     ua: "Музей Чагга",
-    fr: "Le musée Chagga",
+    fr: "Musée Chagga",
     de: "Das Chagga-Museum",
   },
   //* subnav kilimanjaro
   "sub-nav-kilimanjaro": {
     en: "The Kilimanjaro Mountain",
     ua: "Гора Кіліманджаро",
-    fr: "Le mont Kilimandjaro",
+    fr: "Le Mont Kilimandjaro",
     de: "Der Berg Kilimandscharo",
   },
   "subnav-kil-marangu": {
     en: "Marangu Routes",
     ua: "Маршрути Марангу",
-    fr: "Routes Marangu",
-    de: "Marangu-Straßen",
+    fr: "Voies Marangu",
+    de: "Marangu – Route",
   },
   "subnav-kil-machame": {
     en: "Machame Route",
     ua: "Маршрут Мачаме",
-    fr: "Route Machame",
-    de: "Straße Machame",
+    fr: "Voie Machame",
+    de: "Machame – Route",
   },
   "subnav-kil-rongai": {
     en: "Rongai Route",
     ua: "Маршрут Ронгай",
-    fr: "Route Rongai",
-    de: "Straße Rongai",
+    fr: "Voie Rongai",
+    de: "Rongai – Route",
   },
   "subnav-kil-lemosho": {
     en: "Lemosho Route",
     ua: "Маршрут Лемошо",
-    fr: "Lemosho Route",
-    de: "Der Berg Kilimandscharo",
+    fr: "Voie Lemosho",
+    de: "Lemosho – Route",
   },
   "subnav-kil-umbwe": {
     en: "Umbwe Route",
     ua: "Маршрут Умбве",
-    fr: "Circuit Umbwe",
+    fr: "Voie Umbwe",
     de: "Umbwe-Rundreise",
   },
   "subnav-kil-north": {
     en: "Northern Circuit",
     ua: "Північний ланцюг",
     fr: "Circuit Nord",
-    de: "Nord-Rundreise",
+    de: "Nördlicher Rundreise",
   },
   "subnav-kil-meru": {
     en: "Trekking Mount Meru",
     ua: "Трекінг на гору Меру",
-    fr: "Trekking du Mont Meru",
-    de: "Mount Meru Trekking",
+    fr: "Trekking Mont Meru",
+    de: "Trekking zum Mount Meru",
   },
   //* subnav zanzibar
   "subnav-zanzibar": {
     en: "The Zanzibar Archipelago",
     ua: "Архіпелаг Занзібар",
     fr: "L'archipel de Zanzibar",
-    de: "Das Sansibar-Archipel",
+    de: "Sansibar-Archipel",
   },
   "subnav-zanzibar-tarangire": {
     en: "Tarangire National Park",
     ua: "Національний парк Тарангіре",
-    fr: "Parc national du Tarangiré",
-    de: "Tarangire-Nationalpark",
+    fr: "Parc national de Tarangire",
+    de: "Tarangire Nationalpark",
   },
   "subnav-zanzibar-mtowambue": {
     en: "Mto wa Mbu to Manyara National Park",
     ua: "Гора ва Мбу до національного парку Маньяра",
-    fr: "Du parc national de Mto wa Mbu au parc national de Manyara",
-    de: "Vom Mto wa Mbu-Nationalpark zum Manyara-Nationalpark",
+    fr: "Mto wa Mbu au parc national de Manyara",
+    de: "Vom Mount wa Mbu zum Manyara Nationalpark",
   },
   "subnav-zanzibar-ngorongoro": {
     en: "Ngorongoro crater",
     ua: "Кратер Нгоронгоро",
-    fr: "Le cratère du Ngorongoro",
-    de: "Der Ngorongoro-Krater",
+    fr: "Cratère du Ngorongoro ",
+    de: "Ngorongoro Krater",
   },
   "subnav-zanzibar-beach": {
     en: "Zanzibar beach",
     ua: "Пляж Занзібару",
-    fr: "La plage de Zanzibar",
-    de: "Der Strand von Sansibar",
+    fr: "Plage de Zanzibar ",
+    de: "Sansibar Strand",
   },
   "subnav-zanzibar-stone": {
     en: "Zanzibar beach to Stone town",
     ua: "Пляж Занзібару до Кам'яного міста",
-    fr: "De la plage de Zanzibar à Stone town",
-    de: "Vom Strand von Sansibar nach Stone town",
+    fr: "Plage de Zanzibar à Stone Town ",
+    de: "Vom Sansibar Strand nach Stone Town",
   },
   "subnav-contact": {
     en: "Contact Us",
@@ -248,7 +248,7 @@ const langArrHome = {
   "contact-phone": {
     en: "phone",
     ua: "телефон",
-    fr: "téléphoner",
+    fr: "TÉLÉPHONE",
     de: "Telefon",
   },
   "contact-social": {
@@ -285,14 +285,14 @@ const langArrHome = {
     en: "The Zanzibar Archipelago",
     ua: "Архіпелаг Занзібар",
     fr: "L'archipel de Zanzibar",
-    de: "Das Sansibar-Archipel",
+    de: "Sansibar-Archipel",
   },
   //---------------------------------
   //* hero section
   "hero-h1": {
     en: "Unusual Tanzania",
     ua: "НЕЗВИЧАЙНУ ТАНЗАНІЮ",
-    fr: "l'insolite TANZANIE",
+    fr: "la TANZANIE INSOLITE",
     de: "Sie das ungewöhnliche TANZANIA",
   },
   "hero-span": {
@@ -304,8 +304,8 @@ const langArrHome = {
   "hero-h2": {
     en: "Delightful, unusual, wild",
     ua: "Чудову, незвичайну, дику",
-    fr: "Délicieux, insolite, sauvage",
-    de: "Köstlich, ungewöhnlich, wild",
+    fr: "Ravissante, insolite, sauvage",
+    de: "Wunderbar, unvergesslich, wild",
   },
   //* welcome section
   "welcome-h2": {
@@ -317,21 +317,21 @@ const langArrHome = {
   "welcome-p1": {
     en: "Good Deeds Travel is a tour operator that specializes in quality Tanzania vacations. We offer services in lodge and camping safaris in all National Parks, as well as mountain trekking, beach safaris, cultural activities, and lodging reservations.",
     ua: "Good Deeds Travel — туроператорська компанія, що спеціалізується на якісних напрямках у Танзанії. Ми спеціалізуємося на сафарі в лоджі та кемпінгу у всіх національних парках, гірських походах, пляжних сафарі, культурних заходах та бронюванні житла",
-    fr: "Good Deeds Travel est un tour opérateur spécialisé dans les vacances de qualité en Tanzanie. Nous proposons des safaris en lodge et en camping dans tous les parcs nationaux, ainsi que des trekkings en montagne, des safaris sur la plage, des activités culturelles et des réservations d'hébergement.",
-    de: "Good Deeds Travel ist ein Reiseveranstalter, der sich auf Qualitätsurlaub in Tansania spezialisiert hat. Wir bieten Lodge- und Camping-Safaris in allen Nationalparks sowie Bergtrekking, Strandsafaris, kulturelle Aktivitäten und Unterkunftsreservierungen.",
+    fr: "Good Deeds Travel est un tour opérateur spécialiste des vacances de qualité en Tanzanie. Nous proposons des safaris en lodge et en camping dans tous les parcs nationaux, ainsi que des trekkings en montagne, des safaris sur la plage, des activités culturelles et des réservations de lodges.",
+    de: "Good Deeds Travel ist ein Reiseveranstalter, der sich auf Qualitätsurlaub in Tansania spezialisiert. Wir bieten Safari Dienstleistungen in Lodges und Campingplätzen in allen Nationalparks, sowie Bergtrekking, Strandsafaris, kulturelle Aktivitäten und Unterkunftsreservierungen.",
   },
   "welcome-p2": {
     en: "We build and offer unique itineraries to fit your budget, interests, and time preferences to help you plan an eventful and enjoyable trip. We have a dedicated and highly experienced team of tour guides and crew, who will certainly go the extra mile to show you everything you may have imagined while considering a safari to Tanzania.",
     ua: "Ми створюємо та пропонуємо унікальні розроблені маршрути відповідно до вашого бюджету, інтересів та часу з метою планування гарної та приємної подорожі. У нас є добре віддана і досвідчена команда екскурсоводів та екіпажу, які, безумовно, зроблять все, щоб показати вам все, що ви могли уявити, коли думали відправитися на сафарі до Танзанії.",
-    fr: "Nous élaborons et proposons des itinéraires uniques adaptés à votre budget, à vos centres d'intérêt et à vos préférences en matière de temps pour vous aider à planifier un voyage riche en événements et agréable. Nous disposons d'une équipe de guides et d'équipiers dévoués et très expérimentés, qui ne ménageront pas leurs efforts pour vous montrer tout ce que vous avez pu imaginer en envisageant un safari en Tanzanie.",
-    de: "Wir entwickeln und bieten einzigartige Reiserouten, die auf Ihr Budget, Ihre Interessen und Ihre Zeitvorlieben zugeschnitten sind, um Ihnen bei der Planung einer erlebnisreichen und angenehmen Reise zu helfen. Wir verfügen über ein engagiertes und sehr erfahrenes Team von Reiseleitern und Crewmitgliedern, die keine Mühen scheuen werden, um Ihnen alles zu zeigen, was Sie sich vorstellen konnten, als Sie eine Safari in Tansania in Betracht zogen.",
+    fr: "Nous créons et proposons des itinéraires sur mesure adaptés à votre budget, à vos intérêts et à votre disponibilité pour vous aider à planifier un voyage agréable et riche en activités. Nous disposons d'une équipe de guides et de personnels engagés et expérimentés qui feront leur possible pour répondre à vos aspirations du safari en Tanzanie.",
+    de: "Wir entwerfen und bieten einzigartige Reiserouten, nach Ihrem Budget, Ihren Interessen und Zeitpräferenzen an, um Ihnen bei der Planung einer reichhaltigen und angenehmen Reise zu helfen. Wir verfügen über ein engagiertes und sehr erfahrenes Team von Guides und Crew, die sich sicherlich freuen werden, Ihnen alles zu zeigen, was Sie sich vorstellen können, während Sie eine Safari in Tansania in Betracht ziehen.",
   },
   //* carousel
   "carousel-h3": {
     en: "Organizing author tours",
     ua: "Організація авторських екскурсій",
-    fr: "Organisation de tournées d'auteurs",
-    de: "Organisation von Autorentourneen",
+    fr: "Organisation de voyages sur mesure ",
+    de: "Organisation von Autorenreisen",
   },
   "read-more1": {
     en: "Read-more",
@@ -360,26 +360,26 @@ const langArrHome = {
   "carousel-h4-beach": {
     en: "Bush to Beach trip",
     ua: "Сафарі від Буша до пляжу",
-    fr: "Voyage de la brousse à la plage",
-    de: "Reise vom Busch zum Strand",
+    fr: "Voyage Bush to Beach",
+    de: "Ein Ausflug von Bush zum Strand",
   },
   "carousel-p-beach": {
     en: "Zanzibar, also known as Unguja, is the most mesmerizing and fascinating island in Africa.",
     ua: "Занзібар,також відомий як Унгуджа, є найбільш зачаровуючим і захоплюючим островом в Африці.",
-    fr: "Zanzibar, également connue sous le nom d'Unguja, est l'île la plus fascinante et la plus envoûtante d'Afrique. ",
-    de: "Sansibar, auch bekannt als Unguja, ist die faszinierendste und fesselndste Insel Afrikas.",
+    fr: "Zanzibar, également connue sous le nom d'Unguja, est l'île la plus fascinante et la plus charmante d'Afrique",
+    de: "Sansibar, auch bekannt als Unguja, ist die faszinierendste und spektakulärste Insel Afrikas.",
   },
   "carousel-h4-tanzania": {
     en: "Tanzania Safaris",
     ua: "Сафарі в Танзанії",
-    fr: "Safaris en Tanzanie",
+    fr: "Safari en Tanzanie",
     de: "Safaris in Tansania",
   },
   "carousel-p-tanzania": {
     en: "Tanzania, located in East Africa, is one of the world's most popular tourist hotspots because of its beautiful scenery and impressive wildlife, making it a perfect destination for a jeep safari tour",
     ua: "Танзанія розташована у Східній Африці і є провідним туристичним напрямком у світі завдяки своїм пейзажам та чудовій дикій природі.",
-    fr: "La Tanzanie, située en Afrique de l'Est, est l'un des hauts lieux touristiques les plus populaires au monde en raison de la beauté de ses paysages et de sa faune impressionnante, ce qui en fait une destination parfaite pour un safari en jeep.",
-    de: "Das in Ostafrika gelegene Tansania ist aufgrund seiner landschaftlichen Schönheit und seiner beeindruckenden Tierwelt eine der beliebtesten Touristenhochburgen der Welt und somit das perfekte Ziel für eine Jeep-Safari",
+    fr: "La Tanzanie, située en Afrique de l'Est, est l'une des destinations touristiques les plus prisées au monde en raison de ses paysages magnifiques et de sa faune impressionnante, ce qui en fait la destination idéale pour une excursion en jeep.",
+    de: "Tansania, in Ostafrika gelegen, ist eines der beliebtesten Reiseziele der Welt wegen seiner wunderschönen Aussicht und der spektakulären Tierwelt, was es zu einem idealen Ziel für eine Jeep-Safari macht.",
   },
   "carousel-h4-moshi": {
     en: "Day trips in Moshi",
@@ -390,20 +390,20 @@ const langArrHome = {
   "carousel-p-moshi": {
     en: "The last sanctuary in the world of such a wide variety of wildlife, the Moshi and Arusha regions offer a multitude of local activities to choose from for an unforgettable Tanzania tour.",
     ua: "Останній заповідник дикої природи такого масштабу в світі. У регіонах Моші та Аруша можна зайнятися безліччю місцевих заходів",
-    fr: "Dernier sanctuaire au monde d'une telle variété d'animaux sauvages, les régions de Moshi et d'Arusha offrent une multitude d'activités locales à choisir pour un circuit inoubliable en Tanzanie.",
-    de: "Die Regionen Moshi und Arusha sind das weltweit letzte Schutzgebiet für eine so große Vielfalt an Wildtieren und bieten eine Vielzahl an lokalen Aktivitäten, aus denen Sie für eine unvergessliche Rundreise durch Tansania wählen können.",
+    fr: "Les régions de Moshi et d'Arusha, dernier refuge au monde pour une telle diversité de la faune, offrent de nombreuses activités pour un circuit inoubliable en Tanzanie.",
+    de: "Die Regionen Moshi und Arusha, das letzte Naturschutzgebiet der Welt mit einer so großen Vielfalt an Wildtieren, bieten viele lokale Aktivitäten zu Auswahl für eine unvergessliche Tour durch Tansania",
   },
   "carousel-h4-kilimonjaro": {
     en: "The Kilimanjaro Mountain",
     ua: "Одноденні екскурсії в Моші",
-    fr: "Le mont Kilimandjaro",
+    fr: "Le Mont Kilimanjaro",
     de: "Der Berg Kilimandscharo",
   },
   "carousel-p-kilimonjaro": {
     en: "If you are looking into a more active experience, then a Mount Kilimanjaro tour is your perfect Tanzania holiday destination. This snow-capped peak rises above the Eastern African savannah, and the journey from the gate to the peak is equivalent to traveling from the equator to Antarctica in a matter of days.",
     ua: "Останній заповідник дикої природи такого масштабу в світі. У регіонах Моші та Аруша можна зайнятися безліччю місцевих заходів",
-    fr: "Si vous recherchez une expérience plus active, alors une excursion au Mont Kilimandjaro est la destination idéale pour vos vacances en Tanzanie. Ce sommet enneigé s'élève au-dessus de la savane d'Afrique de l'Est, et le trajet entre la porte et le sommet équivaut à voyager de l'équateur à l'Antarctique en quelques jours.",
-    de: "Wenn Sie nach einer aktiveren Erfahrung suchen, dann ist ein Ausflug zum Mount Kilimandscharo das ideale Ziel für Ihren Urlaub in Tansania. Dieser schneebedeckte Gipfel erhebt sich über die ostafrikanische Savanne, und die Fahrt vom Gate zum Gipfel entspricht einer Reise vom Äquator in die Antarktis in wenigen Tagen.",
+    fr: "Si vous cherchez des vacances plus actives, le mont Kilimandjaro est la destination parfaite pour vos vacances en Tanzanie. Son sommet enneigé s'élève au-dessus de la savane d'Afrique de l'Est, et l’ascension du sommet équivaut à un voyage de l'équateur à l'Antarctique en quelques jours.",
+    de: "Wenn Sie nach einem aktiveren Erlebnis suchen, dann ist eine Tour auf den Kilimandscharo Ihre ideale Wahl. Dieser schneebedeckte Gipfel erhebt sich über der ostafrikanischen Savanne, und die Reise vom Tor zum Gipfel entspricht der Reise vom Äquator in die Antarktis in wenigen Tagen.",
   },
   //* advantages
   "advantages-h3": {
@@ -415,13 +415,13 @@ const langArrHome = {
   "advantages-h4-1": {
     en: "Reboot yourself",
     ua: "Перезавантажте себе",
-    fr: "SE RÉINVENTER",
-    de: "SICH NEU ENTWICKELN",
+    fr: "SE RESSOURCER ",
+    de: "SICH NEU ENTDECKEN",
   },
   "advantages-p-1": {
     en: "On our trips you can look at yourself from the other side, see your strengths and weaknesses, feel the other side of your body and soul.",
     ua: "У наших подорожах ви можете поглянути на себе з іншого боку, побачити свої сильні та слабкі сторони, відчути інший бік свого тіла та душі",
-    fr: "Lors de nos voyages, vous pouvez vous regarder de l'autre côté, voir vos forces et vos faiblesses, sentir l'autre côté de votre corps et de votre âme.",
+    fr: "Lors de nos voyages, vous pourriez vous ressourcer, apprendre à mieux vous connaitre physiquement et  spirituellement.",
     de: "Auf unseren Reisen können Sie sich selbst von der anderen Seite betrachten, Ihre Stärken und Schwächen sehen, die andere Seite Ihres Körpers und Ihrer Seele spüren.",
   },
   "advantages-h4-2": {
@@ -433,8 +433,8 @@ const langArrHome = {
   "advantages-p-2": {
     en: "Each trip is unique, and you can feel the real adrenaline during the various adventures you experience along the way.",
     ua: "У наших подорожах ви можете поглянути на себе з іншого боку, побачити свої сильні та слабкі сторони, відчути інший бік свого тіла та душі",
-    fr: "Chaque voyage est unique, et vous pouvez ressentir une véritable adrénaline lors des diverses aventures que vous vivez en cours de route.",
-    de: "Jede Reise ist einzigartig, und bei den verschiedenen Abenteuern, die Sie unterwegs erleben, können Sie echtes Adrenalin spüren.",
+    fr: "Chaque voyage est unique et vous pouvez ressentir une véritable adrénaline au cours des différentes aventures.",
+    de: "Jede Reise ist einzigartig, und Sie können echtes Adrenalin, während der verschiedenen Abenteuer erleben, die sie auf dem Weg erleben",
   },
   "advantages-h4-3": {
     en: "New sensations",
@@ -445,15 +445,15 @@ const langArrHome = {
   "advantages-p-3": {
     en: "You will see unique things that you can never catch on TV. Emotions from this experience will linger for a long time.",
     ua: "У наших подорожах ви можете поглянути на себе з іншого боку, побачити свої сильні та слабкі сторони, відчути інший бік свого тіла та душі",
-    fr: "Vous verrez des choses uniques que vous ne pourrez jamais voir à la télévision. Les émotions ressenties lors de cette expérience resteront longtemps en mémoire.",
-    de: "Sie werden einzigartige Dinge sehen, die Sie niemals im Fernsehen sehen können. Die Emotionen, die Sie bei diesem Erlebnis empfinden, werden Ihnen noch lange in Erinnerung bleiben.",
+    fr: "Vous aller expérimenter des choses uniques que vous ne verrez jamais à la télévision. Les émotions de cette expérience resteront inoubliables.",
+    de: "Sie werden einzigartige Dinge sehen, die Sie nie im Fernsehen sehen werden. Die Emotionen, dieser Erfahrung werden für eine lange Zeit bleiben",
   },
   //* home photos
   "photos-h3": {
     en: "Some photos from our tours",
     ua: "Кілька фото з екскурсій",
     fr: "Quelques photos de nos visites",
-    de: "Einige Fotos von unseren Besuchen",
+    de: "Einige Fotos von unseren Touren",
   },
 };
 
