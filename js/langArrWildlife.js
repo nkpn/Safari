@@ -1647,7 +1647,7 @@ const langArrWildlife = {
   includes: {
     en: "Package includes",
     ua: "Пакет включає",
-    fr: "Le forfait cHébergement (pension complète)",
+    fr: "Le forfait cHébergement",
     de: "Die Pauschale umfasst",
   },
   incl1: {
