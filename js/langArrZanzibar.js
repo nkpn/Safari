@@ -3,13 +3,13 @@ const langArrZanzibar = {
   "nav-home": {
     en: "Home",
     ua: "Головна",
-    fr: "Accueil",
+    fr: "Page d'accueil",
     de: "Startseite",
   },
   "nav-wildlife": {
     en: "Wildlife Safari Tours",
     ua: "Сафарі-тури дикої природи",
-    fr: "Safari de la vie sauvage",
+    fr: "Safari Animalier",
     de: "Wildlife Safari",
   },
   "nav-kilimonjaro": {
@@ -71,38 +71,38 @@ const langArrZanzibar = {
   "sub-nav-wildlife": {
     en: "Wildlife Safari Tours",
     ua: "Сафарі-тури дикої природи",
-    fr: "Safari de la vie sauvage",
-    de: "Wildlife Safari",
+    fr: "Safari Animalier",
+    de: "Die Campingsafari",
   },
   "subnav-wildlife-camping": {
     en: "Camping Safari",
     ua: "Кемпінг Сафарі",
-    fr: "Le safari en camping",
+    fr: "Safari-camping",
     de: "Die Campingsafari",
   },
   "subnav-wildlife-mid": {
     en: "Mid-Range Safari lodge",
     ua: "Сафарі-лодж середнього класу",
-    fr: "Le safari en lodge de moyenne gamme",
-    de: "Die Safari in einer Lodge der Mittelklasse",
+    fr: "Lodge de safari milieu de gamme",
+    de: "Die mittelklasse – Safari - Lodge ",
   },
   "subnav-wildlife-wilderness": {
     en: "The Wilderness and Cultural experience safari",
     ua: "Сафарі по пустелі та культурному досвіду",
-    fr: "Le safari en milieu sauvage et l'expérience culturelle",
-    de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+    fr: "Safari animalier et culturel",
+    de: "Wüstensafari – Erlebnisse",
   },
   "subnav-wildlife-lux": {
     en: "Luxury Lodge Safari",
     ua: "Люкс-лодж сафарі",
-    fr: "Le safari en lodge de luxe",
-    de: "Die Safari in einer Luxus-Lodge",
+    fr: "Lodge de safari haut de gamme",
+    de: "Der Luxus – Safari – Lodge ",
   },
   "subnav-wildlife-classic": {
     en: "Classic Lodge Safari",
     ua: "Класичний лодж сафарі",
-    fr: "Le safari en lodge classique",
-    de: "Die Safari in einer klassischen Lodge",
+    fr: "Lodge de safari classique",
+    de: "Die klassische Safari – Lodge ",
   },
   //* subhead moshi
   "subhead-moshi": {
@@ -164,42 +164,42 @@ const langArrZanzibar = {
     en: "Arusha National Park",
     ua: "Національний парк Аруша",
     fr: "Parc national d'Arusha",
-    de: "Arusha-Nationalpark",
+    de: "Arusha Nationalpark",
   },
   "subnav-moshi-tarangire": {
     en: "Tarangire National Park",
     ua: "Національний парк Тарангіре",
-    fr: "Le parc national du Tarangiré",
-    de: "Der Tarangire-Nationalpark",
+    fr: "Parc national de Tarangire",
+    de: "Tarangire Nationalpark",
   },
   "subnav-moshi-marangu": {
     en: "Marangu waterfalls",
     ua: "Водоспад Марангу",
-    fr: "Les chutes d'eau de Marangu",
-    de: "Die Wasserfälle von Marangu",
+    fr: "Cascades de Marangu",
+    de: "Marangu Wasserfall",
   },
   "subnav-moshi-chemka": {
     en: "Chemka hot springs",
     ua: "Гарячі джерела Чемка",
-    fr: "Les sources chaudes de Chemka",
+    fr: "Sources chaudes de Chemka",
     de: "Die heißen Quellen von Chemka",
   },
   "subnav-moshi-materuni": {
     en: "Materuni waterfalls",
     ua: "Водоспади Матеруні",
-    fr: "Les chutes d'eau de Materuni",
-    de: "Die Wasserfälle von Materuni",
+    fr: "Cascades de Materuni",
+    de: "Materuni Wasserfälle",
   },
   "subnav-moshi-challa": {
     en: "Lake Challa",
     ua: "Озеро Чалла",
-    fr: "Le lac Challa",
+    fr: "Lac Challa",
     de: "Der Challa-See",
   },
   "subnav-moshi-chagga": {
     en: "Chagga museum",
     ua: "Музей Чагга",
-    fr: "Le musée Chagga",
+    fr: "Musée Chagga",
     de: "Das Chagga-Museum",
   },
   //* subhead kilimanjaro
@@ -252,47 +252,53 @@ const langArrZanzibar = {
     de: "Mount Meru Trekking",
   },
   //* subnav mobile kilimanjaro
+  "sub-nav-kilimanjaro": {
+    en: "The Kilimanjaro Mountain",
+    ua: "Гора Кіліманджаро",
+    fr: "Le Mont Kilimandjaro",
+    de: "Der Berg Kilimandscharo",
+  },
   "subnav-kil-marangu": {
     en: "Marangu Routes",
     ua: "Маршрути Марангу",
-    fr: "Routes Marangu",
-    de: "Marangu-Straßen",
+    fr: "Voies Marangu",
+    de: "Marangu – Route",
   },
   "subnav-kil-machame": {
     en: "Machame Route",
     ua: "Маршрут Мачаме",
-    fr: "Route Machame",
-    de: "Straße Machame",
+    fr: "Voie Machame",
+    de: "Machame – Route",
   },
   "subnav-kil-rongai": {
     en: "Rongai Route",
     ua: "Маршрут Ронгай",
-    fr: "Route Rongai",
-    de: "Straße Rongai",
+    fr: "Voie Rongai",
+    de: "Rongai – Route",
   },
   "subnav-kil-lemosho": {
     en: "Lemosho Route",
     ua: "Маршрут Лемошо",
-    fr: "Lemosho Route",
-    de: "Der Berg Kilimandscharo",
+    fr: "Voie Lemosho",
+    de: "Lemosho – Route",
   },
   "subnav-kil-umbwe": {
     en: "Umbwe Route",
     ua: "Маршрут Умбве",
-    fr: "Circuit Umbwe",
+    fr: "Voie Umbwe",
     de: "Umbwe-Rundreise",
   },
   "subnav-kil-north": {
     en: "Northern Circuit",
     ua: "Північний ланцюг",
     fr: "Circuit Nord",
-    de: "Nord-Rundreise",
+    de: "Nördlicher Rundreise",
   },
   "subnav-kil-meru": {
     en: "Trekking Mount Meru",
     ua: "Трекінг на гору Меру",
-    fr: "Trekking du Mont Meru",
-    de: "Mount Meru Trekking",
+    fr: "Trekking Mont Meru",
+    de: "Trekking zum Mount Meru",
   },
   //* subheader zanzibar
   "subhead-zanzibar-tarangire": {
@@ -328,48 +334,42 @@ const langArrZanzibar = {
 
   //* subnav zanzibar
   "subnav-zanzibar": {
-    en: "The Kilimanjaro Mountain",
-    ua: "Гора Кіліманджаро",
-    fr: "Le mont Kilimandjaro",
-    de: "Der Berg Kilimandscharo",
+    en: "The Zanzibar Archipelago",
+    ua: "Архіпелаг Занзібар",
+    fr: "L'archipel de Zanzibar",
+    de: "Sansibar-Archipel",
   },
   "subnav-zanzibar-tarangire": {
     en: "Tarangire National Park",
     ua: "Національний парк Тарангіре",
-    fr: "Parc national du Tarangiré",
-    de: "Tarangire-Nationalpark",
+    fr: "Parc national de Tarangire",
+    de: "Tarangire Nationalpark",
   },
   "subnav-zanzibar-mtowambue": {
     en: "Mto wa Mbu to Manyara National Park",
     ua: "Гора ва Мбу до національного парку Маньяра",
-    fr: "Du parc national de Mto wa Mbu au parc national de Manyara",
-    de: "Vom Mto wa Mbu-Nationalpark zum Manyara-Nationalpark",
+    fr: "Mto wa Mbu au parc national de Manyara",
+    de: "Vom Mount wa Mbu zum Manyara Nationalpark",
   },
   "subnav-zanzibar-ngorongoro": {
     en: "Ngorongoro crater",
     ua: "Кратер Нгоронгоро",
-    fr: "Le cratère du Ngorongoro",
-    de: "Der Ngorongoro-Krater",
+    fr: "Cratère du Ngorongoro ",
+    de: "Ngorongoro Krater",
   },
   "subnav-zanzibar-beach": {
     en: "Zanzibar beach",
     ua: "Пляж Занзібару",
-    fr: "La plage de Zanzibar",
-    de: "Der Strand von Sansibar",
+    fr: "Plage de Zanzibar ",
+    de: "Sansibar Strand",
   },
   "subnav-zanzibar-stone": {
     en: "Zanzibar beach to Stone town",
     ua: "Пляж Занзібару до Кам'яного міста",
-    fr: "De la plage de Zanzibar à Stone town",
-    de: "Vom Strand von Sansibar nach Stone town",
+    fr: "Plage de Zanzibar à Stone Town ",
+    de: "Vom Sansibar Strand nach Stone Town",
   },
   "subnav-contact": {
-    en: "Contact Us",
-    ua: "Зв'яжіться з нами",
-    fr: "Nous contacter",
-    de: "Kontaktieren Sie uns",
-  },
-  "subhead-contact": {
     en: "Contact Us",
     ua: "Зв'яжіться з нами",
     fr: "Nous contacter",
@@ -466,13 +466,13 @@ const langArrZanzibar = {
     en: "The best destinations on the island are Stonetown, Spice Tour, Safari Blue Tour, Nungwi, Kwendwa, the east coast (Jambiani, Paje Bwejuu, and Kizimkazi). The best day trips are: Stone Town Tour, Spice Tour, Safari Blue Tour, Mnemba Atoll, Dolphin Tour, Prison Island, Jozani Forest, Sunset Dhow Cruise, Sandbank Picnic, and Mangapwani Slave Chambers.",
     ua: "Найкращими напрямками на острові є Стоунтаун, Спайс-тур, Сафарі-Блакитний тур, Нунгві, Квендва, східне узбережжя (Джамбіані, Падже Бведжуу і Кізімказі). Найкращі одноденні екскурсії: екскурсія по Кам’яному місту, тур зі спеціями, тур Safari Blue, атол Мнемба, тур Долпіон, острів в’язниці, ліс Джозані, круїз на заході доу, пікнік на пісочній березі та камери рабів Мангапвані.",
     fr: "Les meilleures destinations sur l'île sont Stonetown, Spice Tour, Safari Blue Tour, Nungwi, Kwendwa, la côte est (Jambiani, Paje Bwejuu, et Kizimkazi). Les meilleures excursions d'une journée sont : Stone Town Tour, Spice Tour, Safari Blue Tour, l'atoll de Mnemba, Dolphin Tour, Prison Island, Jozani Forest, Sunset Dhow Cruise, Sandbank Picnic, et Mangapwani Slave Chambers.",
-    de: "Die besten Ziele auf der Insel sind Stonetown, Spice Tour, Safari Blue Tour, Nungwi, Kwendwa, Ostküste (Jambiani, Paje Bwejuu und Kizimkazi). Die besten Tagesausflüge sind: Stone Town Tour, Spice Tour, Safari Blue Tour, Mnemba Atoll, Dolphin Tour, Prison Island, Jozani Forest, Sunset Dhow Cruise, Sandbank Picknick und Mangapwani Slave Chambers.",
+    de: "Die besten Ziele auf der Insel sind Stonetown, Spice Tour, Safari Blue Tour, Nungwi, Kwendwa, Ostküste (Jambiani, Paje Bwejuu und Kizimkazi). Die besten Tagesausflüge sind: Stone Town Tour, Spice Tour, Safari Blue Tour, Mnemba Atoll, Dolpion Tour, Prison Island, Jozani Forest, Sunset Dhow Cruise, Sandbank Picknick und Mangapwani Slave Chambers.",
   },
   "hero-book-btn": {
     en: "Book the tour",
     ua: "Забронюйте тур",
-    fr: "Réservez la visite",
-    de: "Buchen die Tour",
+    fr: "Réservez votre visite",
+    de: "Buchen Sie den Besuch",
   },
   //---------------------------
   "hero2-p": {
@@ -492,7 +492,7 @@ const langArrZanzibar = {
     en: "Tarangire National Park",
     ua: "Національний парк Тарангіре",
     fr: "Parc national du Tarangiré",
-    de: "Tarangire-Nationalpark",
+    de: "Tarangire-Nationalpark.",
   },
   "tarangire-p": {
     en: "After breakfast, you will be collected by your guide/driver, and your safari will begin. Drive to Tarangire National Park from Moshi or Arusha. Tarangire, as previously said, is home to a plethora of migratory wildlife species that may be found in the Tarangire River's permanent waters. You'll have a picnic lunch in the park after the half-day game drive. You'll have to drive to Mto wa Mbu's campsite/lodge in the late afternoon for dinner and an overnight stay.",
@@ -627,9 +627,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-// selectFirst.addEventListener("change", changeURLLanguage);
-// selectSecond.addEventListener("change", changeURLLanguageTwo);
-// mobileSelect.addEventListener("change", changeURLLanguageThree);
+selectFirst.addEventListener("change", changeURLLanguage);
+selectSecond.addEventListener("change", changeURLLanguageTwo);
+mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 const changeLanguage = () => {
   let hash = window.location.hash;
@@ -650,9 +650,9 @@ const changeLanguage = () => {
     location.reload();
   }
   //* set all selects to our lang
-  // selectFirst.value = lang;
-  // selectSecond.value = lang;
-  // mobileSelect.value = lang;
+  selectFirst.value = lang;
+  selectSecond.value = lang;
+  mobileSelect.value = lang;
 
   //* change language
   for (let key in langArrZanzibar) {

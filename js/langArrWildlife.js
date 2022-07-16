@@ -1766,9 +1766,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-// selectFirst.addEventListener("change", changeURLLanguage);
-// selectSecond.addEventListener("change", changeURLLanguageTwo);
-// mobileSelect.addEventListener("change", changeURLLanguageThree);
+selectFirst.addEventListener("change", changeURLLanguage);
+selectSecond.addEventListener("change", changeURLLanguageTwo);
+mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 //* Change language
 const changeLanguage = () => {
@@ -1792,9 +1792,9 @@ const changeLanguage = () => {
     location.reload();
   }
   //* set all selects to our lang
-  // selectFirst.value = lang;
-  // selectSecond.value = lang;
-  // mobileSelect.value = lang;
+  selectFirst.value = lang;
+  selectSecond.value = lang;
+  mobileSelect.value = lang;
 
   //* change language
   for (let key in langArrWildlife) {
