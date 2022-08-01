@@ -307,6 +307,12 @@
     }
   }
 
+  .lng-hero-h3{
+    @media screen and (max-width: $tablet) {
+      // max-width: 65%;
+    }
+  }
+
   p {
     @include heading-description();
     margin-bottom: 28px;
