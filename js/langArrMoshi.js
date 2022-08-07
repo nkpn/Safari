@@ -653,7 +653,7 @@ const langArrMoshi = {
     fr: "Musée d'histoire naturelle d'Arusha",
     de: "Arusha Naturhistorisches Museum",
   },
-  "arusha-p1": {
+  "arusha-museum-p1": {
     en: "The Natural History Museum is located on Boma Road in Arusha, Tanzania. The main focus of this museum is the evolution of mankind. Within this museum, you can learn more about natural science research and the discovery of fossils found within the Olduvai Gorge. There are also displays of insects, birds, and different animals found in Arusha. It also shows Tanzania's colonial history and its struggle for independence. It is a full-day tour in Arusha, and you return to your lodge before dark for dinner and an overnight stay.",
     ua: "Музей природознавства розташований на Бома-роуд в Аруші, Танзанія. Основна тема цього музею – еволюція людства. У цьому музеї ви можете дізнатися більше про природничі наукові дослідження та відкриття скам’янілостей, знайдених в ущелині Олдувай. Є також покази комах, птахів та різних тварин, знайдених в Аруші. Він також показує колоніальну історію Танзанії та її боротьбу за незалежність. Це екскурсія на цілий день в Аруші, і ви повертаєтеся до свого будиночка до настання темряви на вечерю та ночівлю.",
     fr: "Le musée d'histoire naturelle est situé sur Boma Road à Arusha, en Tanzanie. Ce musée vous fera découvrir l'évolution de l'humanité. Vous pouvez en apprendre davantage sur la recherche en sciences naturelles et la découverte de fossiles trouvés dans les gorges d'Olduvai.  Vous y trouverez l’exposition d’insectes, d'oiseaux et de différents animaux trouvés à Arusha. Vous découvrirez également l'histoire coloniale de la Tanzanie et sa lutte pour l'indépendance. C’est une excursion d'une journée à Arusha et vous retournez à votre lodge avant la tombée de la nuit pour dîner et la nuit.",
@@ -662,33 +662,38 @@ const langArrMoshi = {
 };
 
 //---------------------------------------------
-//* Function
-
 const selectFirst = document.querySelector(".for-all-os");
 const selectSecond = document.querySelector(".for-windows");
 const mobileSelect = document.querySelector(".mobile-lang-select");
 
 const allLang = ["en", "ua", "fr", "de"];
+let currentURL = window.location.href;
+let currentUTM = window.location.href.split('?').slice(1);
+
+//* if currentUTM is not null - add ? at the beginning for pushing to URL
+if (currentUTM.length > 0){
+  currentUTM =`?${currentUTM.toString()}`;
+}
 
 //* push select value to the URL
 const changeURLLanguage = () => {
-  let lang = selectFirst.value;
+  let lang = selectFirst.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
 const changeURLLanguageTwo = () => {
-  let lang = selectSecond.value;
+  let lang = selectSecond.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
 const changeURLLanguageThree = () => {
-  let lang = mobileSelect.value;
+  let lang = mobileSelect.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
@@ -696,24 +701,64 @@ selectFirst.addEventListener("change", changeURLLanguage);
 selectSecond.addEventListener("change", changeURLLanguageTwo);
 mobileSelect.addEventListener("change", changeURLLanguageThree);
 
+
 const changeLanguage = () => {
-  let hash = window.location.hash;
-  hash = hash.substring(1);
+  let UtmSourceValue, UtmMediumValue, UtmCampaignValue;
   let lang = "en";
 
+  //* get the lang code from URL
+  let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
+
   if (localStorage.getItem("lang") === null) {
-    localStorage.setItem("lang", lang);
-    location.href = window.location.pathname + "#" + lang;
+    localStorage.setItem("lang", lang); // set Eng as a default language
+    location.href = window.location.pathname + "#" + lang + currentUTM;
     location.reload();
   } else {
     lang = localStorage.getItem("lang");
-    location.href = window.location.pathname + "#" + lang;
+    location.href = window.location.pathname + "#" + lang + currentUTM;
   }
 
   if (!allLang.includes(lang)) {
-    location.href = window.location.pathname + "#en";
+    location.href = window.location.pathname + "#en" + currentUTM;
     location.reload();
   }
+
+  //* get UTM from URL
+  function saveUTM(){
+    const UTMArray = currentURL.split('?').slice(1).toString().split('&');
+    
+    UTMArray.map( el =>{
+      if (el.indexOf('utm_source') !== -1){
+        UtmSourceValue = el.split('=').slice(1);
+      }
+
+      if (el.indexOf('utm_medium') !== -1){
+        UtmMediumValue = el.split('=').slice(1);
+      }
+
+      if (el.indexOf('utm_campaign') !== -1){
+        UtmCampaignValue = el.split('=').slice(1);
+      }
+
+      return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+    })
+  }
+
+  //* Push UTM to the form
+  function PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue){
+    const $UtmCampaignInput = $('#input_13');
+    const $UtmCMediumInput = $('#input_15');
+    const $UtmSourceInput = $('#input_14');
+
+    setTimeout(() => {
+      $UtmCampaignInput.val(UtmCampaignValue);
+      $UtmCMediumInput.val(UtmMediumValue);
+      $UtmSourceInput.val(UtmSourceValue);
+    }, 2000);
+    
+  }
+  
+  
   //* set all selects to our lang
   selectFirst.value = lang;
   selectSecond.value = lang;
@@ -726,6 +771,11 @@ const changeLanguage = () => {
       elem.innerHTML = langArrMoshi[key][lang];
     }
   }
+
+  console.log(localStorage.getItem("lang"), ' - lang from local storage - самый конец функции')
+
+  saveUTM();
+  PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
 };
 
 changeLanguage();

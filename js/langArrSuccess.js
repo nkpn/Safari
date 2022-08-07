@@ -470,72 +470,120 @@ const langArrContact = {
     },
   };
   
-  //---------------------------------------------
-  //* Function
-  
-  const selectFirst = document.querySelector(".for-all-os");
-  const selectSecond = document.querySelector(".for-windows");
-  const mobileSelect = document.querySelector(".mobile-lang-select");
-  
-  const allLang = ["en", "ua", "fr", "de"];
-  
-  //* push select value to the URL
-  const changeURLLanguage = () => {
-    let lang = selectFirst.value;
-    localStorage.setItem("lang", lang);
-    location.href = window.location.pathname + "#" + lang;
+//* Function
+
+const selectFirst = document.querySelector(".for-all-os");
+const selectSecond = document.querySelector(".for-windows");
+const mobileSelect = document.querySelector(".mobile-lang-select");
+
+const allLang = ["en", "ua", "fr", "de"];
+let currentURL = window.location.href;
+let currentUTM = window.location.href.split('?').slice(1);
+
+//* if currentUTM is not null - add ? at the beginning for pushing to URL
+if (currentUTM.length > 0){
+  currentUTM =`?${currentUTM.toString()}`;
+}
+
+//* push select value to the URL
+const changeURLLanguage = () => {
+  let lang = selectFirst.value.toString();
+  localStorage.setItem("lang", lang);
+  location.href = window.location.pathname + "#" + lang + currentUTM;
+  location.reload();
+};
+
+const changeURLLanguageTwo = () => {
+  let lang = selectSecond.value.toString();
+  localStorage.setItem("lang", lang);
+  location.href = window.location.pathname + "#" + lang + currentUTM;
+  location.reload();
+};
+
+const changeURLLanguageThree = () => {
+  let lang = mobileSelect.value.toString();
+  localStorage.setItem("lang", lang);
+  location.href = window.location.pathname + "#" + lang + currentUTM;
+  location.reload();
+};
+
+selectFirst.addEventListener("change", changeURLLanguage);
+selectSecond.addEventListener("change", changeURLLanguageTwo);
+mobileSelect.addEventListener("change", changeURLLanguageThree);
+
+
+const changeLanguage = () => {
+  let UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+  let lang = "en";
+
+  //* get the lang code from URL
+  let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
+
+  if (localStorage.getItem("lang") === null) {
+    localStorage.setItem("lang", lang); // set Eng as a default language
+    location.href = window.location.pathname + "#" + lang + currentUTM;
     location.reload();
-  };
-  
-  const changeURLLanguageTwo = () => {
-    let lang = selectSecond.value;
-    localStorage.setItem("lang", lang);
-    location.href = window.location.pathname + "#" + lang;
+  } else {
+    lang = localStorage.getItem("lang");
+    location.href = window.location.pathname + "#" + lang + currentUTM;
+  }
+
+  if (!allLang.includes(lang)) {
+    location.href = window.location.pathname + "#en" + currentUTM;
     location.reload();
-  };
-  
-  const changeURLLanguageThree = () => {
-    let lang = mobileSelect.value;
-    localStorage.setItem("lang", lang);
-    location.href = window.location.pathname + "#" + lang;
-    location.reload();
-  };
-  
-  selectFirst.addEventListener("change", changeURLLanguage);
-  selectSecond.addEventListener("change", changeURLLanguageTwo);
-  mobileSelect.addEventListener("change", changeURLLanguageThree);
-  
-  const changeLanguage = () => {
-    let hash = window.location.hash;
-    hash = hash.substring(1);
-    let lang = "en";
-  
-    if (localStorage.getItem("lang") === null) {
-      localStorage.setItem("lang", lang);
-      location.href = window.location.pathname + "#" + lang;
-      location.reload();
-    } else {
-      lang = localStorage.getItem("lang");
-      location.href = window.location.pathname + "#" + lang;
-    }
-  
-    if (!allLang.includes(lang)) {
-      location.href = window.location.pathname + "#en";
-      location.reload();
-    }
-    //* set all selects to our lang
-    selectFirst.value = lang;
-    selectSecond.value = lang;
-    mobileSelect.value = lang;
-  
-    //* change language
-    for (let key in langArrContact) {
-      let elem = document.querySelector(".lng-" + key);
-      if (elem) {
-        elem.innerHTML = langArrContact[key][lang];
+  }
+
+  //* get UTM from URL
+  function saveUTM(){
+    const UTMArray = currentURL.split('?').slice(1).toString().split('&');
+    
+    UTMArray.map( el =>{
+      if (el.indexOf('utm_source') !== -1){
+        UtmSourceValue = el.split('=').slice(1);
       }
+
+      if (el.indexOf('utm_medium') !== -1){
+        UtmMediumValue = el.split('=').slice(1);
+      }
+
+      if (el.indexOf('utm_campaign') !== -1){
+        UtmCampaignValue = el.split('=').slice(1);
+      }
+
+      return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+    })
+  }
+
+  //* Push UTM to the form
+  function PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue){
+    const $UtmCampaignInput = $('#input_13');
+    const $UtmCMediumInput = $('#input_15');
+    const $UtmSourceInput = $('#input_14');
+
+    setTimeout(() => {
+      $UtmCampaignInput.val(UtmCampaignValue);
+      $UtmCMediumInput.val(UtmMediumValue);
+      $UtmSourceInput.val(UtmSourceValue);
+    }, 2000);
+    
+  }
+  
+  
+  //* set all selects to our lang
+  selectFirst.value = lang;
+  selectSecond.value = lang;
+  mobileSelect.value = lang;
+
+  //* change language
+  for (let key in langArrContact) {
+    let elem = document.querySelector(".lng-" + key);
+    if (elem) {
+      elem.innerHTML = langArrContact[key][lang];
     }
-  };
-  
-  changeLanguage();
-  
+  }
+
+  saveUTM();
+  PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
+};
+
+changeLanguage();

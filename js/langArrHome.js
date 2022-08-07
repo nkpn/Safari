@@ -465,26 +465,33 @@ const selectSecond = document.querySelector(".for-windows");
 const mobileSelect = document.querySelector(".mobile-lang-select");
 
 const allLang = ["en", "ua", "fr", "de"];
+let currentURL = window.location.href;
+let currentUTM = window.location.href.split('?').slice(1);
+
+//* if currentUTM is not null - add ? at the beginning for pushing to URL
+if (currentUTM.length > 0){
+  currentUTM =`?${currentUTM.toString()}`;
+}
 
 //* push select value to the URL
 const changeURLLanguage = () => {
-  let lang = selectFirst.value;
+  let lang = selectFirst.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
 const changeURLLanguageTwo = () => {
-  let lang = selectSecond.value;
+  let lang = selectSecond.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
 const changeURLLanguageThree = () => {
-  let lang = mobileSelect.value;
+  let lang = mobileSelect.value.toString();
   localStorage.setItem("lang", lang);
-  location.href = window.location.pathname + "#" + lang;
+  location.href = window.location.pathname + "#" + lang + currentUTM;
   location.reload();
 };
 
@@ -492,32 +499,38 @@ selectFirst.addEventListener("change", changeURLLanguage);
 selectSecond.addEventListener("change", changeURLLanguageTwo);
 mobileSelect.addEventListener("change", changeURLLanguageThree);
 
-const changeLanguage = () => {
-  let hash = window.location.hash;
-  hash = hash.substring(1);
-  let lang = "en";
-  const locationLanguage = window.location.hash;
-  console.log(locationLanguage)
-  let UtmSourceValue, UtmMediumValue, UtmCampaignValue;
 
-  if (localStorage.getItem("lang") === null && locationLanguage === null){
-    localStorage.setItem("lang", lang);
-    // location.href = window.location.pathname + "#" + lang;
-    // location.reload();
+const changeLanguage = () => {
+  let UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+  let lang = "en";
+
+  //* get the lang code from URL
+  let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
+
+  if (allLang.includes.locationLanguage){
+    console.log("in all lang includes locLang")
+    lang = locationLanguage;
+    localStorage.setItem("lang", locationLanguage); // set Eng as a default language
+    location.href = window.location.pathname + "#" + lang + currentUTM;
+    location.reload();
+    
+  } else if (localStorage.getItem("lang") === null) {
+    localStorage.setItem("lang", lang); // set Eng as a default language
+    location.href = window.location.pathname + "#" + lang + currentUTM;
+    location.reload();
   } else {
-    // lang = localStorage.getItem("lang");
-    // location.href = window.location.pathname + "#" + lang;
+    lang = localStorage.getItem("lang");
+    location.href = window.location.pathname + "#" + lang + currentUTM;
   }
 
   if (!allLang.includes(lang)) {
-    location.href = window.location.pathname + "#en";
+    location.href = window.location.pathname + "#en" + currentUTM;
     location.reload();
   }
 
-  //* current URL and push it to the form
-  function saveUrl(){
-    const URL = window.location.href;
-    const UTMArray = URL.split('?').slice(1).toString().split('&');
+  //* get UTM from URL
+  function saveUTM(){
+    const UTMArray = currentURL.split('?').slice(1).toString().split('&');
     
     UTMArray.map( el =>{
       if (el.indexOf('utm_source') !== -1){
@@ -536,8 +549,8 @@ const changeLanguage = () => {
     })
   }
 
+  //* Push UTM to the form
   function PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue){
-    console.log(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
     const $UtmCampaignInput = $('#input_13');
     const $UtmCMediumInput = $('#input_15');
     const $UtmSourceInput = $('#input_14');
@@ -546,13 +559,10 @@ const changeLanguage = () => {
       $UtmCampaignInput.val(UtmCampaignValue);
       $UtmCMediumInput.val(UtmMediumValue);
       $UtmSourceInput.val(UtmSourceValue);
-    }, 1000);
+    }, 2000);
     
   }
   
-  
-  saveUrl();
-  PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
   
   //* set all selects to our lang
   selectFirst.value = lang;
@@ -566,6 +576,9 @@ const changeLanguage = () => {
       elem.innerHTML = langArrHome[key][lang];
     }
   }
+
+  saveUTM();
+  PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
 };
 
 changeLanguage();
