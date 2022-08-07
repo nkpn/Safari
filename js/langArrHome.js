@@ -496,20 +496,64 @@ const changeLanguage = () => {
   let hash = window.location.hash;
   hash = hash.substring(1);
   let lang = "en";
+  const locationLanguage = window.location.hash;
+  console.log(locationLanguage)
+  let UtmSourceValue, UtmMediumValue, UtmCampaignValue;
 
-  if (localStorage.getItem("lang") === null) {
+  if (localStorage.getItem("lang") === null && locationLanguage === null){
     localStorage.setItem("lang", lang);
-    location.href = window.location.pathname + "#" + lang;
-    location.reload();
+    // location.href = window.location.pathname + "#" + lang;
+    // location.reload();
   } else {
-    lang = localStorage.getItem("lang");
-    location.href = window.location.pathname + "#" + lang;
+    // lang = localStorage.getItem("lang");
+    // location.href = window.location.pathname + "#" + lang;
   }
 
   if (!allLang.includes(lang)) {
     location.href = window.location.pathname + "#en";
     location.reload();
   }
+
+  //* current URL and push it to the form
+  function saveUrl(){
+    const URL = window.location.href;
+    const UTMArray = URL.split('?').slice(1).toString().split('&');
+    
+    UTMArray.map( el =>{
+      if (el.indexOf('utm_source') !== -1){
+        UtmSourceValue = el.split('=').slice(1);
+      }
+
+      if (el.indexOf('utm_medium') !== -1){
+        UtmMediumValue = el.split('=').slice(1);
+      }
+
+      if (el.indexOf('utm_campaign') !== -1){
+        UtmCampaignValue = el.split('=').slice(1);
+      }
+
+      return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+    })
+  }
+
+  function PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue){
+    console.log(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
+    const $UtmCampaignInput = $('#input_13');
+    const $UtmCMediumInput = $('#input_15');
+    const $UtmSourceInput = $('#input_14');
+
+    setTimeout(() => {
+      $UtmCampaignInput.val(UtmCampaignValue);
+      $UtmCMediumInput.val(UtmMediumValue);
+      $UtmSourceInput.val(UtmSourceValue);
+    }, 1000);
+    
+  }
+  
+  
+  saveUrl();
+  PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
+  
   //* set all selects to our lang
   selectFirst.value = lang;
   selectSecond.value = lang;
