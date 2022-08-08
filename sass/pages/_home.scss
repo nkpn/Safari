@@ -814,6 +814,19 @@
   }
 }
 
+#cid_10 > div{
+  display: flex;
+  flex-direction: row;
+
+  [data-input-type="areaCode"]{
+    flex: 1;
+  }
+
+  [data-input-type="phone"]{
+    flex:2;
+  }
+}
+
 //------------------
 //* Carousel
 .home-photos .container {
