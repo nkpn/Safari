@@ -400,6 +400,18 @@ const langArrContact = {
       fr: "Commentaire ou question",
       de: "Kommentar oder Frage",
     },
+    "communication": {
+      en: "Preferred communication method",
+      ua: "Бажаний спосіб спілкування",
+      fr: "Méthode de communication préférée",
+      de: "Bevorzugte Kommunikationsmethode",
+    },
+    "phone-number": {
+      en: "Phone Number",
+      ua: "Телефонний номер",
+      fr: "Numéro de téléphone",
+      de: "Telefonnummer",
+    },
     "label-submit": {
       en: "Send",
       ua: "Надіслати",

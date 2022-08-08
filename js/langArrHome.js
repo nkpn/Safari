@@ -239,6 +239,18 @@ const langArrHome = {
     fr: "Commentaire ou question",
     de: "Kommentar oder Frage",
   },
+  "communication": {
+    en: "Preferred communication method",
+    ua: "Бажаний спосіб спілкування",
+    fr: "Méthode de communication préférée",
+    de: "Bevorzugte Kommunikationsmethode",
+  },
+  "phone-number": {
+    en: "Phone Number",
+    ua: "Телефонний номер",
+    fr: "Numéro de téléphone",
+    de: "Telefonnummer",
+  },
   "label-submit": {
     en: "Send",
     ua: "Надіслати",
@@ -513,7 +525,6 @@ const changeLanguage = () => {
     localStorage.setItem("lang", locationLanguage); // set Eng as a default language
     location.href = window.location.pathname + "#" + lang + currentUTM;
     location.reload();
-    
   } else if (localStorage.getItem("lang") === null) {
     localStorage.setItem("lang", lang); // set Eng as a default language
     location.href = window.location.pathname + "#" + lang + currentUTM;
