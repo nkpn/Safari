@@ -1797,13 +1797,18 @@ const changeLanguage = () => {
   //* get the lang code from URL
   let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
 
-  if (localStorage.getItem("lang") === null) {
+  if (allLang.includes(locationLanguage)){
+    lang = locationLanguage;
+    localStorage.setItem("lang", locationLanguage); // set Eng as a default language
+    location.href = window.location.pathname + "#" + lang + currentUTM;
+  } else if (localStorage.getItem("lang") === null) {
     localStorage.setItem("lang", lang); // set Eng as a default language
     location.href = window.location.pathname + "#" + lang + currentUTM;
     location.reload();
   } else {
     lang = localStorage.getItem("lang");
     location.href = window.location.pathname + "#" + lang + currentUTM;
+    location.reload();
   }
 
   if (!allLang.includes(lang)) {
