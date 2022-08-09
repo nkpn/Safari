@@ -2309,6 +2309,10 @@ option {
           flex: 2;
 }
 
+.lng-phone-number-2, .lng-area-code {
+  margin-top: 8px;
+}
+
 .home-photos .container {
   position: relative;
 }
