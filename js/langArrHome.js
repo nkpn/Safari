@@ -251,6 +251,18 @@ const langArrHome = {
     fr: "Numéro de téléphone",
     de: "Telefonnummer",
   },
+  "phone-number-2": {
+    en: "Phone Number",
+    ua: "Телефонний номер",
+    fr: "Numéro de téléphone",
+    de: "Telefonnummer",
+  },
+  "area-code": {
+    en: "Area Code",
+    ua: "Код країни",
+    fr: "Indicatif régional",
+    de: "Vorwahl",
+  },
   "label-submit": {
     en: "Send",
     ua: "Надіслати",
@@ -538,26 +550,43 @@ const changeLanguage = () => {
     location.reload();
   }
 
-  //* get UTM from URL
-  function saveUTM(){
-    const UTMArray = currentURL.split('?').slice(1).toString().split('&');
-    
-    UTMArray.map( el =>{
-      if (el.indexOf('utm_source') !== -1){
-        UtmSourceValue = el.split('=').slice(1);
-      }
+ //* get UTM from URL and set to Session Storage
+ function saveUTM(){
+  const UTMArray = currentURL.split('?').slice(1).toString().split('&');
+  
+  UTMArray.map( el =>{
+    if (el.indexOf('utm_source') !== -1){
+      UtmSourceValue = el.split('=').slice(1);
+      sessionStorage.setItem('utm_source' , UtmSourceValue);
+    }
 
-      if (el.indexOf('utm_medium') !== -1){
-        UtmMediumValue = el.split('=').slice(1);
-      }
+    if (el.indexOf('utm_medium') !== -1){
+      UtmMediumValue = el.split('=').slice(1);
+      sessionStorage.setItem('utm_medium' , UtmMediumValue);
+    }
 
-      if (el.indexOf('utm_campaign') !== -1){
-        UtmCampaignValue = el.split('=').slice(1);
-      }
+    if (el.indexOf('utm_campaign') !== -1){
+      UtmCampaignValue = el.split('=').slice(1);
+      sessionStorage.setItem('utm_campaign' , UtmCampaignValue);
+    }
 
-      return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
-    })
+    return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+  })
+}
+
+function getUTMFromSessionStorage(){
+  if (sessionStorage.getItem('utm_source') !== null){
+    UtmSourceValue = sessionStorage.getItem('utm_source');
   }
+  if (sessionStorage.getItem('utm_medium') !== null){
+    UtmMediumValue = sessionStorage.getItem('utm_medium');
+  }
+  if (sessionStorage.getItem('utm_campaign') !== null){
+    UtmCampaignValue  = sessionStorage.getItem('utm_campaign');
+  }
+
+  return UtmSourceValue, UtmMediumValue, UtmCampaignValue;
+}
 
   //* Push UTM to the form
   function PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue){
@@ -588,6 +617,7 @@ const changeLanguage = () => {
   }
 
   saveUTM();
+  getUTMFromSessionStorage();
   PushUTMtoForm(UtmSourceValue, UtmMediumValue, UtmCampaignValue);
 };
 
