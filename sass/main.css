@@ -2323,19 +2323,19 @@ option {
   background-size: 1em;
 }
 
-#input_10_phone::-webkit-input-placeholder {
+#input_10_phone::-webkit-input-placeholder, #input_10_area::-webkit-input-placeholder {
   font-size: 13px;
 }
 
-#input_10_phone:-ms-input-placeholder {
+#input_10_phone:-ms-input-placeholder, #input_10_area:-ms-input-placeholder {
   font-size: 13px;
 }
 
-#input_10_phone::-ms-input-placeholder {
+#input_10_phone::-ms-input-placeholder, #input_10_area::-ms-input-placeholder {
   font-size: 13px;
 }
 
-#input_10_phone::placeholder {
+#input_10_phone::placeholder, #input_10_area::placeholder {
   font-size: 13px;
 }
 
