@@ -203,24 +203,19 @@ $(".nav-submenu-zanzibar").mouseenter(() => {
 $(".nav-submenu-zanzibar").mouseleave(() => {
   $(".nav-submenu-zanzibar").css("display", "none");
 });
+
 //-----
+//* Input mask
+var phoneMask = IMask(
+  document.getElementById('input_10_area'), {
+    mask: '+{0}(000)'
+  });
 
-//* version 1 - zalipaet
-// $('.nav-link-safari').hover(()=>{
-//     $('.nav-submenu-safari').toggleClass('flex');
-//  })
+  var phoneMask2 = IMask(
+    document.getElementById('input_10_phone'), {
+      mask: '000-00-00'
+    });
 
-//  $('.nav-link-kilimonjaro').hover(()=>{
-//     $('.nav-submenu-kilimonjaro').toggleClass('flex');
-//  })
-
-//  $('.nav-link-moshi').hover(()=>{
-//     $('.nav-submenu-moshi').toggleClass('flex');
-//  })
-
-//  $('.nav-link-zanzibar').hover(()=>{
-//     $('.nav-submenu-zanzibar').toggleClass('flex');
-//  })
 //---------------------------------------------------
 if (navigator.userAgent.indexOf("Win") != -1) {
   $(".for-windows").css("display", "block");
