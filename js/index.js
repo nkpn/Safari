@@ -208,13 +208,10 @@ $(".nav-submenu-zanzibar").mouseleave(() => {
 //* Input mask
 var phoneMask = IMask(
   document.getElementById('input_10_area'), {
-    mask: '+{0}(000)'
+    mask: '+000'
   });
 
-  var phoneMask2 = IMask(
-    document.getElementById('input_10_phone'), {
-      mask: '000-00-00'
-    });
+
 
 //---------------------------------------------------
 if (navigator.userAgent.indexOf("Win") != -1) {

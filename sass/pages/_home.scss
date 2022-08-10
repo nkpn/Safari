@@ -827,10 +827,6 @@
   }
 }
 
-.lng-phone-number-2, .lng-area-code{
-  margin-top: 8px;
-}
-
 //*select
 #input_16{
     display: block;
@@ -842,6 +838,14 @@
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 1em;
+}
+
+#input_10_phone::placeholder{
+  font-size: 13px;
+}
+
+.lng-area-code, .lng-phone-number-2{
+  display: none;
 }
 
 //------------------
