@@ -470,15 +470,15 @@ const langArrContact = {
     },
     "success-p": {
       en: "Your message was successfully sent. We will contact you shortly.",
-      ua: "звертатися до нас",
-      fr: "à nous contacter",
-      de: "uns zu kontaktieren",
+      ua: "Ваше повідомлення успішно відправлено. Ми зв'яжемося з вами найближчим часом.",
+      fr: "Votre message a bien été envoyé. Nous vous contacterons sous peu.",
+      de: "Ihre Nachricht wurde erfolgreich versandt. Wir werden Sie in Kürze kontaktieren.",
     },
     "success-button": {
       en: "Go to Home",
-      ua: "Якщо ви маєте на увазі іншу концепцію подорожі, повідомте нам, як би ви хотіли, щоб ваш пакет був налаштований, і ми зробимо все можливе, щоб це сталося.",
-      fr: "Si vous avez en tête un concept de voyage différent, faites-nous savoir comment vous souhaitez que votre forfait soit personnalisé et nous ferons de notre mieux pour y parvenir.",
-      de: "Wenn Sie ein anderes Reisekonzept im Sinn haben, lassen Sie uns wissen, wie Ihr Paket personalisiert werden soll, und wir werden unser Bestes tun, um es zu verwirklichen.",
+      ua: "На головну",
+      fr: "à la page d'accueil",
+      de: "Zur Startseite",
     },
   };
   
