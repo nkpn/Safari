@@ -66,29 +66,50 @@
 //* HOME HERO SECTION
 //--------------------------
 .home-hero {
-  background-image: url("../images/home-page/elephants-min.png");
-  background-size: cover;
-  background-position: 40% 50%;
+  // background-image: url("../images/home-page/elephants-min.png");
+  // background-size: cover;
+  // background-position: 40% 50%;
+  background-color: grey;
   height: 600px;
+  position: relative;
 
   @media screen and (min-width: $tablet) {
     height: 805px;
     background-position: center;
   }
 
-  h2{
-    font-weight: 300 !important;
+  video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    @media screen and (min-width:$tablet) {
+      object-fit: unset;
+    }
+  }
+
+  .container{
+    height: 100%;
+    position: relative;
   }
 
   .home-hero-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 230px;
-    align-items: end;
+    flex-direction: column;
+
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      top: 35%;
+    }
 
     @media screen and (min-width: $tablet) {
       padding-top: 360px;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
     }
   }
 
@@ -98,47 +119,48 @@
       max-width: 265px;
       font-family: Kaisei Decol;
       font-weight: 400;
-      font-size: 40px;
-      line-height: 45px;
+      font-size: 32px;
+      line-height: 40px;
       color: $white;
       text-transform: uppercase;
-      text-align: end;
+      text-align: left;
 
       @media screen and (min-width: $tablet) {
-        font-size: 83px;
-        line-height: 83px;
+        font-size: 88px;
+        line-height: 88px;
         max-width: 550px;
       }
     }
 
     span {
-      font-family: Montserrat;
+      font-family: Montserrat-Variable;
       font-style: italic;
-      font-size: 24px;
-      line-height: 44px;
+      font-size: 16px;
+      line-height: 20px;
       letter-spacing: 0.03em;
       color: $white;
       text-transform: none;
-      font-weight: 100;
+      font-weight: 600;
       display: block;
-      text-align: end;
 
       @media screen and (min-width: $tablet) {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 30px;
       }
     }
 
     h2 {
-      margin-top: 22px;
-      font-size: 9px;
-      line-height: 24px;
-      font-weight: 300;
-      font-family: Montserrat;
-      text-align: end;
+      margin-top:16px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      font-family: Montserrat-Variable;
       color: $white;
+      font-style: italic;
       @media screen and (min-width: $tablet) {
-        font-size: 14px;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 22px;
       }
     }
   }
@@ -152,21 +174,32 @@
 
   .social-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 92px;
+    @media screen and (min-width: $tablet) {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    
   }
 
   .social-nav-item {
     border: 1px solid $bg-light-color;
     border-radius: 50%;
+    background-color: #fff;
 
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-right: 24px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 12px;
+        margin-right: 0;
+      }
     }
 
     a {
       padding: 16px 17px;
       @media screen and (min-width: $tablet) {
-        padding: 26px 27px;
+        padding: 24px 26px;
       }
     }
 
@@ -177,8 +210,7 @@
     }
 
     &:hover {
-      background-color: $social-icon-hero-cover;
-      // opacity: 0.15;
+      opacity: 0.88;
     }
   }
 

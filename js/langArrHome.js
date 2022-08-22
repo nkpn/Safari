@@ -320,10 +320,10 @@ const langArrHome = {
     de: "Sie das ungewöhnliche TANZANIA",
   },
   "hero-span": {
-    en: "visit",
-    ua: "відвідай",
-    fr: "visitez",
-    de: "besuchen",
+    en: "Visit",
+    ua: "Відвідай",
+    fr: "Visitez",
+    de: "Besuchen",
   },
   "hero-h2": {
     en: "Delightful, unusual, wild",

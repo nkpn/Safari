@@ -1318,10 +1318,9 @@ option {
 }
 
 .home-hero {
-  background-image: url("../images/home-page/elephants-min.png");
-  background-size: cover;
-  background-position: 40% 50%;
+  background-color: grey;
   height: 600px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -1331,30 +1330,58 @@ option {
   }
 }
 
-.home-hero h2 {
-  font-weight: 300 !important;
+.home-hero video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero video {
+    -o-object-fit: unset;
+       object-fit: unset;
+  }
+}
+
+.home-hero .container {
+  height: 100%;
+  position: relative;
 }
 
 .home-hero .home-hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 230px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .home-hero .home-hero-container {
+    position: absolute;
+    top: 35%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .home-hero .home-hero-container {
     padding-top: 360px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1366,54 +1393,55 @@ option {
   max-width: 265px;
   font-family: Kaisei Decol;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 32px;
+  line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: end;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
   .home-hero .hero-text h1 {
-    font-size: 83px;
-    line-height: 83px;
+    font-size: 88px;
+    line-height: 88px;
     max-width: 550px;
   }
 }
 
 .home-hero .hero-text span {
-  font-family: Montserrat;
+  font-family: Montserrat-Variable;
   font-style: italic;
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: none;
-  font-weight: 100;
+  font-weight: 600;
   display: block;
-  text-align: end;
 }
 
 @media screen and (min-width: 768px) {
   .home-hero .hero-text span {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 .home-hero .hero-text h2 {
-  margin-top: 22px;
-  font-size: 9px;
-  line-height: 24px;
-  font-weight: 300;
-  font-family: Montserrat;
-  text-align: end;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: Montserrat-Variable;
   color: #ffffff;
+  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
   .home-hero .hero-text h2 {
-    font-size: 14px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 22px;
   }
 }
 
@@ -1431,19 +1459,38 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .social-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
 }
 
 .home-hero .social-nav-item {
   border: 1px solid #F2FBFF;
   border-radius: 50%;
+  background-color: #fff;
 }
 
 .home-hero .social-nav-item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hero .social-nav-item:not(:last-child) {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
 }
 
 .home-hero .social-nav-item a {
@@ -1452,7 +1499,7 @@ option {
 
 @media screen and (min-width: 768px) {
   .home-hero .social-nav-item a {
-    padding: 26px 27px;
+    padding: 24px 26px;
   }
 }
 
@@ -1463,7 +1510,7 @@ option {
 }
 
 .home-hero .social-nav-item:hover {
-  background-color: #D3DBDF25;
+  opacity: 0.88;
 }
 
 .home-hero .facebook {
