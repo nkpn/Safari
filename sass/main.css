@@ -1321,6 +1321,8 @@ option {
   background-color: grey;
   height: 600px;
   position: relative;
+  background-color: #000000;
+  opacity: 0.95;
 }
 
 @media screen and (min-width: 768px) {
@@ -1371,7 +1373,7 @@ option {
 
 @media screen and (min-width: 768px) {
   .home-hero .home-hero-container {
-    padding-top: 360px;
+    padding-top: 420px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
