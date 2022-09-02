@@ -326,10 +326,10 @@ const langArrHome = {
     de: "Besuchen",
   },
   "hero-h2": {
-    en: "Delightful, wild",
-    ua: "Чудову, дику",
-    fr: "Ravissante, sauvage",
-    de: "Wunderbar, wild",
+    en: "Delightful & wild",
+    ua: "Чудову і дику",
+    fr: "Ravissante & sauvage",
+    de: "Wunderbar & wild",
   },
   //* welcome section
   "welcome-h2": {
