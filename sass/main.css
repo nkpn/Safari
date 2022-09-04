@@ -1146,8 +1146,8 @@ option {
 }
 @media screen and (min-width: 768px) {
   .home-hero video {
-    -o-object-fit: unset;
-       object-fit: unset;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .home-hero .container {
