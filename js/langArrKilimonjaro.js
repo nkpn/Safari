@@ -4293,10 +4293,13 @@ const changeLanguage = () => {
     const $UtmCMediumInput = $('#input_15');
     const $UtmSourceInput = $('#input_14');
 
+     const $pageSource = $('#input_23');
+
     setTimeout(() => {
       $UtmCampaignInput.val(UtmCampaignValue);
       $UtmCMediumInput.val(UtmMediumValue);
       $UtmSourceInput.val(UtmSourceValue);
+      $pageSource.val(currentURL)
     }, 2000);
     
   }

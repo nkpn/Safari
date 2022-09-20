@@ -1923,7 +1923,7 @@ option {
   padding: 10px 15px;
 }
 
-#id_10, #id_16 {
+#id_16 {
   display: none;
 }
 
@@ -1962,10 +1962,6 @@ option {
 
 #input_10_phone::placeholder, #input_10_area::placeholder {
   font-size: 13px;
-}
-
-.lng-area-code, .lng-phone-number-2 {
-  display: none;
 }
 
 .home-photos .container {
