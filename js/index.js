@@ -208,7 +208,7 @@ $(".nav-submenu-zanzibar").mouseleave(() => {
 //* Input mask
 var phoneMask = IMask(
   document.getElementById('input_10_area'), {
-    mask: '+000'
+    mask: '+0000'
   });
 
 
@@ -683,27 +683,27 @@ HintsEight.click(() => {
 // ScrollReveal().reveal('img');
 //-----------------------------------------------
 // //* submit button disable
-// let inputName = $("#name");
-// let inputEmail = $("#email");
+let inputName = $("#first_3");
+let inputEmail = $("#input_4");
 // let inputMessage = $("#message");
-// let submitButton = document.querySelector(".submit-button");
-// submitButton.disabled = true;
+let submitButton = document.querySelector(".submit-button");
+submitButton.disabled = true;
 
-// inputName.on("change", stateHandle);
+inputName.on("change", stateHandle);
 // inputMessage.on("change", stateHandle);
-// inputEmail.on("change", stateHandle);
+inputEmail.on("change", stateHandle);
 
-// function stateHandle() {
-//   if (
-//     inputName.val() != "" &&
-//     inputEmail.val() != "" &&
-//     inputMessage.val() != ""
-//   ) {
-//     submitButton.disabled = false;
-//   } else {
-//     submitButton.disabled = true;
-//   }
-// }
+function stateHandle() {
+  if (
+    inputName.val() != "" &&
+    inputEmail.val() != ""
+    // inputMessage.val() != ""
+  ) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
 
 //------------------------
 // //* change header background height if lang=ua,fr
