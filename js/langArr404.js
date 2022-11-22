@@ -30,6 +30,12 @@ const langArrContact = {
       fr: "L'archipel de Zanzibar",
       de: "Das Sansibar-Archipel",
     },
+    "nav-group": {
+      en: "Group Tours",
+      ua: "Групові Тури",
+      fr: "Мisites de groupe",
+      de: "Gruppenreisen",
+  },
     "nav-contact": {
       en: "Contact Us",
       ua: "Зв'яжіться з нами",
@@ -363,6 +369,12 @@ const langArrContact = {
       fr: "De la plage de Zanzibar à Stone town",
       de: "Vom Strand von Sansibar nach Stone town",
     },
+    "subnav-group": {
+      en: "Group Tours",
+      ua: "Групові Тури",
+      fr: "Мisites de groupe",
+      de: "Gruppenreisen",
+  },
     "subnav-contact": {
       en: "Contact Us",
       ua: "Зв'яжіться з нами",

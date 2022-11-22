@@ -30,12 +30,18 @@ const langArrZanzibar = {
     fr: "L'archipel de Zanzibar",
     de: "Das Sansibar-Archipel",
   },
-  "nav-contact": {
-    en: "Contact Us",
-    ua: "Зв'яжіться з нами",
-    fr: "Nous contacter",
-    de: "Kontaktieren Sie uns",
-  },
+   "nav-group": {
+        en: "Group Tours",
+        ua: "Групові Тури",
+        fr: "Мisites de groupe",
+        de: "Gruppenreisen",
+    },
+    "nav-contact": {
+        en: "Contact Us",
+        ua: "Зв'яжіться з нами",
+        fr: "Nous contacter",
+        de: "Kontaktieren Sie uns",
+    },
   //* subheader wildlife mobile
   "subhead-wildlife-camping": {
     en: "Camping Safari",
@@ -369,6 +375,12 @@ const langArrZanzibar = {
     fr: "Plage de Zanzibar à Stone Town ",
     de: "Vom Sansibar Strand nach Stone Town",
   },
+  "subnav-group": {
+    en: "Group Tours",
+    ua: "Групові Тури",
+    fr: "Мisites de groupe",
+    de: "Gruppenreisen",
+},
   "subnav-contact": {
     en: "Contact Us",
     ua: "Зв'яжіться з нами",

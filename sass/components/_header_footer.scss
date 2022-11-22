@@ -87,7 +87,8 @@ html[lang="ua"] > .header-background {
 .nav-submenu-kilimonjaro,
 .nav-submenu-safari,
 .nav-submenu-moshi,
-.nav-submenu-zanzibar {
+.nav-submenu-zanzibar,
+.nav-submenu-group {
   display: none;
   flex-direction: row;
   justify-content: space-between;
@@ -118,7 +119,7 @@ html[lang="ua"] > .header-background {
   padding: 25px 1px;
   color: inherit;
   @media screen and (min-width: 1162px) {
-    padding: 28px 18px;
+    padding: 28px 10px;
   }
 
   &:hover {
@@ -273,7 +274,7 @@ footer {
   }
 
   .footer-copyright {
-    margin-left: 150px;
+    margin-left: 100px;
     @include text-description();
     color: $white;
     opacity: 0.7;

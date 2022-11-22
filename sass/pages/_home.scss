@@ -643,23 +643,7 @@
   text-align: center;
 }
 
-//------------------------------
-//* Photo section
-.home-photos {
-  margin-bottom: 100px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 168px;
-    margin-top: 140px;
-  }
 
-  h3 {
-    @include subheading();
-    margin-bottom: 30px;
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 42px;
-    }
-  }
-}
 
 //----------------------------------
 //* Contact us section
@@ -893,6 +877,7 @@
   position: relative;
 }
 
+
 .slick-slide {
   max-width: 100%;
   margin-left: 15px;
@@ -977,7 +962,7 @@
     background-color: $bg-dark-color;
     margin: 0;
     @media screen and (min-width: $desktop) {
-      width: 18%;
+      width: 13%;
     }
   }
 
@@ -990,7 +975,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      width: 18%;
+      width: 13%;
     }
   }
 
@@ -1023,7 +1008,38 @@
 .black-background {
   background-color: $black !important;
 }
+//------------------------------
+//* Photo section
+.home-photos {
+  margin-bottom: 100px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 168px;
+    margin-top: 140px;
+  }
 
+  h3 {
+    @include subheading();
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 42px;
+    }
+  }
+
+  .slick-dots li {
+    width: 12%;
+    @media screen and (min-width: $desktop) {
+      width: 13%;
+    }
+  }
+
+  .slick-dots li button {
+    width: 12%;
+
+    @media screen and (min-width: $desktop) {
+      width: 13%;
+    }
+  }
+}
 //-------------------
 //* cookie
 #cookie-bar{

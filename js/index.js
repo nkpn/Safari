@@ -203,6 +203,20 @@ $(".nav-submenu-zanzibar").mouseenter(() => {
 $(".nav-submenu-zanzibar").mouseleave(() => {
   $(".nav-submenu-zanzibar").css("display", "none");
 });
+//-----
+//-----
+$(".nav-link-group").mouseenter(() => {
+  $(".nav-submenu-group").css("display", "flex");
+});
+$(".nav-link-group").mouseleave(() => {
+  $(".nav-submenu-group").css("display", "none");
+});
+$(".nav-link-group").mouseenter(() => {
+  $(".nav-submenu-group").css("display", "flex");
+});
+$(".nav-link-group").mouseleave(() => {
+  $(".nav-submenu-group").css("display", "none");
+});
 
 //-----
 //* Input mask
@@ -234,6 +248,8 @@ const zanzibarIcon = $(".zanzibar");
 const zanzibarList = $(".zanzibar-list");
 const daysIconOpen = $(".days-arrow");
 const daysIconClose = $(".days-arrow-close");
+const groupList = $(".group-list");
+const groupIcon = $(".group");
 
 const CampOne = $(".camping-one");
 const CampOneBottom = $(".camp-one-arr-bottom");
@@ -305,6 +321,8 @@ const ClassLodgeFourBottom = $(".class-lodge-four-arr-bottom");
 const ClassLodgeFourUp = $(".class-lodge-four-arr-up");
 const ClassLodgeFourList = $(".class-lodge-four-list");
 
+
+
 //* Dropdown functions
 
 wildlifeIcon.click(() => {
@@ -322,6 +340,10 @@ kilimanjaroIcon.click(() => {
 zanzibarIcon.click(() => {
   zanzibarList.toggle();
 });
+
+groupIcon.click(()=>{
+  groupList.toggle();
+})
 
 daysIconOpen.click(() => {
   daysIconOpen.parent().siblings().css("display", "block");
