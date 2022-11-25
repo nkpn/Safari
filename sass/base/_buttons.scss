@@ -132,3 +132,20 @@
     opacity: 0.9;
   }
 }
+
+.group-btn {
+  background-color: $button-light-color;
+  border-radius: 100px;
+  font-family: Montserrat;
+  cursor: pointer;
+  text-align: center;
+  color: $white;
+  max-width: 250px;
+  font-size: 14px;
+  padding: 4px 16px;
+  border: none;
+
+  &:hover{
+    background-color: $button-main-color;
+  }
+}

@@ -226,6 +226,64 @@ const langArrHome = {
     fr: "Nous contacter",
     de: "Kontaktieren Sie uns",
   },
+      //* Subnav group
+      "subnav-group-circuit": {
+        en: "Northern Circuit",
+        ua: "Північний ланцюг",
+        fr: "Circuit Nord",
+        de: "Nordkreis",
+      },
+      "subnav-group-mid": {
+        en: "Mid-Range Safari lodge",
+        ua: "Сафарі-лодж середнього класу",
+        fr: "Le safari en lodge de moyenne gamme",
+        de: "Die Safari in einer Lodge der Mittelklasse",
+      },
+      "subnav-group-wild": {
+        en: "The Wilderness and Cultural experience safari",
+        ua: "Сафарі по пустелі та культурному досвіду",
+        fr: "Le safari en milieu sauvage et l'expérience culturelle",
+        de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+      },
+      "subnav-group-lux": {
+        en: "Luxury Lodge Safari",
+        ua: "Люкс-лодж сафарі",
+        fr: "Lodge de safari haut de gamme",
+        de: "Der Luxus – Safari – Lodge ",
+      },
+
+    //* subhead group
+    "subhead-group-circuit": {
+        en: "Northern Circuit",
+        ua: "Північний ланцюг",
+        fr: "Circuit Nord",
+        de: "Nordkreis",
+      },
+      "subhead-group-mid": {
+        en: "Mid-Range Safari lodge",
+        ua: "Сафарі-лодж середнього класу",
+        fr: "Le safari en lodge de moyenne gamme",
+        de: "Die Safari in einer Lodge der Mittelklasse",
+      },
+      "subhead-group-wild": {
+        en: "The Wilderness and Cultural experience safari",
+        ua: "Сафарі по пустелі та культурному досвіду",
+        fr: "Le safari en milieu sauvage et l'expérience culturelle",
+        de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+      },
+      "subhead-group-lux": {
+        en: "Luxury Lodge Safari",
+        ua: "Люкс-лодж сафарі",
+        fr: "Lodge de safari haut de gamme",
+        de: "Der Luxus – Safari – Lodge ",
+      },
+    //* Footer
+    "footer-group": {
+      en: "Group Tours",
+      ua: "Групові Тури",
+      fr: "Мisites de groupe",
+      de: "Gruppenreisen",
+  },
   //* Footer
   "contact-us-h3": {
     en: "Contact us",
@@ -490,6 +548,30 @@ const langArrHome = {
     ua: "Кілька фото з екскурсій",
     fr: "Quelques photos de nos visites",
     de: "Einige Fotos von unseren Touren",
+  },
+  "group-tour-1": {
+    en: "Group Tour →",
+    ua: "Груповий тур →",
+    fr: "Visite de groupe →",
+    de: "Gruppentour →",
+  },
+  "group-tour-2": {
+    en: "Group Tour →",
+    ua: "Груповий тур →",
+    fr: "Visite de groupe →",
+    de: "Gruppentour →",
+  },
+  "group-tour-3": {
+    en: "Group Tour →",
+    ua: "Груповий тур →",
+    fr: "Visite de groupe →",
+    de: "Gruppentour →",
+  },
+  "group-tour-4": {
+    en: "Group Tour →",
+    ua: "Груповий тур →",
+    fr: "Visite de groupe →",
+    de: "Gruppentour →",
   },
 };
 

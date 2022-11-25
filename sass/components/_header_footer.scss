@@ -1,7 +1,6 @@
 //-------------------------------
 //* HEADER
 header {
- 
   font-family: Montserrat;
   font-weight: 500;
   font-size: 10px;
@@ -72,18 +71,6 @@ html[lang="ua"] > .header-background {
   color: #f2fbff77;
 }
 
-// .nav-link-safari:hover + .nav-submenu-safari{
-//     display: flex;
-// }
-
-.nav-link-kilimonjaro:hover + .nav-submenu-kilimonjaro {
-  display: flex;
-}
-
-.nav-submenu-kilimonjaro {
-  display: flex;
-}
-
 .nav-submenu-kilimonjaro,
 .nav-submenu-safari,
 .nav-submenu-moshi,
@@ -106,6 +93,7 @@ html[lang="ua"] > .header-background {
     display: flex;
   }
 }
+
 .submenu-background {
   background-color: $submenu-dark-bg-color;
   height: 80px;

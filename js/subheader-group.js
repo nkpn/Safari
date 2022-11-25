@@ -1,4 +1,4 @@
-$(document).ready(function () {
+  $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
     const $headerBg = $('.header-background');

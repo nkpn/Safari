@@ -374,6 +374,22 @@ summary {
   opacity: 0.9;
 }
 
+.group-btn {
+  background-color: #467AFF;
+  border-radius: 100px;
+  font-family: Montserrat;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  max-width: 250px;
+  font-size: 14px;
+  padding: 4px 16px;
+  border: none;
+}
+.group-btn:hover {
+  background-color: #0C4AE9;
+}
+
 @-webkit-keyframes rotateMenu {
   0% {
     transform: rotateX(-90deg);
@@ -543,14 +559,6 @@ html[lang=ua] > .header-background {
 
 .nav-item {
   color: rgba(242, 251, 255, 0.4666666667);
-}
-
-.nav-link-kilimonjaro:hover + .nav-submenu-kilimonjaro {
-  display: flex;
-}
-
-.nav-submenu-kilimonjaro {
-  display: flex;
 }
 
 .nav-submenu-kilimonjaro,
@@ -1448,15 +1456,6 @@ option {
     height: 500px;
   }
 }
-.tours-carousel .carousel-card-zanzibar:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/home-page/beach-safari-min.png");
-}
-.tours-carousel .carousel-card-zanzibar:hover > .lng-carousel-h4-beach {
-  color: grey;
-}
-.tours-carousel .carousel-card-zanzibar:hover > .lng-carousel-p-beach {
-  color: grey;
-}
 .tours-carousel .carousel-card-wildlife {
   width: 100%;
   background-image: url("../images/home-page/tanzania-safaris-min.png");
@@ -1467,18 +1466,6 @@ option {
   .tours-carousel .carousel-card-wildlife {
     height: 500px;
   }
-}
-.tours-carousel .carousel-card-wildlife:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/home-page/tanzania-safaris-min.png");
-}
-.tours-carousel .carousel-card-wildlife:hover > .lng-carousel-h4-tanzania {
-  color: grey;
-}
-.tours-carousel .carousel-card-wildlife:hover > .lng-carousel-p-tanzania {
-  color: grey;
-}
-.tours-carousel .carousel-card-wildlife:hover + .book-btn {
-  display: block;
 }
 .tours-carousel .carousel-card-moshi {
   width: 100%;
@@ -1491,15 +1478,6 @@ option {
     height: 500px;
   }
 }
-.tours-carousel .carousel-card-moshi:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/home-page/moshi-min.png");
-}
-.tours-carousel .carousel-card-moshi:hover > .lng-carousel-h4-moshi {
-  color: grey;
-}
-.tours-carousel .carousel-card-moshi:hover > .lng-carousel-p-moshi {
-  color: grey;
-}
 .tours-carousel .carousel-card-kilimanjaro {
   width: 100%;
   background-image: url("../images/home-page/killimanjaro-min.png");
@@ -1510,27 +1488,6 @@ option {
   .tours-carousel .carousel-card-kilimanjaro {
     height: 500px;
   }
-}
-.tours-carousel .carousel-card-kilimanjaro:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/home-page/killimanjaro-min.png");
-}
-.tours-carousel .carousel-card-kilimanjaro:hover > .lng-carousel-h4-kilimonjaro {
-  color: grey;
-}
-.tours-carousel .carousel-card-kilimanjaro:hover > .lng-carousel-p-kilimonjaro {
-  color: grey;
-}
-.tours-carousel .darkBG {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-}
-.tours-carousel .hide-zanzibar,
-.tours-carousel .hide-safari,
-.tours-carousel .hide-moshi,
-.tours-carousel .hide-kilimonjaro {
-  display: none;
-}
-.tours-carousel .carousel-card:hover + .hide {
-  display: block;
 }
 .tours-carousel .carousel-card {
   display: flex;
@@ -1546,19 +1503,23 @@ option {
 }
 .tours-carousel .carousel-card h4 {
   margin-bottom: 0;
+  margin-top: 5px;
 }
-.tours-carousel .carousel-card .book-btn {
-  background-color: #ffffff;
-  color: #000000;
-  max-width: 250px;
-  margin: 0 auto;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  z-index: 20;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
+@media screen and (min-width: 768px) {
+  .tours-carousel .carousel-card h4 {
+    margin-top: 12px;
+  }
+}
+.tours-carousel .carousel-card .group-btn {
+  background-color: #467AFF;
+  color: #ffffff;
+  max-width: 180px;
+  font-size: 14px;
+  padding: 4px 16px;
+  border: none;
+}
+.tours-carousel .carousel-card .group-btn:hover {
+  background-color: #0C4AE9;
 }
 .tours-carousel h4 {
   font-family: Kaisei Decol;
@@ -4716,12 +4677,12 @@ option {
   font-size: 10px;
 }
 
-.custom-blue-background {
+.custom-blue-background, .custom-group-background {
   position: absolute;
   background-color: #F2FBFF;
 }
 @media screen and (max-width: 767px) {
-  .custom-blue-background {
+  .custom-blue-background, .custom-group-background {
     height: 450px;
     top: 0;
     right: 0;
@@ -4730,7 +4691,7 @@ option {
   }
 }
 @media screen and (min-width: 768px) {
-  .custom-blue-background {
+  .custom-blue-background, .custom-group-background {
     height: 620px;
     top: 0;
     right: 0vw;
@@ -5534,6 +5495,17 @@ option {
   .group-tour-northern {
     padding-bottom: 115px;
     padding-top: 120px;
+  }
+}
+
+.group-package-section .package-list {
+  max-width: unset;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-group-background {
+    height: 470px;
   }
 }
 

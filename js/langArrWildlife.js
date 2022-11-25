@@ -385,7 +385,64 @@ const langArrWildlife = {
     ua: "Зв'яжіться з нами",
     fr: "Nous contacter",
     de: "Kontaktieren Sie uns",
-  },
+  },    //* Subnav group
+  "subnav-group-circuit": {
+      en: "Northern Circuit",
+      ua: "Північний ланцюг",
+      fr: "Circuit Nord",
+      de: "Nordkreis",
+    },
+    "subnav-group-mid": {
+      en: "Mid-Range Safari lodge",
+      ua: "Сафарі-лодж середнього класу",
+      fr: "Le safari en lodge de moyenne gamme",
+      de: "Die Safari in einer Lodge der Mittelklasse",
+    },
+    "subnav-group-wild": {
+      en: "The Wilderness and Cultural experience safari",
+      ua: "Сафарі по пустелі та культурному досвіду",
+      fr: "Le safari en milieu sauvage et l'expérience culturelle",
+      de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+    },
+    "subnav-group-lux": {
+      en: "Luxury Lodge Safari",
+      ua: "Люкс-лодж сафарі",
+      fr: "Lodge de safari haut de gamme",
+      de: "Der Luxus – Safari – Lodge ",
+    },
+
+  //* subhead group
+  "subhead-group-circuit": {
+      en: "Northern Circuit",
+      ua: "Північний ланцюг",
+      fr: "Circuit Nord",
+      de: "Nordkreis",
+    },
+    "subhead-group-mid": {
+      en: "Mid-Range Safari lodge",
+      ua: "Сафарі-лодж середнього класу",
+      fr: "Le safari en lodge de moyenne gamme",
+      de: "Die Safari in einer Lodge der Mittelklasse",
+    },
+    "subhead-group-wild": {
+      en: "The Wilderness and Cultural experience safari",
+      ua: "Сафарі по пустелі та культурному досвіду",
+      fr: "Le safari en milieu sauvage et l'expérience culturelle",
+      de: "Die Safari in der Wildnis und das kulturelle Erlebnis",
+    },
+    "subhead-group-lux": {
+      en: "Luxury Lodge Safari",
+      ua: "Люкс-лодж сафарі",
+      fr: "Lodge de safari haut de gamme",
+      de: "Der Luxus – Safari – Lodge ",
+    },
+  //* Footer
+  "footer-group": {
+    en: "Group Tours",
+    ua: "Групові Тури",
+    fr: "Мisites de groupe",
+    de: "Gruppenreisen",
+},
   //* Footer
   "contact-us-h3": {
     en: "Contact us",
@@ -1746,30 +1803,37 @@ const langArrWildlife = {
     fr: "Vols internationaux et domestiques",
     de: "Internationale und inländische Flüge",
   },
-  excl3: {
+  "excl3": {
     en: "Tips/Gratuities",
     ua: "Поради/чайові",
     fr: "Pourboires",
     de: "Tipps/Gratifikationen",
   },
-  excl4: {
+  "excl4": {
     en: "Sleeping bag",
     ua: "Спальний мішок",
     fr: "Sac de couchage",
     de: "Schlafsack",
   },
-  excl5: {
+  "excl5": {
     en: "Personal care products",
     ua: "Засоби особистої гігієни",
     fr: "Produits de soins personnels",
     de: "Produkte für die Körperpflege",
   },
-  excl6: {
+  "excl6": {
     en: "Travel insurance and visa fees",
     ua: "Страхування подорожей та візові збори",
     fr: "Assurance voyage et frais de visa",
     de: "Reiseversicherung und Visagebühren",
   },
+ "group-btn-1": {
+    en: "Available in groups too →",
+    ua: "Також є груповий тур →",
+    fr: "Disponible en groupe aussi →",
+    de: "Auch in der Gruppe erhältlich →",
+  },
+  
 };
 //---------------------------------------------
 //* Function

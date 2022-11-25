@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
   const $headerBg = $('.header-background');
-  const $navSubmenu = $('.nav-submenu-safari, .nav-submenu-kilimonjaro, .nav-submenu-moshi, .nav-submenu-zanzibar');
+  const $navSubmenu = $('.nav-submenu-safari, .nav-submenu-kilimonjaro, .nav-submenu-moshi, .nav-submenu-zanzibar, .nav-submenu-group');
 
   if(!sessionStorage.getItem('firstVisit')) {   
     $('.promo-header').show();  

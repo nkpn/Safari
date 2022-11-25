@@ -17,3 +17,16 @@
         padding-top: 120px;
       }
 }
+
+.group-package-section{
+    .package-list{
+        max-width: unset;
+        padding-left: 0;
+    }
+}
+
+.custom-group-background{
+    @media screen and (max-width: 767px) {
+        height: 470px;
+    }
+}

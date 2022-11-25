@@ -118,36 +118,6 @@ $(".mobile-image-wrapper").slick({
   dots: true,
 });
 
-//--------------------------------------------------------
-//* carousel card hover function
-$(".carousel-card-zanzibar").hover(() => {
-  $(".hide-zanzibar").toggle();
-  $(".carousel-item").toggleClass("darkBG");
-});
-$(".carousel-card-zanzibar").focus(() => {
-  $(".hide-zanzibar").toggle();
-});
-
-$(".carousel-card-wildlife").hover(() => {
-  $(".hide-safari").toggle();
-});
-$(".carousel-card-wildlife").focus(() => {
-  $(".hide-safari").toggle();
-});
-
-$(".carousel-card-moshi").hover(() => {
-  $(".hide-moshi").toggle();
-});
-$(".carousel-card-moshi").focus(() => {
-  $(".hide-moshi").toggle();
-});
-
-$(".carousel-card-kilimanjaro").hover(() => {
-  $(".hide-kilimonjaro").toggle();
-});
-$(".carousel-card-kilimanjaro").focus(() => {
-  $(".hide-kilimonjaro").toggle();
-});
 
 //--------------------------------------------------------
 //* Header nav
@@ -204,20 +174,18 @@ $(".nav-submenu-zanzibar").mouseleave(() => {
   $(".nav-submenu-zanzibar").css("display", "none");
 });
 //-----
-//-----
 $(".nav-link-group").mouseenter(() => {
   $(".nav-submenu-group").css("display", "flex");
 });
 $(".nav-link-group").mouseleave(() => {
   $(".nav-submenu-group").css("display", "none");
 });
-$(".nav-link-group").mouseenter(() => {
+$(".nav-submenu-group").mouseenter(() => {
   $(".nav-submenu-group").css("display", "flex");
 });
-$(".nav-link-group").mouseleave(() => {
+$(".nav-submenu-group").mouseleave(() => {
   $(".nav-submenu-group").css("display", "none");
 });
-
 //-----
 //* Input mask
 var phoneMask = IMask(
