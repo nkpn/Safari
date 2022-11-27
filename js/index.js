@@ -2,8 +2,6 @@ console.log(
   "Hi! If you need a website - please contact me : illinmikita@gmail.com , or by telegram : https://t.me/nk_pn"
 );
 
-
-
 //-------------------------------
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -186,16 +184,17 @@ $(".nav-submenu-group").mouseenter(() => {
 $(".nav-submenu-group").mouseleave(() => {
   $(".nav-submenu-group").css("display", "none");
 });
-//-----
-//* Input mask
-var phoneMask = IMask(
-  document.getElementById('input_10_area'), {
-    mask: '+0000'
-  });
 
+//-----
+//* number input mask (for form)
+// var phoneMask = IMask(
+//   document.getElementById('input_10_area'), {
+//     mask: '+0000'
+// });
 
 
 //---------------------------------------------------
+//* show needed language select for OS
 if (navigator.userAgent.indexOf("Win") != -1) {
   $(".for-windows").css("display", "block");
   $(".for-all-os").css("display", "none");
@@ -205,7 +204,6 @@ if (navigator.userAgent.indexOf("Win") != -1) {
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items
-
 const wildlifeIcon = $(".wildlife");
 const wildlifeList = $(".wildlife-list");
 const moshiIcon = $(".moshi");

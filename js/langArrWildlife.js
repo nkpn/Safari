@@ -1833,7 +1833,26 @@ const langArrWildlife = {
     fr: "Disponible en groupe aussi →",
     de: "Auch in der Gruppe erhältlich →",
   },
-  
+  //----------------
+  //* Group banner
+  "group-banner-h3": {
+    en: "We also get available group tours",
+    ua: "Ми також пропонуємо групові тури",
+    fr: "Nous obtenons également des visites de groupe disponibles",
+    de: "Wir erhalten auch verfügbare Gruppenreisen",
+  },
+  "group-banner-desc": {
+    en: "Group tours allow you to make the trip more eventful and interesting, as tourists can share their impressions with other members of the group.",
+    ua: "Групові тури дозволяють зробити подорож більш насиченою та цікавою, оскільки туристи можуть поділитися своїми враженнями з іншими учасниками групи.",
+    fr: "Les visites de groupe vous permettent de rendre le voyage plus mouvementé et intéressant, car les touristes peuvent partager leurs impressions avec les autres membres du groupe.",
+    de: "Gruppenreisen ermöglichen es Ihnen, die Reise erlebnisreicher und interessanter zu gestalten, da Touristen ihre Eindrücke mit anderen Mitgliedern der Gruppe teilen können.",
+  },
+  "group-banner-btn": {
+    en: "More info",
+    ua: "Більше інформації",
+    fr: "Plus d'informations",
+    de: "Mehr Info",
+  },
 };
 //---------------------------------------------
 //* Function

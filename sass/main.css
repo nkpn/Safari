@@ -2125,6 +2125,10 @@ option {
   text-decoration: none !important;
 }
 
+.prices-wrapper {
+  display: none !important;
+}
+
 .page-kilimonjaro .container {
   overflow: hidden;
 }
@@ -4735,6 +4739,22 @@ option {
 .page-wildlife .slick-slide {
   margin-left: 10px;
   margin-right: 0px;
+}
+
+.group-banner {
+  position: relative;
+}
+.group-banner .group-first-wrapper, .group-banner .group-image-wrapper {
+  z-index: 100;
+}
+.group-banner .custom-background {
+  position: absolute;
+  background-color: #F2FBFF;
+  top: 0;
+  right: 0vw;
+  width: 120vw;
+  height: 500px;
+  z-index: 0;
 }
 
 .page-zanzibar .contact-us-btn::before {
