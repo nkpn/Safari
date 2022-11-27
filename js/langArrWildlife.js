@@ -1833,6 +1833,31 @@ const langArrWildlife = {
     fr: "Disponible en groupe aussi →",
     de: "Auch in der Gruppe erhältlich →",
   },
+  "group-btn-2": {
+    en: "Available in groups too →",
+    ua: "Також є груповий тур →",
+    fr: "Disponible en groupe aussi →",
+    de: "Auch in der Gruppe erhältlich →",
+  },
+  "group-btn-3": {
+    en: "Available in groups too →",
+    ua: "Також є груповий тур →",
+    fr: "Disponible en groupe aussi →",
+    de: "Auch in der Gruppe erhältlich →",
+  },
+  "group-btn-4": {
+    en: "Available in groups too →",
+    ua: "Також є груповий тур →",
+    fr: "Disponible en groupe aussi →",
+    de: "Auch in der Gruppe erhältlich →",
+  },
+  "group-btn-5": {
+    en: "Available in groups too →",
+    ua: "Також є груповий тур →",
+    fr: "Disponible en groupe aussi →",
+    de: "Auch in der Gruppe erhältlich →",
+  },
+
   //----------------
   //* Group banner
   "group-banner-h3": {
