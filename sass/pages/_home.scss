@@ -892,7 +892,7 @@
   .slick-dots li {
     width: 12%;
     height: 1px;
-    background-color: $bg-dark-color;
+    background-color: $black;
     margin: 0;
     @media screen and (min-width: $desktop) {
       width: 13%;
@@ -914,7 +914,7 @@
 
   .slick-dots .slick-active {
     height: 3px !important;
-    background-color: $bg-dark-color !important;
+    background-color: $black !important;
   }
 }
 

@@ -1986,7 +1986,7 @@ option {
 .home-page .slick-dots li {
   width: 12%;
   height: 1px;
-  background-color: #CDD9DF;
+  background-color: #000000;
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
@@ -2008,7 +2008,7 @@ option {
 }
 .home-page .slick-dots .slick-active {
   height: 3px !important;
-  background-color: #CDD9DF !important;
+  background-color: #000000 !important;
 }
 
 .progress-bar,
