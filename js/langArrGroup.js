@@ -438,6 +438,12 @@ const langArrGroup = {
         fr: "Lodge de safari haut de gamme",
         de: "Der Luxus – Safari – Lodge ",
       },
+      "subhead-group-classic": {
+        en: "Classic Lodge Safari",
+        ua: "Класичний лодж сафарі",
+        fr: "Le safari en lodge classique",
+        de: "Die Safari in einer klassischen Lodge",
+      },
     //* Footer
     "footer-group": {
       en: "Group Tours",
@@ -546,22 +552,22 @@ const langArrGroup = {
 
     //* hero section
     "hero-h1": {
-        en: "Tanzania Safaris",
-        ua: "Сафарі в Танзанії",
-        fr: "Safaris en Tanzanie",
-        de: "Safaris in Tansania",
+      en: "Group Tours",
+      ua: "Групові Тури",
+      fr: "Мisites de groupe",
+      de: "Gruppenreisen",
     },
     "hero-p1": {
-        en: "Tanzania is a country with so many resources that it would take years to catalogue them all.",
-        ua: "Танзанія — країна з такою кількістю ресурсів, що знадобилися б роки, щоб їх усі каталогізувати.",
-        fr: "La Tanzanie est un pays tellement riche en ressources qu'il faudrait des années pour toutes les répertorier.",
-        de: "Tansania ist ein Land mit so vielen Ressourcen, dass es Jahre dauern würde, sie alle zu katalogisieren.",
+        en: "Group tours are a great opportunity to make new friends and share the love of traveling with new people.",
+        ua: "Групові тури – це чудова можливість завести нових друзів та розділити любов до подорожей із новими людьми.",
+        fr: "Les visites de groupe sont une excellente occasion de se faire de nouveaux amis et de partager l'amour du voyage avec de nouvelles personnes.",
+        de: "Gruppenreisen sind eine großartige Gelegenheit, neue Freunde zu finden und die Liebe zum Reisen mit neuen Menschen zu teilen.",
     },
     "hero-p2": {
-        en: "It's not just the tallest and largest freestanding mountain in the world that makes a country proud, it’s also rich in wildlife, minerals, and other resources. Tanzania is all African tourism potential embodied in a single country.",
-        ua: "Країна пишається не лише найвищою та найбільшою окремою горою в світі, вона також багата дикою природою, мінералами та іншими ресурсами.Танзанія — це весь африканський туристичний потенціал, втілений в одній країні.",
-        fr: "Ce n’est pas seulement la plus haute montagne isolée du monde qui fait la fierté du pays, c'est aussi sa faune, ses minéraux et d'autres ressources. La Tanzanie, c'est tout le potentiel touristique africain incarné dans un seul pays.",
-        de: "Es ist nicht nur der höchste und größte freistehende Berg der Welt, der den Stolz eines Landes ausmacht, sondern auch der Reichtum an Tieren, Mineralien und anderen Ressourcen. Tansania ist das gesamte afrikanische Tourismuspotenzial, das in einem einzigen Land verkörpert wird.",
+        en: "We offer small groups of people, from 4 to 6 people.  we will also be happy to help you choose your preferred group composition",
+        ua: "Ми пропонуємо невеликі групи від 4 до 6 осіб.  Ми також раді допомогти Вам з підбором кращого складу групи.",
+        fr: "Nous proposons des petits groupes de personnes, de 4 à 6 personnes.  nous serons également heureux de vous aider à choisir votre composition de groupe préférée.",
+        de: "Wir bieten kleine Gruppen von 4 bis 6 Personen an.  auch bei der auswahl der bevorzugten gruppenzusammensetzung sind wir ihnen gerne behilflich.",
     },
     "hero-book-btn": {
         en: "Book the tour",

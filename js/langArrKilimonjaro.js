@@ -438,6 +438,12 @@ const langArrKilimonjaro = {
       fr: "Lodge de safari haut de gamme",
       de: "Der Luxus – Safari – Lodge ",
     },
+    "subhead-group-classic": {
+      en: "Classic Lodge Safari",
+      ua: "Класичний лодж сафарі",
+      fr: "Le safari en lodge classique",
+      de: "Die Safari in einer klassischen Lodge",
+    },
   //* Footer group
   "footer-group": {
     en: "Group Tours",

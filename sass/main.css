@@ -339,10 +339,13 @@ summary {
   border-radius: 100px;
   color: #ffffff;
   font-family: Montserrat;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1024px) {
   .submit-button {
-    padding: 8px 105px;
+    padding: 8px 58px;
   }
 }
 .submit-button:disabled, .submit-button[disabled], .submit-button:disabled:hover, .submit-button[disabled]:hover {
@@ -4405,7 +4408,7 @@ option {
     display: block;
     position: -webkit-sticky;
     position: sticky;
-    top: 15px;
+    top: 45px;
   }
 }
 .topic-fixed-picture .days-list {
@@ -4714,6 +4717,11 @@ option {
 .page-wildlife .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
 }
+@media screen and (min-width: 768px) {
+  .page-wildlife .days-list {
+    margin-top: 0;
+  }
+}
 .page-wildlife .nav-list #lang {
   color: rgba(242, 251, 255, 0.4666666667);
 }
@@ -4752,6 +4760,7 @@ option {
 @media screen and (min-width: 768px) {
   .group-banner {
     margin-top: 115px;
+    padding-bottom: 200px;
   }
 }
 .group-banner .custom-background {
@@ -4760,8 +4769,13 @@ option {
   top: 0;
   right: 0vw;
   width: 120vw;
-  height: 600px;
+  height: 570px;
   z-index: 0;
+}
+@media screen and (min-width: 768px) {
+  .group-banner .custom-background {
+    height: 380px;
+  }
 }
 .group-banner .group-first-wrapper {
   z-index: 9;
@@ -4770,15 +4784,32 @@ option {
   text-align: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .group-banner .group-first-wrapper {
+    flex-basis: 50%;
+  }
+}
 .group-banner .group-image-wrapper {
   z-index: 9;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .group-banner .group-image-wrapper {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .group-banner .group-image-wrapper img {
+    position: absolute;
+    top: 30%;
+  }
 }
 .group-banner h3 {
   font-family: Kaisei Decol;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 36px;
-  color: #ffffff;
+  font-size: 24px;
+  line-height: 37px;
+  color: #343434;
   color: #000000;
   text-align: center;
   margin: 0 auto 16px;
@@ -4786,8 +4817,14 @@ option {
 }
 @media screen and (min-width: 768px) {
   .group-banner h3 {
-    font-size: 48px;
-    line-height: 55px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .group-banner h3 {
+    text-align: left;
+    margin: 0 0 16px;
   }
 }
 .group-banner p {
@@ -4796,6 +4833,15 @@ option {
   font-family: Montserrat;
   font-weight: 400;
   color: #343434;
+  display: block;
+  max-width: 80%;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .group-banner p {
+    text-align: left;
+    align-self: flex-start;
+  }
 }
 .group-banner .mobile-only {
   margin-top: 16px;
@@ -4806,6 +4852,8 @@ option {
 @media screen and (min-width: 768px) {
   .group-banner .submit-button {
     margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

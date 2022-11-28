@@ -283,7 +283,7 @@
     @media screen and (min-width: $tablet) {
       display: block;
       position: sticky;
-      top: 15px;
+      top: 45px;
     }
   }
 
@@ -563,6 +563,12 @@
     }
   }
 
+  .days-list{
+    @media screen and (min-width:$tablet) {
+      margin-top: 0;
+    }
+  }
+
   .nav-list #lang {
     color: #f2fbff77;
   }
@@ -607,6 +613,7 @@
 
   @media screen and (min-width:$tablet) {
     margin-top: 115px;
+    padding-bottom: 200px;
   }
 
   .custom-background{
@@ -615,11 +622,11 @@
     top: 0;
     right: 0vw;
     width: 120vw;
-    height: 600px;
+    height: 570px;
     z-index: 0;
 
     @media screen and (min-width:$tablet) {
-      
+      height: 380px;
     }
   }
 
@@ -629,22 +636,51 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+
+    @media screen and (min-width:$tablet) {
+      flex-basis: 50%;
+    }
   }
 
   .group-image-wrapper{
     z-index: 9;
+    position: relative;
+
+    @media screen and (min-width:$tablet) {
+      flex-basis: 50%;
+    }
+
+    img{
+      @media screen and (min-width:$tablet) {
+        position: absolute;
+        top: 30%;
+      }
+    }
   }
 
   h3{
-    @include heading();
+    @include subheading();
     color: $black;
     text-align: center;
     margin: 0 auto 16px;
     max-width: 80%;
+
+    @media screen and (min-width:$tablet) {
+      text-align: left;
+      margin: 0 0 16px;
+    }
   }
 
   p{
     @include text-description();
+    display: block;
+    max-width: 80%;
+    align-self: center;
+
+    @media screen and (min-width:$tablet) {
+      text-align: left;
+      align-self: flex-start;
+    }
   }
 
   .mobile-only{
@@ -656,6 +692,8 @@
 
     @media screen and (min-width:$tablet) {
       margin-top: 24px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
