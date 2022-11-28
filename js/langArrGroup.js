@@ -2389,10 +2389,22 @@ const changeLanguage = () => {
   //* get the lang code from URL
   let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
 
+  function moveToAnchor(){
+    let link = localStorage.getItem('linkTo');
+    // $(document.body).scrollTop($(`${link}`).offset())
+    $('html,body').animate({scrollTop: $(link).offset().top}, 100);
+    localStorage.removeItem('linkTo');
+  }
+
   if (allLang.includes(locationLanguage)){
     lang = locationLanguage;
     localStorage.setItem("lang", locationLanguage); // set lang as a default language
     location.href = window.location.pathname + "#" + lang + currentUTM;
+
+    // if we move here from some anchor button
+    if (localStorage.getItem('linkTo')){
+      moveToAnchor();
+    }
   } else if (localStorage.getItem("lang") === null) {
     localStorage.setItem("lang", lang); // set Eng as a default language
     location.href = window.location.pathname + "#" + lang + currentUTM;
@@ -2400,9 +2412,12 @@ const changeLanguage = () => {
   } else {
     lang = localStorage.getItem("lang");
     location.href = window.location.pathname + "#" + lang + currentUTM;
-    console.log(location.href)
-    console.log(window.location.pathname)
-    location.reload();
+
+    if (localStorage.getItem('linkTo')){
+      console.log('we have link to')
+      moveToAnchor();
+    }
+    // location.reload();
   }
 
   if (!allLang.includes(lang)) {
@@ -2484,3 +2499,6 @@ const changeLanguage = () => {
 };
 
 changeLanguage();
+
+
+

@@ -1946,7 +1946,7 @@ const changeLanguage = () => {
   } else {
     lang = localStorage.getItem("lang");
     location.href = window.location.pathname + "#" + lang + currentUTM;
-    location.reload();
+    // location.reload();
   }
 
   if (!allLang.includes(lang)) {
@@ -2029,3 +2029,4 @@ const changeLanguage = () => {
 };
 
 changeLanguage();
+

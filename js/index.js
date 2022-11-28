@@ -703,3 +703,11 @@ function stateHandle() {
 //     $(".header-background").css("height", "100px");
 //   } else false;
 // }
+
+
+$('.group-btn').each(function(){
+  $(this).on('click', function(){
+    let linkTo = $(this).data('test');
+    localStorage.setItem('linkTo', linkTo)
+  })
+})
