@@ -24,12 +24,16 @@
       padding: 8px 0 8px 28px !important;
     }
 
+    &::before{
+      top: 35%;
+    }
+
     &::after {
       content: " ";
       display: inline-block;
 
       position: absolute;
-      left: 0;
+      left: 3%;
       bottom: -4px;
 
       width: 100%;
@@ -41,9 +45,7 @@
       transition: transform 250ms $animation-timing-function;
     }
 
-    &::before{
-      top: 35%;
-    }
+    
   }
 
   .submenu-link {

@@ -922,6 +922,20 @@
       padding: 8px 10px;
     }
   }
+
+  .contact-us-btn {
+    @media screen and (min-width: 1162px) {
+      padding: 8px 0 8px 28px !important;
+    }
+
+    &::before{
+      top: 35%;
+    }
+
+    &::after {
+      left: 3%;
+    }
+  }
 }
 
 // .slick-arrow:first-child{
