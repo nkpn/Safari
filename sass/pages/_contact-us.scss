@@ -13,7 +13,17 @@
     background-color: inherit;
   }
 
+  .nav-link {
+    @media screen and (min-width: 1162px) {
+      padding: 8px 10px;
+    }
+  }
+
   .contact-us-btn {
+    @media screen and (min-width: 1162px) {
+      padding: 8px 0 8px 28px !important;
+    }
+
     &::after {
       content: " ";
       display: inline-block;
@@ -29,6 +39,10 @@
 
       transform: scale(1);
       transition: transform 250ms $animation-timing-function;
+    }
+
+    &::before{
+      top: 35%;
     }
   }
 

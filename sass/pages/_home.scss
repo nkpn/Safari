@@ -916,6 +916,12 @@
     height: 3px !important;
     background-color: $black !important;
   }
+
+  .nav-link {
+    @media screen and (min-width: 1162px) {
+      padding: 8px 10px;
+    }
+  }
 }
 
 // .slick-arrow:first-child{
