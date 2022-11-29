@@ -5,7 +5,7 @@
   font-family: Montserrat;
   cursor: pointer;
   position: relative;
-  padding: 28px 0 28px 20px !important;
+  padding: 28px 0 28px 28px !important;
   text-align: center;
 
   &::before {
@@ -13,10 +13,14 @@
     width: 16px;
     height: 12px;
     position: absolute;
-    left: -2px;
+    left: 8px;
     top: 44%;
     background-image: url("../images/icons/envelop.svg");
   }
+}
+
+.nav-item .contact-us-btn{
+
 }
 
 .book-btn {
