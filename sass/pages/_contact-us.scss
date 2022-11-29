@@ -97,9 +97,8 @@
       p {
         @include heading-description();
         color: $white;
-        font-weight: 400;
         max-width: 80%;
-        font-weight: 300;
+        
         @media screen and (min-width: $tablet) {
           max-width: 50%;
         }
