@@ -2026,6 +2026,9 @@ option {
 .home-page .contact-us-btn::after {
   left: 3%;
 }
+.home-page .nav-list {
+  margin-top: 10px;
+}
 
 .progress-bar,
 .progress-bar-two {
@@ -5375,6 +5378,9 @@ option {
   background-color: #F2FBFF;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-page .nav-list {
+  margin-top: 10px;
 }
 .contact-page .submenu-link::after {
   display: none !important;

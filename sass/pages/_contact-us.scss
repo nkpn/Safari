@@ -44,8 +44,10 @@
       transform: scale(1);
       transition: transform 250ms $animation-timing-function;
     }
+  }
 
-    
+  .nav-list{
+    margin-top: 10px;
   }
 
   .submenu-link {
