@@ -1950,6 +1950,12 @@ const langArrKilimonjaro = {
     fr: "Vu que la forêt près des clairières de Lemosho est riche en buffles, éléphants et autres espèces de gros gibier qui s'approchent généralement de la forêt de montagne depuis le parc national d'Amboseli, un garde forestier armé accompagne généralement les groupes de touristes le premier jour. La plupart des randonneurs préfèrent réaliser l’ascension en 7 jours (si vous chosissez 6 jours vous perdez un jour d'acclimatation).",
     de: "Da der Wald in der Nähe der Lemosho-Lichtungen reich an Büffeln, Elefanten und anderen Großwildarten ist, die sich in der Regel vom Amboseli-Nationalpark aus dem Bergwald nähern, werden Touristengruppen am ersten Tag in der Regel von einem bewaffneten Ranger begleitet. Die meisten Bergsteiger ziehen es vor, in einem Zeitraum von 7 Tagen zu klettern (obwohl auch 6 Tage möglich sind, wenn Sie den Tag der Akklimatisierung verlieren).",
   },
+  "lemosho-info-button": {
+    en: "In Details →",
+    ua: "Детальна програма →",
+    fr: "Programme détaillé →",
+    de: "Ausführliches Programm →",
+  },
   "lemosho-days": {
     en: "7-8 DAYS",
     ua: "7-8 ДНІВ",
@@ -2855,22 +2861,22 @@ const langArrKilimonjaro = {
   //----------------------
   //* Northern circuit
   "northern-h3": {
-    en: "Northern Circuit",
-    ua: "Північний ланцюг",
-    fr: "Circuit Nord",
-    de: "Nordkreis",
+    en: "The Northern Circuit Route of Kilimanjaro",
+    ua: "Північний ланцюг Кіліманджаро",
+    fr: "La route du circuit nord du Kilimandjaro",
+    de: "Die Northern Circuit Route des Kilimandscharo",
   },
   "northern-p1": {
-    en: "This particular safari involves camping at Tarangire, Lake Manyara, Ngorongoro, and Serengeti.",
-    ua: "Це особливе сафарі включає кемпінг в Тарангіре, озері Маньяра, Нгоронгоро та Серенгеті.",
-    fr: "Ce safari propose le camping à Tarangire, au lac Manyara, à Ngorongoro et au Serengeti.",
-    de: "Diese besondere Safari beinhaltet Camping in Tarangire, Lake Manyara, Ngorongoro und der Serengeti.",
+    en: "This is the longest route of the Kilimanjaro routes because it is a combination of different Kilimanjaro routes. The usual example program you can see is below. But please notice, that the route and amount of days can be combined and changed by your wish.",
+    ua: "Це найдовший маршрут з маршрутів Кіліманджаро, тому що він є комбінацією різних маршрутів Кіліманджаро. Звичайний приклад програми, який ви можете побачити нижче. Але зверніть увагу, що маршрут і кількість днів можна комбінувати та змінювати за вашим бажанням.",
+    fr: "C'est la route la plus longue des routes du Kilimandjaro car c'est une combinaison de différentes routes du Kilimandjaro. L'exemple de programme habituel que vous pouvez voir est ci-dessous. Mais veuillez noter que l'itinéraire et le nombre de jours peuvent être combinés et modifiés selon votre souhait.",
+    de: "Dies ist die längste Route der Kilimandscharo-Routen, da es sich um eine Kombination verschiedener Kilimandscharo-Routen handelt. Das übliche Beispielprogramm, das Sie sehen können, ist unten. Bitte beachten Sie jedoch, dass die Route und die Anzahl der Tage nach Ihren Wünschen kombiniert und geändert werden können.",
   },
   "northern-days": {
-    en: "8-10 DAYS",
-    ua: "8-10 ДНІВ",
-    fr: "8-10 JOURS",
-    de: "8-10 TAGE",
+    en: "8-12 DAYS",
+    ua: "8-12 ДНІВ",
+    fr: "8-12 JOURS",
+    de: "8-12 TAGE",
   },
   "northern-day-desc": {
     en: "Detailed information about the tour day by day",

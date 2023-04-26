@@ -393,18 +393,6 @@ summary {
   background-color: #0C4AE9;
 }
 
-@-webkit-keyframes rotateMenu {
-  0% {
-    transform: rotateX(-90deg);
-  }
-  70% {
-    transform: rotateX(20deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-
 @keyframes rotateMenu {
   0% {
     transform: rotateX(-90deg);
@@ -414,17 +402,6 @@ summary {
   }
   100% {
     transform: rotateX(0deg);
-  }
-}
-@-webkit-keyframes growDown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
   }
 }
 @keyframes growDown {
@@ -528,7 +505,7 @@ header {
 
 @media screen and (min-width: 1024px) {
   html[lang=fr],
-html[lang=ua] > .header-background {
+  html[lang=ua] > .header-background {
     height: 100px;
   }
 }
@@ -575,8 +552,7 @@ html[lang=ua] > .header-background {
   align-items: center;
   color: rgba(242, 251, 255, 0.4666666667);
   background-color: #161616;
-  -webkit-animation: growDown 200ms ease-in-out forwards;
-          animation: growDown 200ms ease-in-out forwards;
+  animation: growDown 200ms ease-in-out forwards;
   transform-origin: top center;
   position: absolute;
   height: 80px;
@@ -687,8 +663,7 @@ html[lang=ua] > .header-background {
   background-color: #000000;
   color: #ffffff;
   z-index: 999;
-  -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
+  animation-duration: 250ms;
   overflow: auto;
 }
 
@@ -845,8 +820,7 @@ footer .social-item:hover {
 .mobile-nav-submenu-list {
   display: none;
   list-style: circle;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
+  animation-duration: 300ms;
 }
 
 .mobile-nav-submenu-item {
@@ -1520,6 +1494,7 @@ option {
   font-size: 14px;
   padding: 4px 16px;
   border: none;
+  margin-top: 15px;
 }
 .tours-carousel .carousel-card .group-btn:hover {
   background-color: #0C4AE9;
@@ -1890,10 +1865,6 @@ option {
 }
 
 #input_10_phone::-moz-placeholder, #input_10_area::-moz-placeholder {
-  font-size: 13px;
-}
-
-#input_10_phone:-ms-input-placeholder, #input_10_area:-ms-input-placeholder {
   font-size: 13px;
 }
 
@@ -2358,7 +2329,6 @@ option {
 }
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .first-wrapper img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2371,7 +2341,6 @@ option {
 }
 .page-kilimonjaro .kilimonjaro-hero .desktop-image-wrapper .second-wrapper img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2494,9 +2463,8 @@ option {
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .topic-fixed-picture .tablet-only {
     display: block;
-    position: -webkit-sticky;
     position: sticky;
-    top: 15px;
+    top: 105px;
   }
 }
 .page-kilimonjaro .topic-fixed-picture .days-list {
@@ -2558,8 +2526,7 @@ option {
 }
 .page-kilimonjaro .topic-fixed-picture .hided-description-list {
   display: none;
-  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
-          animation: rotateMenu 400ms ease-in-out forwards;
+  animation: rotateMenu 400ms ease-in-out forwards;
   transform-origin: top center;
 }
 .page-kilimonjaro .topic-fixed-picture .hided-description-item {
@@ -2733,8 +2700,7 @@ option {
 }
 .page-kilimonjaro .topic-fixed-picture .prices-wrapper-list {
   display: none;
-  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
-          animation: rotateMenu 400ms ease-in-out forwards;
+  animation: rotateMenu 400ms ease-in-out forwards;
   transform-origin: top center;
   flex-direction: column;
 }
@@ -2745,8 +2711,7 @@ option {
 }
 .page-kilimonjaro .topic-fixed-picture .prices-table {
   display: none;
-  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
-          animation: rotateMenu 400ms ease-in-out forwards;
+  animation: rotateMenu 400ms ease-in-out forwards;
   transform-origin: top center;
   border-collapse: collapse;
 }
@@ -2799,14 +2764,14 @@ option {
 }
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .marangu-section,
-.page-kilimonjaro .meru-section,
-.page-kilimonjaro .machame-section,
-.page-kilimonjaro .rongai-section,
-.page-kilimonjaro .lemosho-section,
-.page-kilimonjaro .umbwe-section,
-.page-kilimonjaro .northern-circuit-section,
-.page-kilimonjaro .section-hints,
-.page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
+  .page-kilimonjaro .meru-section,
+  .page-kilimonjaro .machame-section,
+  .page-kilimonjaro .rongai-section,
+  .page-kilimonjaro .lemosho-section,
+  .page-kilimonjaro .umbwe-section,
+  .page-kilimonjaro .northern-circuit-section,
+  .page-kilimonjaro .section-hints,
+  .page-kilimonjaro .mount-kilimanjaro-hero-bottom-section {
     padding-top: 115px;
   }
 }
@@ -3055,8 +3020,7 @@ option {
 }
 .page-kilimonjaro .section-hints .hints-hided {
   display: none;
-  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
-          animation: rotateMenu 400ms ease-in-out forwards;
+  animation: rotateMenu 400ms ease-in-out forwards;
   transform-origin: top center;
   padding-bottom: 23px;
 }
@@ -3207,7 +3171,6 @@ option {
 }
 .desktop-image-wrapper .first-wrapper img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -3220,7 +3183,6 @@ option {
 }
 .desktop-image-wrapper .second-wrapper-moshi img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -4276,7 +4238,6 @@ option {
 }
 .wildlife-hero .desktop-image-wrapper .first-wrapper img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -4288,7 +4249,6 @@ option {
 }
 .wildlife-hero .desktop-image-wrapper .second-wrapper img {
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -4425,9 +4385,8 @@ option {
 @media screen and (min-width: 768px) {
   .topic-fixed-picture .tablet-only {
     display: block;
-    position: -webkit-sticky;
     position: sticky;
-    top: 45px;
+    top: 105px;
   }
 }
 .topic-fixed-picture .days-list {
@@ -4510,8 +4469,7 @@ option {
 }
 .topic-fixed-picture .hided-description-list {
   display: none;
-  -webkit-animation: rotateMenu 400ms ease-in-out forwards;
-          animation: rotateMenu 400ms ease-in-out forwards;
+  animation: rotateMenu 400ms ease-in-out forwards;
   transform-origin: top center;
 }
 .topic-fixed-picture .hided-description-item {
@@ -4957,14 +4915,14 @@ option {
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .zanzibar-tarangire-section h2,
-.page-zanzibar .zanzibar-tarangire-section h3 {
+  .page-zanzibar .zanzibar-tarangire-section h3 {
     font-size: 36px;
     line-height: 48px;
   }
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .zanzibar-tarangire-section h2,
-.page-zanzibar .zanzibar-tarangire-section h3 {
+  .page-zanzibar .zanzibar-tarangire-section h3 {
     margin-bottom: 20px;
   }
 }
