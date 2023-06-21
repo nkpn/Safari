@@ -1923,9 +1923,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-selectFirst.addEventListener("change", changeURLLanguage);
-selectSecond.addEventListener("change", changeURLLanguageTwo);
-mobileSelect.addEventListener("change", changeURLLanguageThree);
+// selectFirst.addEventListener("change", changeURLLanguage);
+// selectSecond.addEventListener("change", changeURLLanguageTwo);
+// mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 
 const changeLanguage = () => {
@@ -1935,24 +1935,24 @@ const changeLanguage = () => {
   //* get the lang code from URL
   let locationLanguage = window.location.hash.split('#').slice(1).toString().slice(0,2);
 
-  if (allLang.includes(locationLanguage)){
-    lang = locationLanguage;
-    localStorage.setItem("lang", locationLanguage); // set Eng as a default language
-    location.href = window.location.pathname + "#" + lang + currentUTM;
-  } else if (localStorage.getItem("lang") === null) {
-    localStorage.setItem("lang", lang); // set Eng as a default language
-    location.href = window.location.pathname + "#" + lang + currentUTM;
-    location.reload();
-  } else {
-    lang = localStorage.getItem("lang");
-    location.href = window.location.pathname + "#" + lang + currentUTM;
-    // location.reload();
-  }
+  // if (allLang.includes(locationLanguage)){
+  //   lang = locationLanguage;
+  //   localStorage.setItem("lang", locationLanguage); // set Eng as a default language
+  //   location.href = window.location.pathname + "#" + lang + currentUTM;
+  // } else if (localStorage.getItem("lang") === null) {
+  //   localStorage.setItem("lang", lang); // set Eng as a default language
+  //   location.href = window.location.pathname + "#" + lang + currentUTM;
+  //   location.reload();
+  // } else {
+  //   lang = localStorage.getItem("lang");
+  //   location.href = window.location.pathname + "#" + lang + currentUTM;
+  //   // location.reload();
+  // }
 
-  if (!allLang.includes(lang)) {
-    location.href = window.location.pathname + "#en" + currentUTM;
-    location.reload();
-  }
+  // if (!allLang.includes(lang)) {
+  //   location.href = window.location.pathname + "#en" + currentUTM;
+  //   location.reload();
+  // }
 
   //* get UTM from URL and set to Session Storage
   function saveUTM(){
@@ -2011,17 +2011,17 @@ const changeLanguage = () => {
   
   
   //* set all selects to our lang
-  selectFirst.value = lang;
-  selectSecond.value = lang;
-  mobileSelect.value = lang;
+  // selectFirst.value = lang;
+  // selectSecond.value = lang;
+  // mobileSelect.value = lang;
 
   //* change language
-  for (let key in langArrWildlife) {
-    let elem = document.querySelector(".lng-" + key);
-    if (elem) {
-      elem.innerHTML = langArrWildlife[key][lang];
-    }
-  }
+  // for (let key in langArrWildlife) {
+  //   let elem = document.querySelector(".lng-" + key);
+  //   if (elem) {
+  //     elem.innerHTML = langArrWildlife[key][lang];
+  //   }
+  // }
 
   saveUTM();
   getUTMFromSessionStorage();

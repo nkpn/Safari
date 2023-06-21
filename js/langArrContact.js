@@ -590,9 +590,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-selectFirst.addEventListener("change", changeURLLanguage);
-selectSecond.addEventListener("change", changeURLLanguageTwo);
-mobileSelect.addEventListener("change", changeURLLanguageThree);
+// selectFirst.addEventListener("change", changeURLLanguage);
+// selectSecond.addEventListener("change", changeURLLanguageTwo);
+// mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 
 const changeLanguage = () => {
@@ -682,12 +682,12 @@ const changeLanguage = () => {
   mobileSelect.value = lang;
 
   //* change language
-  for (let key in langArrContact) {
-    let elem = document.querySelector(".lng-" + key);
-    if (elem) {
-      elem.innerHTML = langArrContact[key][lang];
-    }
-  }
+  // for (let key in langArrContact) {
+  //   let elem = document.querySelector(".lng-" + key);
+  //   if (elem) {
+  //     elem.innerHTML = langArrContact[key][lang];
+  //   }
+  // }
 
   saveUTM();
   getUTMFromSessionStorage();

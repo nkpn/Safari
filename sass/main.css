@@ -1823,6 +1823,15 @@ option {
   border: 1px solid #467AFF;
   outline: none;
 }
+.contact-us form.input option {
+  background-color: inherit;
+  font-family: Montserrat-Variable;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat-Variable;
+  font-weight: 600;
+  color: #343434;
+}
 .contact-us .form-input:-webkit-autofill,
 .contact-us .form-input:-webkit-autofill:hover,
 .contact-us .form-input:-webkit-autofill:focus,
@@ -1833,10 +1842,6 @@ option {
   resize: none;
   border-radius: 33px;
   padding: 10px 15px;
-}
-
-#id_16, #id_10 {
-  display: none;
 }
 
 #cid_10 > div {
@@ -1853,7 +1858,6 @@ option {
 #input_16 {
   display: block;
   width: 100%;
-  font-family: inherit;
   /** for the dropdown indicator */
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1870,6 +1874,21 @@ option {
 
 #input_10_phone::placeholder, #input_10_area::placeholder {
   font-size: 13px;
+}
+
+.form-line {
+  padding: 10px 0;
+}
+
+.form-introduction {
+  margin-bottom: 2rem;
+}
+.form-introduction p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat-Variable;
+  font-weight: 600;
+  color: #343434;
 }
 
 .home-photos .container {
