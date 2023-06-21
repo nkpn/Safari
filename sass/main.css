@@ -1844,15 +1844,26 @@ option {
   padding: 10px 15px;
 }
 
-#cid_10 > div {
-  display: flex;
-  flex-direction: row;
+#id_4, #id_10 {
+  display: none;
 }
-#cid_10 > div [data-input-type=areaCode] {
-  flex: 1;
+
+@media screen and (min-width: 768px) {
+  #cid_10 > div {
+    display: flex;
+    flex-direction: row;
+  }
+  #cid_10 > div [data-input-type=areaCode] {
+    flex: 1;
+  }
+  #cid_10 > div [data-input-type=phone] {
+    flex: 2;
+  }
 }
-#cid_10 > div [data-input-type=phone] {
-  flex: 2;
+
+.form-line[data-type=control_phone] .form-sub-label-container {
+  max-width: unset;
+  width: 100%;
 }
 
 #input_16 {

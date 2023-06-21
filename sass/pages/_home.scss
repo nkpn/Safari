@@ -773,21 +773,29 @@
   }
 }
 
-#id_16,#id_10{
-  // display: none;
+#id_4,#id_10{
+  display: none;
 }
 
 #cid_10 > div{
-  display: flex;
-  flex-direction: row;
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-direction: row;
 
-  [data-input-type="areaCode"]{
-    flex: 1;
-  }
+    [data-input-type="areaCode"]{
+      flex: 1;
+    }
 
-  [data-input-type="phone"]{
-    flex:2;
+    [data-input-type="phone"]{
+      flex:2;
+    }
   }
+  
+}
+
+.form-line[data-type="control_phone"] .form-sub-label-container{
+  max-width: unset;
+  width: 100%;
 }
 
 //*select

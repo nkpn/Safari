@@ -195,12 +195,12 @@ $(".nav-submenu-group").mouseleave(() => {
 
 //---------------------------------------------------
 //* show needed language select for OS
-if (navigator.userAgent.indexOf("Win") != -1) {
-  $(".for-windows").css("display", "block");
-  $(".for-all-os").css("display", "none");
-} else {
-  $(".for-all-os").css("display", "block");
-}
+// if (navigator.userAgent.indexOf("Win") != -1) {
+//   $(".for-windows").css("display", "block");
+//   $(".for-all-os").css("display", "none");
+// } else {
+//   $(".for-all-os").css("display", "block");
+// }
 
 //---------------------------------------------------------
 //* DOM elements for dropdown items
@@ -671,20 +671,23 @@ HintsEight.click(() => {
 // ScrollReveal().reveal('img');
 //-----------------------------------------------
 // //* submit button disable
-let inputName = $("#first_3");
-let inputEmail = $("#input_4");
+const inputName = $("#first_3");
+const emailWrapper = $('#id_4')
+const inputEmail = $("#input_4");
+const contactPhoneWrapper = $('#id_10')
+const inputContacType = $("#input_16");
 // let inputMessage = $("#message");
 let submitButton = document.querySelector(".submit-button");
 submitButton.disabled = true;
 
 inputName.on("change", stateHandle);
-// inputMessage.on("change", stateHandle);
 inputEmail.on("change", stateHandle);
+inputContacType.on("change", showCorrectInput);
 
 function stateHandle() {
   if (
     inputName.val() != "" &&
-    inputEmail.val() != ""
+    inputContacType.val() != ""
     // inputMessage.val() != ""
   ) {
     submitButton.disabled = false;
@@ -692,6 +695,21 @@ function stateHandle() {
     submitButton.disabled = true;
   }
 }
+
+function showCorrectInput(){
+  console.log(inputContacType.val() )
+  if (inputContacType.val()=== 'WhatsApp'){
+      contactPhoneWrapper.slideToggle(400);
+      emailWrapper.hide();
+  } else if (inputContacType.val()=== 'Email'){
+    contactPhoneWrapper.hide();
+    emailWrapper.slideToggle(400)
+  } else if (inputContacType.val()=== ''){
+    contactPhoneWrapper.hide();
+    emailWrapper.hide();
+  }
+}
+
 
 //------------------------
 // //* change header background height if lang=ua,fr
