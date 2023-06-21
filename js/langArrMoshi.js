@@ -889,9 +889,9 @@ const changeLanguage = () => {
   
   
   //* set all selects to our lang
-  selectFirst.value = lang;
-  selectSecond.value = lang;
-  mobileSelect.value = lang;
+  // selectFirst.value = lang;
+  // selectSecond.value = lang;
+  // mobileSelect.value = lang;
 
   //* change language
   // for (let key in langArrMoshi) {

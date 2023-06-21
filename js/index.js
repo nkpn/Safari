@@ -690,7 +690,6 @@ function stateHandle() {
 }
 
 function showCorrectInput() {
-  console.log(inputContacType.val());
   if (inputContacType.val() === "WhatsApp") {
     contactPhoneWrapper.slideToggle(400);
     emailWrapper.hide();
