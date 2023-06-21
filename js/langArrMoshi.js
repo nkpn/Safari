@@ -802,9 +802,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-selectFirst.addEventListener("change", changeURLLanguage);
-selectSecond.addEventListener("change", changeURLLanguageTwo);
-mobileSelect.addEventListener("change", changeURLLanguageThree);
+// selectFirst.addEventListener("change", changeURLLanguage);
+// selectSecond.addEventListener("change", changeURLLanguageTwo);
+// mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 
 const changeLanguage = () => {
@@ -894,12 +894,12 @@ const changeLanguage = () => {
   mobileSelect.value = lang;
 
   //* change language
-  for (let key in langArrMoshi) {
-    let elem = document.querySelector(".lng-" + key);
-    if (elem) {
-      elem.innerHTML = langArrMoshi[key][lang];
-    }
-  }
+  // for (let key in langArrMoshi) {
+  //   let elem = document.querySelector(".lng-" + key);
+  //   if (elem) {
+  //     elem.innerHTML = langArrMoshi[key][lang];
+  //   }
+  // }
 
   console.log(localStorage.getItem("lang"), ' - lang from local storage - самый конец функции')
 

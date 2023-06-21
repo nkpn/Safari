@@ -753,6 +753,12 @@
     }
   }
 
+  form.input option{
+    background-color: inherit;
+    font-family: Montserrat-Variable;
+    @include text-description();
+  }
+
   .form-input:-webkit-autofill,
   .form-input:-webkit-autofill:hover,
   .form-input:-webkit-autofill:focus,
@@ -768,7 +774,7 @@
 }
 
 #id_16,#id_10{
-  display: none;
+  // display: none;
 }
 
 #cid_10 > div{
@@ -788,7 +794,6 @@
 #input_16{
     display: block;
     width: 100%;
-    font-family: inherit;
     /** for the dropdown indicator */
     appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
@@ -799,6 +804,18 @@
 
 #input_10_phone::placeholder, #input_10_area::placeholder{
   font-size: 13px;
+}
+
+.form-line{
+  padding: 10px 0;
+}
+
+.form-introduction{
+  margin-bottom: 2rem;
+
+  p{
+    @include text-description();
+  }
 }
 
 .lng-area-code, .lng-phone-number-2{

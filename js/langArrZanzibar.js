@@ -734,9 +734,9 @@ const changeURLLanguageThree = () => {
   location.reload();
 };
 
-selectFirst.addEventListener("change", changeURLLanguage);
-selectSecond.addEventListener("change", changeURLLanguageTwo);
-mobileSelect.addEventListener("change", changeURLLanguageThree);
+// selectFirst.addEventListener("change", changeURLLanguage);
+// selectSecond.addEventListener("change", changeURLLanguageTwo);
+// mobileSelect.addEventListener("change", changeURLLanguageThree);
 
 
 const changeLanguage = () => {
@@ -828,12 +828,12 @@ function getUTMFromSessionStorage(){
   mobileSelect.value = lang;
 
   //* change language
-  for (let key in langArrZanzibar) {
-    let elem = document.querySelector(".lng-" + key);
-    if (elem) {
-      elem.innerHTML = langArrZanzibar[key][lang];
-    }
-  }
+  // for (let key in langArrZanzibar) {
+  //   let elem = document.querySelector(".lng-" + key);
+  //   if (elem) {
+  //     elem.innerHTML = langArrZanzibar[key][lang];
+  //   }
+  // }
 
   saveUTM();
   getUTMFromSessionStorage();

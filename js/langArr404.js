@@ -541,12 +541,12 @@ const langArrContact = {
     // mobileSelect.value = lang;
   
     //* change language
-    for (let key in langArrContact) {
-      let elem = document.querySelector(".lng-" + key);
-      if (elem) {
-        elem.innerHTML = langArrContact[key][lang];
-      }
-    }
+    // for (let key in langArrContact) {
+    //   let elem = document.querySelector(".lng-" + key);
+    //   if (elem) {
+    //     elem.innerHTML = langArrContact[key][lang];
+    //   }
+    // }
   };
   
   changeLanguage();
