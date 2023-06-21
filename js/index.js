@@ -116,7 +116,6 @@ $(".mobile-image-wrapper").slick({
   dots: true,
 });
 
-
 //--------------------------------------------------------
 //* Header nav
 
@@ -191,7 +190,6 @@ $(".nav-submenu-group").mouseleave(() => {
 //   document.getElementById('input_10_area'), {
 //     mask: '+0000'
 // });
-
 
 //---------------------------------------------------
 //* show needed language select for OS
@@ -287,8 +285,6 @@ const ClassLodgeFourBottom = $(".class-lodge-four-arr-bottom");
 const ClassLodgeFourUp = $(".class-lodge-four-arr-up");
 const ClassLodgeFourList = $(".class-lodge-four-list");
 
-
-
 //* Dropdown functions
 
 wildlifeIcon.click(() => {
@@ -307,9 +303,9 @@ zanzibarIcon.click(() => {
   zanzibarList.toggle();
 });
 
-groupIcon.click(()=>{
+groupIcon.click(() => {
   groupList.toggle();
-})
+});
 
 daysIconOpen.click(() => {
   daysIconOpen.parent().siblings().css("display", "block");
@@ -672,44 +668,40 @@ HintsEight.click(() => {
 //-----------------------------------------------
 // //* submit button disable
 const inputName = $("#first_3");
-const emailWrapper = $('#id_4')
+const emailWrapper = $("#id_4");
 const inputEmail = $("#input_4");
-const contactPhoneWrapper = $('#id_10')
+const contactPhoneWrapper = $("#id_10");
 const inputContacType = $("#input_16");
 // let inputMessage = $("#message");
 let submitButton = document.querySelector(".submit-button");
 submitButton.disabled = true;
 
 inputName.on("change", stateHandle);
-inputEmail.on("change", stateHandle);
+inputContacType.on("change", stateHandle);
 inputContacType.on("change", showCorrectInput);
 
 function stateHandle() {
-  if (
-    inputName.val() != "" &&
-    inputContacType.val() != ""
-    // inputMessage.val() != ""
-  ) {
+ 
+  if (inputName.val() !== "" && inputContacType.val() !== "") {
     submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
   }
 }
 
-function showCorrectInput(){
-  console.log(inputContacType.val() )
-  if (inputContacType.val()=== 'WhatsApp'){
-      contactPhoneWrapper.slideToggle(400);
-      emailWrapper.hide();
-  } else if (inputContacType.val()=== 'Email'){
+function showCorrectInput() {
+  console.log(inputContacType.val());
+  if (inputContacType.val() === "WhatsApp") {
+    contactPhoneWrapper.slideToggle(400);
+    emailWrapper.hide();
+  } else if (inputContacType.val() === "Email") {
     contactPhoneWrapper.hide();
-    emailWrapper.slideToggle(400)
-  } else if (inputContacType.val()=== ''){
+    emailWrapper.slideToggle(400);
+  } else if (inputContacType.val() === "") {
     contactPhoneWrapper.hide();
     emailWrapper.hide();
   }
 }
-
 
 //------------------------
 // //* change header background height if lang=ua,fr
@@ -722,10 +714,9 @@ function showCorrectInput(){
 //   } else false;
 // }
 
-
-$('.group-btn').each(function(){
-  $(this).on('click', function(){
-    let linkTo = $(this).data('test');
-    localStorage.setItem('linkTo', linkTo)
-  })
-})
+$(".group-btn").each(function () {
+  $(this).on("click", function () {
+    let linkTo = $(this).data("test");
+    localStorage.setItem("linkTo", linkTo);
+  });
+});
