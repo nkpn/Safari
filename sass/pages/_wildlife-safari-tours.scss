@@ -296,7 +296,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 10px;
+    padding: 20px 5px;
+    gap: 8px;
     @media screen and (min-width: $tablet) {
       padding: 15px 10px;
     }
@@ -311,7 +312,7 @@
   }
 
   .day {
-    flex-basis: 20%;
+    flex-basis: 30%;
     @include uppercase-list-heading();
     color: $text-primary-color;
     font-weight: 500;
@@ -375,6 +376,7 @@
     span {
       display: block;
       @include uppercase-list-heading();
+      font-style: italic;
 
       @media screen and (min-width: $desktop) {
         margin-right: 28px;
@@ -385,6 +387,19 @@
     p {
       margin-top: 16px;
       @include heading-description();
+
+      &:first-of-type{
+        font-style: italic;
+      }
+    }
+
+    p.day-feature{
+      font-family: Montserrat;
+      font-weight: 600;
+
+      &:nth-of-type(3){
+        margin-top: 5px;
+      }
     }
 
     @media screen and (min-width: $desktop) {
@@ -392,6 +407,20 @@
       justify-content: space-between;
       align-items: baseline;
     }
+  }
+}
+
+.topic-heading-combine{
+  font-family: Kaisei Decol;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-primary-color;
+  margin: 0 0 12px 0;
+
+  @media screen and (min-width:$tablet) {
+      font-size: 24px;
+      line-height: 36px;
   }
 }
 
@@ -555,7 +584,13 @@
 .page-wildlife {
 
   .group-btn{
-    margin-bottom: 15px;
+    margin: 15px auto;
+    width: 100%;
+    display: block;
+
+    @media screen and (min-width:$tablet) {
+      margin: 15px 0;
+    }
   }
   .contact-us-btn {
     &::before {

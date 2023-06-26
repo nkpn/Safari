@@ -666,25 +666,36 @@ HintsEight.click(() => {
 //* Scroll Reveal
 // ScrollReveal().reveal('img');
 //-----------------------------------------------
-// //* submit button disable
-const inputName = $("#first_3");
+//* submit button disable
 const emailWrapper = $("#id_4");
-const inputEmail = $("#input_4");
 const contactPhoneWrapper = $("#id_10");
+
+const inputName = $("#first_3");
+const inputEmail = $("#input_4");
 const inputContacType = $("#input_16");
+const countryCodeInput = $("#input_10_area");
+const phoneNumberInput = $("#input_10_phone");
 // let inputMessage = $("#message");
 let submitButton = document.querySelector(".submit-button");
 submitButton.disabled = true;
 
 inputName.on("change", stateHandle);
 inputContacType.on("change", stateHandle);
+countryCodeInput.on("change", stateHandle);
+phoneNumberInput.on("change", stateHandle);
+inputEmail.on("change", stateHandle);
 inputContacType.on("change", showCorrectInput);
 
+
+
 function stateHandle() {
- 
-  if (inputName.val() !== "" && inputContacType.val() !== "") {
+  if (inputName.val() !== "" && inputContacType.val() !== "" && countryCodeInput.val() !== "" && phoneNumberInput.val() !== "") {
+    console.log('first if')
     submitButton.disabled = false;
-  } else {
+  } else if (inputName.val() !== "" && inputContacType.val() !== "" && inputEmail.val() !== "" ) {
+    console.log('second if')
+    submitButton.disabled = false;
+  } else{
     submitButton.disabled = true;
   }
 }

@@ -618,15 +618,14 @@
   }
 
   .contact-information-list {
-    margin-top: 45px;
     display: flex;
     flex-direction: column;
     margin-bottom: 39px;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 0;
+
       flex-basis: 45%;
-      margin-top: 89px;
     }
 
     .address {
@@ -727,6 +726,7 @@
     }
   }
 
+
   .form-field {
     display: flex;
     flex-direction: column;
@@ -824,6 +824,10 @@
   p{
     @include text-description();
   }
+}
+
+.always-hidden{
+  display: none !important; 
 }
 
 .lng-area-code, .lng-phone-number-2{

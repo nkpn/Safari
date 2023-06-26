@@ -1688,7 +1688,6 @@ option {
   }
 }
 .contact-us .contact-information-list {
-  margin-top: 45px;
   display: flex;
   flex-direction: column;
   margin-bottom: 39px;
@@ -1697,7 +1696,6 @@ option {
   .contact-us .contact-information-list {
     margin-bottom: 0;
     flex-basis: 45%;
-    margin-top: 89px;
   }
 }
 .contact-us .contact-information-list .address {
@@ -1900,6 +1898,10 @@ option {
   font-family: Montserrat-Variable;
   font-weight: 600;
   color: #343434;
+}
+
+.always-hidden {
+  display: none !important;
 }
 
 .home-photos .container {
@@ -4427,7 +4429,8 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 10px;
+  padding: 20px 5px;
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .topic-fixed-picture .day-wrapper {
@@ -4441,7 +4444,7 @@ option {
   cursor: pointer;
 }
 .topic-fixed-picture .day {
-  flex-basis: 20%;
+  flex-basis: 30%;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
@@ -4519,6 +4522,7 @@ option {
   font-weight: 500;
   text-transform: uppercase;
   color: #343434;
+  font-style: italic;
 }
 @media screen and (min-width: 1024px) {
   .topic-fixed-picture .hided-description-item span {
@@ -4540,11 +4544,36 @@ option {
     line-height: 24px;
   }
 }
+.topic-fixed-picture .hided-description-item p:first-of-type {
+  font-style: italic;
+}
+.topic-fixed-picture .hided-description-item p.day-feature {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.topic-fixed-picture .hided-description-item p.day-feature:nth-of-type(3) {
+  margin-top: 5px;
+}
 @media screen and (min-width: 1024px) {
   .topic-fixed-picture .hided-description-item {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+}
+
+.topic-heading-combine {
+  font-family: Kaisei Decol;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #343434;
+  margin: 0 0 12px 0;
+}
+@media screen and (min-width: 768px) {
+  .topic-heading-combine {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
@@ -4719,7 +4748,14 @@ option {
 }
 
 .page-wildlife .group-btn {
-  margin-bottom: 15px;
+  margin: 15px auto;
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .page-wildlife .group-btn {
+    margin: 15px 0;
+  }
 }
 .page-wildlife .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
