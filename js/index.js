@@ -230,6 +230,11 @@ const CampFourBottom = $(".camp-four-arr-bottom");
 const CampFourUp = $(".camp-four-arr-up");
 const CampFourList = $(".camp-four-list");
 
+const CampFive = $(".camping-five");
+const CampFiveBottom = $(".camp-five-arr-bottom");
+const CampFiveUp = $(".camp-five-arr-up");
+const CampFiveList = $(".camp-five-list");
+
 const MidRangeTwo = $(".mid-range-two");
 const MidRangeTwoBottom = $(".mid-range-two-arr-bottom");
 const MidRangeTwoUp = $(".mid-range-two-arr-up");
@@ -254,6 +259,31 @@ const WildTwo = $(".wilderness-two");
 const WildTwoBottom = $(".wilderness-two-arr-bottom");
 const WildTwoUp = $(".wilderness-two-arr-up");
 const WildTwoList = $(".wilderness-two-list");
+
+const WildThree = $(".wilderness-three");
+const WildThreeBottom = $(".wilderness-three-arr-bottom");
+const WildThreeUp = $(".wilderness-three-arr-up");
+const WildThreeList = $(".wilderness-three-list");
+
+const WildFour = $(".wilderness-four");
+const WildFourBottom = $(".wilderness-four-arr-bottom");
+const WildFourUp = $(".wilderness-four-arr-up");
+const WildFourList = $(".wilderness-four-list");
+
+const WildFive = $(".wilderness-five");
+const WildFiveBottom = $(".wilderness-five-arr-bottom");
+const WildFiveUp = $(".wilderness-five-arr-up");
+const WildFiveList = $(".wilderness-five-list");
+
+const WildSix = $(".wilderness-six");
+const WildSixBottom = $(".wilderness-six-arr-bottom");
+const WildSixUp = $(".wilderness-six-arr-up");
+const WildSixList = $(".wilderness-six-list");
+
+const WildSeven = $(".wilderness-seven");
+const WildSevenBottom = $(".wilderness-seven-arr-bottom");
+const WildSevenUp = $(".wilderness-seven-arr-up");
+const WildSevenList = $(".wilderness-seven-list");
 
 const LuxLodgeTwo = $(".lux-lodge-two");
 const LuxLodgeTwoBottom = $(".lux-lodge-two-arr-bottom");
@@ -337,6 +367,12 @@ CampFour.click(() => {
   CampFourList.toggle();
 });
 
+CampFive.click(() => {
+  CampFiveBottom.toggle();
+  CampFiveUp.toggle();
+  CampFiveList.toggle();
+});
+
 MidRangeTwo.click(() => {
   MidRangeTwoBottom.toggle();
   MidRangeTwoUp.toggle();
@@ -365,6 +401,36 @@ WildTwo.click(() => {
   WildTwoBottom.toggle();
   WildTwoUp.toggle();
   WildTwoList.toggle();
+});
+
+WildThree.click(() => {
+  WildThreeBottom.toggle();
+  WildThreeUp.toggle();
+  WildThreeList.toggle();
+});
+
+WildFour.click(() => {
+  WildFourBottom.toggle();
+  WildFourUp.toggle();
+  WildFourList.toggle();
+});
+
+WildFive.click(() => {
+  WildFiveBottom.toggle();
+  WildFiveUp.toggle();
+  WildFiveList.toggle();
+});
+
+WildSix.click(() => {
+  WildSixBottom.toggle();
+  WildSixUp.toggle();
+  WildSixList.toggle();
+});
+
+WildSeven.click(() => {
+  WildSevenBottom.toggle();
+  WildSevenUp.toggle();
+  WildSevenList.toggle();
 });
 
 LuxLodgeTwo.click(() => {
