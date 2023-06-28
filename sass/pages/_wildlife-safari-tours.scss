@@ -604,6 +604,12 @@
       margin: 15px 0;
     }
   }
+  
+  .group-btn.price-btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact-us-btn {
     &::before {
       background-image: url("../images/icons/envelop-grey.svg");

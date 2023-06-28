@@ -288,6 +288,14 @@ summary {
   color: #CECECE;
 }
 
+.group-btn.price-btn {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 16px;
+  text-transform: uppercase;
+}
+
 .contact-us-btn-blue {
   font-size: 14px;
   line-height: 24px;
@@ -722,7 +730,7 @@ footer .contact-information-item {
 footer .contact-information-item a {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -731,7 +739,7 @@ footer .contact-information-item a {
 footer .footer-navigation a {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -744,7 +752,7 @@ footer .footer-copyright {
   margin-left: 100px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -763,7 +771,7 @@ footer .footer-copyright-mobile {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -1097,7 +1105,7 @@ option {
 .description p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   margin-bottom: 12px;
@@ -1560,7 +1568,7 @@ option {
 .advantages p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   margin-top: 25px;
@@ -1800,7 +1808,7 @@ option {
 .contact-us .form-label {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   margin-bottom: 4px;
@@ -1813,7 +1821,7 @@ option {
   border: 1px solid #CDD9DF;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
 }
@@ -1826,7 +1834,7 @@ option {
   font-family: Montserrat-Variable;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
 }
@@ -1895,7 +1903,7 @@ option {
 .form-introduction p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
 }
@@ -2212,7 +2220,7 @@ option {
 .page-kilimonjaro .kilimonjaro-hero p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -2387,7 +2395,7 @@ option {
 .page-kilimonjaro .kilimanjaro-second-section p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #000000;
@@ -2684,7 +2692,7 @@ option {
   margin: 0 11px 0 0;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #343434;
@@ -2763,7 +2771,7 @@ option {
 .page-kilimonjaro .topic-fixed-picture .prices-table-item p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
 }
@@ -3059,7 +3067,7 @@ option {
 .page-kilimonjaro .section-hints .hints-hided-item {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   padding-left: 15px;
@@ -3083,7 +3091,7 @@ option {
 .page-kilimonjaro .section-hints .hints-description {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   padding-top: 28px;
@@ -4116,7 +4124,7 @@ option {
 .wildlife-hero p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #ffffff;
@@ -4297,7 +4305,7 @@ option {
 .wildlife-second-section p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   color: #000000;
@@ -4708,7 +4716,7 @@ option {
 .package-item {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   padding-left: 15px;
@@ -4768,6 +4776,10 @@ option {
   .page-wildlife .group-btn {
     margin: 15px 0;
   }
+}
+.page-wildlife .group-btn.price-btn {
+  margin-left: auto;
+  margin-right: auto;
 }
 .page-wildlife .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
@@ -4885,7 +4897,7 @@ option {
 .group-banner p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   display: block;
@@ -5607,7 +5619,7 @@ option {
   margin-top: 8px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   text-align: center;
@@ -5660,7 +5672,7 @@ option {
   margin-top: 8px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
+  font-family: Montserrat;
   font-weight: 600;
   color: #343434;
   text-align: center;

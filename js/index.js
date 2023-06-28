@@ -186,10 +186,26 @@ $(".nav-submenu-group").mouseleave(() => {
 
 //-----
 //* number input mask (for form)
-// var phoneMask = IMask(
-//   document.getElementById('input_10_area'), {
-//     mask: '+0000'
-// });
+var phoneMask = IMask(
+  document.getElementById('input_10_area'), {
+    mask: '+0000'
+});
+
+//* Set section source to form
+function setSectionSource(sectionName){
+  const formInput = $('#input_24');
+  formInput.val(sectionName);
+  console.log(formInput.val())
+}
+const buttonsArray = $('.group-btn');
+buttonsArray.each(function(){
+  const buttons = $(this);
+  buttons.on('click', e => {
+    if (e.target.dataset.section){
+      setSectionSource(e.target.dataset.section)
+    }
+  })
+})
 
 //---------------------------------------------------
 //* show needed language select for OS
@@ -756,10 +772,8 @@ inputContacType.on("change", showCorrectInput);
 
 function stateHandle() {
   if (inputName.val() !== "" && inputContacType.val() !== "" && countryCodeInput.val() !== "" && phoneNumberInput.val() !== "") {
-    console.log('first if')
     submitButton.disabled = false;
   } else if (inputName.val() !== "" && inputContacType.val() !== "" && inputEmail.val() !== "" ) {
-    console.log('second if')
     submitButton.disabled = false;
   } else{
     submitButton.disabled = true;
