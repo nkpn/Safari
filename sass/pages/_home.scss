@@ -735,6 +735,7 @@
 
   .form-label {
     @include text-description();
+    font-family: Montserrat;
     margin-bottom: 4px;
   }
 
@@ -823,6 +824,7 @@
 
   p{
     @include text-description();
+    font-family: Montserrat;
   }
 }
 

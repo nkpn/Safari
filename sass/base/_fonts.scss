@@ -3,12 +3,20 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 37px;
-color: $text-primary-color;
+    color: $text-primary-color;
 
     @media screen and (min-width:$tablet) {
         font-size: 36px;
         line-height: 48px;
     }
+}
+
+@mixin small-subheading{
+    font-family: Kaisei Decol;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: $text-primary-color;
 }
 
 @mixin heading{
@@ -40,7 +48,7 @@ color: $text-primary-color;
 @mixin text-description{
     font-size: 14px;
     line-height: 24px;
-    font-family: Montserrat;
+    font-family: Montserrat-Variable;
     font-weight: 600;
     color: $text-primary-color;
 }

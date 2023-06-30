@@ -27,10 +27,15 @@
   p {
     @include text-description();
     color: $white;
-    margin-bottom: 28px;
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 48px;
+
+    &:last-of-type{
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      @media screen and (min-width: $tablet) {
+        margin-top: 2rem;
+      }
     }
+   
   }
 
   .wildlife-hero-wrapper {
@@ -189,9 +194,31 @@
 
 .wildlife-second-section {
   position: relative;
+
+  h2{
+    @include small-subheading();
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   p {
     @include text-description();
     color: $black;
+  }
+  h4{
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include small-subheading();
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-weight: normal;
+    color: $black;
+    @media screen and (min-width: $tablet) {
+     max-width: 80%;
+     margin: 3rem auto 0;
+    }
   }
   padding-bottom: 282px;
   padding-top: 60px;
@@ -208,6 +235,10 @@
     background-image: url("../images/wildlife-safari-tours/zebra-hero-min.jpg");
     background-size: cover;
     padding-bottom: 482px;
+  }
+
+  .first-column, .second-column{
+    flex-direction: column;
   }
 }
 
