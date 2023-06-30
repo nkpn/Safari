@@ -204,6 +204,7 @@
   p {
     @include text-description();
     color: $black;
+    font-family: Montserrat;
   }
   h4{
     margin-top: 2rem;

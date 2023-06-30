@@ -730,8 +730,8 @@ footer .contact-information-item {
 footer .contact-information-item a {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
   opacity: 0.7;
@@ -739,8 +739,8 @@ footer .contact-information-item a {
 footer .footer-navigation a {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
   opacity: 0.7;
@@ -752,8 +752,8 @@ footer .footer-copyright {
   margin-left: 100px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
   opacity: 0.7;
@@ -771,8 +771,8 @@ footer .footer-copyright-mobile {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
   opacity: 0.7;
@@ -1105,8 +1105,8 @@ option {
 .description p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   margin-bottom: 12px;
   text-align: left;
@@ -1568,8 +1568,8 @@ option {
 .advantages p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   margin-top: 25px;
 }
@@ -1808,8 +1808,8 @@ option {
 .contact-us .form-label {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   font-family: Montserrat;
   margin-bottom: 4px;
@@ -1822,8 +1822,8 @@ option {
   border: 1px solid #CDD9DF;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
 }
 .contact-us .form-input:hover, .contact-us .form-input:focus {
@@ -1835,8 +1835,8 @@ option {
   font-family: Montserrat-Variable;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
 }
 .contact-us .form-input:-webkit-autofill,
@@ -1904,8 +1904,8 @@ option {
 .form-introduction p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   font-family: Montserrat;
 }
@@ -2222,8 +2222,8 @@ option {
 .page-kilimonjaro .kilimonjaro-hero p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
   margin-bottom: 28px;
@@ -2397,8 +2397,8 @@ option {
 .page-kilimonjaro .kilimanjaro-second-section p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #000000;
   max-width: 85%;
@@ -2694,8 +2694,8 @@ option {
   margin: 0 11px 0 0;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #343434;
 }
@@ -2773,8 +2773,8 @@ option {
 .page-kilimonjaro .topic-fixed-picture .prices-table-item p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
 }
 .page-kilimonjaro .topic-fixed-picture .prices-table-item b {
@@ -3069,8 +3069,8 @@ option {
 .page-kilimonjaro .section-hints .hints-hided-item {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   padding-left: 15px;
   position: relative;
@@ -3093,8 +3093,8 @@ option {
 .page-kilimonjaro .section-hints .hints-description {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   padding-top: 28px;
 }
@@ -4126,8 +4126,8 @@ option {
 .wildlife-hero p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #ffffff;
 }
@@ -4320,10 +4320,11 @@ option {
 .wildlife-second-section p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   color: #000000;
+  font-family: Montserrat;
 }
 .wildlife-second-section h4 {
   margin-top: 2rem;
@@ -4755,8 +4756,8 @@ option {
 .package-item {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   padding-left: 15px;
   position: relative;
@@ -4936,8 +4937,8 @@ option {
 .group-banner p {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   display: block;
   max-width: 80%;
@@ -5658,8 +5659,8 @@ option {
   margin-top: 8px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   text-align: center;
 }
@@ -5711,8 +5712,8 @@ option {
   margin-top: 8px;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat-Variable;
-  font-weight: 600;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #343434;
   text-align: center;
 }
@@ -5816,6 +5817,10 @@ img {
 
 hr {
   border-color: #DBE7ED;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .two-columns {
