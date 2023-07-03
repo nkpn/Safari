@@ -243,6 +243,49 @@
   }
 }
 
+// -----------------
+.wildlife-important-notes-section{
+  position: relative;
+
+  h2{
+    @include small-subheading();
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  p {
+    @include text-description();
+    color: $black;
+    font-family: Montserrat;
+  }
+  h4{
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include small-subheading();
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-weight: normal;
+    color: $black;
+    @media screen and (min-width: $tablet) {
+     max-width: 80%;
+     margin: 3rem auto 0;
+    }
+  }
+  padding-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 120px;
+  }
+
+  .two-columns>.first-column, .two-columns>.second-column{
+    flex-direction: column;
+    max-width: 100%;
+    align-self: unset;
+  }
+}
+
 //---------------------------------------
 //* camping-safari section
 .camping-safari {
@@ -273,6 +316,7 @@
     }
     h3 {
       @include subheading();
+      margin-bottom: 1rem;
     }
 
     h4 {
@@ -429,20 +473,26 @@
     }
 
     p {
-      margin-top: 16px;
       @include heading-description();
 
       &:first-of-type{
         font-style: italic;
+        margin-bottom: 16px;
+      }
+      &:nth-of-type(1){
+        margin-top: 16px;
       }
     }
 
     p.day-feature{
       font-family: Montserrat;
       font-weight: 600;
+      padding-left: 2rem;
+      border-left: 1px solid black;
+
 
       &:nth-of-type(3){
-        margin-top: 5px;
+        padding-top: 5px;
       }
     }
 

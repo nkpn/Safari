@@ -2468,7 +2468,7 @@ option {
   margin-bottom: 24px;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -2548,7 +2548,7 @@ option {
   flex-basis: 65%;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -2614,7 +2614,7 @@ option {
   margin-top: 16px;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -2658,7 +2658,7 @@ option {
 .page-kilimonjaro .topic-fixed-picture .wrapper-description p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   display: block;
@@ -3346,7 +3346,7 @@ option {
 .arusha-wrapper p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   text-align: left;
@@ -3452,7 +3452,7 @@ option {
 .tarangire-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   text-align: left;
@@ -3525,7 +3525,7 @@ option {
 .moshi-hero-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 28px;
@@ -3607,7 +3607,7 @@ option {
 .marangu-wateralls-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -3688,7 +3688,7 @@ option {
 .chemka-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -3772,7 +3772,7 @@ option {
 .materuni-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -3866,7 +3866,7 @@ option {
 .lake-challa-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -3960,7 +3960,7 @@ option {
 .chagga-museum-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   text-align: left;
@@ -4046,7 +4046,7 @@ option {
 .arusha-museum p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -4363,6 +4363,61 @@ option {
   flex-direction: column;
 }
 
+.wildlife-important-notes-section {
+  position: relative;
+  padding-top: 60px;
+}
+.wildlife-important-notes-section h2 {
+  font-family: Kaisei Decol;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37px;
+  color: #343434;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.wildlife-important-notes-section p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #343434;
+  color: #000000;
+  font-family: Montserrat;
+}
+.wildlife-important-notes-section h4 {
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Kaisei Decol;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37px;
+  color: #343434;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-weight: normal;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .wildlife-important-notes-section h4 {
+    max-width: 80%;
+    margin: 3rem auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wildlife-important-notes-section {
+    padding-top: 120px;
+  }
+}
+.wildlife-important-notes-section .two-columns > .first-column, .wildlife-important-notes-section .two-columns > .second-column {
+  flex-direction: column;
+  max-width: 100%;
+  align-self: unset;
+}
+
 .camping-safari {
   padding-top: 100px;
 }
@@ -4410,6 +4465,7 @@ option {
   font-size: 24px;
   line-height: 37px;
   color: #343434;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .topic-fixed-picture .topic-description h3 {
@@ -4422,7 +4478,7 @@ option {
   margin-bottom: 24px;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -4506,7 +4562,7 @@ option {
   flex-basis: 60%;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -4591,10 +4647,9 @@ option {
   }
 }
 .topic-fixed-picture .hided-description-item p {
-  margin-top: 16px;
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
 }
@@ -4606,13 +4661,19 @@ option {
 }
 .topic-fixed-picture .hided-description-item p:first-of-type {
   font-style: italic;
+  margin-bottom: 16px;
+}
+.topic-fixed-picture .hided-description-item p:nth-of-type(1) {
+  margin-top: 16px;
 }
 .topic-fixed-picture .hided-description-item p.day-feature {
   font-family: Montserrat;
   font-weight: 600;
+  padding-left: 2rem;
+  border-left: 1px solid black;
 }
 .topic-fixed-picture .hided-description-item p.day-feature:nth-of-type(3) {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 1024px) {
   .topic-fixed-picture .hided-description-item {
@@ -4997,7 +5058,7 @@ option {
 .page-zanzibar .zanzibar-hero-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 24px;
@@ -5059,7 +5120,7 @@ option {
 .page-zanzibar .zanzibar-tarangire-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   display: block;
@@ -5162,7 +5223,7 @@ option {
 .page-zanzibar .mwowambu-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   display: block;
@@ -5266,7 +5327,7 @@ option {
 .page-zanzibar .ngorongoro-section p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   display: block;
@@ -5554,7 +5615,7 @@ option {
 .contact-page .home-hero .contact-hero-text p {
   font-family: Montserrat-Variable;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #000000;
   color: #ffffff;
