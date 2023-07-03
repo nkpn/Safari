@@ -522,19 +522,19 @@ const langArrContact = {
     hash = hash.substring(1);
     let lang = "en";
   
-    if (localStorage.getItem("lang") === null) {
-      localStorage.setItem("lang", lang);
-      location.href = window.location.pathname + "#" + lang;
-      location.reload();
-    } else {
-      lang = localStorage.getItem("lang");
-      location.href = window.location.pathname + "#" + lang;
-    }
+    // if (localStorage.getItem("lang") === null) {
+    //   localStorage.setItem("lang", lang);
+    //   location.href = window.location.pathname + "#" + lang;
+    //   location.reload();
+    // } else {
+    //   lang = localStorage.getItem("lang");
+    //   location.href = window.location.pathname + "#" + lang;
+    // }
   
-    if (!allLang.includes(lang)) {
-      location.href = window.location.pathname + "#en";
-      location.reload();
-    }
+    // if (!allLang.includes(lang)) {
+    //   location.href = window.location.pathname + "#en";
+    //   location.reload();
+    // }
     //* set all selects to our lang
     // selectFirst.value = lang;
     // selectSecond.value = lang;
