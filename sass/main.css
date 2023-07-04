@@ -4337,9 +4337,11 @@ option {
   color: #000000;
   font-family: Montserrat-Variable;
   font-weight: 600;
+  font-style: italic;
 }
 .wildlife-second-section strong {
   font-family: Montserrat;
+  font-style: normal;
 }
 .wildlife-second-section h4 {
   margin-top: 2rem;
