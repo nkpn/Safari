@@ -262,7 +262,13 @@
   p {
     @include text-description();
     color: $black;
+    font-family: Montserrat-Variable;
+    font-weight: 600;
+    font-style: italic;
+  }
+  strong{
     font-family: Montserrat;
+    font-style: normal;
   }
   h4{
     margin-top: 2rem;

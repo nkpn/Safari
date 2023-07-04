@@ -4401,7 +4401,13 @@ option {
   font-weight: 500;
   color: #343434;
   color: #000000;
+  font-family: Montserrat-Variable;
+  font-weight: 600;
+  font-style: italic;
+}
+.wildlife-important-notes-section strong {
   font-family: Montserrat;
+  font-style: normal;
 }
 .wildlife-important-notes-section h4 {
   margin-top: 2rem;
