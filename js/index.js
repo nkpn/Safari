@@ -10,10 +10,20 @@ function topFunction() {
 
 //---------------
 //* Init slick slider
+const mobileMenu =  $(".mobile-menu");
+
 $(document).ready(function () {
-  $(".burger,.close-btn").click(function (event) {
-    $(".mobile-menu").toggleClass("active");
+  $(".burger,.close-btn").on('click', (function (event) {
+    mobileMenu.toggleClass("active");
+  }));
+
+  $('.mobile-nav-submenu-item>a').on('click', function(event){
+    if(mobileMenu.hasClass("active")){
+      mobileMenu.removeClass("active");
+    }
   });
+
+  
 
   $(".carousel").slick({
     infinite: true,
