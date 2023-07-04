@@ -624,7 +624,7 @@
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 0;
-
+      justify-content: space-between;
       flex-basis: 45%;
     }
 
@@ -817,6 +817,16 @@
 
 .form-line{
   padding: 10px 0;
+}
+
+#id_2{
+  @media screen and (min-width:$tablet) {
+    padding: 10px 0 0 0;
+  }
+}
+
+#id_17{
+  display: none;
 }
 
 .form-introduction{

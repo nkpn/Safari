@@ -1703,6 +1703,7 @@ option {
 @media screen and (min-width: 768px) {
   .contact-us .contact-information-list {
     margin-bottom: 0;
+    justify-content: space-between;
     flex-basis: 45%;
   }
 }
@@ -1896,6 +1897,16 @@ option {
 
 .form-line {
   padding: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  #id_2 {
+    padding: 10px 0 0 0;
+  }
+}
+
+#id_17 {
+  display: none;
 }
 
 .form-introduction {
@@ -4324,6 +4335,10 @@ option {
   font-weight: 500;
   color: #343434;
   color: #000000;
+  font-family: Montserrat-Variable;
+  font-weight: 600;
+}
+.wildlife-second-section strong {
   font-family: Montserrat;
 }
 .wildlife-second-section h4 {
