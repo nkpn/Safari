@@ -14,6 +14,19 @@
     }
   }
 
+  .two-columns p{
+    font-style: italic
+  }
+
+  .day{
+    font-style: normal;
+  }
+
+  strong{
+    font-family: Montserrat;
+    font-style: normal;
+  }
+
   //* Zanzibar HERO section
   .zanzibar-hero-section {
     margin-top: 60px;
@@ -28,26 +41,49 @@
       background-size: contain;
       background-image: url("../images/zanzibar/hero-desktop.jpg");
       background-position: 100%;
+      padding-bottom: 250px;
     }
 
     @media screen and (min-width: $desktop) {
-      margin-top: 168px;
+      margin-top: 138px;
+      padding-bottom: 225px;
+      background-position: 100% 200%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      background-position: 100% 250%;
+      padding-bottom: 250px;
     }
 
     p {
       @include heading-description();
-      margin-bottom: 24px;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
 
-      @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
-      }
+    strong{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
     }
 
     .wrapper {
-      max-width: 60%;
+      text-align: center;
+    }
+
+    .two-columns{
+      
+      align-items: center;
       @media screen and (min-width: $tablet) {
-        max-width: 450px;
+        flex-direction: row;
       }
+    }
+
+    .first-column, .second-column{
+      flex-direction: column;
+      align-self: unset;
+      margin-bottom: 0;
+      max-width: 100%;
     }
   }
 
@@ -75,12 +111,12 @@
     p {
       @include heading-description();
       display: block;
-      max-width: 75%;
-      margin-bottom: 24px;
+      
+      margin-bottom: 12px;
       padding: 0;
 
       @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
+        max-width: 75%;
       }
     }
 
@@ -88,6 +124,7 @@
       @include uppercase-list-heading();
       margin-bottom: 8px;
       padding: 0;
+      
       @media screen and (min-width: $tablet) {
         margin-bottom: 16px;
       }
@@ -156,12 +193,18 @@
     p {
       @include heading-description();
       display: block;
-      max-width: 95%;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
       padding: 0;
 
       @media screen and (min-width: $desktop) {
-        margin-bottom: 97px;
+        max-width: 95%;
+      }
+
+      &:last-of-type{
+        margin-bottom: 55px;
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 95px;
+        }
       }
     }
 
@@ -240,7 +283,7 @@
       @include heading-description();
       display: block;
       max-width: 75%;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
       padding: 0;
 
       @media screen and (min-width: $tablet) {

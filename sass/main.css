@@ -2549,7 +2549,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   color: #343434;
@@ -2596,7 +2596,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
 }
@@ -2611,7 +2611,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
 }
@@ -2651,20 +2651,15 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin: 0;
 }
 .page-kilimonjaro .topic-fixed-picture .wrapper-description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) {
-  .page-kilimonjaro .topic-fixed-picture .wrapper-description {
-    flex-direction: row;
-  }
 }
 .page-kilimonjaro .topic-fixed-picture .wrapper-description p {
   font-family: Montserrat-Variable;
@@ -2672,15 +2667,18 @@ option {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  font-style: italic;
   display: block;
-  margin-right: 8px;
-  margin-bottom: 4px;
+  margin: 0 8px 0 0;
 }
 @media screen and (min-width: 768px) {
   .page-kilimonjaro .topic-fixed-picture .wrapper-description p {
     font-size: 14px;
     line-height: 24px;
   }
+}
+.page-kilimonjaro .topic-fixed-picture .wrapper-description p:nth-of-type(1) {
+  margin-top: unset;
 }
 .page-kilimonjaro .topic-fixed-picture .prices-wrapper {
   display: flex;
@@ -2798,7 +2796,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   font-size: 10px;
@@ -2991,7 +2989,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   font-size: 13px;
@@ -3714,7 +3712,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin-bottom: 8px;
@@ -4575,7 +4573,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   color: #343434;
@@ -4658,7 +4656,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   font-style: italic;
@@ -4681,13 +4679,6 @@ option {
     font-size: 14px;
     line-height: 24px;
   }
-}
-.topic-fixed-picture .hided-description-item p:first-of-type {
-  font-style: italic;
-  margin-bottom: 16px;
-}
-.topic-fixed-picture .hided-description-item p:nth-of-type(1) {
-  margin-top: 16px;
 }
 .topic-fixed-picture .hided-description-item p.day-feature {
   font-family: Montserrat;
@@ -4901,6 +4892,13 @@ option {
     margin: 15px 0;
   }
 }
+.page-wildlife .hided-description-item p:first-of-type {
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.page-wildlife .hided-description-item p:nth-of-type(1) {
+  margin-top: 16px;
+}
 .page-wildlife .group-btn.price-btn {
   margin-left: auto;
   margin-right: auto;
@@ -5057,6 +5055,16 @@ option {
 .page-zanzibar .zanzibar-hero p:nth-child(2) {
   margin-bottom: 24px;
 }
+.page-zanzibar .two-columns p {
+  font-style: italic;
+}
+.page-zanzibar .day {
+  font-style: normal;
+}
+.page-zanzibar strong {
+  font-family: Montserrat;
+  font-style: normal;
+}
 .page-zanzibar .zanzibar-hero-section {
   margin-top: 60px;
   padding-bottom: 160px;
@@ -5071,11 +5079,20 @@ option {
     background-size: contain;
     background-image: url("../images/zanzibar/hero-desktop.jpg");
     background-position: 100%;
+    padding-bottom: 250px;
   }
 }
 @media screen and (min-width: 1024px) {
   .page-zanzibar .zanzibar-hero-section {
-    margin-top: 168px;
+    margin-top: 138px;
+    padding-bottom: 225px;
+    background-position: 100% 200%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .page-zanzibar .zanzibar-hero-section {
+    background-position: 100% 250%;
+    padding-bottom: 250px;
   }
 }
 .page-zanzibar .zanzibar-hero-section p {
@@ -5084,7 +5101,8 @@ option {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  margin-bottom: 24px;
+  font-style: italic;
+  margin-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .zanzibar-hero-section p {
@@ -5092,18 +5110,27 @@ option {
     line-height: 24px;
   }
 }
-@media screen and (min-width: 768px) {
-  .page-zanzibar .zanzibar-hero-section p {
-    margin-bottom: 32px;
-  }
+.page-zanzibar .zanzibar-hero-section strong {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
 }
 .page-zanzibar .zanzibar-hero-section .wrapper {
-  max-width: 60%;
+  text-align: center;
+}
+.page-zanzibar .zanzibar-hero-section .two-columns {
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .page-zanzibar .zanzibar-hero-section .wrapper {
-    max-width: 450px;
+  .page-zanzibar .zanzibar-hero-section .two-columns {
+    flex-direction: row;
   }
+}
+.page-zanzibar .zanzibar-hero-section .first-column, .page-zanzibar .zanzibar-hero-section .second-column {
+  flex-direction: column;
+  align-self: unset;
+  margin-bottom: 0;
+  max-width: 100%;
 }
 .page-zanzibar .zanzibar-tarangire-section {
   padding-top: 80px;
@@ -5147,8 +5174,7 @@ option {
   line-height: 18px;
   color: #000000;
   display: block;
-  max-width: 75%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -5159,14 +5185,14 @@ option {
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .zanzibar-tarangire-section p {
-    margin-bottom: 32px;
+    max-width: 75%;
   }
 }
 .page-zanzibar .zanzibar-tarangire-section .day {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin-bottom: 8px;
@@ -5250,8 +5276,7 @@ option {
   line-height: 18px;
   color: #000000;
   display: block;
-  max-width: 95%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -5262,14 +5287,22 @@ option {
 }
 @media screen and (min-width: 1024px) {
   .page-zanzibar .mwowambu-section p {
-    margin-bottom: 97px;
+    max-width: 95%;
+  }
+}
+.page-zanzibar .mwowambu-section p:last-of-type {
+  margin-bottom: 55px;
+}
+@media screen and (min-width: 1024px) {
+  .page-zanzibar .mwowambu-section p:last-of-type {
+    margin-bottom: 95px;
   }
 }
 .page-zanzibar .mwowambu-section .day {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin-bottom: 8px;
@@ -5355,7 +5388,7 @@ option {
   color: #000000;
   display: block;
   max-width: 75%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -5373,7 +5406,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin-bottom: 8px;
@@ -5444,7 +5477,7 @@ option {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343434;
   margin-bottom: 8px;

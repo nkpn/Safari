@@ -486,14 +486,6 @@
 
     p {
       @include heading-description();
-
-      &:first-of-type{
-        font-style: italic;
-        margin-bottom: 16px;
-      }
-      &:nth-of-type(1){
-        margin-top: 16px;
-      }
     }
 
     p.day-feature{
@@ -696,6 +688,16 @@
 
     @media screen and (min-width:$tablet) {
       margin: 15px 0;
+    }
+  }
+
+  .hided-description-item p{
+    &:first-of-type{
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    &:nth-of-type(1){
+      margin-top: 16px;
     }
   }
   

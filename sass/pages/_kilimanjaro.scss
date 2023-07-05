@@ -411,18 +411,18 @@
 
     .wrapper-description {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
-
-      @media screen and (min-width: $tablet) {
-        flex-direction: row;
-      }
 
       p {
         @include heading-description();
+        font-style: italic;
         display: block;
-        margin-right: 8px;
-        margin-bottom: 4px;
+        margin: 0 8px 0 0;
+
+        &:nth-of-type(1){
+          margin-top: unset;
+        }
       }
     }
 

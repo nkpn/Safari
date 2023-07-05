@@ -9,9 +9,8 @@ function topFunction() {
 }
 
 //---------------
-//* Init slick slider
+//* mobile menu functions
 const mobileMenu =  $(".mobile-menu");
-
 $(document).ready(function () {
   $(".burger,.close-btn").on('click', (function (event) {
     mobileMenu.toggleClass("active");
@@ -24,7 +23,7 @@ $(document).ready(function () {
   });
 
   
-
+//* Init slick slider
   $(".carousel").slick({
     infinite: true,
     slidesToShow: 3,
