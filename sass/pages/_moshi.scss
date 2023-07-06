@@ -1,4 +1,10 @@
 .page-moshi {
+  .contact-us{
+    padding-bottom: 150px;
+    @media screen and (min-width:$tablet) {
+      padding-bottom: 200px;
+    }
+  }
   .contact-us-btn {
     &::before {
       background-image: url("../images/icons/envelop-grey.svg");

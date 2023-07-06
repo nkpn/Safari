@@ -3163,6 +3163,12 @@ option {
 }
 .page-kilimonjaro .contact-us {
   background-color: #ffffff;
+  padding-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  .page-kilimonjaro .contact-us {
+    padding-bottom: 200px;
+  }
 }
 .page-kilimonjaro .slick-list {
   overflow: hidden;
@@ -3172,6 +3178,14 @@ option {
   font-weight: 500 !important;
 }
 
+.page-moshi .contact-us {
+  padding-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  .page-moshi .contact-us {
+    padding-bottom: 200px;
+  }
+}
 .page-moshi .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
 }
@@ -4880,8 +4894,13 @@ option {
 
 .page-wildlife > .contact-us {
   background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 200px;
 }
 
+.page-wildlife .package-section {
+  margin-bottom: 150px;
+}
 .page-wildlife .group-btn {
   margin: 15px auto;
   width: 100%;
@@ -5046,11 +5065,22 @@ option {
   }
 }
 
+.page-zanzibar .contact-us {
+  padding-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  .page-zanzibar .contact-us {
+    padding-bottom: 200px;
+  }
+}
 .page-zanzibar .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
 }
 .page-zanzibar .nav-list #lang {
   color: rgba(242, 251, 255, 0.4666666667);
+}
+.page-zanzibar .chemka-section .first-wrapper img {
+  margin-top: 50px;
 }
 .page-zanzibar .zanzibar-hero p:nth-child(2) {
   margin-bottom: 24px;
@@ -5317,6 +5347,11 @@ option {
   justify-content: unset;
 }
 @media screen and (min-width: 768px) {
+  .page-zanzibar .mwowambu-section .two-columns {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .page-zanzibar .mwowambu-section .first {
     flex-basis: 60%;
   }
@@ -5419,6 +5454,7 @@ option {
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .ngorongoro-section .two-columns {
+    align-items: center;
     gap: 55px;
   }
 }
@@ -5511,13 +5547,7 @@ option {
 }
 @media screen and (min-width: 768px) {
   .page-zanzibar .stone-town-section .zanzibar-island {
-    margin-top: 130px;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .page-zanzibar .stone-town-section .zanzibar-island {
-    margin-top: 230px;
+    margin-top: 50px;
   }
 }
 .page-zanzibar .contact-us {

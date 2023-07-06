@@ -677,9 +677,15 @@
 //* Contact us for Wildlife page
 .page-wildlife > .contact-us {
   background-color: $white;
+  padding-top: 0;
+  padding-bottom: 200px;
 }
 
 .page-wildlife {
+
+  .package-section{
+    margin-bottom: 150px;
+  }
 
   .group-btn{
     margin: 15px auto;

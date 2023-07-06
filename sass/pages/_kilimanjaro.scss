@@ -884,6 +884,10 @@
   //* Contact us section
   .contact-us {
     background-color: $white;
+    padding-bottom: 150px;
+    @media screen and (min-width:$tablet) {
+      padding-bottom: 200px;
+    }
   }
 
   .slick-list {

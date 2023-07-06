@@ -773,8 +773,8 @@ submitButton.disabled = true;
 inputName.on("change", stateHandle);
 inputContacType.on("change", stateHandle);
 countryCodeInput.on("change", stateHandle);
-phoneNumberInput.on("change", stateHandle);
-inputEmail.on("change", stateHandle);
+phoneNumberInput.keypress(stateHandle)
+inputEmail.keypress(stateHandle)
 inputContacType.on("change", showCorrectInput);
 
 
@@ -819,3 +819,20 @@ $(".group-btn").each(function () {
     localStorage.setItem("linkTo", linkTo);
   });
 });
+
+function scrollToPosition(e){
+  e.preventDefault();
+  const position = $(this).attr('href').split('#')[1];
+  const section = document.getElementById(position);
+
+  if (section){
+    var offset = section.offsetTop; // Отримуємо зсув секції від верху сторінки
+    console.log(offset)
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth"
+    });
+  }
+}
+
+$('.book-btn').on('click', scrollToPosition)

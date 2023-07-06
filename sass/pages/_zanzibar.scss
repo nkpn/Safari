@@ -1,4 +1,10 @@
 .page-zanzibar {
+  .contact-us{
+    padding-bottom: 150px;
+    @media screen and (min-width:$tablet) {
+      padding-bottom: 200px;
+    }
+  }
   .contact-us-btn {
     &::before {
       background-image: url("../images/icons/envelop-grey.svg");
@@ -6,6 +12,12 @@
   }
   .nav-list #lang {
     color: #f2fbff77;
+  }
+
+  .chemka-section{
+    .first-wrapper img{
+        margin-top: 50px;
+    }
   }
   //* Zanzibar hero
   .zanzibar-hero {
@@ -219,6 +231,9 @@
 
     .two-columns {
       justify-content: unset;
+      @media screen and (min-width: $tablet) {
+        align-items: center;
+      }
     }
 
     .first {
@@ -302,6 +317,7 @@
 
     .two-columns {
       @media screen and (min-width: $tablet) {
+        align-items: center;
         gap: 55px;
       }
       @media screen and (min-width: $desktop) {
@@ -392,11 +408,7 @@
 
     .zanzibar-island {
       @media screen and (min-width: $tablet) {
-        margin-top: 130px;
-        margin-left: auto;
-      }
-      @media screen and (min-width: $desktop) {
-        margin-top: 230px;
+        margin-top: 50px;
       }
     }
   }
