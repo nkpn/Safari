@@ -292,8 +292,10 @@ summary {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 12px;
   padding: 12px 16px;
   text-transform: uppercase;
+  display: block;
 }
 
 .contact-us-btn-blue {
@@ -1681,6 +1683,9 @@ option {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 14px;
+}
+.contact-us p:not(.form-introduction p) {
+  font-style: normal !important;
 }
 .contact-us a {
   margin-top: 12px;
@@ -5076,6 +5081,10 @@ option {
 .page-zanzibar .contact-us-btn::before {
   background-image: url("../images/icons/envelop-grey.svg");
 }
+.page-zanzibar .price-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+}
 .page-zanzibar .nav-list #lang {
   color: rgba(242, 251, 255, 0.4666666667);
 }
@@ -5262,9 +5271,8 @@ option {
 }
 @media screen and (min-width: 1024px) {
   .page-zanzibar .zanzibar-tarangire-section .img-wrapper .elephant {
-    margin-top: 120px;
-    max-width: 65%;
-    margin-left: auto;
+    margin-top: 10px;
+    max-width: 75%;
   }
 }
 .page-zanzibar .mwowambu-section {
@@ -5318,14 +5326,6 @@ option {
 @media screen and (min-width: 1024px) {
   .page-zanzibar .mwowambu-section p {
     max-width: 95%;
-  }
-}
-.page-zanzibar .mwowambu-section p:last-of-type {
-  margin-bottom: 55px;
-}
-@media screen and (min-width: 1024px) {
-  .page-zanzibar .mwowambu-section p:last-of-type {
-    margin-bottom: 95px;
   }
 }
 .page-zanzibar .mwowambu-section .day {
@@ -5549,6 +5549,12 @@ option {
   .page-zanzibar .stone-town-section .zanzibar-island {
     margin-top: 50px;
   }
+}
+.page-zanzibar .stone-town-section p {
+  max-width: 100%;
+}
+.page-zanzibar .stone-town-section .stone-town-last-p {
+  font-family: Montserrat;
 }
 .page-zanzibar .contact-us {
   background-color: #ffffff;

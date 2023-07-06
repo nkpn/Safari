@@ -820,19 +820,19 @@ $(".group-btn").each(function () {
   });
 });
 
-function scrollToPosition(e){
-  e.preventDefault();
-  const position = $(this).attr('href').split('#')[1];
-  const section = document.getElementById(position);
+// function scrollToPosition(e){
+//   e.preventDefault();
+//   const position = $(this).attr('href').split('#')[1];
+//   const section = document.getElementById(position);
 
-  if (section){
-    var offset = section.offsetTop; // Отримуємо зсув секції від верху сторінки
-    console.log(offset)
-    window.scrollTo({
-      top: offset,
-      behavior: "smooth"
-    });
-  }
-}
+//   if (section){
+//     var offset = section.offsetTop; // Отримуємо зсув секції від верху сторінки
+//     console.log(offset)
+//     window.scrollTo({
+//       top: offset,
+//       behavior: "smooth"
+//     });
+//   }
+// }
 
-$('.book-btn').on('click', scrollToPosition)
+// $('.book-btn').on('click', scrollToPosition)

@@ -605,6 +605,10 @@
     font-size: 14px;
   }
 
+   p:not(.form-introduction p) {
+    font-style: normal !important;
+  }
+
   a {
     margin-top: 12px;
     font-family: Kaisei Decol;
