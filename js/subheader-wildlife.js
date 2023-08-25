@@ -7,26 +7,13 @@ $(document).ready(function () {
   if(!sessionStorage.getItem('firstVisit')) {   
     $('.promo-header').show();  
     if ($(window).width() < 720) {
-        $headerBg.css('height', '108px')
-        $navSubmenu.css('bottom','-142px')
+        $headerBg.css('height', '58px')
     } else {
-        $headerBg.css('height', '148px')
-        $navSubmenu.css('bottom','-142px')
+        $headerBg.css('height', '88px')
+        $navSubmenu.css('bottom','-75px')
     }
    
   }    // show modal if it first time
-  $('.promo-close').click(function() {
-    sessionStorage.setItem('firstVisit',true); // used to store the state across refreshes.
-    $('.promo-header').hide();
-    if ($(window).width() < 720) {
-      $headerBg.css('height', '60px')
-      $navSubmenu.css('bottom','-142px')
-    } else{
-      $headerBg.css('height', '80px')
-      $navSubmenu.css('bottom','-74px')
-    }
-   
-  });
 });
 
 function onScroll(event) {
